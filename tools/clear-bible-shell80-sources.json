@@ -1,0 +1,17 @@
+{
+  "revision": "c99bd0ae6946775f932517656308ca19fc706921",
+  "license": "CC BY 4.0 for Clear.Bible alignment data, see source-specific notices for texts",
+  "sha256": {
+    "WLCM-BSB-manual.json": "3a7619681cebe2d0768681215456e9ee4701aef72a82af5fc851b31148aa3c1f",
+    "WLCM-BSB-manual.toml": "2c424d122034675d9814bbb4011b63ebda08b547850b2d4a04f1e5cdf4a93490",
+    "WLCM.tsv": "eec7b7e31b72019a67a74be0718f3b65efe1e88ce85716ddc194c031a3eb17e8",
+    "SBLGNT-BSB-manual.json": "5c94608d672d89c25057c6339176be13e3946634afe125e1539e8c87f2dcb164",
+    "SBLGNT-BSB-manual.toml": "96c3463f0bc07d047a3ab89d3af8ed9df17875c01d06930e581602c17ba81a89",
+    "SBLGNT.tsv": "df632b6b788aece04ac83495a315ac3933d122dca09da849efb1bc17d9c2a0be",
+    "BGNT-BSB-manual.json": "8c8f595d2a3ffa6d9ef75a63b7af55f3095cd254ae86245ff731c96a6a430e7e",
+    "BGNT-BSB-manual.toml": "5cb8175a23f268d6360fdf58d56deaaf5fac2590ae54fecf808be6db2f4bd9e5",
+    "BGNT.tsv": "09ef4a4741eb2bb582f752190140cb540def7a69747c81883230f77ff135ef8d",
+    "ot_BSB.tsv": "f06c76205f30e3e4a95f884a013c2e65a6df2e0acea3435ad3f2d77f71d003da",
+    "nt_BSB.tsv": "d388c73f52361968eb96761098e983699fdd0dd37272b1d701efebd61a5a36df"
+  }
+}

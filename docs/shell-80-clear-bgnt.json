@@ -1,0 +1,1916 @@
+{
+  "id": "BGNT",
+  "creator": "Berean Bible",
+  "schemes": [
+    "BCVWP",
+    "BCVWP"
+  ],
+  "rawRecords": 115992,
+  "rawVerses": 7941,
+  "rawBooks": {
+    "matthew": 1068,
+    "mark": 673,
+    "luke": 1149,
+    "john": 878,
+    "acts": 1003,
+    "romans": 432,
+    "1-corinthians": 437,
+    "2-corinthians": 257,
+    "galatians": 149,
+    "ephesians": 155,
+    "philippians": 104,
+    "colossians": 95,
+    "1-thessalonians": 89,
+    "2-thessalonians": 47,
+    "1-timothy": 113,
+    "2-timothy": 83,
+    "titus": 46,
+    "philemon": 25,
+    "hebrews": 303,
+    "james": 108,
+    "1-peter": 105,
+    "2-peter": 61,
+    "1-john": 105,
+    "2-john": 13,
+    "3-john": 14,
+    "jude": 25,
+    "revelation": 404
+  },
+  "matchedReferences": 7937,
+  "validated": 37,
+  "rejected": 7899,
+  "ambiguous": 1,
+  "reasons": {
+    "original position, spelling, morphology or identity differs": 5431,
+    "original word boundaries or token counts differ": 2466,
+    "remapped Reader original reference": 1,
+    "target verse bridge or remap": 1,
+    "unresolvable explicit position edges": 1
+  },
+  "groupScreen": {
+    "available": 366,
+    "rejected": 115543,
+    "ambiguous": 17,
+    "missingReference": 66
+  },
+  "targetAgreement": {
+    "sameReference": 7940,
+    "exact": 747
+  },
+  "compatibility": {
+    "web": {
+      "exactVerses": 43,
+      "exactWords": 485,
+      "sentenceVerses": 94
+    },
+    "asv": {
+      "exactVerses": 12,
+      "exactWords": 126,
+      "sentenceVerses": 15
+    },
+    "kjv": {
+      "exactVerses": 5,
+      "exactWords": 37,
+      "sentenceVerses": 11
+    },
+    "ylt": {
+      "exactVerses": 1,
+      "exactWords": 2,
+      "sentenceVerses": 0
+    },
+    "dby": {
+      "exactVerses": 4,
+      "exactWords": 22,
+      "sentenceVerses": 14
+    },
+    "webster": {
+      "exactVerses": 6,
+      "exactWords": 48,
+      "sentenceVerses": 11
+    },
+    "rv": {
+      "exactVerses": 19,
+      "exactWords": 280,
+      "sentenceVerses": 15
+    },
+    "gnv": {
+      "exactVerses": 0,
+      "exactWords": 0,
+      "sentenceVerses": 0
+    },
+    "dra": {
+      "exactVerses": 4,
+      "exactWords": 40,
+      "sentenceVerses": 15
+    }
+  },
+  "methods": {
+    "exactOrSentence": {
+      "verses": 5,
+      "occurrences": 56,
+      "groups": 46,
+      "newVerses": 1,
+      "newOccurrences": 14
+    },
+    "clearOnlyPhrase": {
+      "verses": 21,
+      "occurrences": 113,
+      "groups": 86,
+      "newVerses": 12,
+      "newOccurrences": 58
+    },
+    "clearAndUlt": {
+      "verses": 10,
+      "occurrences": 32,
+      "groups": 29,
+      "newVerses": 2,
+      "newOccurrences": 3
+    },
+    "threeWay": {
+      "verses": 6,
+      "occurrences": 14,
+      "groups": 14,
+      "newVerses": 0,
+      "newOccurrences": 0
+    }
+  },
+  "books": {
+    "matthew": {
+      "validated": 3,
+      "rejected": 1065,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 1,
+          "occurrences": 10,
+          "groups": 9,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 1,
+          "occurrences": 7,
+          "groups": 6,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearAndUlt": {
+          "verses": 1,
+          "occurrences": 1,
+          "groups": 1,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 1,
+          "occurrences": 1,
+          "groups": 1,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "mark": {
+      "validated": 0,
+      "rejected": 673,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearAndUlt": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "luke": {
+      "validated": 1,
+      "rejected": 1148,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearAndUlt": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "john": {
+      "validated": 5,
+      "rejected": 873,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 3,
+          "occurrences": 32,
+          "groups": 27,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 4,
+          "occurrences": 14,
+          "groups": 11,
+          "newVerses": 1,
+          "newOccurrences": 2
+        },
+        "clearAndUlt": {
+          "verses": 3,
+          "occurrences": 6,
+          "groups": 5,
+          "newVerses": 1,
+          "newOccurrences": 1
+        },
+        "threeWay": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "acts": {
+      "validated": 2,
+      "rejected": 1001,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 2,
+          "occurrences": 17,
+          "groups": 11,
+          "newVerses": 1,
+          "newOccurrences": 7
+        },
+        "clearAndUlt": {
+          "verses": 1,
+          "occurrences": 3,
+          "groups": 3,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 1,
+          "occurrences": 3,
+          "groups": 3,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "romans": {
+      "validated": 4,
+      "rejected": 425,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 2,
+          "occurrences": 9,
+          "groups": 7,
+          "newVerses": 2,
+          "newOccurrences": 9
+        },
+        "clearAndUlt": {
+          "verses": 1,
+          "occurrences": 2,
+          "groups": 2,
+          "newVerses": 1,
+          "newOccurrences": 2
+        },
+        "threeWay": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "1-corinthians": {
+      "validated": 2,
+      "rejected": 435,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 1,
+          "occurrences": 14,
+          "groups": 10,
+          "newVerses": 1,
+          "newOccurrences": 14
+        },
+        "clearOnlyPhrase": {
+          "verses": 1,
+          "occurrences": 11,
+          "groups": 7,
+          "newVerses": 1,
+          "newOccurrences": 11
+        },
+        "clearAndUlt": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "2-corinthians": {
+      "validated": 3,
+      "rejected": 253,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 1,
+          "occurrences": 3,
+          "groups": 2,
+          "newVerses": 1,
+          "newOccurrences": 3
+        },
+        "clearAndUlt": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "galatians": {
+      "validated": 2,
+      "rejected": 147,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 1,
+          "occurrences": 11,
+          "groups": 10,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearAndUlt": {
+          "verses": 1,
+          "occurrences": 6,
+          "groups": 6,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 1,
+          "occurrences": 5,
+          "groups": 5,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "ephesians": {
+      "validated": 3,
+      "rejected": 151,
+      "ambiguous": 1,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 3,
+          "occurrences": 14,
+          "groups": 11,
+          "newVerses": 2,
+          "newOccurrences": 5
+        },
+        "clearAndUlt": {
+          "verses": 1,
+          "occurrences": 9,
+          "groups": 7,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 1,
+          "occurrences": 3,
+          "groups": 3,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "philippians": {
+      "validated": 1,
+      "rejected": 103,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearAndUlt": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "colossians": {
+      "validated": 0,
+      "rejected": 95,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearAndUlt": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "1-thessalonians": {
+      "validated": 1,
+      "rejected": 88,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearAndUlt": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "2-thessalonians": {
+      "validated": 0,
+      "rejected": 47,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearAndUlt": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "1-timothy": {
+      "validated": 1,
+      "rejected": 112,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 1,
+          "occurrences": 5,
+          "groups": 5,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearAndUlt": {
+          "verses": 1,
+          "occurrences": 4,
+          "groups": 4,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 1,
+          "occurrences": 1,
+          "groups": 1,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "2-timothy": {
+      "validated": 2,
+      "rejected": 81,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 1,
+          "occurrences": 1,
+          "groups": 1,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearAndUlt": {
+          "verses": 1,
+          "occurrences": 1,
+          "groups": 1,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 1,
+          "occurrences": 1,
+          "groups": 1,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "titus": {
+      "validated": 2,
+      "rejected": 44,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 1,
+          "occurrences": 10,
+          "groups": 6,
+          "newVerses": 1,
+          "newOccurrences": 10
+        },
+        "clearAndUlt": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "philemon": {
+      "validated": 0,
+      "rejected": 25,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearAndUlt": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "hebrews": {
+      "validated": 2,
+      "rejected": 301,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 1,
+          "occurrences": 1,
+          "groups": 1,
+          "newVerses": 1,
+          "newOccurrences": 1
+        },
+        "clearAndUlt": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "james": {
+      "validated": 0,
+      "rejected": 108,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearAndUlt": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "1-peter": {
+      "validated": 1,
+      "rejected": 104,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 1,
+          "occurrences": 8,
+          "groups": 6,
+          "newVerses": 1,
+          "newOccurrences": 8
+        },
+        "clearAndUlt": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "2-peter": {
+      "validated": 1,
+      "rejected": 60,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearAndUlt": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "1-john": {
+      "validated": 1,
+      "rejected": 104,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 1,
+          "occurrences": 2,
+          "groups": 2,
+          "newVerses": 1,
+          "newOccurrences": 2
+        },
+        "clearAndUlt": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "2-john": {
+      "validated": 0,
+      "rejected": 13,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearAndUlt": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "3-john": {
+      "validated": 0,
+      "rejected": 14,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearAndUlt": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "jude": {
+      "validated": 0,
+      "rejected": 25,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearAndUlt": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    },
+    "revelation": {
+      "validated": 0,
+      "rejected": 404,
+      "ambiguous": 0,
+      "methods": {
+        "exactOrSentence": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearOnlyPhrase": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "clearAndUlt": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        },
+        "threeWay": {
+          "verses": 0,
+          "occurrences": 0,
+          "groups": 0,
+          "newVerses": 0,
+          "newOccurrences": 0
+        }
+      }
+    }
+  },
+  "priority": {
+    "don't": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "says": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "didn't": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "spoke": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "brothers": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "around": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "doesn't": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "comes": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "tent": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "listen": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "today": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "king's": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "everyone": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "won't": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "does": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "philistines": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "whoever": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "show": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 1,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "can't": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "inhabitants": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "let's": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "loving": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "families": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "news": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "moab": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "isn't": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    },
+    "whatever": {
+      "exactOrSentence": 0,
+      "clearOnlyPhrase": 0,
+      "clearAndUlt": 0,
+      "threeWay": 0
+    }
+  },
+  "heldout": {
+    "exactGroup": 11
+  },
+  "samples": {
+    "heldout": [
+      {
+        "bookId": "acts",
+        "chapter": 2,
+        "verse": 19,
+        "agreement": "exactGroup",
+        "previous": [
+          [
+            [
+              20,
+              22
+            ]
+          ],
+          [
+            3
+          ]
+        ],
+        "clear": [
+          [
+            [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                7,
+                11
+              ]
+            ],
+            [
+              1
+            ]
+          ],
+          [
+            [
+              [
+                12,
+                19
+              ]
+            ],
+            [
+              2
+            ]
+          ],
+          [
+            [
+              [
+                20,
+                22
+              ]
+            ],
+            [
+              3
+            ]
+          ],
+          [
+            [
+              [
+                42,
+                47
+              ]
+            ],
+            [
+              8
+            ]
+          ],
+          [
+            [
+              [
+                48,
+                50
+              ]
+            ],
+            [
+              9
+            ]
+          ],
+          [
+            [
+              [
+                91,
+                98
+              ]
+            ],
+            [
+              17
+            ]
+          ],
+          [
+            [
+              [
+                99,
+                101
+              ],
+              [
+                102,
+                107
+              ]
+            ],
+            [
+              18
+            ]
+          ]
+        ]
+      },
+      {
+        "bookId": "acts",
+        "chapter": 2,
+        "verse": 19,
+        "agreement": "exactGroup",
+        "previous": [
+          [
+            [
+              42,
+              47
+            ]
+          ],
+          [
+            8
+          ]
+        ],
+        "clear": [
+          [
+            [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                7,
+                11
+              ]
+            ],
+            [
+              1
+            ]
+          ],
+          [
+            [
+              [
+                12,
+                19
+              ]
+            ],
+            [
+              2
+            ]
+          ],
+          [
+            [
+              [
+                20,
+                22
+              ]
+            ],
+            [
+              3
+            ]
+          ],
+          [
+            [
+              [
+                42,
+                47
+              ]
+            ],
+            [
+              8
+            ]
+          ],
+          [
+            [
+              [
+                48,
+                50
+              ]
+            ],
+            [
+              9
+            ]
+          ],
+          [
+            [
+              [
+                91,
+                98
+              ]
+            ],
+            [
+              17
+            ]
+          ],
+          [
+            [
+              [
+                99,
+                101
+              ],
+              [
+                102,
+                107
+              ]
+            ],
+            [
+              18
+            ]
+          ]
+        ]
+      },
+      {
+        "bookId": "acts",
+        "chapter": 2,
+        "verse": 19,
+        "agreement": "exactGroup",
+        "previous": [
+          [
+            [
+              48,
+              50
+            ]
+          ],
+          [
+            9
+          ]
+        ],
+        "clear": [
+          [
+            [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                7,
+                11
+              ]
+            ],
+            [
+              1
+            ]
+          ],
+          [
+            [
+              [
+                12,
+                19
+              ]
+            ],
+            [
+              2
+            ]
+          ],
+          [
+            [
+              [
+                20,
+                22
+              ]
+            ],
+            [
+              3
+            ]
+          ],
+          [
+            [
+              [
+                42,
+                47
+              ]
+            ],
+            [
+              8
+            ]
+          ],
+          [
+            [
+              [
+                48,
+                50
+              ]
+            ],
+            [
+              9
+            ]
+          ],
+          [
+            [
+              [
+                91,
+                98
+              ]
+            ],
+            [
+              17
+            ]
+          ],
+          [
+            [
+              [
+                99,
+                101
+              ],
+              [
+                102,
+                107
+              ]
+            ],
+            [
+              18
+            ]
+          ]
+        ]
+      },
+      {
+        "bookId": "galatians",
+        "chapter": 5,
+        "verse": 22,
+        "agreement": "exactGroup",
+        "previous": [
+          [
+            [
+              0,
+              3
+            ]
+          ],
+          [
+            1
+          ]
+        ],
+        "clear": [
+          [
+            [
+              [
+                0,
+                3
+              ]
+            ],
+            [
+              1
+            ]
+          ],
+          [
+            [
+              [
+                8,
+                13
+              ]
+            ],
+            [
+              2
+            ]
+          ],
+          [
+            [
+              [
+                14,
+                16
+              ],
+              [
+                17,
+                20
+              ]
+            ],
+            [
+              3
+            ]
+          ],
+          [
+            [
+              [
+                21,
+                27
+              ]
+            ],
+            [
+              4
+            ]
+          ],
+          [
+            [
+              [
+                28,
+                30
+              ]
+            ],
+            [
+              5
+            ]
+          ],
+          [
+            [
+              [
+                31,
+                35
+              ]
+            ],
+            [
+              6
+            ]
+          ],
+          [
+            [
+              [
+                37,
+                40
+              ]
+            ],
+            [
+              7
+            ]
+          ],
+          [
+            [
+              [
+                42,
+                47
+              ]
+            ],
+            [
+              8
+            ]
+          ],
+          [
+            [
+              [
+                49,
+                57
+              ]
+            ],
+            [
+              9
+            ]
+          ],
+          [
+            [
+              [
+                59,
+                67
+              ]
+            ],
+            [
+              10
+            ]
+          ]
+        ]
+      }
+    ],
+    "priority": [],
+    "threeWay": [
+      {
+        "bookId": "matthew",
+        "chapter": 12,
+        "verse": 8,
+        "groups": [
+          [
+            [
+              [
+                0,
+                3
+              ]
+            ],
+            [
+              1
+            ]
+          ]
+        ]
+      },
+      {
+        "bookId": "acts",
+        "chapter": 2,
+        "verse": 19,
+        "groups": [
+          [
+            [
+              [
+                20,
+                22
+              ]
+            ],
+            [
+              3
+            ]
+          ],
+          [
+            [
+              [
+                42,
+                47
+              ]
+            ],
+            [
+              8
+            ]
+          ],
+          [
+            [
+              [
+                48,
+                50
+              ]
+            ],
+            [
+              9
+            ]
+          ]
+        ]
+      },
+      {
+        "bookId": "galatians",
+        "chapter": 5,
+        "verse": 22,
+        "groups": [
+          [
+            [
+              [
+                0,
+                3
+              ]
+            ],
+            [
+              1
+            ]
+          ],
+          [
+            [
+              [
+                37,
+                40
+              ]
+            ],
+            [
+              7
+            ]
+          ],
+          [
+            [
+              [
+                42,
+                47
+              ]
+            ],
+            [
+              8
+            ]
+          ],
+          [
+            [
+              [
+                49,
+                57
+              ]
+            ],
+            [
+              9
+            ]
+          ],
+          [
+            [
+              [
+                59,
+                67
+              ]
+            ],
+            [
+              10
+            ]
+          ]
+        ]
+      },
+      {
+        "bookId": "ephesians",
+        "chapter": 6,
+        "verse": 23,
+        "groups": [
+          [
+            [
+              [
+                30,
+                34
+              ]
+            ],
+            [
+              4
+            ]
+          ],
+          [
+            [
+              [
+                35,
+                39
+              ]
+            ],
+            [
+              5
+            ]
+          ],
+          [
+            [
+              [
+                86,
+                92
+              ]
+            ],
+            [
+              13
+            ]
+          ]
+        ]
+      },
+      {
+        "bookId": "1-timothy",
+        "chapter": 6,
+        "verse": 6,
+        "groups": [
+          [
+            [
+              [
+                40,
+                44
+              ]
+            ],
+            [
+              2
+            ]
+          ]
+        ]
+      },
+      {
+        "bookId": "2-timothy",
+        "chapter": 4,
+        "verse": 12,
+        "groups": [
+          [
+            [
+              [
+                23,
+                30
+              ]
+            ],
+            [
+              4
+            ]
+          ]
+        ]
+      }
+    ]
+  },
+  "dualCandidateSize": {
+    "bytes": 0,
+    "gzipBytes": 0,
+    "chapters": 0
+  }
+}

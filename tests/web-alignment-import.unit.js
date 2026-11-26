@@ -10,7 +10,7 @@ const {createHash} = require('node:crypto');
 const {readBook,readOriginal,readAlignment,validateVerse,projection,projectVerse,generate} = require('../tools/import-web-alignment');
 const berean = require('../tools/word-study-berean');
 const {loadBibleLibrary,READER_TOKEN_PATTERN} = require('../tools/audit-word-study-coverage');
-const report = require('../docs/shell-79-web-alignment-report.json');
+const report = require('../docs/shell-80-web-alignment-report.json');
 const web = loadBibleLibrary('web.js','webLibrary');
 const root = path.resolve(__dirname,'../data/word-study/alignment/web');
 
@@ -148,10 +148,32 @@ test('all Shell 78 WEB rows survive and the report reconciles to live baseline t
     }
   }
   assert.equal(count,308);
-  assert.equal(report.totals.prior,312);
-  assert.equal(report.totals.wordsBefore,1829);
-  assert.equal(report.totals.priorityWordsBefore,1065);
-  assert.equal(Object.keys(report.forms).length,500);
+  const historical=require('../docs/shell-79-web-alignment-report.json');
+  assert.equal(historical.totals.prior,312);
+  assert.equal(historical.totals.wordsBefore,1829);
+  assert.equal(historical.totals.priorityWordsBefore,1065);
+  assert.equal(Object.keys(historical.forms).length,500);
+});
+
+test('every Shell 79 alignment row is preserved and the new independently sourced groups reconcile',()=>{
+  const previous=require('../docs/shell-79-web-alignment-report.json');
+  let count=0, additions=0;
+  for(const relative of Object.keys(report.files).filter(file=>file.includes('/'))) {
+    const bytes=fs.readFileSync(path.join(root,relative));
+    const current=JSON.parse(bytes);
+    const pin=previous.files[relative];
+    if(!pin){additions+=Object.keys(current).length; continue;}
+    if(createHash('sha256').update(bytes).digest('hex')===pin.sha256){
+      count+=Object.keys(current).length;
+      continue;
+    }
+    const existing=JSON.parse(execFileSync('git',['show','ea6902a:data/word-study/alignment/web/'+relative],{cwd:path.resolve(__dirname,'..')}));
+    for(const [verse,row] of Object.entries(existing)){assert.deepEqual(current[verse],row);count++;}
+    additions+=Object.keys(current).length-Object.keys(existing).length;
+  }
+  assert.equal(count,381);
+  assert.equal(additions,528);
+  assert.equal(report.added.occurrences,1167);
 });
 
 test('the production provider verifies every WEB row and fails closed on changed input',async()=>{
@@ -192,7 +214,10 @@ test('the production provider verifies every WEB row and fails closed on changed
     ['hosea',5,9,'Ephraim','The tribe descended from Ephraim, the name Hosea uses here for the northern kingdom of Israel.'],
     ['1-chronicles',7,27,'Joshua','Joshua son of Nun, listed here among the descendants of Ephraim.'],
     ['galatians',5,22,'kindness','Treating others with goodness and consideration, listed here as fruit of the Spirit.'],
-    ['1-timothy',4,5,'prayer','An appeal to God, here connected with receiving food with thanksgiving.']
+    ['1-timothy',4,5,'prayer','An appeal to God, here connected with receiving food with thanksgiving.'],
+    ['job',19,12,'tent','A portable shelter. Job pictures troops surrounding his dwelling.'],
+    ['job',19,12,'around','Surrounding Job’s dwelling on all sides in his picture of a siege.'],
+    ['proverbs',6,21,'around','Encircling the neck. The verse pictures keeping the teaching close, like something tied around the neck.']
   ]) {
     const verseText = web[bookId][chapter].verses[verse-1];
     const englishStart = verseText.indexOf(displayWord);

@@ -24,7 +24,7 @@ const preview67='36a83c644db7a510f634d692866968a431837a78';
 const preview68='7014c91849364dae244b89b44dd0a515fa1c98d1';
 const preview69='885831216ca3e85bf5426ec5940e1a9105a3afd4';
 const preview70='558845a0d9f12a61d8911b4db47cb363a4ad281e';
-const currentVersion=79;
+const currentVersion=80;
 const production55='90a13c28afc64526bf27b6c2bb7021dd516d6493';
 const discoveryAssets=["/js/home-discovery.js","/js/home-discovery-catalog.json"];
 const discoveryPins={"/":"0dbb79fc2df882e469eb86e752cf7953e85078aa60e615362603597b5596fd15","/js/app.js":"498e0a2f3ce4b5c735d4ba3ea43bfb6a70709181849c7627067c339d4b31eab2","/js/home-discovery.js":"d123dff0bc63e160beb2f512dcb05341931abb0241233eebd77d864cb460eee3","/js/home-discovery-catalog.json":"5bb67690dbf8e1ff44af50617d0d9f30ae30aa5e78f95bdd024952c632b4555a","/css/components.css":"401ba5d477482de2fd3647da880bd9a266fc3f7dc4d134f93f9eae95e3ccca95"};
@@ -74,7 +74,8 @@ for(const previous of [
   {version:75,commit:'08ae6aeded6182ca140165c8f17fd0a35d317e0b',assets:52},
   {version:76,commit:'e6e319836ddcdb904d8d3da4c3072f6a120e1d60',assets:52},
   {version:77,commit:'2e82e2c59bedb1398c566bdc7f62d8d6e31bd6c2',assets:52},
-  {version:78,commit:'eea5c23eede2afb9495f18334b78c66815506db9',assets:52}
+  {version:78,commit:'eea5c23eede2afb9495f18334b78c66815506db9',assets:52},
+  {version:79,commit:'ea6902a18f4f4f65e3a434b84f516484a51dfef1',assets:52}
 ])test.describe(`installed cache ${previous.version}`,()=>{
 const baseline=previous.commit;
 const oldCache='god4-shell-compact-reader-'+previous.version,newCache='god4-shell-compact-reader-'+currentVersion;
@@ -93,7 +94,7 @@ test.beforeAll(()=>{
   const oldWorker=execFileSync('git',['show',baseline+':sw.js'],{cwd:root});
   const oldAssets=vm.runInNewContext(oldWorker.toString().match(/const SHELL_ASSETS = (\[[\s\S]*?\]);/)[1],{HOME_URL:'/',OFFLINE_URL:'/offline'});
   // Hydrate only selected historical fixtures; every response remains a Git blob.
-  prior=Object.fromEntries([...new Set(['/sw.js',...oldAssets,...assetPaths,...(previous.version===78?warmedWordStudy:[])])].map(url=>[new URL(url,'http://localhost').pathname,execFileSync('git',['show',baseline+':'+fileFor(url)],{cwd:root})]));
+  prior=Object.fromEntries([...new Set(['/sw.js',...oldAssets,...assetPaths,...(previous.version>=78?warmedWordStudy:[])])].map(url=>[new URL(url,'http://localhost').pathname,execFileSync('git',['show',baseline+':'+fileFor(url)],{cwd:root})]));
   current=Object.fromEntries(assetPaths.map(url=>[url,fs.readFileSync(path.join(root,fileFor(url)))]));
   oldHashes=Object.fromEntries(assetPaths.map(url=>[url,digest(prior[url])]));
   newHashes=Object.fromEntries(assetPaths.map(url=>[url,digest(current[url])]));
@@ -105,9 +106,9 @@ const saved=[{ref:'John 1:1',text:'Installed-user saved verse',location:{transla
 test.use({viewport:{width:320,height:844},hasTouch:true,serviceWorkers:'allow'});
 if(previous.version>=52)test.use({userAgent:'Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36'});
 
-test('shell 79 preserves activation, Bible caches and the exact required assets',()=>{
+test('shell 80 preserves activation, Bible caches and the exact required assets',()=>{
   const worker=fs.readFileSync(path.join(root,'sw.js'),'utf8');
-  let normalized=worker.replace(/\r\n/g,'\n').replace("'compact-reader-79'","'compact-reader-"+previous.version+"'");
+  let normalized=worker.replace(/\r\n/g,'\n').replace("'compact-reader-80'","'compact-reader-"+previous.version+"'");
   if(previous.version<78)normalized=normalized.replace(/\/\/ Word Study runtime cache begins[\s\S]*?\/\/ Word Study runtime cache ends\n\n/,'')
     .replace(/  \/\/ Word Study runtime route begins[\s\S]*?  \/\/ Word Study runtime route ends\n/,'');
   if(previous.version<56)for(const asset of discoveryAssets)normalized=normalized.replace("  '"+asset+"',\n",'');
@@ -127,7 +128,7 @@ test('shell 79 preserves activation, Bible caches and the exact required assets'
     '/js/word-study/provider.js':'4b3fdfa5fdd86ef515e5b48b72d186931841ab911beba8d61d1c98859ff7c506',
     '/':'2b4f020a910a66406fa04cdfd3d8abe6200068b599107d3e33de7d0d61e396e6',
     '/css/companion.css':'afe7794ac43078b655794831a0571918a0b96731ab3da5930c8204d9fdc4c986',
-    [alignmentPath]:'c0421ed6478ccef5bb828d872e2edafde6a69b56d689a7e2bde6c0334e3e5f56',
+    [alignmentPath]:'757187d9465e11452e283f069950dba8d5a027ed285c47bb4c76fdb0558b6b35',
     [dictionaryPath]:'d2370962a5c5d5f8785fc0d9d4c9f717a639b5a4aa4646204ecc66f0470995ef',
     [lexiconProviderPath]:'26442c26186010cad9ea56aaecd624c09b016c9d6f41556d3e630ea4f02c150e',
     '/js/word-study/controller.js':'2b69572fe089c1d5ac2baa49d69ae665dbe845c2f1edf660f724b761e92b1245'
@@ -567,7 +568,7 @@ for(const width of previous.version>=44?[1280,320,390]:[320,390])test(`installed
   }finally{await context.setOffline(false);await server.stop(context);}
 });
 
-test(`failed shell-79 installation leaves installed shell ${previous.version} usable offline and retries without data loss`,async({page,context})=>{
+test(`failed shell-80 installation leaves installed shell ${previous.version} usable offline and retries without data loss`,async({page,context})=>{
   test.setTimeout(60000);
   const server=await fixture();
   try{
@@ -607,7 +608,7 @@ test(`failed shell-79 installation leaves installed shell ${previous.version} us
   }finally{await context.setOffline(false);await server.stop(context);}
 });
 
-test(`interrupted shell-79 precache keeps shell ${previous.version} recoverable and retries offline safely`,async({page,context})=>{
+test(`interrupted shell-80 precache keeps shell ${previous.version} recoverable and retries offline safely`,async({page,context})=>{
   test.setTimeout(60000);const server=await fixture();
   try{
     await installOld(page,server.origin);const before=await retainedState(page),requests=server.state.bibleRequests.slice();
@@ -696,7 +697,7 @@ if(previous.version>=52)test('closing all old tabs permits offline relaunch with
 });
 
 
-if(previous.version===78)test('previously cached Word Study survives the Shell 79 update and offline reload',async({page,context})=>{
+if(previous.version>=78)test('previously cached Word Study survives the Shell 80 update and offline reload',async({page,context})=>{
   test.setTimeout(60000);
   const server=await fixture();
   const cacheName='god4-word-study-data-v1';

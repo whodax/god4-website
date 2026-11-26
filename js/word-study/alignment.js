@@ -256,6 +256,14 @@
     title:'WEB phrase verified against ULT and Berean',
     revision:'ULT 92, Berean Standard Bible third printing, UHB 3.0.0 and UGNT 0.34'
   });
+  var webClearHebrew = Object.assign({},webSource,{
+    title:'WEB phrase verified against ULT and Clear.Bible Hebrew',
+    revision:'ULT 92 and Clear.Bible c99bd0a WLCM–BSB manual alignment'
+  });
+  var webClearGreek = Object.assign({},webSource,{
+    title:'WEB phrase verified against ULT and Clear.Bible Greek',
+    revision:'ULT 92 and Clear.Bible c99bd0a SBLGNT–BSB manual alignment'
+  });
   function hasReviewedVerse(context){
     return reviewedCatalog.some(function(entry){
       return ['translationId','bookId','chapter','verse'].every(function(field){ return entry[field] === context[field]; });
@@ -304,7 +312,8 @@
       var row = chapter?.[context.verse];
       if(!Array.isArray(row) || row[0] !== context.verseText || !Array.isArray(row[1]) ||
         row[1].length !== records.length || !Array.isArray(row[2])) return null;
-      var source = !web ? crosswireSource : row[3] === 'dual-phrase' ? webConsensus :
+      var source = !web ? crosswireSource : row[3] === 'clear-hebrew-dual' ? webClearHebrew :
+        row[3] === 'clear-greek-dual' ? webClearGreek : row[3] === 'dual-phrase' ? webConsensus :
         row[3]?.startsWith('berean-') ? webBerean : row[3] ? webExpanded : webSource;
       if(!records.every(function(record,index){
         var token = row[1][index];
@@ -327,8 +336,23 @@
     var text = study.verseText;
     var sense;
     var noun = /^N-/;
+    var partOfSpeech='noun';
     if(term === 'Christ'){
       sense = ['G5547','The Anointed One, the Messiah.','Greek Christos'];
+    }else if(alignment.source === webClearHebrew && study.translationId === 'web'){
+      if(study.bookId === 'job' && study.chapter === 19 && study.verse === 12 && /encamp around my tent/.test(text)){
+        noun=/^H(?:R\/)?N/;
+        if(term === 'tent'){
+          sense=['H168','A portable shelter. Job pictures troops surrounding his dwelling.','Hebrew ohel'];
+        }else if(term === 'around'){
+          sense=['H5439','Surrounding Job’s dwelling on all sides in his picture of a siege.','Hebrew saviv'];
+          partOfSpeech='preposition';
+        }
+      }else if(term === 'around' && study.bookId === 'proverbs' && study.chapter === 6 && study.verse === 21 && /around your neck/.test(text)){
+        sense=['H5921','Encircling the neck. The verse pictures keeping the teaching close, like something tied around the neck.','Hebrew al'];
+        noun=/^HR$/;
+        partOfSpeech='preposition';
+      }
     }else if(alignment.source === webConsensus && study.translationId === 'web'){
       if(term === 'kindness' && study.bookId === 'galatians' && study.chapter === 5 && study.verse === 22 && /fruit of the Spirit/.test(text)){
         sense = ['G5544','Treating others with goodness and consideration, listed here as fruit of the Spirit.','Greek chrestotes'];
@@ -356,7 +380,7 @@
     if(!records.some(function(record){
       return linked.has(record.tokenIndex) && record.strongsNumber === sense[0] && noun.test(record.morphology);
     })) return null;
-    return {partOfSpeech:'noun',definition:sense[1],source:'Scripture context · ' + sense[2] + ' (' + sense[0] + ')'};
+    return {partOfSpeech:partOfSpeech,definition:sense[1],source:'Scripture context · ' + sense[2] + ' (' + sense[0] + ')'};
   }
   return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookupChapter:lookupChapter, hasReviewedVerse:hasReviewedVerse,
     contextualDefinition:contextualDefinition, lookup:createProvider(reviewedCatalog).lookup};

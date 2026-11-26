@@ -90,4 +90,23 @@ The Shell 78 failure snapshots showed two different timeout points. The 320px up
 
 Prototype a third independent position review on the 13 remaining priority forms with single-source leads. Start with the hand-aligned Clear.Bible Hebrew package and named references such as Moab and the Philistines, then examine verbs with identifiable subjects and tenses. Use MACULA Hebrew syntax as supporting evidence for boundaries. Evaluate the Clear.Bible Greek package separately. Pin exact artifacts and measure overlap on the identical GOD4.us edition before publishing any additional groups. [MACULA Hebrew](https://github.com/Clear-Bible/macula-hebrew) · [Clear.Bible alignments](https://github.com/Clear-Bible/Alignments)
 
-Bible-wide verified alignment remains a release blocker. The 27 priority forms without verified evidence, the large majority of WEB verses, the unresolved KJV coverage, and the other Reader editions remain open. Physical Shell 79 Android and TalkBack acceptance is pending.
+## Physical Android and TalkBack acceptance
+
+The owner reported **12 of 12 checks passed** on preview `193ffdae`, commit `ea6902a18f4f4f65e3a434b84f516484a51dfef1`.
+
+| Check | Result |
+| --- | --- |
+| WEB Numbers 13:8, Ephraim | Pass |
+| WEB Numbers 13:8, of | Pass |
+| WEB Galatians 5:22, kindness | Pass |
+| WEB 1 Timothy 4:5, prayer | Pass |
+| WEB Numbers 32:3, Dibon | Pass |
+| KJV John 1:1, Word | Pass |
+| KJV Acts 8:37, Christ | Pass |
+| Dark theme | Pass |
+| Close Word Study | Pass |
+| TalkBack | Pass |
+| Full offline reload | Pass |
+| Ethiopian Read Aloud | Pass |
+
+Bible-wide verified alignment remains a release blocker. The 27 priority forms without verified evidence, the large majority of WEB verses, the unresolved KJV coverage, and the other Reader editions remain open.
