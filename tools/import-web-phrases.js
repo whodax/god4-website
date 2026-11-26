@@ -58,12 +58,18 @@ async function generate({ult,uhb,ugnt,berean,baseline,output}) {
           totals.priorityWordsBefore+=counted.priority;
           continue;
         }
-        const tagged=ultBook?.get(ref), table=bsbBook?.get(ref), original=originalBook?.get(ref);
-        if (!tagged || !table || !original) {
+        if (!ultBook?.has(ref) || !bsbBook?.has(ref) || !originalBook?.has(ref)) {
           totals.missing++;
           continue;
         }
+        const tagged=ultBook.get(ref),table=bsbBook.get(ref),original=originalBook.get(ref);
         totals.screened++;
+        if (!tagged || !table || !original) {
+          totals.ambiguous++;
+          const code='duplicate or empty source reference';
+          report.reasons[code]=(report.reasons[code]||0)+1;
+          continue;
+        }
         const parsed=readAlignment(tagged);
         let outcome;
         if (parsed.reason) outcome={code:'ULT '+parsed.reason,ambiguous:parsed.ambiguous};
