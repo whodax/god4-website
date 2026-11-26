@@ -1,0 +1,5154 @@
+{
+  "totals": {
+    "screened": 25197,
+    "accepted": 73,
+    "rejected": 16549,
+    "ambiguous": 8575,
+    "missing": 5589,
+    "prior": 312,
+    "wordsBefore": 1829,
+    "priorityWordsBefore": 1065,
+    "words": 135,
+    "groups": 97,
+    "priorityWords": 80
+  },
+  "books": {
+    "genesis": {
+      "screened": 1510,
+      "accepted": 3,
+      "rejected": 550,
+      "ambiguous": 957,
+      "missing": 0,
+      "prior": 23,
+      "wordsBefore": 187,
+      "priorityWordsBefore": 95,
+      "words": 6,
+      "groups": 3,
+      "priorityWords": 5
+    },
+    "exodus": {
+      "screened": 1207,
+      "accepted": 4,
+      "rejected": 502,
+      "ambiguous": 701,
+      "missing": 0,
+      "prior": 6,
+      "wordsBefore": 17,
+      "priorityWordsBefore": 10,
+      "words": 7,
+      "groups": 4,
+      "priorityWords": 4
+    },
+    "leviticus": {
+      "screened": 850,
+      "accepted": 0,
+      "rejected": 366,
+      "ambiguous": 484,
+      "missing": 0,
+      "prior": 9,
+      "wordsBefore": 41,
+      "priorityWordsBefore": 28,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "numbers": {
+      "screened": 1287,
+      "accepted": 15,
+      "rejected": 697,
+      "ambiguous": 575,
+      "missing": 0,
+      "prior": 1,
+      "wordsBefore": 10,
+      "priorityWordsBefore": 1,
+      "words": 28,
+      "groups": 15,
+      "priorityWords": 19
+    },
+    "deuteronomy": {
+      "screened": 957,
+      "accepted": 2,
+      "rejected": 536,
+      "ambiguous": 419,
+      "missing": 0,
+      "prior": 2,
+      "wordsBefore": 5,
+      "priorityWordsBefore": 3,
+      "words": 4,
+      "groups": 3,
+      "priorityWords": 1
+    },
+    "joshua": {
+      "screened": 622,
+      "accepted": 4,
+      "rejected": 315,
+      "ambiguous": 303,
+      "missing": 0,
+      "prior": 36,
+      "wordsBefore": 187,
+      "priorityWordsBefore": 93,
+      "words": 5,
+      "groups": 5,
+      "priorityWords": 0
+    },
+    "judges": {
+      "screened": 616,
+      "accepted": 0,
+      "rejected": 273,
+      "ambiguous": 343,
+      "missing": 0,
+      "prior": 2,
+      "wordsBefore": 12,
+      "priorityWordsBefore": 10,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "ruth": {
+      "screened": 85,
+      "accepted": 0,
+      "rejected": 55,
+      "ambiguous": 30,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "1-samuel": {
+      "screened": 808,
+      "accepted": 1,
+      "rejected": 330,
+      "ambiguous": 477,
+      "missing": 0,
+      "prior": 2,
+      "wordsBefore": 5,
+      "priorityWordsBefore": 4,
+      "words": 2,
+      "groups": 1,
+      "priorityWords": 1
+    },
+    "2-samuel": {
+      "screened": 691,
+      "accepted": 1,
+      "rejected": 290,
+      "ambiguous": 400,
+      "missing": 0,
+      "prior": 4,
+      "wordsBefore": 23,
+      "priorityWordsBefore": 13,
+      "words": 2,
+      "groups": 1,
+      "priorityWords": 2
+    },
+    "1-kings": {
+      "screened": 815,
+      "accepted": 1,
+      "rejected": 367,
+      "ambiguous": 447,
+      "missing": 0,
+      "prior": 1,
+      "wordsBefore": 6,
+      "priorityWordsBefore": 6,
+      "words": 3,
+      "groups": 2,
+      "priorityWords": 1
+    },
+    "2-kings": {
+      "screened": 713,
+      "accepted": 0,
+      "rejected": 269,
+      "ambiguous": 444,
+      "missing": 0,
+      "prior": 6,
+      "wordsBefore": 29,
+      "priorityWordsBefore": 25,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "1-chronicles": {
+      "screened": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "missing": 863,
+      "prior": 79,
+      "wordsBefore": 490,
+      "priorityWordsBefore": 220,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "2-chronicles": {
+      "screened": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "missing": 816,
+      "prior": 6,
+      "wordsBefore": 27,
+      "priorityWordsBefore": 16,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "ezra": {
+      "screened": 271,
+      "accepted": 2,
+      "rejected": 161,
+      "ambiguous": 108,
+      "missing": 0,
+      "prior": 9,
+      "wordsBefore": 82,
+      "priorityWordsBefore": 47,
+      "words": 3,
+      "groups": 2,
+      "priorityWords": 1
+    },
+    "nehemiah": {
+      "screened": 372,
+      "accepted": 6,
+      "rejected": 217,
+      "ambiguous": 149,
+      "missing": 0,
+      "prior": 34,
+      "wordsBefore": 130,
+      "priorityWordsBefore": 19,
+      "words": 14,
+      "groups": 14,
+      "priorityWords": 0
+    },
+    "esther": {
+      "screened": 166,
+      "accepted": 0,
+      "rejected": 62,
+      "ambiguous": 104,
+      "missing": 0,
+      "prior": 1,
+      "wordsBefore": 3,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "job": {
+      "screened": 1063,
+      "accepted": 1,
+      "rejected": 546,
+      "ambiguous": 516,
+      "missing": 0,
+      "prior": 7,
+      "wordsBefore": 53,
+      "priorityWordsBefore": 45,
+      "words": 1,
+      "groups": 1,
+      "priorityWords": 1
+    },
+    "psalms": {
+      "screened": 2438,
+      "accepted": 15,
+      "rejected": 1599,
+      "ambiguous": 824,
+      "missing": 0,
+      "prior": 23,
+      "wordsBefore": 143,
+      "priorityWordsBefore": 122,
+      "words": 26,
+      "groups": 16,
+      "priorityWords": 19
+    },
+    "proverbs": {
+      "screened": 907,
+      "accepted": 3,
+      "rejected": 470,
+      "ambiguous": 434,
+      "missing": 0,
+      "prior": 8,
+      "wordsBefore": 40,
+      "priorityWordsBefore": 32,
+      "words": 4,
+      "groups": 3,
+      "priorityWords": 3
+    },
+    "ecclesiastes": {
+      "screened": 221,
+      "accepted": 2,
+      "rejected": 105,
+      "ambiguous": 114,
+      "missing": 0,
+      "prior": 1,
+      "wordsBefore": 1,
+      "priorityWordsBefore": 0,
+      "words": 3,
+      "groups": 2,
+      "priorityWords": 3
+    },
+    "song-of-solomon": {
+      "screened": 116,
+      "accepted": 0,
+      "rejected": 68,
+      "ambiguous": 48,
+      "missing": 0,
+      "prior": 1,
+      "wordsBefore": 5,
+      "priorityWordsBefore": 4,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "isaiah": {
+      "screened": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "missing": 1284,
+      "prior": 8,
+      "wordsBefore": 51,
+      "priorityWordsBefore": 37,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "jeremiah": {
+      "screened": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "missing": 1360,
+      "prior": 4,
+      "wordsBefore": 9,
+      "priorityWordsBefore": 5,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "lamentations": {
+      "screened": 154,
+      "accepted": 0,
+      "rejected": 147,
+      "ambiguous": 7,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "ezekiel": {
+      "screened": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "missing": 1262,
+      "prior": 11,
+      "wordsBefore": 37,
+      "priorityWordsBefore": 36,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "daniel": {
+      "screened": 353,
+      "accepted": 1,
+      "rejected": 168,
+      "ambiguous": 184,
+      "missing": 0,
+      "prior": 4,
+      "wordsBefore": 42,
+      "priorityWordsBefore": 34,
+      "words": 2,
+      "groups": 1,
+      "priorityWords": 1
+    },
+    "hosea": {
+      "screened": 194,
+      "accepted": 0,
+      "rejected": 130,
+      "ambiguous": 64,
+      "missing": 0,
+      "prior": 3,
+      "wordsBefore": 23,
+      "priorityWordsBefore": 19,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "joel": {
+      "screened": 72,
+      "accepted": 0,
+      "rejected": 38,
+      "ambiguous": 34,
+      "missing": 0,
+      "prior": 1,
+      "wordsBefore": 5,
+      "priorityWordsBefore": 2,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "amos": {
+      "screened": 145,
+      "accepted": 0,
+      "rejected": 69,
+      "ambiguous": 76,
+      "missing": 0,
+      "prior": 1,
+      "wordsBefore": 3,
+      "priorityWordsBefore": 2,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "obadiah": {
+      "screened": 21,
+      "accepted": 0,
+      "rejected": 11,
+      "ambiguous": 10,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "jonah": {
+      "screened": 48,
+      "accepted": 0,
+      "rejected": 23,
+      "ambiguous": 25,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "micah": {
+      "screened": 102,
+      "accepted": 0,
+      "rejected": 65,
+      "ambiguous": 37,
+      "missing": 0,
+      "prior": 3,
+      "wordsBefore": 16,
+      "priorityWordsBefore": 14,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "nahum": {
+      "screened": 46,
+      "accepted": 0,
+      "rejected": 30,
+      "ambiguous": 16,
+      "missing": 0,
+      "prior": 1,
+      "wordsBefore": 11,
+      "priorityWordsBefore": 9,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "habakkuk": {
+      "screened": 56,
+      "accepted": 0,
+      "rejected": 29,
+      "ambiguous": 27,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "zephaniah": {
+      "screened": 53,
+      "accepted": 1,
+      "rejected": 21,
+      "ambiguous": 31,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 2,
+      "groups": 1,
+      "priorityWords": 1
+    },
+    "haggai": {
+      "screened": 38,
+      "accepted": 0,
+      "rejected": 19,
+      "ambiguous": 19,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "zechariah": {
+      "screened": 211,
+      "accepted": 0,
+      "rejected": 110,
+      "ambiguous": 101,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "malachi": {
+      "screened": 53,
+      "accepted": 0,
+      "rejected": 29,
+      "ambiguous": 24,
+      "missing": 0,
+      "prior": 2,
+      "wordsBefore": 6,
+      "priorityWordsBefore": 6,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "matthew": {
+      "screened": 1069,
+      "accepted": 1,
+      "rejected": 1065,
+      "ambiguous": 3,
+      "missing": 0,
+      "prior": 2,
+      "wordsBefore": 27,
+      "priorityWordsBefore": 23,
+      "words": 2,
+      "groups": 2,
+      "priorityWords": 1
+    },
+    "mark": {
+      "screened": 677,
+      "accepted": 0,
+      "rejected": 675,
+      "ambiguous": 2,
+      "missing": 0,
+      "prior": 1,
+      "wordsBefore": 1,
+      "priorityWordsBefore": 1,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "luke": {
+      "screened": 1150,
+      "accepted": 1,
+      "rejected": 1144,
+      "ambiguous": 5,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 1,
+      "groups": 1,
+      "priorityWords": 1
+    },
+    "john": {
+      "screened": 874,
+      "accepted": 0,
+      "rejected": 871,
+      "ambiguous": 3,
+      "missing": 0,
+      "prior": 5,
+      "wordsBefore": 58,
+      "priorityWordsBefore": 56,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "acts": {
+      "screened": 1004,
+      "accepted": 3,
+      "rejected": 997,
+      "ambiguous": 4,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 6,
+      "groups": 6,
+      "priorityWords": 5
+    },
+    "romans": {
+      "screened": 430,
+      "accepted": 1,
+      "rejected": 424,
+      "ambiguous": 5,
+      "missing": 3,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 1,
+      "groups": 1,
+      "priorityWords": 1
+    },
+    "1-corinthians": {
+      "screened": 436,
+      "accepted": 0,
+      "rejected": 435,
+      "ambiguous": 1,
+      "missing": 0,
+      "prior": 1,
+      "wordsBefore": 20,
+      "priorityWordsBefore": 14,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "2-corinthians": {
+      "screened": 256,
+      "accepted": 2,
+      "rejected": 251,
+      "ambiguous": 3,
+      "missing": 1,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 3,
+      "groups": 3,
+      "priorityWords": 2
+    },
+    "galatians": {
+      "screened": 149,
+      "accepted": 1,
+      "rejected": 147,
+      "ambiguous": 1,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 5,
+      "groups": 5,
+      "priorityWords": 4
+    },
+    "ephesians": {
+      "screened": 155,
+      "accepted": 1,
+      "rejected": 150,
+      "ambiguous": 4,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 3,
+      "groups": 3,
+      "priorityWords": 3
+    },
+    "philippians": {
+      "screened": 104,
+      "accepted": 0,
+      "rejected": 104,
+      "ambiguous": 0,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "colossians": {
+      "screened": 95,
+      "accepted": 0,
+      "rejected": 95,
+      "ambiguous": 0,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "1-thessalonians": {
+      "screened": 89,
+      "accepted": 0,
+      "rejected": 89,
+      "ambiguous": 0,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "2-thessalonians": {
+      "screened": 47,
+      "accepted": 0,
+      "rejected": 47,
+      "ambiguous": 0,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "1-timothy": {
+      "screened": 111,
+      "accepted": 1,
+      "rejected": 109,
+      "ambiguous": 1,
+      "missing": 0,
+      "prior": 2,
+      "wordsBefore": 8,
+      "priorityWordsBefore": 5,
+      "words": 2,
+      "groups": 2,
+      "priorityWords": 1
+    },
+    "2-timothy": {
+      "screened": 82,
+      "accepted": 0,
+      "rejected": 82,
+      "ambiguous": 0,
+      "missing": 0,
+      "prior": 1,
+      "wordsBefore": 6,
+      "priorityWordsBefore": 4,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "titus": {
+      "screened": 46,
+      "accepted": 0,
+      "rejected": 43,
+      "ambiguous": 3,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "philemon": {
+      "screened": 25,
+      "accepted": 0,
+      "rejected": 25,
+      "ambiguous": 0,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "hebrews": {
+      "screened": 303,
+      "accepted": 0,
+      "rejected": 299,
+      "ambiguous": 4,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "james": {
+      "screened": 108,
+      "accepted": 0,
+      "rejected": 108,
+      "ambiguous": 0,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "1-peter": {
+      "screened": 105,
+      "accepted": 0,
+      "rejected": 103,
+      "ambiguous": 2,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "2-peter": {
+      "screened": 60,
+      "accepted": 0,
+      "rejected": 59,
+      "ambiguous": 1,
+      "missing": 0,
+      "prior": 1,
+      "wordsBefore": 10,
+      "priorityWordsBefore": 5,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "1-john": {
+      "screened": 105,
+      "accepted": 0,
+      "rejected": 104,
+      "ambiguous": 1,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "2-john": {
+      "screened": 13,
+      "accepted": 0,
+      "rejected": 13,
+      "ambiguous": 0,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "3-john": {
+      "screened": 14,
+      "accepted": 0,
+      "rejected": 14,
+      "ambiguous": 0,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "jude": {
+      "screened": 25,
+      "accepted": 0,
+      "rejected": 25,
+      "ambiguous": 0,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    },
+    "revelation": {
+      "screened": 404,
+      "accepted": 0,
+      "rejected": 404,
+      "ambiguous": 0,
+      "missing": 0,
+      "prior": 0,
+      "wordsBefore": 0,
+      "priorityWordsBefore": 0,
+      "words": 0,
+      "groups": 0,
+      "priorityWords": 0
+    }
+  },
+  "reasons": {
+    "ULT ambiguous original occurrence": 8297,
+    "ULT original position, spelling, identity or morphology differs": 9397,
+    "no complete anchored two-source group": 2810,
+    "Berean witness order, identity, surface or morphology differs": 892,
+    "Berean has no nonsupplied group with supported morphology": 400,
+    "repeated group": 183,
+    "ULT English tag splits or lacks selectable words": 93,
+    "ULT original verse missing or token count differs": 2396,
+    "scope-sensitive wording": 354,
+    "no shared English word": 25,
+    "ULT explicit milestone identity or morphology differs": 45,
+    "ULT unbalanced alignment": 2,
+    "ULT unsupported English markup": 228,
+    "Berean witness token count differs": 1,
+    "remapped original reference": 1
+  },
+  "methods": {
+    "wordOverlap": 24942,
+    "ultOnly": 2390,
+    "bereanOnly": 842,
+    "dual": 73
+  },
+  "forms": {
+    "the": {
+      "before": 212,
+      "added": 6,
+      "webOccurrences": 61493,
+      "ultOnly": 988,
+      "bereanOnly": 330
+    },
+    "of": {
+      "before": 171,
+      "added": 13,
+      "webOccurrences": 31376,
+      "ultOnly": 593,
+      "bereanOnly": 400
+    },
+    "and": {
+      "before": 70,
+      "added": 21,
+      "webOccurrences": 30463,
+      "ultOnly": 280,
+      "bereanOnly": 111
+    },
+    "to": {
+      "before": 20,
+      "added": 0,
+      "webOccurrences": 21156,
+      "ultOnly": 215,
+      "bereanOnly": 25
+    },
+    "you": {
+      "before": 12,
+      "added": 0,
+      "webOccurrences": 14596,
+      "ultOnly": 103,
+      "bereanOnly": 2
+    },
+    "in": {
+      "before": 24,
+      "added": 3,
+      "webOccurrences": 12750,
+      "ultOnly": 168,
+      "bereanOnly": 19
+    },
+    "he": {
+      "before": 6,
+      "added": 0,
+      "webOccurrences": 10380,
+      "ultOnly": 75,
+      "bereanOnly": 0
+    },
+    "will": {
+      "before": 11,
+      "added": 0,
+      "webOccurrences": 9297,
+      "ultOnly": 70,
+      "bereanOnly": 0
+    },
+    "for": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 9080,
+      "ultOnly": 153,
+      "bereanOnly": 11
+    },
+    "i": {
+      "before": 10,
+      "added": 0,
+      "webOccurrences": 8627,
+      "ultOnly": 68,
+      "bereanOnly": 0
+    },
+    "a": {
+      "before": 12,
+      "added": 0,
+      "webOccurrences": 8492,
+      "ultOnly": 95,
+      "bereanOnly": 40
+    },
+    "that": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 8081,
+      "ultOnly": 55,
+      "bereanOnly": 1
+    },
+    "his": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 7995,
+      "ultOnly": 143,
+      "bereanOnly": 0
+    },
+    "your": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 7200,
+      "ultOnly": 127,
+      "bereanOnly": 0
+    },
+    "they": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 7032,
+      "ultOnly": 41,
+      "bereanOnly": 0
+    },
+    "is": {
+      "before": 13,
+      "added": 0,
+      "webOccurrences": 7026,
+      "ultOnly": 32,
+      "bereanOnly": 5
+    },
+    "lord": {
+      "before": 30,
+      "added": 1,
+      "webOccurrences": 6713,
+      "ultOnly": 15,
+      "bereanOnly": 31
+    },
+    "him": {
+      "before": 3,
+      "added": 0,
+      "webOccurrences": 6392,
+      "ultOnly": 41,
+      "bereanOnly": 0
+    },
+    "with": {
+      "before": 6,
+      "added": 1,
+      "webOccurrences": 6313,
+      "ultOnly": 68,
+      "bereanOnly": 7
+    },
+    "who": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 6230,
+      "ultOnly": 24,
+      "bereanOnly": 0
+    },
+    "be": {
+      "before": 4,
+      "added": 0,
+      "webOccurrences": 5842,
+      "ultOnly": 30,
+      "bereanOnly": 0
+    },
+    "it": {
+      "before": 5,
+      "added": 0,
+      "webOccurrences": 5788,
+      "ultOnly": 31,
+      "bereanOnly": 0
+    },
+    "all": {
+      "before": 14,
+      "added": 3,
+      "webOccurrences": 5596,
+      "ultOnly": 62,
+      "bereanOnly": 35
+    },
+    "them": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 5580,
+      "ultOnly": 37,
+      "bereanOnly": 0
+    },
+    "my": {
+      "before": 5,
+      "added": 0,
+      "webOccurrences": 4864,
+      "ultOnly": 126,
+      "bereanOnly": 0
+    },
+    "have": {
+      "before": 4,
+      "added": 0,
+      "webOccurrences": 4841,
+      "ultOnly": 40,
+      "bereanOnly": 0
+    },
+    "on": {
+      "before": 1,
+      "added": 1,
+      "webOccurrences": 4700,
+      "ultOnly": 70,
+      "bereanOnly": 5
+    },
+    "shall": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 4449,
+      "ultOnly": 25,
+      "bereanOnly": 0
+    },
+    "from": {
+      "before": 3,
+      "added": 1,
+      "webOccurrences": 4284,
+      "ultOnly": 65,
+      "bereanOnly": 9
+    },
+    "was": {
+      "before": 9,
+      "added": 0,
+      "webOccurrences": 4218,
+      "ultOnly": 31,
+      "bereanOnly": 6
+    },
+    "me": {
+      "before": 3,
+      "added": 0,
+      "webOccurrences": 4058,
+      "ultOnly": 46,
+      "bereanOnly": 0
+    },
+    "god": {
+      "before": 10,
+      "added": 0,
+      "webOccurrences": 4037,
+      "ultOnly": 68,
+      "bereanOnly": 40
+    },
+    "their": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 3970,
+      "ultOnly": 74,
+      "bereanOnly": 0
+    },
+    "but": {
+      "before": 5,
+      "added": 2,
+      "webOccurrences": 3926,
+      "ultOnly": 24,
+      "bereanOnly": 4
+    },
+    "said": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 3922,
+      "ultOnly": 5,
+      "bereanOnly": 0
+    },
+    "are": {
+      "before": 7,
+      "added": 0,
+      "webOccurrences": 3535,
+      "ultOnly": 19,
+      "bereanOnly": 2
+    },
+    "not": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 3318,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "out": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 3223,
+      "ultOnly": 21,
+      "bereanOnly": 7
+    },
+    "which": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 3221,
+      "ultOnly": 11,
+      "bereanOnly": 0
+    },
+    "as": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 3208,
+      "ultOnly": 9,
+      "bereanOnly": 5
+    },
+    "this": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 2751,
+      "ultOnly": 28,
+      "bereanOnly": 0
+    },
+    "were": {
+      "before": 4,
+      "added": 0,
+      "webOccurrences": 2692,
+      "ultOnly": 15,
+      "bereanOnly": 1
+    },
+    "has": {
+      "before": 4,
+      "added": 0,
+      "webOccurrences": 2673,
+      "ultOnly": 35,
+      "bereanOnly": 1
+    },
+    "by": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 2641,
+      "ultOnly": 20,
+      "bereanOnly": 3
+    },
+    "when": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 2629,
+      "ultOnly": 22,
+      "bereanOnly": 6
+    },
+    "israel": {
+      "before": 9,
+      "added": 0,
+      "webOccurrences": 2565,
+      "ultOnly": 81,
+      "bereanOnly": 22
+    },
+    "one": {
+      "before": 23,
+      "added": 0,
+      "webOccurrences": 2545,
+      "ultOnly": 7,
+      "bereanOnly": 2
+    },
+    "up": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 2449,
+      "ultOnly": 12,
+      "bereanOnly": 0
+    },
+    "son": {
+      "before": 56,
+      "added": 0,
+      "webOccurrences": 2360,
+      "ultOnly": 35,
+      "bereanOnly": 5
+    },
+    "king": {
+      "before": 30,
+      "added": 1,
+      "webOccurrences": 2263,
+      "ultOnly": 36,
+      "bereanOnly": 55
+    },
+    "then": {
+      "before": 8,
+      "added": 0,
+      "webOccurrences": 2197,
+      "ultOnly": 31,
+      "bereanOnly": 5
+    },
+    "there": {
+      "before": 4,
+      "added": 0,
+      "webOccurrences": 2195,
+      "ultOnly": 25,
+      "bereanOnly": 1
+    },
+    "man": {
+      "before": 5,
+      "added": 0,
+      "webOccurrences": 2191,
+      "ultOnly": 15,
+      "bereanOnly": 8
+    },
+    "had": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 2117,
+      "ultOnly": 25,
+      "bereanOnly": 0
+    },
+    "people": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 1929,
+      "ultOnly": 35,
+      "bereanOnly": 3
+    },
+    "house": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1921,
+      "ultOnly": 29,
+      "bereanOnly": 13
+    },
+    "into": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 1911,
+      "ultOnly": 14,
+      "bereanOnly": 0
+    },
+    "so": {
+      "before": 4,
+      "added": 0,
+      "webOccurrences": 1818,
+      "ultOnly": 8,
+      "bereanOnly": 5
+    },
+    "we": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 1798,
+      "ultOnly": 11,
+      "bereanOnly": 0
+    },
+    "children": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 1794,
+      "ultOnly": 5,
+      "bereanOnly": 0
+    },
+    "her": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1789,
+      "ultOnly": 16,
+      "bereanOnly": 0
+    },
+    "land": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1768,
+      "ultOnly": 37,
+      "bereanOnly": 0
+    },
+    "no": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 1765,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "came": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 1733,
+      "ultOnly": 11,
+      "bereanOnly": 0
+    },
+    "before": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 1705,
+      "ultOnly": 10,
+      "bereanOnly": 0
+    },
+    "come": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1685,
+      "ultOnly": 10,
+      "bereanOnly": 0
+    },
+    "at": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1650,
+      "ultOnly": 10,
+      "bereanOnly": 2
+    },
+    "if": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1624,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "men": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 1583,
+      "ultOnly": 26,
+      "bereanOnly": 8
+    },
+    "go": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 1560,
+      "ultOnly": 5,
+      "bereanOnly": 0
+    },
+    "also": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1543,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "against": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1529,
+      "ultOnly": 23,
+      "bereanOnly": 0
+    },
+    "those": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1528,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "day": {
+      "before": 3,
+      "added": 0,
+      "webOccurrences": 1495,
+      "ultOnly": 11,
+      "bereanOnly": 6
+    },
+    "do": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 1483,
+      "ultOnly": 12,
+      "bereanOnly": 0
+    },
+    "now": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1454,
+      "ultOnly": 21,
+      "bereanOnly": 4
+    },
+    "hand": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 1400,
+      "ultOnly": 16,
+      "bereanOnly": 0
+    },
+    "went": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1370,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "don't": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1369,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "because": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1357,
+      "ultOnly": 12,
+      "bereanOnly": 0
+    },
+    "made": {
+      "before": 4,
+      "added": 0,
+      "webOccurrences": 1355,
+      "ultOnly": 9,
+      "bereanOnly": 0
+    },
+    "may": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1350,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "its": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 1334,
+      "ultOnly": 12,
+      "bereanOnly": 0
+    },
+    "behold": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1333,
+      "ultOnly": 16,
+      "bereanOnly": 0
+    },
+    "saying": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1328,
+      "ultOnly": 14,
+      "bereanOnly": 0
+    },
+    "therefore": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1311,
+      "ultOnly": 7,
+      "bereanOnly": 1
+    },
+    "let": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 1306,
+      "ultOnly": 3,
+      "bereanOnly": 1
+    },
+    "us": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1274,
+      "ultOnly": 11,
+      "bereanOnly": 0
+    },
+    "or": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 1272,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "these": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 1261,
+      "ultOnly": 16,
+      "bereanOnly": 0
+    },
+    "lord's": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1208,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "like": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 1180,
+      "ultOnly": 17,
+      "bereanOnly": 1
+    },
+    "our": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1179,
+      "ultOnly": 23,
+      "bereanOnly": 0
+    },
+    "father": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 1164,
+      "ultOnly": 8,
+      "bereanOnly": 2
+    },
+    "down": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1157,
+      "ultOnly": 14,
+      "bereanOnly": 0
+    },
+    "things": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 1124,
+      "ultOnly": 4,
+      "bereanOnly": 1
+    },
+    "what": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1119,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "even": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1117,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "sons": {
+      "before": 33,
+      "added": 0,
+      "webOccurrences": 1081,
+      "ultOnly": 28,
+      "bereanOnly": 28
+    },
+    "says": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1071,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "away": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1064,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "over": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1033,
+      "ultOnly": 25,
+      "bereanOnly": 0
+    },
+    "an": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 1021,
+      "ultOnly": 10,
+      "bereanOnly": 5
+    },
+    "she": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 993,
+      "ultOnly": 6,
+      "bereanOnly": 0
+    },
+    "among": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 984,
+      "ultOnly": 4,
+      "bereanOnly": 5
+    },
+    "jesus": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 980,
+      "ultOnly": 3,
+      "bereanOnly": 5
+    },
+    "make": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 979,
+      "ultOnly": 5,
+      "bereanOnly": 0
+    },
+    "know": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 975,
+      "ultOnly": 7,
+      "bereanOnly": 0
+    },
+    "earth": {
+      "before": 4,
+      "added": 0,
+      "webOccurrences": 943,
+      "ultOnly": 29,
+      "bereanOnly": 0
+    },
+    "give": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 929,
+      "ultOnly": 7,
+      "bereanOnly": 0
+    },
+    "david": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 919,
+      "ultOnly": 10,
+      "bereanOnly": 3
+    },
+    "name": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 889,
+      "ultOnly": 18,
+      "bereanOnly": 2
+    },
+    "am": {
+      "before": 13,
+      "added": 0,
+      "webOccurrences": 879,
+      "ultOnly": 7,
+      "bereanOnly": 0
+    },
+    "great": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 878,
+      "ultOnly": 8,
+      "bereanOnly": 0
+    },
+    "didn't": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 863,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "days": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 858,
+      "ultOnly": 26,
+      "bereanOnly": 3
+    },
+    "after": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 856,
+      "ultOnly": 10,
+      "bereanOnly": 0
+    },
+    "moses": {
+      "before": 3,
+      "added": 1,
+      "webOccurrences": 855,
+      "ultOnly": 29,
+      "bereanOnly": 5
+    },
+    "city": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 844,
+      "ultOnly": 15,
+      "bereanOnly": 2
+    },
+    "place": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 832,
+      "ultOnly": 15,
+      "bereanOnly": 0
+    },
+    "judah": {
+      "before": 4,
+      "added": 2,
+      "webOccurrences": 831,
+      "ultOnly": 31,
+      "bereanOnly": 14
+    },
+    "brought": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 830,
+      "ultOnly": 6,
+      "bereanOnly": 0
+    },
+    "heart": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 828,
+      "ultOnly": 20,
+      "bereanOnly": 3
+    },
+    "put": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 825,
+      "ultOnly": 5,
+      "bereanOnly": 1
+    },
+    "take": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 822,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "according": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 821,
+      "ultOnly": 6,
+      "bereanOnly": 1
+    },
+    "offering": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 815,
+      "ultOnly": 7,
+      "bereanOnly": 4
+    },
+    "jerusalem": {
+      "before": 4,
+      "added": 1,
+      "webOccurrences": 802,
+      "ultOnly": 20,
+      "bereanOnly": 6
+    },
+    "good": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 799,
+      "ultOnly": 5,
+      "bereanOnly": 0
+    },
+    "every": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 777,
+      "ultOnly": 10,
+      "bereanOnly": 2
+    },
+    "way": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 773,
+      "ultOnly": 11,
+      "bereanOnly": 0
+    },
+    "two": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 755,
+      "ultOnly": 11,
+      "bereanOnly": 0
+    },
+    "took": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 736,
+      "ultOnly": 6,
+      "bereanOnly": 0
+    },
+    "whom": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 734,
+      "ultOnly": 8,
+      "bereanOnly": 0
+    },
+    "see": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 710,
+      "ultOnly": 5,
+      "bereanOnly": 0
+    },
+    "word": {
+      "before": 4,
+      "added": 0,
+      "webOccurrences": 701,
+      "ultOnly": 10,
+      "bereanOnly": 4
+    },
+    "set": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 691,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "more": {
+      "before": 4,
+      "added": 0,
+      "webOccurrences": 686,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "sent": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 685,
+      "ultOnly": 12,
+      "bereanOnly": 0
+    },
+    "holy": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 673,
+      "ultOnly": 2,
+      "bereanOnly": 6
+    },
+    "say": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 649,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "saw": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 643,
+      "ultOnly": 9,
+      "bereanOnly": 0
+    },
+    "tell": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 641,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "bring": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 631,
+      "ultOnly": 7,
+      "bereanOnly": 0
+    },
+    "heard": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 620,
+      "ultOnly": 11,
+      "bereanOnly": 0
+    },
+    "called": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 617,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "egypt": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 613,
+      "ultOnly": 15,
+      "bereanOnly": 6
+    },
+    "own": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 611,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "any": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 609,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "evil": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 608,
+      "ultOnly": 9,
+      "bereanOnly": 0
+    },
+    "nor": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 601,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "servant": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 601,
+      "ultOnly": 9,
+      "bereanOnly": 8
+    },
+    "hundred": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 599,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "did": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 592,
+      "ultOnly": 10,
+      "bereanOnly": 0
+    },
+    "spirit": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 592,
+      "ultOnly": 6,
+      "bereanOnly": 2
+    },
+    "through": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 591,
+      "ultOnly": 3,
+      "bereanOnly": 1
+    },
+    "time": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 586,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "should": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 583,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "many": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 582,
+      "ultOnly": 12,
+      "bereanOnly": 0
+    },
+    "himself": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 579,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "fathers": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 569,
+      "ultOnly": 13,
+      "bereanOnly": 0
+    },
+    "how": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 565,
+      "ultOnly": 6,
+      "bereanOnly": 0
+    },
+    "spoke": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 563,
+      "ultOnly": 5,
+      "bereanOnly": 0
+    },
+    "where": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 563,
+      "ultOnly": 10,
+      "bereanOnly": 0
+    },
+    "done": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 562,
+      "ultOnly": 12,
+      "bereanOnly": 0
+    },
+    "words": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 553,
+      "ultOnly": 14,
+      "bereanOnly": 4
+    },
+    "been": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 552,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "until": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 550,
+      "ultOnly": 14,
+      "bereanOnly": 0
+    },
+    "eat": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 546,
+      "ultOnly": 5,
+      "bereanOnly": 0
+    },
+    "christ": {
+      "before": 0,
+      "added": 1,
+      "webOccurrences": 544,
+      "ultOnly": 3,
+      "bereanOnly": 2
+    },
+    "brothers": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 543,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "again": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 539,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "eyes": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 538,
+      "ultOnly": 16,
+      "bereanOnly": 0
+    },
+    "fire": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 538,
+      "ultOnly": 11,
+      "bereanOnly": 0
+    },
+    "gave": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 538,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "years": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 534,
+      "ultOnly": 6,
+      "bereanOnly": 0
+    },
+    "would": {
+      "before": 3,
+      "added": 0,
+      "webOccurrences": 533,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "servants": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 519,
+      "ultOnly": 6,
+      "bereanOnly": 6
+    },
+    "nations": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 503,
+      "ultOnly": 10,
+      "bereanOnly": 1
+    },
+    "priest": {
+      "before": 1,
+      "added": 3,
+      "webOccurrences": 501,
+      "ultOnly": 10,
+      "bereanOnly": 10
+    },
+    "given": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 492,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "thousand": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 492,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "life": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 486,
+      "ultOnly": 9,
+      "bereanOnly": 1
+    },
+    "answered": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 480,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "than": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 480,
+      "ultOnly": 6,
+      "bereanOnly": 1
+    },
+    "voice": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 477,
+      "ultOnly": 6,
+      "bereanOnly": 1
+    },
+    "yet": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 476,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "commanded": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 475,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "together": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 465,
+      "ultOnly": 5,
+      "bereanOnly": 0
+    },
+    "speak": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 462,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "hear": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 461,
+      "ultOnly": 8,
+      "bereanOnly": 0
+    },
+    "three": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 457,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "hands": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 454,
+      "ultOnly": 15,
+      "bereanOnly": 0
+    },
+    "work": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 451,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "about": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 448,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "cities": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 443,
+      "ultOnly": 18,
+      "bereanOnly": 4
+    },
+    "another": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 440,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "why": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 440,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "sin": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 439,
+      "ultOnly": 6,
+      "bereanOnly": 0
+    },
+    "seven": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 437,
+      "ultOnly": 8,
+      "bereanOnly": 0
+    },
+    "blood": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 436,
+      "ultOnly": 9,
+      "bereanOnly": 1
+    },
+    "law": {
+      "before": 0,
+      "added": 1,
+      "webOccurrences": 433,
+      "ultOnly": 11,
+      "bereanOnly": 1
+    },
+    "might": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 429,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "off": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 425,
+      "ultOnly": 5,
+      "bereanOnly": 0
+    },
+    "sword": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 421,
+      "ultOnly": 9,
+      "bereanOnly": 0
+    },
+    "soul": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 420,
+      "ultOnly": 17,
+      "bereanOnly": 0
+    },
+    "first": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 416,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "forever": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 415,
+      "ultOnly": 10,
+      "bereanOnly": 3
+    },
+    "themselves": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 411,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "around": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 410,
+      "ultOnly": 5,
+      "bereanOnly": 0
+    },
+    "old": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 410,
+      "ultOnly": 2,
+      "bereanOnly": 2
+    },
+    "water": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 410,
+      "ultOnly": 7,
+      "bereanOnly": 1
+    },
+    "gold": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 407,
+      "ultOnly": 13,
+      "bereanOnly": 2
+    },
+    "found": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 406,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "peace": {
+      "before": 0,
+      "added": 1,
+      "webOccurrences": 405,
+      "ultOnly": 12,
+      "bereanOnly": 3
+    },
+    "priests": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 405,
+      "ultOnly": 7,
+      "bereanOnly": 1
+    },
+    "other": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 403,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "wife": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 398,
+      "ultOnly": 4,
+      "bereanOnly": 7
+    },
+    "mouth": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 396,
+      "ultOnly": 16,
+      "bereanOnly": 1
+    },
+    "head": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 395,
+      "ultOnly": 8,
+      "bereanOnly": 0
+    },
+    "death": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 393,
+      "ultOnly": 12,
+      "bereanOnly": 5
+    },
+    "sea": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 393,
+      "ultOnly": 8,
+      "bereanOnly": 6
+    },
+    "yes": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 385,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "under": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 384,
+      "ultOnly": 14,
+      "bereanOnly": 0
+    },
+    "neither": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 383,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "glory": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 382,
+      "ultOnly": 4,
+      "bereanOnly": 2
+    },
+    "face": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 381,
+      "ultOnly": 10,
+      "bereanOnly": 0
+    },
+    "altar": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 379,
+      "ultOnly": 17,
+      "bereanOnly": 2
+    },
+    "high": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 379,
+      "ultOnly": 9,
+      "bereanOnly": 0
+    },
+    "bread": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 378,
+      "ultOnly": 7,
+      "bereanOnly": 0
+    },
+    "side": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 376,
+      "ultOnly": 6,
+      "bereanOnly": 0
+    },
+    "right": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 375,
+      "ultOnly": 1,
+      "bereanOnly": 1
+    },
+    "god's": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 374,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "saul": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 374,
+      "ultOnly": 7,
+      "bereanOnly": 1
+    },
+    "year": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 373,
+      "ultOnly": 5,
+      "bereanOnly": 0
+    },
+    "became": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 363,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "some": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 363,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "toward": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 363,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "jacob": {
+      "before": 1,
+      "added": 2,
+      "webOccurrences": 360,
+      "ultOnly": 9,
+      "bereanOnly": 7
+    },
+    "brother": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 359,
+      "ultOnly": 7,
+      "bereanOnly": 0
+    },
+    "live": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 359,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "thing": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 359,
+      "ultOnly": 4,
+      "bereanOnly": 1
+    },
+    "keep": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 355,
+      "ultOnly": 8,
+      "bereanOnly": 0
+    },
+    "cut": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 354,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "woman": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 353,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "left": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 352,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "love": {
+      "before": 1,
+      "added": 1,
+      "webOccurrences": 351,
+      "ultOnly": 5,
+      "bereanOnly": 1
+    },
+    "young": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 351,
+      "ultOnly": 2,
+      "bereanOnly": 1
+    },
+    "near": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 349,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "drink": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 348,
+      "ultOnly": 11,
+      "bereanOnly": 0
+    },
+    "covenant": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 343,
+      "ultOnly": 7,
+      "bereanOnly": 2
+    },
+    "heaven": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 340,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "kingdom": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 339,
+      "ultOnly": 10,
+      "bereanOnly": 4
+    },
+    "dead": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 338,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "armies": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 330,
+      "ultOnly": 7,
+      "bereanOnly": 1
+    },
+    "kings": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 328,
+      "ultOnly": 15,
+      "bereanOnly": 2
+    },
+    "doesn't": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 326,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "aaron": {
+      "before": 1,
+      "added": 2,
+      "webOccurrences": 321,
+      "ultOnly": 19,
+      "bereanOnly": 13
+    },
+    "silver": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 320,
+      "ultOnly": 5,
+      "bereanOnly": 6
+    },
+    "concerning": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 319,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "stand": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 319,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "wicked": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 319,
+      "ultOnly": 11,
+      "bereanOnly": 0
+    },
+    "lived": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 318,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "field": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 315,
+      "ultOnly": 8,
+      "bereanOnly": 2
+    },
+    "righteousness": {
+      "before": 1,
+      "added": 2,
+      "webOccurrences": 311,
+      "ultOnly": 6,
+      "bereanOnly": 4
+    },
+    "flesh": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 310,
+      "ultOnly": 7,
+      "bereanOnly": 0
+    },
+    "struck": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 308,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "both": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 307,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "back": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 305,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "dwell": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 305,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "blessed": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 304,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "sight": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 304,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "stood": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 303,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "without": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 303,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "taken": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 301,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "daughter": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 300,
+      "ultOnly": 1,
+      "bereanOnly": 2
+    },
+    "told": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 300,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "turn": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 300,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "wilderness": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 300,
+      "ultOnly": 17,
+      "bereanOnly": 1
+    },
+    "cause": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 299,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "comes": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 299,
+      "ultOnly": 5,
+      "bereanOnly": 0
+    },
+    "rest": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 299,
+      "ultOnly": 8,
+      "bereanOnly": 0
+    },
+    "can": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 298,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "surely": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 297,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "burnt": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 295,
+      "ultOnly": 5,
+      "bereanOnly": 3
+    },
+    "night": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 295,
+      "ultOnly": 5,
+      "bereanOnly": 1
+    },
+    "tent": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 295,
+      "ultOnly": 2,
+      "bereanOnly": 6
+    },
+    "listen": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 293,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "mighty": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 293,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "righteous": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 293,
+      "ultOnly": 6,
+      "bereanOnly": 1
+    },
+    "fear": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 291,
+      "ultOnly": 2,
+      "bereanOnly": 7
+    },
+    "being": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 288,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "babylon": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 287,
+      "ultOnly": 6,
+      "bereanOnly": 1
+    },
+    "today": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 287,
+      "ultOnly": 7,
+      "bereanOnly": 0
+    },
+    "die": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 284,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "offerings": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 283,
+      "ultOnly": 15,
+      "bereanOnly": 1
+    },
+    "each": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 280,
+      "ultOnly": 0,
+      "bereanOnly": 1
+    },
+    "king's": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 280,
+      "ultOnly": 0,
+      "bereanOnly": 4
+    },
+    "cast": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 278,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "solomon": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 278,
+      "ultOnly": 11,
+      "bereanOnly": 2
+    },
+    "waters": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 278,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "middle": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 275,
+      "ultOnly": 3,
+      "bereanOnly": 1
+    },
+    "end": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 274,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "nothing": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 273,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "whose": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 273,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "gate": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 272,
+      "ultOnly": 3,
+      "bereanOnly": 4
+    },
+    "very": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 272,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "become": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 271,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "killed": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 271,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "return": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 271,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "spoken": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 271,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "written": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 271,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "four": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 270,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "only": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 270,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "everyone": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 268,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "won't": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 268,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "having": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 263,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "seen": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 262,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "turned": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 262,
+      "ultOnly": 5,
+      "bereanOnly": 0
+    },
+    "while": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 260,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "deliver": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 258,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "does": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 258,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "feet": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 258,
+      "ultOnly": 11,
+      "bereanOnly": 0
+    },
+    "long": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 258,
+      "ultOnly": 0,
+      "bereanOnly": 5
+    },
+    "princes": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 258,
+      "ultOnly": 3,
+      "bereanOnly": 2
+    },
+    "month": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 257,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "five": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 256,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "afraid": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 254,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "full": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 254,
+      "ultOnly": 5,
+      "bereanOnly": 1
+    },
+    "philistines": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 254,
+      "ultOnly": 5,
+      "bereanOnly": 0
+    },
+    "anger": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 253,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "jews": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 253,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "levites": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 252,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "delivered": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 250,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "gathered": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 250,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "here": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 250,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "light": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 250,
+      "ultOnly": 5,
+      "bereanOnly": 1
+    },
+    "faith": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 249,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "world": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 249,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "disciples": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 248,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "sky": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 248,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "wine": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 246,
+      "ultOnly": 5,
+      "bereanOnly": 0
+    },
+    "army": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 245,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "body": {
+      "before": 0,
+      "added": 1,
+      "webOccurrences": 245,
+      "ultOnly": 2,
+      "bereanOnly": 2
+    },
+    "daughters": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 245,
+      "ultOnly": 2,
+      "bereanOnly": 9
+    },
+    "multitude": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 245,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "whoever": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 244,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "yourself": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 244,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "destroy": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 241,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "iniquity": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 241,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "most": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 240,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "please": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 240,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "prophet": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 240,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "between": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 238,
+      "ultOnly": 12,
+      "bereanOnly": 0
+    },
+    "prophets": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 238,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "enemies": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 236,
+      "ultOnly": 7,
+      "bereanOnly": 0
+    },
+    "inheritance": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 236,
+      "ultOnly": 10,
+      "bereanOnly": 0
+    },
+    "pass": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 236,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "well": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 236,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "gods": {
+      "before": 5,
+      "added": 1,
+      "webOccurrences": 235,
+      "ultOnly": 4,
+      "bereanOnly": 1
+    },
+    "little": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 235,
+      "ultOnly": 0,
+      "bereanOnly": 1
+    },
+    "seek": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 235,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "built": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 234,
+      "ultOnly": 6,
+      "bereanOnly": 0
+    },
+    "mother": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 234,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "power": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 234,
+      "ultOnly": 3,
+      "bereanOnly": 1
+    },
+    "wrath": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 234,
+      "ultOnly": 3,
+      "bereanOnly": 2
+    },
+    "offer": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 232,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "same": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 232,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "send": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 230,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "abraham": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 229,
+      "ultOnly": 3,
+      "bereanOnly": 3
+    },
+    "yourselves": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 229,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "kill": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 228,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "pharaoh": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 228,
+      "ultOnly": 3,
+      "bereanOnly": 1
+    },
+    "whole": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 228,
+      "ultOnly": 0,
+      "bereanOnly": 3
+    },
+    "died": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 227,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "joseph": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 227,
+      "ultOnly": 1,
+      "bereanOnly": 1
+    },
+    "laid": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 227,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "morning": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 226,
+      "ultOnly": 5,
+      "bereanOnly": 0
+    },
+    "much": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 226,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "war": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 226,
+      "ultOnly": 3,
+      "bereanOnly": 1
+    },
+    "praise": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 225,
+      "ultOnly": 8,
+      "bereanOnly": 0
+    },
+    "walk": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 225,
+      "ultOnly": 5,
+      "bereanOnly": 0
+    },
+    "wisdom": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 224,
+      "ultOnly": 8,
+      "bereanOnly": 3
+    },
+    "cubits": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 222,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "ten": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 222,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "works": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 222,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "asked": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 221,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "chief": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 221,
+      "ultOnly": 0,
+      "bereanOnly": 1
+    },
+    "fell": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 221,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "joshua": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 221,
+      "ultOnly": 7,
+      "bereanOnly": 1
+    },
+    "temple": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 217,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "ground": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 216,
+      "ultOnly": 3,
+      "bereanOnly": 1
+    },
+    "strong": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 216,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "serve": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 215,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "oil": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 214,
+      "ultOnly": 6,
+      "bereanOnly": 3
+    },
+    "fruit": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 213,
+      "ultOnly": 6,
+      "bereanOnly": 3
+    },
+    "peoples": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 213,
+      "ultOnly": 7,
+      "bereanOnly": 1
+    },
+    "unclean": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 213,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "fall": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 212,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "far": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 212,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "kindness": {
+      "before": 0,
+      "added": 1,
+      "webOccurrences": 210,
+      "ultOnly": 1,
+      "bereanOnly": 1
+    },
+    "mountain": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 210,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "tribe": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 210,
+      "ultOnly": 4,
+      "bereanOnly": 7
+    },
+    "truth": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 210,
+      "ultOnly": 0,
+      "bereanOnly": 2
+    },
+    "known": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 209,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "male": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 208,
+      "ultOnly": 6,
+      "bereanOnly": 0
+    },
+    "sins": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 207,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "within": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 207,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "assembly": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 206,
+      "ultOnly": 1,
+      "bereanOnly": 1
+    },
+    "gone": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 206,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "show": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 206,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "ways": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 206,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "sheep": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 204,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "wise": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 203,
+      "ultOnly": 5,
+      "bereanOnly": 0
+    },
+    "border": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 202,
+      "ultOnly": 6,
+      "bereanOnly": 0
+    },
+    "food": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 202,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "lay": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 202,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "though": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 202,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "can't": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 201,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "country": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 201,
+      "ultOnly": 4,
+      "bereanOnly": 2
+    },
+    "strength": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 201,
+      "ultOnly": 7,
+      "bereanOnly": 1
+    },
+    "call": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 200,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "inhabitants": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 199,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "ark": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 197,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "burned": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 197,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "living": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 197,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "places": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 197,
+      "ultOnly": 8,
+      "bereanOnly": 0
+    },
+    "stone": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 197,
+      "ultOnly": 2,
+      "bereanOnly": 1
+    },
+    "jordan": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 196,
+      "ultOnly": 5,
+      "bereanOnly": 1
+    },
+    "houses": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 194,
+      "ultOnly": 3,
+      "bereanOnly": 1
+    },
+    "angel": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 193,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "let's": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 193,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "tree": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 192,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "child": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 190,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "elders": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 190,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "judge": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 190,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "offspring": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 190,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "still": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 188,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "twelve": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 188,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "sacrifice": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 187,
+      "ultOnly": 4,
+      "bereanOnly": 1
+    },
+    "above": {
+      "before": 2,
+      "added": 0,
+      "webOccurrences": 186,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "returned": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 185,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "second": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 185,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "save": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 184,
+      "ultOnly": 5,
+      "bereanOnly": 0
+    },
+    "third": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 184,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "loving": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 183,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "began": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 182,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "times": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 182,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "door": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 181,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "rejoice": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 181,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "wall": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 181,
+      "ultOnly": 6,
+      "bereanOnly": 1
+    },
+    "book": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 179,
+      "ultOnly": 8,
+      "bereanOnly": 0
+    },
+    "throne": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 179,
+      "ultOnly": 8,
+      "bereanOnly": 0
+    },
+    "women": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 177,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "six": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 176,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "coming": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 175,
+      "ultOnly": 3,
+      "bereanOnly": 1
+    },
+    "ephraim": {
+      "before": 1,
+      "added": 1,
+      "webOccurrences": 175,
+      "ultOnly": 6,
+      "bereanOnly": 5
+    },
+    "find": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 175,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "mountains": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 175,
+      "ultOnly": 8,
+      "bereanOnly": 0
+    },
+    "poor": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 175,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "families": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 174,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "judgment": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 174,
+      "ultOnly": 0,
+      "bereanOnly": 2
+    },
+    "able": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 172,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "broken": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 172,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "receive": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 172,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "must": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 171,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "news": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 171,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "battle": {
+      "before": 1,
+      "added": 1,
+      "webOccurrences": 170,
+      "ultOnly": 4,
+      "bereanOnly": 2
+    },
+    "joy": {
+      "before": 0,
+      "added": 1,
+      "webOccurrences": 170,
+      "ultOnly": 3,
+      "bereanOnly": 1
+    },
+    "moab": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 170,
+      "ultOnly": 8,
+      "bereanOnly": 3
+    },
+    "new": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 169,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "destroyed": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 168,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    },
+    "sat": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 168,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "build": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 167,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "enter": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 167,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "filled": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 166,
+      "ultOnly": 2,
+      "bereanOnly": 0
+    },
+    "isn't": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 166,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "sanctuary": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 166,
+      "ultOnly": 2,
+      "bereanOnly": 2
+    },
+    "stones": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 166,
+      "ultOnly": 1,
+      "bereanOnly": 1
+    },
+    "understanding": {
+      "before": 0,
+      "added": 1,
+      "webOccurrences": 166,
+      "ultOnly": 6,
+      "bereanOnly": 2
+    },
+    "whatever": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 166,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "remember": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 165,
+      "ultOnly": 5,
+      "bereanOnly": 0
+    },
+    "answer": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 163,
+      "ultOnly": 3,
+      "bereanOnly": 0
+    },
+    "bear": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 162,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "believe": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 162,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "carried": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 162,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "darkness": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 162,
+      "ultOnly": 7,
+      "bereanOnly": 1
+    },
+    "knowledge": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 162,
+      "ultOnly": 6,
+      "bereanOnly": 2
+    },
+    "reigned": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 162,
+      "ultOnly": 6,
+      "bereanOnly": 0
+    },
+    "benjamin": {
+      "before": 2,
+      "added": 3,
+      "webOccurrences": 161,
+      "ultOnly": 7,
+      "bereanOnly": 5
+    },
+    "born": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 161,
+      "ultOnly": 10,
+      "bereanOnly": 0
+    },
+    "cry": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 161,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "heads": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 161,
+      "ultOnly": 4,
+      "bereanOnly": 1
+    },
+    "lest": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 161,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "such": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 161,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "kept": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 160,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "nation": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 160,
+      "ultOnly": 1,
+      "bereanOnly": 0
+    },
+    "part": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 160,
+      "ultOnly": 0,
+      "bereanOnly": 0
+    },
+    "salvation": {
+      "before": 0,
+      "added": 0,
+      "webOccurrences": 160,
+      "ultOnly": 7,
+      "bereanOnly": 0
+    },
+    "reign": {
+      "before": 1,
+      "added": 0,
+      "webOccurrences": 159,
+      "ultOnly": 4,
+      "bereanOnly": 0
+    }
+  },
+  "files": {
+    "genesis/10.json": {
+      "sha256": "856e51fd0230d0b495ef39685f52786f7f81a5f973caeba706f020a958e20b41",
+      "bytes": 700
+    },
+    "genesis/11.json": {
+      "sha256": "8946c747004b29f61fea141cec20903157e61c60b2eaa0d456f400219d734729",
+      "bytes": 876
+    },
+    "genesis/22.json": {
+      "sha256": "8fa345290065d2d088647ec78370282c79d81afb98bfa91ffb0d74c01eaf8ddb",
+      "bytes": 591
+    },
+    "genesis/23.json": {
+      "sha256": "c753644ab61a1a0428d5031a586ed651dc4df41a37602c3da0b8a0fb45f152a4",
+      "bytes": 1453
+    },
+    "genesis/25.json": {
+      "sha256": "5111d397fda73e4ef0064da7e91cb10faab670f9394ac3e042e656479f484874",
+      "bytes": 1420
+    },
+    "genesis/29.json": {
+      "sha256": "07c4df1cce03902a8b2c75cfa435176bf71addc9f018114a56831c562ab59765",
+      "bytes": 1010
+    },
+    "genesis/33.json": {
+      "sha256": "23f6baa21f37205f10703a55c9d7033456dcaa403868ab582fc5c711711d740e",
+      "bytes": 932
+    },
+    "genesis/35.json": {
+      "sha256": "f1a0fcbdc1c5dc64c0a9ef2013b49bcabc35a53fde61dae5458fd6ccfaf3bc3b",
+      "bytes": 664
+    },
+    "genesis/45.json": {
+      "sha256": "0af796e3b10e5118b8e037b0c73ebb152e8410971b796089ea28488be14fec77",
+      "bytes": 1003
+    },
+    "genesis/46.json": {
+      "sha256": "54f41d12c4f0b34707c021e125fa6d8a10bd32225abf46938865fb10b5573df0",
+      "bytes": 6791
+    },
+    "genesis/49.json": {
+      "sha256": "0ee32e3c67c8a181ffbf4fd1e8620fbe08622a444f2199874cd7508836103ac3",
+      "bytes": 854
+    },
+    "exodus/1.json": {
+      "sha256": "004cc994e7e8fe0f12ccfa13029206982f2172053c9146ef7cec99215bdb20a9",
+      "bytes": 551
+    },
+    "exodus/6.json": {
+      "sha256": "b200cc9bac3e972832997db550e6012a8a09cb4c1dc084606638aa693ff26b67",
+      "bytes": 690
+    },
+    "exodus/15.json": {
+      "sha256": "d95c2c895c4abb91293c14b6cd6c4b8918cb91d2b2c253b590c8aa9b4e9cacbe",
+      "bytes": 566
+    },
+    "exodus/16.json": {
+      "sha256": "bd1a3227ff76ace8d44f0310994c603c1a8fceb550443328fbe028f170176865",
+      "bytes": 322
+    },
+    "exodus/21.json": {
+      "sha256": "3f0013aa0e71e620c401f1682a725f9d7f4c8f6057d6eb574b463448d9b24d04",
+      "bytes": 619
+    },
+    "exodus/34.json": {
+      "sha256": "135b1092bde53b1256c36e6fd623eb1407df7ad43683eac25dc1886450ef5de0",
+      "bytes": 858
+    },
+    "exodus/38.json": {
+      "sha256": "1c4d44c11524bdfc327fde21defee43c19f61e756b58f3802cd68729a386afa6",
+      "bytes": 1100
+    },
+    "leviticus/4.json": {
+      "sha256": "f4c9e15d5312eb6ae897c9eb728bb34abc8a5f64f3c1a7be624ea7f8def636c7",
+      "bytes": 970
+    },
+    "leviticus/7.json": {
+      "sha256": "5645d494d835463dcaf3df94a36d9f4837d0f9a0378070eb55c9ee4fb1bbfad6",
+      "bytes": 634
+    },
+    "leviticus/11.json": {
+      "sha256": "7863385b6e5f16de9fe848a663d346ff7861148844176f93c319bbe47f8ab02d",
+      "bytes": 1739
+    },
+    "leviticus/19.json": {
+      "sha256": "fb3249178ef3b05b47ba3e3c4aa01d04ba08a851e2a356956ee500f645c879d2",
+      "bytes": 1621
+    },
+    "leviticus/20.json": {
+      "sha256": "d9de432235fe8c083dcb0dd8e7303c820f5de58d05c2bf6974d1911b1d820871",
+      "bytes": 547
+    },
+    "numbers/7.json": {
+      "sha256": "b2b68018634324d0febbafe009991966b1df6fbaed8d82381b7757bc6517f01b",
+      "bytes": 970
+    },
+    "numbers/13.json": {
+      "sha256": "f04fc9d0d39f3a9e75702e13f6961c91000959f324535b94ac046fa3b6f1bc60",
+      "bytes": 3393
+    },
+    "numbers/16.json": {
+      "sha256": "74900f9c88fca02b4e5c88279bdebb65832515b20efe6e83a1c975d78ecd009b",
+      "bytes": 622
+    },
+    "numbers/18.json": {
+      "sha256": "8e9c048d33162187eef9541d67af0866503f754541eb9cbaceaebf79af918f82",
+      "bytes": 1199
+    },
+    "numbers/32.json": {
+      "sha256": "8e4397a4b5959c3d14658e76beca84ea55f00b5da09aee95634f3d824c8487d8",
+      "bytes": 705
+    },
+    "numbers/33.json": {
+      "sha256": "1aa5a207929b57d709776a2275cf766193130f3ab2e9241aab8a4d1aa90a203a",
+      "bytes": 1137
+    },
+    "deuteronomy/11.json": {
+      "sha256": "c3225114a1fce44b0f063dd7ca537fde0a3e54f2b538fdaeb4ab729df7a71722",
+      "bytes": 1255
+    },
+    "deuteronomy/27.json": {
+      "sha256": "f41e436a66f7a355318f8ade91a6d11bd89e631b775eda9b897bf7219032d53c",
+      "bytes": 731
+    },
+    "deuteronomy/28.json": {
+      "sha256": "b7b51d8a1eadc9f28050b5da62a34006c964cfc227a9d6c8211022c957e03dc1",
+      "bytes": 717
+    },
+    "deuteronomy/32.json": {
+      "sha256": "ee560ea6441bcc5d8d1aeae5385ea280cd836a2496522a6915899dd2f2d40d19",
+      "bytes": 436
+    },
+    "joshua/12.json": {
+      "sha256": "b4e058861b6d2e60df12c86b1314b156305ebf8cb01ee4f6bf1277caaeefa63b",
+      "bytes": 5076
+    },
+    "joshua/13.json": {
+      "sha256": "b86c0c80f4ef8898f932b0fc83b3d34ead3612e492ddc536c3225980c1f42ada",
+      "bytes": 945
+    },
+    "joshua/15.json": {
+      "sha256": "b00af39c7f84c604295f5bf9e5f524079f38d486e5d2f731bac474d737455d28",
+      "bytes": 3964
+    },
+    "joshua/18.json": {
+      "sha256": "72edffefa80de86e538b29a4161a35dbedd144642ffb6e0bed58284b8e598566",
+      "bytes": 730
+    },
+    "joshua/19.json": {
+      "sha256": "aa7e7efa898c3fd4995ebf9621c94be6bc0ba204a45227418772b1abd15ed796",
+      "bytes": 2772
+    },
+    "judges/5.json": {
+      "sha256": "009feedb0675f88dfbadde8dbbc5d108f94134a1c170d85425a0e78a66ed3642",
+      "bytes": 850
+    },
+    "judges/9.json": {
+      "sha256": "e19752674dd665612795f620954caa828ac916f496103cf962378790a8358274",
+      "bytes": 910
+    },
+    "1-samuel/10.json": {
+      "sha256": "a2f7126a5c2e1bf1b7fe5f3424e66caf996cef2a89034663c9591056889048d7",
+      "bytes": 1340
+    },
+    "1-samuel/14.json": {
+      "sha256": "1a4b484732b026d2a7ce936d34067d6a44da92c8fc6d8fd3d51c16b3f99eee5f",
+      "bytes": 1165
+    },
+    "1-samuel/22.json": {
+      "sha256": "fd55b6d89e6410b1b7120c9ade792890a05805bc654218f4034e320ae3bcf490",
+      "bytes": 894
+    },
+    "2-samuel/1.json": {
+      "sha256": "ab78056b06c7c385efb8fd4fcf2b88e71bcc24caac6bf0fae1e423ee2bf5db1a",
+      "bytes": 553
+    },
+    "2-samuel/2.json": {
+      "sha256": "a12745af2f7fd829cdaacdf84af5bdf491b7cb31dba2922f724eea10f0c2828f",
+      "bytes": 992
+    },
+    "2-samuel/3.json": {
+      "sha256": "173cddfae35c336e4235b08d10706495bcb6fbf9013b41eec41145a2be79921c",
+      "bytes": 646
+    },
+    "2-samuel/5.json": {
+      "sha256": "c1aa416ddf40b6d05280b7b0d93deeeea9486c150707e86e151dc4eb317d4357",
+      "bytes": 1337
+    },
+    "1-kings/4.json": {
+      "sha256": "6524968a3a300c7df804081dac996cfa11ad765156820fa8cc1d7977656592ec",
+      "bytes": 603
+    },
+    "1-kings/15.json": {
+      "sha256": "8f6cfe953c286bfb3707ff85b585db0c4a68dddb363dd4faa3e24ec6c9b1be8e",
+      "bytes": 632
+    },
+    "2-kings/2.json": {
+      "sha256": "be53b83362b4a879b1b101c361fb22c241c371c1e9a34256763ab3bc800fa8c5",
+      "bytes": 1310
+    },
+    "2-kings/3.json": {
+      "sha256": "7866c6d9ba51bae02225ce26efc1046022b7a95f9b674199be9c448367a8f7f3",
+      "bytes": 938
+    },
+    "2-kings/4.json": {
+      "sha256": "7c30c72d0fa5baa6c35289f1020d2f11ba833c7ae3d838d3e411237790543fba",
+      "bytes": 1061
+    },
+    "2-kings/6.json": {
+      "sha256": "01c6de4e75ac8236821a0f275626c0dbd4c2cf64dca68b52e13da190d0e6a354",
+      "bytes": 1254
+    },
+    "2-kings/10.json": {
+      "sha256": "a1dcaec51f0dde00b03e9128218f1fe00252d8a41f623fedb6627e9b980a2b98",
+      "bytes": 1088
+    },
+    "2-kings/19.json": {
+      "sha256": "f6c1bb1185fb565475bb7b4a4c1d2d26da489098c01140b58a55615eff97f273",
+      "bytes": 850
+    },
+    "1-chronicles/1.json": {
+      "sha256": "def3e94adbaf3a31ad132542560fd644fb8269f5e930485138a1a44c7393b700",
+      "bytes": 2757
+    },
+    "1-chronicles/2.json": {
+      "sha256": "45f49481657ef4f86b2421563df2c03876d872ad6d7a47b3f1b5f7058f6d13f5",
+      "bytes": 2620
+    },
+    "1-chronicles/3.json": {
+      "sha256": "d86818cd1fa00a8e916ddba1ae9f79a05ad12bdc238f154cf7cab3e413403914",
+      "bytes": 2746
+    },
+    "1-chronicles/4.json": {
+      "sha256": "268afd3f6838657ed25b67bb015be3b0d1644e25a36c59435e5b83226873e7f4",
+      "bytes": 2796
+    },
+    "1-chronicles/5.json": {
+      "sha256": "433178b29c03ea251b2236f9964703d94337b5df0b813a02cf48bd49eb017d59",
+      "bytes": 400
+    },
+    "1-chronicles/6.json": {
+      "sha256": "2714c5f20792187359d0c38dbd74b637249e3893cf2100f62282e53560d90136",
+      "bytes": 8583
+    },
+    "1-chronicles/7.json": {
+      "sha256": "e4d21f7e462cd932df08e5518c30dbdefc58d52ee8fbe92735c2d1d34db1187f",
+      "bytes": 3952
+    },
+    "1-chronicles/8.json": {
+      "sha256": "bc1064d1ca9a836f943bed2674d3f76af48963b6f241865888f5b266c92e917b",
+      "bytes": 3367
+    },
+    "1-chronicles/9.json": {
+      "sha256": "45df28f4de19716ca493841de869e7f8a7eaeb2354cca6fd8d211744f01a2130",
+      "bytes": 343
+    },
+    "1-chronicles/12.json": {
+      "sha256": "05e4c693b9198a2a8b0e563b021d4398750f36d96d7a2b7b7561badda46c7944",
+      "bytes": 931
+    },
+    "1-chronicles/14.json": {
+      "sha256": "23258780e232aafca21fc80081abac60cd368e3401c9b3faa64449bfeea08915",
+      "bytes": 795
+    },
+    "1-chronicles/23.json": {
+      "sha256": "0e93dcc6d850f6eb63639cb6d3f05807d2ffc02467477cf0dc1a9d8c50aa2bf2",
+      "bytes": 984
+    },
+    "1-chronicles/24.json": {
+      "sha256": "7d817f62dba9d73494c0d9872e3be3a6bc6efb6cb2459b6033d63742af308ab9",
+      "bytes": 1919
+    },
+    "1-chronicles/26.json": {
+      "sha256": "509804ba2d78c84f117a7b99beac0cb6af601e8b0785570b4af7ce614cc23611",
+      "bytes": 2094
+    },
+    "2-chronicles/3.json": {
+      "sha256": "72483d6b35341fc5509d603eaa8d98f4cc0f5ec42a03639e8cf54268646ff3a3",
+      "bytes": 608
+    },
+    "2-chronicles/9.json": {
+      "sha256": "8c01a281f710d0348c914fee2d03a644fba8d754307d6114aeb4bd4d7875c7d5",
+      "bytes": 561
+    },
+    "2-chronicles/11.json": {
+      "sha256": "a7eb25321765875472156a41aa028ff3662824a0aa554c8fcaf080cbc411213b",
+      "bytes": 693
+    },
+    "2-chronicles/20.json": {
+      "sha256": "0f918ab7bbaaf91da3da43b276e46b36b865b222faf145eeaae6c2856c3ad61f",
+      "bytes": 1190
+    },
+    "2-chronicles/29.json": {
+      "sha256": "bff92c5aaea6bf655a566e3fdb8833b1fba62207e1523ef40ec5cb8561fa3c44",
+      "bytes": 1092
+    },
+    "ezra/2.json": {
+      "sha256": "723a66865cce3eee79f14837dfe89a68a6c1dea7ce3141586748248996a46024",
+      "bytes": 1245
+    },
+    "ezra/7.json": {
+      "sha256": "19c9efcfbcd4f68e7a82d291091cdb21dd27bc783937eac86df784772db8ce6c",
+      "bytes": 2190
+    },
+    "ezra/10.json": {
+      "sha256": "58afceee5987a93d71d805ebd6df677baa37dd8eaa4bbc86354bdfbbc3fd17da",
+      "bytes": 1936
+    },
+    "nehemiah/10.json": {
+      "sha256": "590cc38a8c48453605e38117a750c141adf7c6771d3c58f9dda02707937a14b7",
+      "bytes": 4282
+    },
+    "nehemiah/11.json": {
+      "sha256": "47772f8b8fef7e40e26496f68606a727f26a2594499baa7edc03ae1f594d7170",
+      "bytes": 1475
+    },
+    "nehemiah/12.json": {
+      "sha256": "cac29885c06c1b3d2a5f26625539968a7a94aeff9f318d1118a3755322141544",
+      "bytes": 7325
+    },
+    "esther/9.json": {
+      "sha256": "9effe900fb869c44ad09cf2ce7bf58228e0989367d091f8a374315a7c9ad5253",
+      "bytes": 371
+    },
+    "job/5.json": {
+      "sha256": "8c39e37d0f56892c7d66de754236001d5bf25ae7aa2ed81715f9ddec82428195",
+      "bytes": 585
+    },
+    "job/9.json": {
+      "sha256": "5ab10a9359a3a0c9933165a7fe5362088eb6f982b62c83522458267ac47915c8",
+      "bytes": 849
+    },
+    "job/14.json": {
+      "sha256": "a3c6e322c031d6fbe71029df53d48db42dd959bc26e4851351d199b9998e7e74",
+      "bytes": 526
+    },
+    "job/15.json": {
+      "sha256": "3c8d01d09a7c370dd5e11ca3a3a7f15d12b042f52f680ebce1fd7f4913738f7b",
+      "bytes": 477
+    },
+    "job/33.json": {
+      "sha256": "faeff6cd12c6645737b9e5bde0a9fe320e1c3be379f1cde8848622bb53d38eb4",
+      "bytes": 499
+    },
+    "job/34.json": {
+      "sha256": "af1618e5f98d03663bba33e726ee2ab3575fc65992ab4f47420eb1dbec37f55f",
+      "bytes": 461
+    },
+    "job/38.json": {
+      "sha256": "e3d8f5ef19f38cb8bd015f34c0dd952af0c1e64250c36a098985ae67364ba03c",
+      "bytes": 950
+    },
+    "psalms/2.json": {
+      "sha256": "422dcd0577c3726faf0da44623fe2a0baecf04fa6934cc0d056f5853fd9eb256",
+      "bytes": 444
+    },
+    "psalms/7.json": {
+      "sha256": "ec747a12f5fd8b303b677dafb5796d6a6d56c170622562ae10e8d38f8e3528a0",
+      "bytes": 404
+    },
+    "psalms/9.json": {
+      "sha256": "1f1ce2dc5f2445252362eba95b1a54058f01324d9fe863d395b24d493ca40bcc",
+      "bytes": 562
+    },
+    "psalms/16.json": {
+      "sha256": "77812fc45526b23b43e65fc00c0a2f8b37101b854aebb616e0023fb0389c9050",
+      "bytes": 534
+    },
+    "psalms/24.json": {
+      "sha256": "caf86e663a59ddade7c1c080c3a3953d0294a0e332bc3a07e9315b2314e033e6",
+      "bytes": 649
+    },
+    "psalms/43.json": {
+      "sha256": "677430fbe3aa5482621e76f29976509dfb2714dabc4180761d5593cc7ea1ad60",
+      "bytes": 743
+    },
+    "psalms/75.json": {
+      "sha256": "6194bc27b59caf76061d1003520a78f847f057a2bb2adeab2fc039f6e6ee3ab7",
+      "bytes": 424
+    },
+    "psalms/77.json": {
+      "sha256": "7189fdb08e71103be517ba28a8cff7308ed7d3f293f6c6fd72a4b2f8ae2f9f65",
+      "bytes": 412
+    },
+    "psalms/78.json": {
+      "sha256": "86d7e007d19c14fa31e05a0153030aeb4a0763f85bfc8c8e18f0a030823903cb",
+      "bytes": 518
+    },
+    "psalms/87.json": {
+      "sha256": "be0ab08e93288a81ca9aeb853a4984c67ab43f057f8954ec3a1c166594084dba",
+      "bytes": 577
+    },
+    "psalms/89.json": {
+      "sha256": "2035ec8d95c7c988895940440288504470cdcc2f940d608148f722d3e011b4af",
+      "bytes": 560
+    },
+    "psalms/92.json": {
+      "sha256": "33f9bc848b5ffcec222dbddcd72b7ea7c7258449b5fe2356397823e54c7d9a5b",
+      "bytes": 493
+    },
+    "psalms/94.json": {
+      "sha256": "aab730dc5a95149a830e8bcdfe216b17a6ffcc97529ed9af0cd662cf34844816",
+      "bytes": 490
+    },
+    "psalms/95.json": {
+      "sha256": "f2e54bb4ee9569306e7e8ade4f5289488e652cd51c6a8c2be2d87df3a3804f16",
+      "bytes": 557
+    },
+    "psalms/96.json": {
+      "sha256": "dd57115e29fd7117499e011ad30728448a2b1639499caae9d8ba50149d5b4860",
+      "bytes": 1141
+    },
+    "psalms/97.json": {
+      "sha256": "5a735cc0cf074baa32e48405d6e60bf65d97bfd0dda9f130829cc8fd4b1cca2c",
+      "bytes": 716
+    },
+    "psalms/99.json": {
+      "sha256": "7d6417c6986809d1bac259f7bc8d0a85b73865dd325409c99abfb3f07dbdb0d2",
+      "bytes": 1510
+    },
+    "psalms/103.json": {
+      "sha256": "dd87fd2bf22a351f40b41db7f311573a457664d2d736af28e3911353cc695a3d",
+      "bytes": 562
+    },
+    "psalms/107.json": {
+      "sha256": "2e1a0f818dfef1b0e5745c327216f878dc294f0cc536c67b58993a0643f99cfb",
+      "bytes": 463
+    },
+    "psalms/108.json": {
+      "sha256": "a0c3e7cd34394db2de940bbc761f9d2a69521f511bee22912343334df1ace83e",
+      "bytes": 466
+    },
+    "psalms/112.json": {
+      "sha256": "b9a8922b1641537b2f89d768016da73155f0e19408503d988b9d7b65e8f68e8e",
+      "bytes": 426
+    },
+    "psalms/115.json": {
+      "sha256": "1b7a05e82ac92aaeb6b3ef6c98bb06e76a7bf8163ff137485b119dbb3ed4ac61",
+      "bytes": 509
+    },
+    "psalms/116.json": {
+      "sha256": "aa9135404183d79ad7a61e7c676019de4fe027ecf3ee0bb2da2b6661efa90c0a",
+      "bytes": 372
+    },
+    "psalms/117.json": {
+      "sha256": "38208e2ebc465449419098a3038b20f05fbd32b945f60384aed70f96528af180",
+      "bytes": 528
+    },
+    "psalms/118.json": {
+      "sha256": "72f8ee18ebe2f286a70a213db3a59d42769b26d0310081cb61f33fdf24bcbb29",
+      "bytes": 939
+    },
+    "psalms/119.json": {
+      "sha256": "4549dcd60839d2ec03fd944a1309235359630eb8290d5e75fa4e07d939e47a44",
+      "bytes": 1692
+    },
+    "psalms/135.json": {
+      "sha256": "d685c43ce834a65dfb41251c8a8f3536f823e7d4215cb37e951b80376ef408bb",
+      "bytes": 716
+    },
+    "psalms/145.json": {
+      "sha256": "5efde2055faf00b01880903835d620c4402c3c4604125157f57fa732db6d8132",
+      "bytes": 485
+    },
+    "psalms/148.json": {
+      "sha256": "66cdec71e85ff2a690d7a72c40e6dbb5d7c64872567a354f735880f11d3f2695",
+      "bytes": 1652
+    },
+    "psalms/150.json": {
+      "sha256": "9b68daf54451b78e3ac37602d4eeca9723835811dc29ada73772184a37346267",
+      "bytes": 450
+    },
+    "proverbs/2.json": {
+      "sha256": "53748aa12cb3d4a457111183c71c1e86fc15a6ef4036d4f864ff3a636cda5668",
+      "bytes": 463
+    },
+    "proverbs/4.json": {
+      "sha256": "834b0eebcda8427a29a64d5b73d2c9e73b0925e49e6a59576d8512f07af3bf08",
+      "bytes": 493
+    },
+    "proverbs/13.json": {
+      "sha256": "0e7855d8de9f4294316c5a2e9cf86b9046ecd135180306c38f0ad35f690322a6",
+      "bytes": 489
+    },
+    "proverbs/14.json": {
+      "sha256": "1e82a76ce7ffecd55eeafdf11c09b5c1d8242a9694b6d40be06d8693b4eb29ed",
+      "bytes": 978
+    },
+    "proverbs/15.json": {
+      "sha256": "eb72a2d13f2086a802ab5ccf4f7d7bb92fb360ca83f2a0d606141503c4c6db02",
+      "bytes": 1033
+    },
+    "proverbs/22.json": {
+      "sha256": "f52aefdec83f4d545b97f397d58dcd2261f6913f644e4b720dbc8a2ad56448d6",
+      "bytes": 642
+    },
+    "proverbs/26.json": {
+      "sha256": "4fa8d32994431a902fbc821de660153c4db27180f99fc346c9577adbcde3a293",
+      "bytes": 507
+    },
+    "proverbs/29.json": {
+      "sha256": "dc3877b247a4c5567d3a058584238e5808ff0bd138837e0f508e7a6a9f902d2b",
+      "bytes": 510
+    },
+    "proverbs/30.json": {
+      "sha256": "c9649b6f4b812c0da92751987bbbab120387d8330ca80be2ecad0c53393ebec6",
+      "bytes": 1358
+    },
+    "ecclesiastes/1.json": {
+      "sha256": "6f2210b9bf43546fe703ffc05271e582fe3bdeae1359d03e58f7eb12b51dd988",
+      "bytes": 822
+    },
+    "ecclesiastes/3.json": {
+      "sha256": "3c0ce85482435452a21e16184ff75538cbb6a1274d6167b00708fa1ac06425bb",
+      "bytes": 1281
+    },
+    "song-of-solomon/2.json": {
+      "sha256": "77ee25d8268cb146e866abacdf1f91c42fa98c2b594ae4af1cd3cbdc21b1a792",
+      "bytes": 664
+    },
+    "isaiah/10.json": {
+      "sha256": "48fcd5db647f92dee2d5b44218cf453ec8f5f6b131b0272ed07684658930c1c6",
+      "bytes": 912
+    },
+    "isaiah/19.json": {
+      "sha256": "c0d5e83e1a853fdf59515a6529f240aa105ecd583b12064448f369c65cb3c2d2",
+      "bytes": 977
+    },
+    "isaiah/33.json": {
+      "sha256": "0ab2782eeebc2b63c3c3d88ab7a0e1549e33e057542a6fe6e2ff174a84a0722d",
+      "bytes": 509
+    },
+    "isaiah/34.json": {
+      "sha256": "783219f63b15a1d58dbb4e0062e561e7ec16cb5f7512831b45aa4aaabfb6a801",
+      "bytes": 621
+    },
+    "isaiah/36.json": {
+      "sha256": "8c14e66e921071b8aabbef66d6bb20073faca91b717a1f7cd43f76eb86a148ff",
+      "bytes": 853
+    },
+    "isaiah/38.json": {
+      "sha256": "b5a7a1b18dae6da765b20cf099775123951f5ba87149b0d3b4b7a12c2d9e44a3",
+      "bytes": 549
+    },
+    "isaiah/54.json": {
+      "sha256": "9ca3fca9ec95234e64d714a6ac1afcd4fe0455caeaa21126f9113b75ce0bafdc",
+      "bytes": 814
+    },
+    "isaiah/64.json": {
+      "sha256": "119eb28874999a1e2a9d548f513510e882c223e1d39b6d49db0ee3c906a5b437",
+      "bytes": 608
+    },
+    "jeremiah/8.json": {
+      "sha256": "d96c0e2495ae1a40d52054880ee3f09e5c18704364c43edc1b98ac051e4d7e79",
+      "bytes": 684
+    },
+    "jeremiah/13.json": {
+      "sha256": "93e52d8d0227763febc58b8bfacc23799192f0c8d5de791978f5313871a0b69d",
+      "bytes": 742
+    },
+    "jeremiah/36.json": {
+      "sha256": "faf5190ef03688e0024ade301903bd3903e131af509e09e83836a46f69aba4d8",
+      "bytes": 647
+    },
+    "jeremiah/49.json": {
+      "sha256": "1aae6c801fde040ff3a932ad6ce2135a54bf6fe9347f95745f284998d507ca4d",
+      "bytes": 839
+    },
+    "ezekiel/6.json": {
+      "sha256": "edf36c4df5432ffe81dce27e72305a086e8a734f0a462b71d84b50566465a67e",
+      "bytes": 473
+    },
+    "ezekiel/11.json": {
+      "sha256": "bc0a342494aaab4e357d1e10f840bc4fa414aa4402d82a067b73227e937d8ba1",
+      "bytes": 699
+    },
+    "ezekiel/13.json": {
+      "sha256": "fbbe217e6daaa8f34ea4d4de12169b5f9e6de9ab8a37d1649f46efc442030310",
+      "bytes": 2262
+    },
+    "ezekiel/19.json": {
+      "sha256": "122c79b05bf0a489722227042a1af8f67d2b8bc187ca28a4db8a504bd6f05079",
+      "bytes": 423
+    },
+    "ezekiel/20.json": {
+      "sha256": "2dded2c8407f587ef69b086f78832da587033a9772bc3bf4b0dfd99800d8c815",
+      "bytes": 872
+    },
+    "ezekiel/29.json": {
+      "sha256": "74e85eadf0670954a99a9a077c0a5be9fefd5e210e9c1e0f1e6ea36222383ed9",
+      "bytes": 922
+    },
+    "ezekiel/34.json": {
+      "sha256": "de6694457281b7bb3e46a13f3aba9ea0e9a180457fd96d14c52bfea83a10643a",
+      "bytes": 1470
+    },
+    "ezekiel/35.json": {
+      "sha256": "1c0e1001991a848773fd3db2d3b3a3fe0f040e32b14b54e99259eccd27bccc5c",
+      "bytes": 642
+    },
+    "ezekiel/36.json": {
+      "sha256": "f0fa6da962743bf578587d58811e5f9630ce56cb6f337bcb791c89a4fa3ef0d7",
+      "bytes": 838
+    },
+    "ezekiel/39.json": {
+      "sha256": "8980b5dce1b7d2259bcf5098198e389b4df86f8375b687e8e56db0bafe5f21cb",
+      "bytes": 1268
+    },
+    "daniel/1.json": {
+      "sha256": "a493a1d019778c1aeaf0a45065b157313386f9d6f82c9458a61edfebf76965cc",
+      "bytes": 996
+    },
+    "daniel/2.json": {
+      "sha256": "54981f4f68108509c2166358e68f6390680fbc381b410fbd5322a47ec16fab03",
+      "bytes": 1214
+    },
+    "daniel/3.json": {
+      "sha256": "51d73c817728f29b7afab77376f75526a90b2cba3b13df7fac651dad188acd99",
+      "bytes": 709
+    },
+    "daniel/5.json": {
+      "sha256": "571cd5fd9eb3ea723a9f4b47249ed050247b7b00ac1193744033a9ae600a40dd",
+      "bytes": 1416
+    },
+    "daniel/8.json": {
+      "sha256": "87c953149d54765da5652aa2896812d7c80f2cf539c65c8d6aaccbe3b600a4b6",
+      "bytes": 517
+    },
+    "hosea/5.json": {
+      "sha256": "7499eded6b989558cb673af868cb12373441be9e34924041d5ee33cb40c930c2",
+      "bytes": 1446
+    },
+    "hosea/9.json": {
+      "sha256": "0a29b88a9d09338efacb39a12d477add167bcdf10a734e111ba7a4b076c17219",
+      "bytes": 1305
+    },
+    "joel/3.json": {
+      "sha256": "d8075401c7be597ef95a919e83bb0f61563896499829552cdb4748d21e74208c",
+      "bytes": 678
+    },
+    "amos/5.json": {
+      "sha256": "727c2c56f2f1e3e8e21e08c12630be383801667f04642ff0ba84e85d4625a285",
+      "bytes": 550
+    },
+    "micah/4.json": {
+      "sha256": "bcd5b79555bb1d8c506d1cffd8cbe1a3783470d0ca60d6fdb9f003d03d82b393",
+      "bytes": 1370
+    },
+    "micah/7.json": {
+      "sha256": "6bac51c60c6b39fdd4109888e6f61281ef0baa0ce0c802562cc3b7af0c4e4ef0",
+      "bytes": 1096
+    },
+    "nahum/1.json": {
+      "sha256": "6d7721d8fa7819ee983a714f4e0a141206cea79e00de6063bf49fb2d614b5148",
+      "bytes": 983
+    },
+    "zephaniah/1.json": {
+      "sha256": "4b45151392e0483ba473e2cc416a157a930db6e3f5db7900b49d7f46d6ead44f",
+      "bytes": 957
+    },
+    "malachi/1.json": {
+      "sha256": "a65d80fd1b3dad6519bd377b03e36edc974f9ea1c9ca22911a0dfd46ca329601",
+      "bytes": 961
+    },
+    "malachi/3.json": {
+      "sha256": "d14d4fd411be92f5b340313dad3d86c1e7188e1d30180277530986bfc462417d",
+      "bytes": 801
+    },
+    "matthew/4.json": {
+      "sha256": "2d0c013f59690c05a9dfa1dd74555a8805dcb784ed28185d1492800e75b76f8d",
+      "bytes": 882
+    },
+    "matthew/12.json": {
+      "sha256": "8516a2a7a570ddd1f557c4e68bb7183a8797ae3e057c6682a23a606e960dd1e6",
+      "bytes": 539
+    },
+    "matthew/14.json": {
+      "sha256": "94f68fac7f6063765531eb84c4b6abba6d9447036de1647eac269646eb47f328",
+      "bytes": 424
+    },
+    "luke/22.json": {
+      "sha256": "b738793bcae5994bb87447e815b5114a69f36bf9127c5384904110452bc1acce",
+      "bytes": 411
+    },
+    "john/1.json": {
+      "sha256": "b5461f2bd8ab7515e3bedc374351f1c650d6e5a4f5727d7772c02b448a9db634",
+      "bytes": 1630
+    },
+    "john/9.json": {
+      "sha256": "5192e0b9a35c19929dcb10e4b1aeb986468233bd4ec21c49616fbab32946a79b",
+      "bytes": 561
+    },
+    "john/11.json": {
+      "sha256": "801345a91a38acf26e0821f2203eb4ae006103a8c8314062db45388343d43522",
+      "bytes": 180
+    },
+    "acts/2.json": {
+      "sha256": "24490c7d903ed3ed294b5b08e98fee25c03b1f8bd0a16f63337c2c6209c9915c",
+      "bytes": 873
+    },
+    "acts/12.json": {
+      "sha256": "66447e32c043101e873f404d2ab81cd97d80f602817bca24001c393e498dbf08",
+      "bytes": 403
+    },
+    "acts/16.json": {
+      "sha256": "8acac60890ac5870b3f4f72d42474ad65f9fee2e9c713a6723811c9ed7991ce6",
+      "bytes": 470
+    },
+    "romans/2.json": {
+      "sha256": "eed7d46eeacfc8cfd295fc9e38a8f8dbf38542b6e547430418f96db8b960ba18",
+      "bytes": 750
+    },
+    "1-corinthians/15.json": {
+      "sha256": "ac59744b1cfb296afa21ed837efe0dc22810a47f94b8704ed0eca474fb2a6fd9",
+      "bytes": 854
+    },
+    "2-corinthians/5.json": {
+      "sha256": "13f39658d0f886ac51d05e1810e4a60cd8c042a41280dc235fc8e641fd80b281",
+      "bytes": 729
+    },
+    "2-corinthians/11.json": {
+      "sha256": "763c0ebc0c7b7c288632f9e7ae448b93ca563db3fda74998a448a166b2555163",
+      "bytes": 579
+    },
+    "galatians/5.json": {
+      "sha256": "2fa7b768f1f1a8a761c089a39f4734bf4b306787b09d4c64d9b9a39d4de2358d",
+      "bytes": 719
+    },
+    "ephesians/6.json": {
+      "sha256": "87048f5093d37f21a162352d6e8a3b8cf48ef282e87dd6c10cada18b8fafc568",
+      "bytes": 711
+    },
+    "1-timothy/4.json": {
+      "sha256": "7afd7a577a07dbb11710a988c6cc044796a7f4726e5cd407f1a41d584c802357",
+      "bytes": 636
+    },
+    "1-timothy/6.json": {
+      "sha256": "75992c25f3f6a51c50fd45b62e4165ab5aba51a2617f0046b5e7acfcfda0fdcb",
+      "bytes": 489
+    },
+    "2-timothy/4.json": {
+      "sha256": "596ec9bbd42c6ee8ce3a12da2a67b719c57e48f0b5241bf673c9d944a0c93fa4",
+      "bytes": 329
+    },
+    "2-peter/1.json": {
+      "sha256": "484c6269fd585f78aa80d433e57347823fe895cfbfe464d0c7561f1523c43aed",
+      "bytes": 684
+    },
+    "index.json": {
+      "sha256": "64bb82adc733a931b449fe2a421e93bf9383cb8981f36068465d3360412c9bb0",
+      "bytes": 1055
+    }
+  }
+}

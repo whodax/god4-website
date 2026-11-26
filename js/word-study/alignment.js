@@ -252,6 +252,15 @@
     title:'WEB checked against the Berean translation tables and the original-language witnesses',
     revision:'Berean Standard Bible third printing, UHB 3.0.0 and UGNT 0.34'
   });
+  var webConsensus = Object.assign({},webSource,{
+    title:'WEB phrase verified against ULT and Berean',
+    revision:'ULT 92, Berean Standard Bible third printing, UHB 3.0.0 and UGNT 0.34'
+  });
+  function hasReviewedVerse(context){
+    return reviewedCatalog.some(function(entry){
+      return ['translationId','bookId','chapter','verse'].every(function(field){ return entry[field] === context[field]; });
+    });
+  }
   var chapterRequests = new Map();
   var webIndexRequest;
   var webBase = '/data/word-study/alignment/web/';
@@ -295,7 +304,8 @@
       var row = chapter?.[context.verse];
       if(!Array.isArray(row) || row[0] !== context.verseText || !Array.isArray(row[1]) ||
         row[1].length !== records.length || !Array.isArray(row[2])) return null;
-      var source = !web ? crosswireSource : row[3]?.startsWith('berean-') ? webBerean : row[3] ? webExpanded : webSource;
+      var source = !web ? crosswireSource : row[3] === 'dual-phrase' ? webConsensus :
+        row[3]?.startsWith('berean-') ? webBerean : row[3] ? webExpanded : webSource;
       if(!records.every(function(record,index){
         var token = row[1][index];
         return record.bookId === context.bookId && record.chapter === context.chapter && record.verse === context.verse &&
@@ -319,6 +329,12 @@
     var noun = /^N-/;
     if(term === 'Christ'){
       sense = ['G5547','The Anointed One, the Messiah.','Greek Christos'];
+    }else if(alignment.source === webConsensus && study.translationId === 'web'){
+      if(term === 'kindness' && study.bookId === 'galatians' && study.chapter === 5 && study.verse === 22 && /fruit of the Spirit/.test(text)){
+        sense = ['G5544','Treating others with goodness and consideration, listed here as fruit of the Spirit.','Greek chrestotes'];
+      }else if(term === 'prayer' && study.bookId === '1-timothy' && study.chapter === 4 && study.verse === 5 && /through the word of God and prayer/.test(text)){
+        sense = ['G1783','An appeal to God, here connected with receiving food with thanksgiving.','Greek enteuxis'];
+      }
     }else if(study.translationId === 'web' && [webSource,webExpanded,webBerean].includes(alignment.source)){
       if(term === 'Ephraim' && /\bEphraim will become a desolation\b/.test(text)){
         sense = ['H669','The tribe descended from Ephraim, the name Hosea uses here for the northern kingdom of Israel.','Hebrew Ephraim'];
@@ -342,6 +358,6 @@
     })) return null;
     return {partOfSpeech:'noun',definition:sense[1],source:'Scripture context · ' + sense[2] + ' (' + sense[0] + ')'};
   }
-  return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookupChapter:lookupChapter,
+  return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookupChapter:lookupChapter, hasReviewedVerse:hasReviewedVerse,
     contextualDefinition:contextualDefinition, lookup:createProvider(reviewedCatalog).lookup};
 }));

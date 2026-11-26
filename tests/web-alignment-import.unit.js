@@ -10,7 +10,7 @@ const {createHash} = require('node:crypto');
 const {readBook,readOriginal,readAlignment,validateVerse,projection,projectVerse,generate} = require('../tools/import-web-alignment');
 const berean = require('../tools/word-study-berean');
 const {loadBibleLibrary,READER_TOKEN_PATTERN} = require('../tools/audit-word-study-coverage');
-const report = require('../docs/shell-78-web-alignment-report.json');
+const report = require('../docs/shell-79-web-alignment-report.json');
 const web = loadBibleLibrary('web.js','webLibrary');
 const root = path.resolve(__dirname,'../data/word-study/alignment/web');
 
@@ -132,7 +132,26 @@ test('Shell 77 WEB rows remain intact and the expansions add only new references
     }
   }
   assert.equal(count,57);
-  assert.equal(report.additions.verses,251);
+  assert.equal(require('../docs/shell-78-web-alignment-report.json').additions.verses,251);
+});
+
+test('all Shell 78 WEB rows survive and the report reconciles to live baseline totals',()=>{
+  const previous=require('../docs/shell-78-web-alignment-report.json');
+  let count=0;
+  for (const relative of Object.keys(previous.files).filter(file=>file.includes('/'))) {
+    const source=execFileSync('git',['show','eea5c23:data/word-study/alignment/web/'+relative],{cwd:path.resolve(__dirname,'..')});
+    const existing=JSON.parse(source);
+    const current=JSON.parse(fs.readFileSync(path.join(root,relative)));
+    for (const [verse,row] of Object.entries(existing)) {
+      assert.deepEqual(current[verse],row);
+      count++;
+    }
+  }
+  assert.equal(count,308);
+  assert.equal(report.totals.prior,312);
+  assert.equal(report.totals.wordsBefore,1829);
+  assert.equal(report.totals.priorityWordsBefore,1065);
+  assert.equal(Object.keys(report.forms).length,500);
 });
 
 test('the production provider verifies every WEB row and fails closed on changed input',async()=>{
@@ -171,7 +190,9 @@ test('the production provider verifies every WEB row and fails closed on changed
     ['john',9,5,'light','Jesus describes himself as the one who gives people spiritual sight.'],
     ['2-peter',1,7,'love','Care for others that goes beyond affection for those close to you.'],
     ['hosea',5,9,'Ephraim','The tribe descended from Ephraim, the name Hosea uses here for the northern kingdom of Israel.'],
-    ['1-chronicles',7,27,'Joshua','Joshua son of Nun, listed here among the descendants of Ephraim.']
+    ['1-chronicles',7,27,'Joshua','Joshua son of Nun, listed here among the descendants of Ephraim.'],
+    ['galatians',5,22,'kindness','Treating others with goodness and consideration, listed here as fruit of the Spirit.'],
+    ['1-timothy',4,5,'prayer','An appeal to God, here connected with receiving food with thanksgiving.']
   ]) {
     const verseText = web[bookId][chapter].verses[verse-1];
     const englishStart = verseText.indexOf(displayWord);
@@ -180,7 +201,7 @@ test('the production provider verifies every WEB row and fails closed on changed
     const {records} = await original.lookupVerse(context);
     const result = await alignment.lookupChapter(context,records);
     assert.equal(alignment.contextualDefinition(context,records,result)?.definition,expected);
-    assert.equal(alignment.contextualDefinition({...context,verseText:'Other context'},records,result),null);
+    assert.equal(alignment.contextualDefinition({...context,bookId:'genesis',verseText:'Other context'},records,result),null);
     assert.equal(alignment.contextualDefinition(context,records,null),null);
   }
 });

@@ -58,4 +58,22 @@ The new collection includes 149 chapter shards and one index, totaling **164,581
 
 All 103 unit checks passed. Both Shell 77 and Shell 78 imports reproduced the same reports and shard hashes. Chromium verified that Numbers 32:3 retains its Hebrew highlight after a full offline reload on the installed Shell 78. Ten historical 320px dark-theme fallback repetitions passed. The full engineering and device acceptance status is tracked on [PR #131](https://github.com/whodax/god4-website/pull/131).
 
-Bible-wide verified alignment remains a release blocker. The remaining 27 priority forms, most WEB verses, 2,013 rejected and 11 ambiguous KJV NT verses, KJV OT, the other Reader editions, Catholic and Ethiopian Scripture, and Bible-wide contextual definitions remain open. Shell 78 physical Android and TalkBack acceptance is pending.
+## Physical Android and TalkBack acceptance
+
+The owner reported all **11 checks passed** on the Shell 78 preview `8108a1a6`, commit `eea5c23eede2afb9495f18334b78c66815506db9`.
+
+| Check | Result |
+| --- | --- |
+| WEB Numbers 32:3, Dibon | Pass |
+| WEB Hosea 5:9, Ephraim | Pass |
+| WEB 1 Chronicles 7:27, Joshua | Pass |
+| WEB Genesis 1:1, created | Pass |
+| KJV John 1:1, Word | Pass |
+| KJV Acts 8:37, Christ | Pass |
+| Dark theme | Pass |
+| Close Word Study | Pass |
+| TalkBack | Pass |
+| Full offline reload | Pass |
+| Ethiopian Read Aloud | Pass |
+
+Bible-wide verified alignment remains a release blocker. The remaining 27 priority forms, most WEB verses, 2,013 rejected and 11 ambiguous KJV NT verses, KJV OT, the other Reader editions, Catholic and Ethiopian Scripture, and Bible-wide contextual definitions remain open.

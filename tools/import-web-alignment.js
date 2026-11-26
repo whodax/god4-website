@@ -450,4 +450,5 @@ if (require.main === module) {
     .catch(error => { console.error(error); process.exitCode = 1; });
 }
 
-module.exports = {readBook, readOriginal, readAlignment, validateVerse, projection, projectVerse, generate};
+module.exports = {readBook, readOriginal, readAlignment, validateVerse, projection, projectVerse, generate,
+  loadSource, manuscriptMatches, provider, books};

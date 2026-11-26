@@ -202,7 +202,7 @@ test.describe('installed offline runtime',()=>{
   async function installed(page){await open(page);await page.evaluate(()=>navigator.serviceWorker.ready.then(()=>true));if(!await page.evaluate(()=>!!navigator.serviceWorker.controller))await page.reload();await page.evaluate(()=>initializeBibleExperience());}
   test('cache 26 preserves six runtimes; unused runtime first activates offline with local fallback and no durable JSON',async({page,context})=>{
     await installed(page);
-  const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-78')).keys()).map(r=>new URL(r.url).pathname));
+  const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-79')).keys()).map(r=>new URL(r.url).pathname));
     for(const dep of dependencies)expect(assets).toContain(dep);expect(assets).toContain('/js/word-study/loader.js');expect(assets).toContain('/js/word-study/alignment.js');
     expect(await page.evaluate(()=>typeof WordStudyController)).toBe('undefined');
     await context.setOffline(true);await word(page).press('Enter');
@@ -254,6 +254,31 @@ test.describe('installed offline runtime',()=>{
   test('first-use shell-hit readiness latency is measured',async({page})=>{
     await installed(page);const timing=await page.evaluate(async()=>{const start=performance.now();await WordStudyLoader.ensure();return performance.now()-start;});
     console.log('Word Study shell-hit readiness ms:',timing);expect(timing).toBeGreaterThanOrEqual(0);
+  });
+  test('phrase highlights and context survive reload after the runtime cache starts evicting',async({page,context})=>{
+    await installed(page);
+    const cache=await page.evaluate(async()=>{
+      const base='/data/word-study/alignment/web/';
+      const catalog=await (await fetch(base+'index.json')).json();
+      const urls=Object.entries(catalog).flatMap(([book,chapters])=>chapters.map(chapter=>base+book+'/'+chapter+'.json')).slice(0,50);
+      for(const url of urls)await (await fetch(url)).json();
+      const entries=await (await caches.open('god4-word-study-data-v1')).keys();
+      const paths=entries.map(item=>new URL(item.url).pathname);
+      return {count:paths.length,index:paths.includes(base+'index.json'),evicted:!paths.includes(urls[0])};
+    });
+    expect(cache).toEqual({count:48,index:true,evicted:true});
+    const study=()=>word(page,'kindness').press('Enter');
+    const definition=page.locator('#wordStudyDefinition');
+    await page.evaluate(()=>navigateReaderToPassage('galatians',5,22));
+    await study();
+    await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('WEB phrase verified against ULT and Berean');
+    await expect(definition).toContainText('fruit of the Spirit');
+    await context.setOffline(true);
+    await page.reload();
+    await page.evaluate(async()=>{await initializeBibleExperience();await navigateReaderToPassage('galatians',5,22);});
+    await study();
+    await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveCount(1);
+    await expect(definition).toContainText('fruit of the Spirit');
   });
 });
 
