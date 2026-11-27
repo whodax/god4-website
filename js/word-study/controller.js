@@ -297,6 +297,11 @@ var WordStudyController = (function createWordStudyController(){
           }
         }
         if(!current()) return;
+        if(study.alignmentTextVerified && verified?.status !== 'available' && alignmentApi.lookupEdition){
+          var compatible = alignmentApi.lookupEdition(study,result.records);
+          if(compatible) verified = await compatible;
+        }
+        if(!current()) return;
         renderOriginalLanguage(result, verified);
         var definition = alignmentApi.contextualDefinition?.(study,result.records,activeAlignment);
         if(definition){

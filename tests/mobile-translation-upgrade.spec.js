@@ -24,7 +24,7 @@ const preview67='36a83c644db7a510f634d692866968a431837a78';
 const preview68='7014c91849364dae244b89b44dd0a515fa1c98d1';
 const preview69='885831216ca3e85bf5426ec5940e1a9105a3afd4';
 const preview70='558845a0d9f12a61d8911b4db47cb363a4ad281e';
-const currentVersion=82;
+const currentVersion=83;
 const production55='90a13c28afc64526bf27b6c2bb7021dd516d6493';
 const discoveryAssets=["/js/home-discovery.js","/js/home-discovery-catalog.json"];
 const discoveryPins={"/":"0dbb79fc2df882e469eb86e752cf7953e85078aa60e615362603597b5596fd15","/js/app.js":"498e0a2f3ce4b5c735d4ba3ea43bfb6a70709181849c7627067c339d4b31eab2","/js/home-discovery.js":"d123dff0bc63e160beb2f512dcb05341931abb0241233eebd77d864cb460eee3","/js/home-discovery-catalog.json":"5bb67690dbf8e1ff44af50617d0d9f30ae30aa5e78f95bdd024952c632b4555a","/css/components.css":"401ba5d477482de2fd3647da880bd9a266fc3f7dc4d134f93f9eae95e3ccca95"};
@@ -77,7 +77,8 @@ for(const previous of [
   {version:78,commit:'eea5c23eede2afb9495f18334b78c66815506db9',assets:52},
   {version:79,commit:'ea6902a18f4f4f65e3a434b84f516484a51dfef1',assets:52},
   {version:80,commit:'82042e8cc29875d3d69aeea241c1a131368ec15b',assets:52},
-  {version:81,commit:'13d94205e959d332645ba7f4cb2a4b7d3da9ea2a',assets:52}
+  {version:81,commit:'13d94205e959d332645ba7f4cb2a4b7d3da9ea2a',assets:52},
+  {version:82,commit:'cce89e56de5fe07b40207928128e3d735f41ef1d',assets:52}
 ])test.describe(`installed cache ${previous.version}`,()=>{
 const baseline=previous.commit;
 const oldCache='god4-shell-compact-reader-'+previous.version,newCache='god4-shell-compact-reader-'+currentVersion;
@@ -108,10 +109,11 @@ const saved=[{ref:'John 1:1',text:'Installed-user saved verse',location:{transla
 test.use({viewport:{width:320,height:844},hasTouch:true,serviceWorkers:'allow'});
 if(previous.version>=52)test.use({userAgent:'Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36'});
 
-test('shell 82 preserves activation, Bible caches and the exact required assets',()=>{
+test('shell 83 preserves activation, Bible caches and the exact required assets',()=>{
   const worker=fs.readFileSync(path.join(root,'sw.js'),'utf8');
-  let normalized=worker.replace(/\r\n/g,'\n').replace("'compact-reader-82'","'compact-reader-"+previous.version+"'");
-  if(previous.version>=78) normalized=normalized
+  let normalized=worker.replace(/\r\n/g,'\n').replace("'compact-reader-83'","'compact-reader-"+previous.version+"'");
+  normalized=normalized.replaceAll('web|kjv-tr|editions','web|kjv-tr').replaceAll('web|kjv|kjv-tr|editions','web|kjv|kjv-tr');
+  if(previous.version>=78&&previous.version<82) normalized=normalized
     .replace("!/\\/alignment\\/(?:web|kjv-tr)\\/index\\.json$/.test(key.url)","!key.url.endsWith('/alignment/web/index.json')")
     .replace('(?:web|kjv-tr)\\/index|(?:web|kjv|kjv-tr)\\/','web\\/index|(?:web|kjv)\\/');
   if(previous.version<78)normalized=normalized.replace(/\/\/ Word Study runtime cache begins[\s\S]*?\/\/ Word Study runtime cache ends\n\n/,'')
@@ -133,10 +135,10 @@ test('shell 82 preserves activation, Bible caches and the exact required assets'
     '/js/word-study/provider.js':'4b3fdfa5fdd86ef515e5b48b72d186931841ab911beba8d61d1c98859ff7c506',
     '/':'2b4f020a910a66406fa04cdfd3d8abe6200068b599107d3e33de7d0d61e396e6',
     '/css/companion.css':'afe7794ac43078b655794831a0571918a0b96731ab3da5930c8204d9fdc4c986',
-    [alignmentPath]:'1026e13686450e6ca9f5232e2311e9a5f1a923fc95cb0e2ba329a00d27413563',
+    [alignmentPath]:'198b9b77ea8d424f8d90ba2c8928c5b8fdc28da0ecda0692bbc6a57b620598d5',
     [dictionaryPath]:'d2370962a5c5d5f8785fc0d9d4c9f717a639b5a4aa4646204ecc66f0470995ef',
     [lexiconProviderPath]:'26442c26186010cad9ea56aaecd624c09b016c9d6f41556d3e630ea4f02c150e',
-    '/js/word-study/controller.js':'c81261939c337e874bb27299af445751fe1d4d2ab2219d937d3d2f1ec1773c5d'
+    '/js/word-study/controller.js':'7357b8e36188ceecd884b848fbb9689b4497191ca2f5959dc5e111974fff19ff'
   };
   for(const asset of requiredAssets){
     const body=fs.readFileSync(path.join(root,fileFor(asset)));
@@ -577,7 +579,7 @@ for(const width of previous.version>=44?[1280,320,390]:[320,390])test(`installed
   }finally{await context.setOffline(false);await server.stop(context);}
 });
 
-test(`failed shell-82 installation leaves installed shell ${previous.version} usable offline and retries without data loss`,async({page,context})=>{
+test(`failed shell-83 installation leaves installed shell ${previous.version} usable offline and retries without data loss`,async({page,context})=>{
   test.setTimeout(60000);
   const server=await fixture();
   try{
@@ -617,7 +619,7 @@ test(`failed shell-82 installation leaves installed shell ${previous.version} us
   }finally{await context.setOffline(false);await server.stop(context);}
 });
 
-test(`interrupted shell-82 precache keeps shell ${previous.version} recoverable and retries offline safely`,async({page,context})=>{
+test(`interrupted shell-83 precache keeps shell ${previous.version} recoverable and retries offline safely`,async({page,context})=>{
   test.setTimeout(60000);const server=await fixture();
   try{
     await installOld(page,server.origin);const before=await retainedState(page),requests=server.state.bibleRequests.slice();
@@ -706,7 +708,7 @@ if(previous.version>=52)test('closing all old tabs permits offline relaunch with
 });
 
 
-if(previous.version>=78)test('previously cached Word Study survives the Shell 82 update and offline reload',async({page,context})=>{
+if(previous.version>=78)test('previously cached Word Study survives the Shell 83 update and offline reload',async({page,context})=>{
   test.setTimeout(60000);
   const server=await fixture();
   const cacheName='god4-word-study-data-v1';

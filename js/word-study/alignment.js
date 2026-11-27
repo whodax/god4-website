@@ -270,7 +270,9 @@
     });
   }
   var chapterRequests = new Map();
-  var webIndexRequest, trIndexRequest;
+  var webIndexRequest, trIndexRequest, editionIndexRequest;
+  var editionBase = '/data/word-study/alignment/editions/';
+  var editionNames = {kjv:'KJV',web:'WEB',asv:'ASV',ylt:'YLT',dby:'DBY',webster:'WBS',rv:'RV',gnv:'GNV',dra:'Douay-Rheims'};
   var trBase = '/data/word-study/alignment/kjv-tr/';
   var trRevision = '33af6e9361f8db0afd353714d05c75f44e5555b9';
   var trSource = Object.assign({},crosswireSource,{
@@ -317,25 +319,59 @@
     }) : loadChapter('/data/word-study/alignment/kjv/' + location);
     return chapterData.then(function(chapter){
       var row = chapter?.[context.verse];
-      if(!Array.isArray(row) || row[0] !== context.verseText || !Array.isArray(row[1]) ||
-        row[1].length !== records.length || !Array.isArray(row[2])) return null;
-      var source = !web ? crosswireSource : row[3] === 'clear-hebrew-dual' ? webClearHebrew :
-        row[3] === 'clear-greek-dual' ? webClearGreek : row[3] === 'dual-phrase' ? webConsensus :
-        row[3]?.startsWith('berean-') ? webBerean : row[3] ? webExpanded : webSource;
-      if(!records.every(function(record,index){
-        var token = row[1][index];
-        return record.bookId === context.bookId && record.chapter === context.chapter && record.verse === context.verse &&
-          record.tokenIndex === index && Array.isArray(token) &&
-          record.language === (web ? token[3] : 'greek') &&
-          record.surface === token[0] && record.strongsNumber === token[1] && record.morphology === token[2];
-      })) return null;
-      var entry = {status:'verified',source:source,translationId:context.translationId,bookId:context.bookId,
-        chapter:context.chapter,verse:context.verse,englishText:row[0],originalTokens:records,
-        groups:row[2].map(function(group){
-          return {english:group[0].map(function(span){return {start:span[0],end:span[1]};}),original:group[1]};
-        })};
-      return valid(entry,context,records) ? {status:'available',groups:entry.groups,source:source} : null;
+      var source = !web ? crosswireSource : row?.[3] === 'clear-hebrew-dual' ? webClearHebrew :
+        row?.[3] === 'clear-greek-dual' ? webClearGreek : row?.[3] === 'dual-phrase' ? webConsensus :
+        row?.[3]?.startsWith('berean-') ? webBerean : row?.[3] ? webExpanded : webSource;
+      return matchChapterRow(context,records,row,source);
     }).catch(function(){ return null; });
+  }
+  function matchChapterRow(context,records,row,source){
+    if(!Array.isArray(row) || row[0] !== context.verseText || !Array.isArray(row[1]) ||
+      row[1].length !== records.length || !Array.isArray(row[2])) return null;
+    if(!records.every(function(record,index){
+      var token = row[1][index];
+      return record.bookId === context.bookId && record.chapter === context.chapter && record.verse === context.verse &&
+        record.tokenIndex === index && Array.isArray(token) &&
+        record.language === (token[3] || 'greek') && record.surface === token[0] &&
+        record.strongsNumber === token[1] && record.morphology === token[2];
+    })) return null;
+    var groups = row[2].map(function(group){
+      return {english:group[0].map(function(span){return {start:span[0],end:span[1]};}),original:group[1]};
+    });
+    var entry = {status:'verified',source:source,translationId:context.translationId,bookId:context.bookId,
+      chapter:context.chapter,verse:context.verse,englishText:row[0],originalTokens:records,groups:groups};
+    return valid(entry,context,records) ? {status:'available',groups:groups,source:source} : null;
+  }
+  function lookupEdition(context,records){
+    var edition = context.translationId;
+    if(!Object.hasOwn(editionNames,edition) || !records.length || !/^[a-z0-9-]+$/.test(context.bookId) ||
+      !Number.isInteger(context.chapter) || context.chapter < 1 || !Number.isInteger(context.verse) || context.verse < 1 ||
+      /[[\]{}<>]/.test(context.verseText)) return null;
+    if(!editionIndexRequest){
+      editionIndexRequest = requestJson(editionBase+'index.json').catch(function(){editionIndexRequest=null;return null;});
+    }
+    var timeout;
+    var data = editionIndexRequest.then(async function(index){
+      var list = index?.[edition]?.[context.bookId]?.[context.chapter];
+      if(!Array.isArray(list) || !list.includes(context.verse)) return null;
+      var location = context.bookId+'/'+context.chapter+'.json';
+      var chapter = await loadChapter(editionBase+location);
+      var plan = chapter?.[edition]?.[context.verse];
+      if(!Array.isArray(plan) || !['web','kjv'].includes(plan[0]) || plan[0]===edition ||
+        !['exact','typography','independent-phrase'].includes(plan[1])) return null;
+      var original = await loadChapter('/data/word-study/alignment/'+plan[0]+'/'+location);
+      var row = original?.[context.verse];
+      if(!Array.isArray(row) || /[[\]{}<>]/.test(row[0])) return null;
+      var mode = plan[1], basis = plan[0]==='web'?'verified WEB':'CrossWire KJV';
+      var label = mode==='independent-phrase'?'confirmed local phrase from CrossWire KJV and verified WEB':
+        (mode==='exact'?'exact wording and witness from ':'typography checked against ')+basis;
+      var witness = edition==='dra' ? ' ('+({greek:'Greek',hebrew:'Hebrew',aramaic:'Aramaic'}[records[0].language] || 'original-language')+' witness)' : '';
+      var source = {title:editionNames[edition]+' · '+label+witness,reference:editionBase+'NOTICE.md',
+        revision:'Shell 83 edition plan',editionPlan:true,reviewedBy:'GOD4.us automated text, offset and original-token validation'};
+      return matchChapterRow(context,records,mode==='exact'?row:[plan[2],row[1],plan[3]],source);
+    }).catch(function(){return null;});
+    return Promise.race([data,new Promise(function(resolve){timeout=setTimeout(function(){resolve(null);},3000);})])
+      .finally(function(){clearTimeout(timeout);});
   }
   function matchKjvWitness(context, chapter){
     if(!chapter || chapter.revision !== trRevision || chapter.bookId !== context.bookId ||
@@ -391,6 +427,17 @@
     var partOfSpeech='noun';
     if(term === 'Christ'){
       sense = ['G5547','The Anointed One, the Messiah.','Greek Christos'];
+    }else if(alignment.source.editionPlan){
+      if(term === 'Word' && study.bookId === 'john' && study.chapter === 1 && study.verse === 1){
+        sense=['G3056','The title John uses here for the one who was with God and was God.','Greek logos'];
+      }else if(term === 'begat' && study.bookId === 'matthew' && study.chapter === 1){
+        sense=['G1080','Became the father of the person named next in this genealogy.','Greek gennaō'];
+        noun=/^V-AAI-3S$/;
+        partOfSpeech='verb';
+      }else if(term === 'Seraiah' && study.bookId === 'nehemiah' && study.chapter === 10 && study.verse === 2){
+        sense=['H8304','One of the people listed as sealing the covenant in this chapter.','Hebrew Seraiah'];
+        noun=/^H(?:[^/]+\/)*Np$/;
+      }
     }else if(alignment.source === trSource){
       if(term === 'inhabitants' && study.bookId === 'revelation' && study.chapter === 17 && study.verse === 2){
         sense=['G2730','People who live on the earth. In this vision they share in Babylon’s corruption.','Greek katoikeō'];
@@ -446,6 +493,6 @@
     })) return null;
     return {partOfSpeech:partOfSpeech,definition:sense[1],source:'Scripture context · ' + sense[2] + ' (' + sense[0] + ')'};
   }
-  return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookupChapter:lookupChapter, lookupKjvWitness:lookupKjvWitness, hasReviewedVerse:hasReviewedVerse,
+  return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookupChapter:lookupChapter, lookupKjvWitness:lookupKjvWitness, lookupEdition:lookupEdition, hasReviewedVerse:hasReviewedVerse,
     contextualDefinition:contextualDefinition, lookup:createProvider(reviewedCatalog).lookup};
 }));

@@ -1,0 +1,109 @@
+{
+  "examined": 1548,
+  "unchangedReasons": {
+    "Greek position, surface or Strong identity differs": 1090,
+    "English text or supplied-word boundary differs": 187,
+    "missing or ambiguous position metadata": 6,
+    "Greek morphology differs": 192,
+    "TR reference missing": 59,
+    "unsupported markup": 11,
+    "Greek source sequence incomplete": 3
+  },
+  "englishMismatchAgainstInstalledWitness": 189,
+  "wrapperTrial": {
+    "examined": 11,
+    "kjvTextExact": 7,
+    "fullyValidated": 6,
+    "cases": [
+      {
+        "ref": "Matt.22.44",
+        "transparent": true,
+        "englishExact": false,
+        "installed": "English text or supplied-word boundary differs",
+        "tr": "English text or supplied-word boundary differs"
+      },
+      {
+        "ref": "Matt.27.37",
+        "transparent": true,
+        "englishExact": true,
+        "installed": "fully validated",
+        "tr": "fully validated"
+      },
+      {
+        "ref": "Mark.12.36",
+        "transparent": true,
+        "englishExact": false,
+        "installed": "English text or supplied-word boundary differs",
+        "tr": "English text or supplied-word boundary differs"
+      },
+      {
+        "ref": "Mark.15.26",
+        "transparent": true,
+        "englishExact": true,
+        "installed": "fully validated",
+        "tr": "fully validated"
+      },
+      {
+        "ref": "Luke.20.42",
+        "transparent": true,
+        "englishExact": false,
+        "installed": "English text or supplied-word boundary differs",
+        "tr": "English text or supplied-word boundary differs"
+      },
+      {
+        "ref": "Luke.23.38",
+        "transparent": true,
+        "englishExact": true,
+        "installed": "fully validated",
+        "tr": "fully validated"
+      },
+      {
+        "ref": "John.19.19",
+        "transparent": true,
+        "englishExact": true,
+        "installed": "fully validated",
+        "tr": "fully validated"
+      },
+      {
+        "ref": "Acts.2.34",
+        "transparent": true,
+        "englishExact": false,
+        "installed": "English text or supplied-word boundary differs",
+        "tr": "English text or supplied-word boundary differs"
+      },
+      {
+        "ref": "Acts.17.23",
+        "transparent": true,
+        "englishExact": true,
+        "installed": "fully validated",
+        "tr": "Greek position, surface or Strong identity differs"
+      },
+      {
+        "ref": "Rev.17.5",
+        "transparent": true,
+        "englishExact": true,
+        "installed": "fully validated",
+        "tr": "fully validated"
+      },
+      {
+        "ref": "Rev.19.16",
+        "transparent": true,
+        "englishExact": true,
+        "installed": "Greek position, surface or Strong identity differs",
+        "tr": "Greek position, surface or Strong identity differs"
+      }
+    ]
+  },
+  "ambiguousCases": [
+    "Matt.7.20",
+    "Matt.17.26",
+    "Mark.14.17",
+    "Acts.20.37",
+    "Acts.27.37",
+    "2Cor.8.10"
+  ],
+  "positionTrial": {
+    "recordsWithGreekSurfaceSequenceDifferent": 1054,
+    "recordsWithMatchingSurfaceSequenceAfterProjection": 36
+  }
+}

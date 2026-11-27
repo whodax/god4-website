@@ -2,12 +2,15 @@
 
 const fs=require('node:fs');
 const path=require('node:path');
+const {createHash}=require('node:crypto');
 const {assessBook}=require('./adjudicate-web-book');
 const {gate}=require('./audit-web-book-coverage');
 const {verifyBaseline}=require('./audit-shell81-crosswalk');
 const {loadBibleLibrary}=require('./audit-word-study-coverage');
 const {provider}=require('./import-web-alignment');
 const alignment=require('../js/word-study/alignment');
+
+const editionPublication=require('../docs/shell-83-edition-publication.json');
 
 const identity=['bookId','chapter','verse','surface','language','strongsNumber','morphology','source'];
 
@@ -20,6 +23,10 @@ async function stage(bytes,submissions,roster) {
   const assessed=assessBook(bytes,submissions,roster);
   const packet=JSON.parse(bytes), rows=new Map(packet.rows.map(row=>[row.id,row]));
   const web=loadBibleLibrary('web.js','webLibrary'), lookup=provider(), existing=verifyBaseline();
+  const editionBytes=fs.readFileSync(path.join(__dirname,'../data/word-study/alignment/editions/index.json'));
+  if(createHash('sha256').update(editionBytes).digest('hex')!==editionPublication.files['index.json'].sha256)
+    throw new Error('Edition alignment index does not match its publication report');
+  const editions=JSON.parse(editionBytes).web;
   const staged={version:1,bookId:packet.bookId,reviewPacketSha256:assessed.reviewPacketSha256,
     counts:{...assessed.counts,staged:0,invalidLiveWitness:0,existingVerifiedVerse:0,emptyReviewedVerse:0},chapters:{}};
   for(const decision of assessed.decisions){
@@ -36,7 +43,7 @@ async function stage(bytes,submissions,roster) {
       continue;
     }
     if(Object.hasOwn(existing.get(bookId+'/'+chapter+'.json')||{},verse)||
-      alignment.lookup(context,records).status==='available'){
+      editions?.[bookId]?.[chapter]?.includes(verse)||alignment.lookup(context,records).status==='available'){
       staged.counts.existingVerifiedVerse++;
       continue;
     }

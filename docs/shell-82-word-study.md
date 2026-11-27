@@ -75,12 +75,16 @@ node tools/stage-reviewed-web-book.js <frozen-review-packet.json> <submissions.j
 | Asset and Ethiopian education checks | Passed, including metadata for all nine Reader translations |
 | Deployed preview at 390px | Zero alignment requests before selection. The alternate phrase, context definition, edition isolation, offline reload and focus return all passed. |
 
-All 476 alternate rows also passed the live alignment provider byte-pinned test, with exact KJV text, supplied-word protection and no collisions with accepted primary rows. The original KJV, WEB and original-language files match the accepted engineering baseline. The browser tests verified that a corrupt chapter falls back without alternate highlighting, and that both catalog indexes survive eviction at the existing 48-entry limit. Physical acceptance for the new witness is pending.
+All 476 alternate rows also passed the live alignment provider byte-pinned test, with exact KJV text, supplied-word protection and no collisions with accepted primary rows. The original KJV, WEB and original-language files match the accepted engineering baseline. The browser tests verified that a corrupt chapter falls back without alternate highlighting, and that both catalog indexes survive eviction at the existing 48-entry limit.
 
 ## Shell 82 physical acceptance
 
-1. In KJV Revelation 17:2, open **inhabitants**. Check the Textus Receptus label, gold-highlighted Greek, and the contextual definition. Activate the highlighted Greek to confirm the English phrase and token details.
-2. Switch to WEB and open the corresponding passage. Check that it does not inherit the KJV alternate label. Return to KJV and check that the alternate label returns.
-3. With KJV downloaded and Revelation 17:2 studied once online, go offline and reload. Open **inhabitants** again. Use TalkBack to close Word Study and check focus returns to that word.
+All **three physical Android and TalkBack checks passed** on November 27, 2026, on preview `333740aa` at commit `cce89e56de5fe07b40207928128e3d735f41ef1d`.
+
+| Check | Result |
+| --- | --- |
+| Textus Receptus alignment | Pass |
+| Translation isolation | Pass |
+| Offline and TalkBack | Pass |
 
 Bible-wide verified alignment remains a release blocker. This preview stays on draft PR #131.
