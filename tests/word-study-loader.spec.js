@@ -202,7 +202,7 @@ test.describe('installed offline runtime',()=>{
   async function installed(page){await open(page);await page.evaluate(()=>navigator.serviceWorker.ready.then(()=>true));if(!await page.evaluate(()=>!!navigator.serviceWorker.controller))await page.reload();await page.evaluate(()=>initializeBibleExperience());}
   test('cache 26 preserves six runtimes; unused runtime first activates offline with local fallback and no durable JSON',async({page,context})=>{
     await installed(page);
-  const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-81')).keys()).map(r=>new URL(r.url).pathname));
+  const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-82')).keys()).map(r=>new URL(r.url).pathname));
     for(const dep of dependencies)expect(assets).toContain(dep);expect(assets).toContain('/js/word-study/loader.js');expect(assets).toContain('/js/word-study/alignment.js');
     expect(await page.evaluate(()=>typeof WordStudyController)).toBe('undefined');
     await context.setOffline(true);await word(page).press('Enter');
@@ -279,6 +279,37 @@ test.describe('installed offline runtime',()=>{
     await study();
     await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveCount(1);
     await expect(definition).toContainText('fruit of the Spirit');
+  });
+
+  test('KJV Textus Receptus pairs the visible witness and phrase through offline reload',async({page,context})=>{
+    const alignmentRequests=[];
+    page.on('request',request=>{if(request.url().includes('/data/word-study/alignment/'))alignmentRequests.push(request.url());});
+    await installed(page);
+    const navigate=()=>page.evaluate(async()=>{
+      await initializeBibleExperience();
+      await changeTranslation('kjv');
+      await navigateReaderToPassage('revelation',17,2);
+    });
+    await page.evaluate(async()=>{if(!(await BibleTranslationLoader.retain('kjv')).ok)throw new Error('KJV retention failed');});
+    await navigate();
+    expect(alignmentRequests).toEqual([]);
+    const selected=page.locator('#readerContent [data-verse-number="2"] [data-word-study-term="inhabitants"]');
+    const status=page.locator('#wordStudyAlignmentStatus');
+    const original=page.locator('#wordStudyOriginalTokens [data-aligned="true"]');
+    const check=async()=>{
+      await selected.press('Enter');
+      await expect(status).toContainText("Robinson's Textus Receptus");
+      await expect(page.locator('#wordStudyOriginalIntro')).toContainText('Greek words from the Textus Receptus.');
+      await expect(original).toHaveText('κατοικουντες');
+      await expect(page.locator('#wordStudyDefinition')).toContainText('People who live on the earth');
+      await original.press('Enter');
+      await expect(page.locator('#wordStudyOriginalDetails')).toContainText('G2730');
+    };
+    await check();
+    await context.setOffline(true);
+    await page.reload();await navigate();
+    await check();await page.keyboard.press('Escape');
+    await expect(selected).toBeFocused();
   });
   test('Clear.Bible Word Study preserves both English spans and its definition offline',async({page,context})=>{
     await installed(page);

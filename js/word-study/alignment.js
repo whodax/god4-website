@@ -270,7 +270,14 @@
     });
   }
   var chapterRequests = new Map();
-  var webIndexRequest;
+  var webIndexRequest, trIndexRequest;
+  var trBase = '/data/word-study/alignment/kjv-tr/';
+  var trRevision = '33af6e9361f8db0afd353714d05c75f44e5555b9';
+  var trSource = Object.assign({},crosswireSource,{
+    title:"KJV CrossWire and Robinson's Textus Receptus",
+    reference:'/data/word-study/alignment/kjv-tr/NOTICE.md',
+    revision:trRevision
+  });
   var webBase = '/data/word-study/alignment/web/';
   function requestJson(url){
     var abort = new AbortController();
@@ -330,6 +337,51 @@
       return valid(entry,context,records) ? {status:'available',groups:entry.groups,source:source} : null;
     }).catch(function(){ return null; });
   }
+  function matchKjvWitness(context, chapter){
+    if(!chapter || chapter.revision !== trRevision || chapter.bookId !== context.bookId ||
+      chapter.chapter !== context.chapter || !chapter.lexicon ||
+      !Object.hasOwn(chapter.verses || {}, context.verse)) return null;
+    var row = chapter.verses[context.verse];
+    if(!Array.isArray(row) || row[0] !== context.verseText ||
+      !Array.isArray(row[1]) || !Array.isArray(row[2])) return null;
+    if(!row[1].every(function(token){
+      return Array.isArray(token) && token.length === 3 && typeof token[0] === 'string' && /^[\u0370-\u03ff]+$/.test(token[0]) &&
+        typeof token[1] === 'string' && /^G[1-9]\d{0,4}$/.test(token[1]) &&
+        typeof token[2] === 'string' && /^[A-Z][A-Z0-9-]+$/.test(token[2]);
+    })) return null;
+    var records = row[1].map(function(token, index){
+      var fields = chapter.lexicon[token[1]];
+      var lexical = function(i){ return typeof fields?.[i] === 'string' ? fields[i] : null; };
+      return {status:'authoritative',language:'greek',source:"Textus Receptus, Maurice A. Robinson's parsed edition (" + trRevision + ')',
+        bookId:context.bookId,chapter:context.chapter,verse:context.verse,tokenIndex:index,
+        surface:token[0],strongsNumber:token[1],morphology:token[2],lemma:lexical(0),
+        transliteration:lexical(1),pronunciation:lexical(2),definition:lexical(3),partOfSpeech:null};
+    });
+    var groups = row[2].map(function(group){
+      return {english:group[0].map(function(span){return {start:span[0],end:span[1]};}),original:group[1]};
+    });
+    var entry = {status:'verified',source:trSource,translationId:'kjv',bookId:context.bookId,
+      chapter:context.chapter,verse:context.verse,englishText:row[0],originalTokens:records,groups:groups};
+    return valid(entry,context,records) ?
+      {status:'available',records:records,alignment:{status:'available',groups:groups,source:trSource}} : null;
+  }
+  function lookupKjvWitness(context){
+    if(context.translationId !== 'kjv' || typeof BibleCanon === 'undefined' ||
+      !/^[a-z0-9-]+$/.test(context.bookId) || BibleCanon.book(context.bookId)?.testament !== 'new' ||
+      !Number.isInteger(context.chapter) || context.chapter < 1 ||
+      !Number.isInteger(context.verse) || context.verse < 1) return null;
+    if(!trIndexRequest){
+      trIndexRequest = requestJson(trBase + 'index.json').catch(function(){
+        trIndexRequest = null;
+        return null;
+      });
+    }
+    return trIndexRequest.then(function(index){
+      var verses = index?.[context.bookId]?.[context.chapter];
+      return Array.isArray(verses) && verses.includes(context.verse) ?
+        loadChapter(trBase + context.bookId + '/' + context.chapter + '.json') : null;
+    }).then(function(chapter){return matchKjvWitness(context,chapter);}).catch(function(){return null;});
+  }
   function contextualDefinition(study, records, alignment){
     if(alignment?.status !== 'available') return null;
     var term = study.displayWord;
@@ -339,6 +391,18 @@
     var partOfSpeech='noun';
     if(term === 'Christ'){
       sense = ['G5547','The Anointed One, the Messiah.','Greek Christos'];
+    }else if(alignment.source === trSource){
+      if(term === 'inhabitants' && study.bookId === 'revelation' && study.chapter === 17 && study.verse === 2){
+        sense=['G2730','People who live on the earth. In this vision they share in Babylon’s corruption.','Greek katoikeō'];
+        noun=/^V-PAP-NPM$/;
+      }else if(term === 'Bethabara' && study.bookId === 'john' && study.chapter === 1 && study.verse === 28){
+        sense=['G962','The place beyond the Jordan where John was baptizing in this KJV verse.','Greek Bethabara'];
+        noun=/^N-DSF$/;
+      }else if(term === 'begat' && study.bookId === 'matthew' && study.chapter === 1 && study.verse === 6){
+        sense=['G1080','Became the father of the person named next in this genealogy.','Greek gennaō'];
+        noun=/^V-AAI-3S$/;
+        partOfSpeech='verb';
+      }
     }else if(alignment.source === webClearHebrew && study.translationId === 'web'){
       if(study.bookId === 'job' && study.chapter === 19 && study.verse === 12 && /encamp around my tent/.test(text)){
         noun=/^H(?:R\/)?N/;
@@ -382,6 +446,6 @@
     })) return null;
     return {partOfSpeech:partOfSpeech,definition:sense[1],source:'Scripture context · ' + sense[2] + ' (' + sense[0] + ')'};
   }
-  return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookupChapter:lookupChapter, hasReviewedVerse:hasReviewedVerse,
+  return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookupChapter:lookupChapter, lookupKjvWitness:lookupKjvWitness, hasReviewedVerse:hasReviewedVerse,
     contextualDefinition:contextualDefinition, lookup:createProvider(reviewedCatalog).lookup};
 }));

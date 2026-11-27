@@ -1,4 +1,4 @@
-const {toggleReaderFullscreen}=require('./reader-navigation-test-helper');
+const {selectCompareOption,toggleReaderFullscreen}=require('./reader-navigation-test-helper');
 const {test,expect}=require('@playwright/test');
 test.use({contextOptions:{reducedMotion:'reduce'},serviceWorkers:'block'});
 
@@ -508,4 +508,41 @@ test('overlapping phrases preserve whitespace without empty keyboard controls',a
   await page.keyboard.press('Space');await expect(controls.nth(1)).toHaveAttribute('aria-pressed','true');
   await page.keyboard.press('Enter');await expect(controls.nth(1)).toBeFocused();
   await page.keyboard.press('Escape');await expect(word).toBeFocused();
+});
+
+
+test('unavailable or mismatched Textus Receptus data keeps the original verse without alternate highlighting',async({page})=>{
+  await page.route('**/alignment/kjv-tr/revelation/17.json',async route=>{
+    const response=await route.fetch(),body=await response.json();
+    body.verses[2][0]+=' Wrong edition.';
+    await route.fulfill({response,json:body});
+  });
+  await open(page,'kjv','revelation',17,2);
+  await page.locator('#readerContent [data-verse-number="2"] [data-word-study-term="inhabitants"]').press('Enter');
+  await expect(page.locator('#wordStudyOriginalTokens button').first()).toBeVisible();
+  await expect(page.locator('#wordStudyOriginalIntro')).not.toContainText('Textus Receptus');
+  await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('Exact word alignment is unavailable');
+  await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveCount(0);
+});
+
+test('a Textus Receptus chapter is scoped to KJV and Compare still renders both editions',async({page})=>{
+  const requests=[];
+  page.on('request',request=>{if(request.url().includes('/alignment/kjv-tr/')) requests.push(request.url());});
+  await open(page,'web','john',1,28);
+  await page.locator('#readerContent [data-verse-number="28"] [data-word-study-term="john"]').press('Enter');
+  await expect(page.locator('#wordStudyOriginalTokens button').first()).toBeVisible();
+  await expect(page.locator('#wordStudyOriginalIntro')).not.toContainText('Textus Receptus');
+  expect(requests).toEqual([]);
+  await page.keyboard.press('Escape');
+  await page.evaluate(async()=>{await changeTranslation('kjv');await navigateReaderToPassage('john',1,28);});
+  await page.getByRole('button',{name:'Compare',exact:true}).click();
+  await expect(page.locator('#compareGrid .compare-col')).toHaveCount(2);
+  await expect(page.locator('#compareGrid .compare-col').first()).toContainText('Bethabara');
+  await selectCompareOption(page.locator('[data-compare-index="1"]'),'web');
+  await expect(page.locator('#compareGrid .compare-col').nth(1)).not.toContainText('Bethabara');
+  expect(requests).toEqual([]);
+  await page.getByRole('button',{name:'Reader',exact:true}).click();
+  await page.locator('#readerContent [data-verse-number="28"] [data-word-study-term="bethabara"]').press('Enter');
+  await expect(page.locator('#wordStudyAlignmentStatus')).toContainText("Robinson's Textus Receptus");
+  await expect(page.locator('#wordStudyDefinition')).toContainText('beyond the Jordan');
 });

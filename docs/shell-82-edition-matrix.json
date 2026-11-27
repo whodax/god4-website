@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "scope": "Research only. Identical English and original tokens are screened separately from independence.",
+  "published": 0,
+  "editions": {
+    "web": {
+      "byzantine-or-explicit-override": {
+        "screened": 5933,
+        "exactEnglish": 23,
+        "referenceRemappedOrUnavailable": 0,
+        "exactNativeAtReaderReference": 23,
+        "eligibleForIndependentReview": 23
+      },
+      "robinson-tr": {
+        "screened": 476,
+        "exactEnglish": 0,
+        "referenceRemappedOrUnavailable": 0,
+        "exactNativeAtReaderReference": 0,
+        "eligibleForIndependentReview": 0
+      }
+    },
+    "asv": {
+      "byzantine-or-explicit-override": {
+        "screened": 5933,
+        "exactEnglish": 306,
+        "referenceRemappedOrUnavailable": 0,
+        "exactNativeAtReaderReference": 306,
+        "eligibleForIndependentReview": 306
+      },
+      "robinson-tr": {
+        "screened": 476,
+        "exactEnglish": 12,
+        "referenceRemappedOrUnavailable": 0,
+        "exactNativeAtReaderReference": 0,
+        "eligibleForIndependentReview": 0
+      }
+    },
+    "ylt": {
+      "byzantine-or-explicit-override": {
+        "screened": 5933,
+        "exactEnglish": 1,
+        "referenceRemappedOrUnavailable": 0,
+        "exactNativeAtReaderReference": 1,
+        "eligibleForIndependentReview": 1
+      },
+      "robinson-tr": {
+        "screened": 476,
+        "exactEnglish": 0,
+        "referenceRemappedOrUnavailable": 0,
+        "exactNativeAtReaderReference": 0,
+        "eligibleForIndependentReview": 0
+      }
+    },
+    "dby": {
+      "byzantine-or-explicit-override": {
+        "screened": 5933,
+        "exactEnglish": 41,
+        "referenceRemappedOrUnavailable": 0,
+        "exactNativeAtReaderReference": 41,
+        "eligibleForIndependentReview": 41
+      },
+      "robinson-tr": {
+        "screened": 476,
+        "exactEnglish": 0,
+        "referenceRemappedOrUnavailable": 0,
+        "exactNativeAtReaderReference": 0,
+        "eligibleForIndependentReview": 0
+      }
+    },
+    "webster": {
+      "byzantine-or-explicit-override": {
+        "screened": 5933,
+        "exactEnglish": 1364,
+        "referenceRemappedOrUnavailable": 0,
+        "exactNativeAtReaderReference": 1364,
+        "eligibleForIndependentReview": 1364
+      },
+      "robinson-tr": {
+        "screened": 476,
+        "exactEnglish": 102,
+        "referenceRemappedOrUnavailable": 0,
+        "exactNativeAtReaderReference": 0,
+        "eligibleForIndependentReview": 0
+      }
+    },
+    "rv": {
+      "byzantine-or-explicit-override": {
+        "screened": 5933,
+        "exactEnglish": 372,
+        "referenceRemappedOrUnavailable": 0,
+        "exactNativeAtReaderReference": 372,
+        "eligibleForIndependentReview": 372
+      },
+      "robinson-tr": {
+        "screened": 476,
+        "exactEnglish": 14,
+        "referenceRemappedOrUnavailable": 0,
+        "exactNativeAtReaderReference": 0,
+        "eligibleForIndependentReview": 0
+      }
+    },
+    "gnv": {
+      "byzantine-or-explicit-override": {
+        "screened": 5933,
+        "exactEnglish": 18,
+        "referenceRemappedOrUnavailable": 0,
+        "exactNativeAtReaderReference": 18,
+        "eligibleForIndependentReview": 18
+      },
+      "robinson-tr": {
+        "screened": 476,
+        "exactEnglish": 0,
+        "referenceRemappedOrUnavailable": 0,
+        "exactNativeAtReaderReference": 0,
+        "eligibleForIndependentReview": 0
+      }
+    },
+    "dra": {
+      "byzantine-or-explicit-override": {
+        "screened": 5933,
+        "exactEnglish": 115,
+        "referenceRemappedOrUnavailable": 3,
+        "exactNativeAtReaderReference": 112,
+        "eligibleForIndependentReview": 112
+      },
+      "robinson-tr": {
+        "screened": 476,
+        "exactEnglish": 3,
+        "referenceRemappedOrUnavailable": 0,
+        "exactNativeAtReaderReference": 0,
+        "eligibleForIndependentReview": 0
+      }
+    }
+  }
+}

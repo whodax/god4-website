@@ -285,8 +285,16 @@ var WordStudyController = (function createWordStudyController(){
         var study = activeContext;
         var verified = study.alignmentTextVerified && alignmentApi.lookup(study, result.records);
         if(study.alignmentTextVerified && verified?.status !== 'available' && alignmentApi.lookupChapter){
-          var pending = alignmentApi.lookupChapter(study, result.records);
-          if(pending) verified = await pending;
+          var primary = alignmentApi.lookupChapter(study, result.records);
+          var alternate = !result.records[0]?.source?.startsWith('Textus Receptus,') && alignmentApi.lookupKjvWitness?.(study);
+          if(primary) verified = await primary;
+          if(verified?.status !== 'available' && alternate){
+            var witness = await alternate;
+            if(witness){
+              result = witness;
+              verified = witness.alignment;
+            }
+          }
         }
         if(!current()) return;
         renderOriginalLanguage(result, verified);

@@ -122,7 +122,7 @@ function readTr(text,bookId) {
   return {verses,issues};
 }
 
-async function run(input,trRepository) {
+async function run(input,trRepository,onFit) {
   const osis=loadXml(input), bible=loadBibleLibrary('kjv.js','kjvLibrary'),original=provider();
   const trSummary=trRepository?{revision:trRevision,files:{},findings:{},byBook:{},words:0,priorityWords:0}:null;
   const report={version:1,baseline,source:{revision,checksum},trExperiment:trSummary,nt:{verses:0,strictReasons:{},findings:{},originalFindings:{},
@@ -175,6 +175,7 @@ async function run(input,trRepository) {
           const state=fit?.reason||(!fit?'TR reference missing':'fully position-compatible with TR');
           for(const target of [trSummary.findings,trSummary.byBook[bookId]]) bump(target,state);
           if(fit?.alignments){
+            onFit?.({bookId,chapter,verse,text,witness,groups:fit.alignments});
             for(const word of words(text)){
               if(!fit.alignments.some(([spans])=>spans.some(([start,end])=>word.index>=start&&word.index+word[0].length<=end))) continue;
               trSummary.words++;
