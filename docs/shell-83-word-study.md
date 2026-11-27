@@ -77,7 +77,17 @@ The wider diagnostic run found font-related timeouts and one outdated Ethiopian 
 
 The original published KJV, KJV-TR and WEB files, original-language witnesses, installed Reader editions and Ethiopian Scripture all match the Shell 82 Git baseline. The 33-case held-out file also matches that baseline byte for byte.
 
-## New physical acceptance
+## Physical Android and TalkBack acceptance
+
+All **three checks passed** on November 27, 2026, on the [Shell 83 preview](https://ece28502.god4-us.pages.dev/#companion) at commit `f94429b00dc147f7a252c21009877589c36b8b48`.
+
+| Check | Result |
+| --- | --- |
+| Webster Matthew 1:4, **begat** | Pass |
+| Douay-Rheims John 1:1 and KJV Nehemiah 10:2 witness labels and highlights | Pass |
+| Webster alignment after an offline reload | Pass |
+
+### Device checklist
 
 1. In Webster Matthew 1:4, open Word Study on **begat**. Check the gold Greek highlight, the genealogy definition and the WBS source label. Close Word Study with TalkBack and confirm focus returns to **begat**.
 2. In Douay-Rheims John 1:1, open **Word**. Check the gold match and the explicit **Greek witness** label. Then open KJV Nehemiah 10:2 on **Seraiah** and check the gold Hebrew match and right-to-left display.
