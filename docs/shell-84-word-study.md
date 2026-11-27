@@ -81,7 +81,18 @@ Independent repeats produced identical hashes for all 671 corpus files, all 208 
 
 The timeout snapshot showed the three correctly labeled John 1:1 phrase controls and the preceding occurrence already aligned. The isolated and repeated runs exercised the full phrase selection sequence. The [Shell 83 report](shell-83-word-study.md#physical-android-and-talkback-acceptance) retains the earlier physical results.
 
-## New Android and TalkBack acceptance
+## Physical Android and TalkBack acceptance
+
+All **four checks passed** on November 27, 2026, on the [Shell 84 preview](https://9a8293c6.god4-us.pages.dev/#companion) at commit `519c71010221c86f7e9ef5f1296fe95c65fd5b7e`.
+
+| Check | Result |
+| --- | --- |
+| Scrivener Greek witness in KJV Matthew 3:8 | Pass |
+| Moab in WEB Numbers 21:20 | Pass |
+| Passage-specific definitions in KJV 1 Samuel 23:1 and Douay-Rheims Judges 14:7 | Pass |
+| Supplied-word protection in Webster Matthew 9:19 | Pass |
+
+### Device checklist
 
 1. In **KJV Matthew 3:8**, select **repentance**. Check the Scrivener 1894 label, both highlighted Greek tokens, and focus return. Switch to WEB and open the same verse to check edition isolation.
 2. In **WEB Numbers 21:20**, select **Moab**. Check the gold Hebrew highlight, right-to-left text, and the territory definition. With WEB and the chapter previously cached, reload offline and repeat the lookup.
