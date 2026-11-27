@@ -66,3 +66,21 @@ test.describe('network witness rejection',()=>{
     await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveCount(0);
   });
 });
+
+test('repeated Webster phrases highlight only the original tokens for the selected occurrence',async({page})=>{
+  await page.goto('/');
+  await navigate(page,{...wbs,book:'john',verse:1});
+  const verse=page.locator('#readerContent [data-verse-number="1"]');
+  const occurrences=verse.locator('[data-word-study-term="word"]');
+  const aligned=page.locator('#wordStudyOriginalTokens [data-aligned="true"]');
+  for(const [occurrence,indices] of [[0,['3','4']],[1,['6','7']]]){
+    const trigger=occurrences.nth(occurrence);
+    await trigger.press('Enter');
+    await expect(status(page)).toContainText('WBS');
+    await expect(aligned).toHaveCount(2);
+    expect(await aligned.evaluateAll(buttons=>buttons.map(button=>button.dataset.originalLanguageTokenIndex))).toEqual(indices);
+    await expect(verse.locator('[data-aligned="true"]')).toHaveText(['the','Word']);
+    await page.keyboard.press('Escape');
+    await expect(trigger).toBeFocused();
+  }
+});

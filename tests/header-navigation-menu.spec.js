@@ -147,7 +147,7 @@ test('real footer destinations and explicit unavailable labels replace navigatio
   await expect(page.getByRole('link',{name:'Ethiopian Bible information'})).toHaveAttribute('href','#ethiopian');
   await expect(page.getByRole('link',{name:'Explore the Ethiopian Bible guide'})).toHaveAttribute('href','/guides/ethiopian-bible.html');
   await expect(page.getByRole('link',{name:'Discover the Books of Enoch'})).toHaveAttribute('href','/books-of-enoch.html');
-  await expect(page.locator('.eth-cta')).toHaveText('Educational guides only — additional Scripture texts are not yet available in the Reader.');
+  await expect(page.getByRole('link',{name:'Read the Ethiopian collection',exact:true})).toHaveAttribute('href','/guides/ethiopian-readings.html');
   await expect(page.locator('.foot-col .nav-unavailable')).toHaveCount(3);
 });
 
