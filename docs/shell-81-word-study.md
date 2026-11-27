@@ -34,6 +34,7 @@ Ordered witness checks require every original token to match the Reader source s
 | Explicit native token or morpheme IDs reconciled in that candidate cohort | 117,422 |
 | Candidate groups containing a multi-morpheme original word | 6,593 |
 | Candidate verses where the publisher Berean original witness also validates | 4,939 |
+| Candidate verses with an ordered ULT milestone witness | 1,764 |
 
 Clear declarations are source-coordinate links. The production-quality English spans and original positions required to promote those remaps are absent. CrossWire exact text is a compatibility screen within KJV. The much smaller position-verified KJV subset remains as published in Shell 76. These checks retain all source distinctions and the original English text.
 
@@ -73,7 +74,7 @@ Both audit artifacts reproduced byte for byte.
 
 The input decisions and predictions both contain `datasetRevision`, `datasetVersion`, a `datasetChecksum` of the frozen dataset returned by the evaluator's `fingerprint()` helper, and `passages` keyed by holdout ID. A decision record contains `reviews` and optional `resolution`. A review requires `reviewerId`, `mode` set to `independent-human`, an ISO date, and `groups` with exact `spans` and token `positions`. It also requires a written `rationale` and versioned evidence entries, each with `source`, `revision`, and `locator`. Predictions contain the same group shape without reviewer details. The roster is a JSON array of approved IDs. Fixture test identities are synthetic and do not certify review.
 
-No external reviewers took part in Shell 81. Independent human accuracy, partial agreement and disagreement are unavailable. All newly proposed rows remain pending. The source-to-source comparison is not a substitute for those results.
+No external reviewers took part in Shell 81. The evaluator returned 33 pending evaluation cases and zero scored cases. Independent human accuracy, partial agreement and disagreement are unavailable. All newly proposed rows remain pending. The source-to-source comparison is not a substitute for those results.
 
 ## Priority forms
 
@@ -101,7 +102,22 @@ The audit reuses the Shell 79 shard checksum gate and the Shell 80 generation ma
 
 ## Performance and validation
 
-The published WEB index and chapter shards remain **555,937 bytes raw** and **265,935 bytes** gzip-compressed separately. Startup JavaScript remains **290,674 of 290,914 bytes**, with zero alignment requests before the first selection. Only the cache version changes in runtime code. Chapter-based lazy loading, the 48-entry persistent cache, and the existing 16-entry page limit remain in place. The engineering review files are outside runtime data.
+The published WEB index and chapter shards remain **555,937 bytes raw** and **265,935 bytes** gzip-compressed separately. Startup JavaScript remains **290,674 of 290,914 bytes**, with zero alignment requests before the first selection. Only the cache version changes in runtime code. Chapter-based lazy loading, the 48-entry persistent cache, and the existing 16-entry page limit remain in place. The engineering review files are outside runtime data. The crosswalk report is 42,174 bytes raw (3,734 gzip). The review packet is 821,294 bytes raw (44,239 gzip).
+
+| Check | Result |
+| --- | --- |
+| Unit tests | 498 passed, including nine crosswalk and review checks |
+| Asset and Ethiopian static validation | Passed, including metadata for all nine Reader translations |
+| Focused Chromium regression scenarios | All 191 passed across the main run and the isolated asset-fixture rerun |
+| Historical dark-theme upgrade at 320px | 10 of 10 passed on one worker |
+| Shell 80-to-81 upgrades | 1280px, 320px and 390px passed |
+| Persistent offline Word Study | Cached Shell 80 files survived activation and full offline reload. Chapter eviction, cached original tokens and phrase highlights passed. |
+| Ethiopian Read Aloud | Browser fixture passed in 18.7s, including chapter advance and stop |
+| Chromium first-use readiness | 16.2ms from shell cache and 22.6ms using the local network fixture |
+
+The first run recorded 190 passes and one static assertion failure. The upgrade fixture expected the alignment script to differ from Shell 80. Shell 81 intentionally leaves all 52 required assets byte-identical after line ending normalization. The corrected fixture asserts that equality and passed in isolation. All 191 outcomes were available before the Windows runner stalled during teardown. The isolated asset fixture and historical repetitions finished normally. Existing test deadlines and retry limits were kept.
+
+The 390px Cloudflare smoke verified zero alignment requests before selection, both English spans of “my tent” in Job 19:12, the contextual definition in Proverbs 6:21, and a full offline reload. Shell 81 physical Android and TalkBack acceptance is pending.
 
 ## Remaining release blockers and next milestone
 

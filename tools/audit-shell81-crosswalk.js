@@ -79,7 +79,7 @@ function targetCoordinates(dataset) {
 
 async function acceptedNumbering(web,kjv,crosswire) {
   const original=provider();
-  const links=[], stats={addressed:0,readerPresent:0,exactKjvText:0,ambiguous:0};
+  const links=[], exactExamples=[], stats={addressed:0,readerPresent:0,exactKjvText:0,ambiguous:0};
   const byRef=new Map();
   const xml=fs.readFileSync(crosswire);
   if (hash(xml)!==checksum) throw new Error('CrossWire KJV OSIS checksum mismatch');
@@ -94,7 +94,12 @@ async function acceptedNumbering(web,kjv,crosswire) {
     const text=kjv[from.bookId]?.[from.chapter]?.verses?.[from.verse-1];
     if (!text?.trim()) continue;
     stats.readerPresent++;
-    if (readTaggedVerse(body).text===text) stats.exactKjvText++;
+    if (readTaggedVerse(body).text!==text) continue;
+    stats.exactKjvText++;
+    if (exactExamples.length<3) {
+      const to=address('reader-kjv',[from.bookId,from.chapter,from.verse].join(':'));
+      exactExamples.push(referenceLink([from],[to],{kind:'declared-numbering',locator:'Pinned OSIS verse with exact KJV text'}));
+    }
   }
   for (const coordinate of ['matthew:23:13','matthew:23:14','romans:14:24','romans:14:25','romans:14:26']) {
     const from=address('reader-web',coordinate), {bookId,chapter,verse}=from;
@@ -114,7 +119,7 @@ async function acceptedNumbering(web,kjv,crosswire) {
       [ref.bookId,ref.chapter,ref.verse].join(':'));
     links.push(referenceLink([from],[to],{kind:'declared-numbering',locator:'Shell 80 Reader original-language provider reviewed DRA coordinates'}));
   }
-  return {crosswire:stats,readerExceptions:links};
+  return {crosswire:{...stats,exactExamples},readerExceptions:links};
 }
 
 function touches(left,right) {
@@ -155,7 +160,7 @@ async function run(clearDir,ult,uhb,ugnt,berean,crosswire,shell79) {
   const report={version,baseline,sources,referenceInventory:await acceptedNumbering(web,kjv,crosswire),
     screens:{},counts:empty(),groups:empty(),comparison:{},priority:Object.fromEntries(forms.map(form=>[form,empty()])),
     coordinateReconciliation:{newlyResolvedReferences:0,newlyResolvedTokens:0,validatedVersePairs:0,
-      bereanWitnessCompatible:0,byLanguage:{},explicitNativePositions:0,groupsWithMultipleNativeMorphemes:0},publishedAdditions:0};
+      bereanWitnessCompatible:0,ultWitnessCompatible:0,edgeExamples:{},byLanguage:{},explicitNativePositions:0,groupsWithMultipleNativeMorphemes:0},publishedAdditions:0};
   const proposals=new Map();
   for (const id of ['WLCM','SBLGNT']) {
     const counts=empty(), groups=empty(), byBook={};
@@ -168,13 +173,25 @@ async function run(clearDir,ult,uhb,ugnt,berean,crosswire,shell79) {
         const readerAddress=address(id==='WLCM'?'reader-hebrew-aramaic':'reader-greek-byzantine',coordinate);
         const witnessAddress=address(id==='WLCM'?'uhb':'ugnt',code+' '+label);
         const nativeRef=address(id==='WLCM'?'clear-wlcm':'clear-sblgnt',ref);
-        if (!orderedWitness(witnessAddress,readerAddress,witness,records)) throw new Error('Unwitnessed candidate reference '+coordinate);
+        const readerWitness=orderedWitness(witnessAddress,readerAddress,witness,records);
+        if (!readerWitness) throw new Error('Unwitnessed candidate reference '+coordinate);
         const reference=referenceLink([nativeRef],[readerAddress],{kind:'ordered-witness',locator:id+' position validation against '+witnessAddress.coordinate});
         const nativePositions=mapVerifiedPositions(nativeRef,evidence.positionIds,{kind:'validated-package',locator:id},records);
         if (!reference || !nativePositions) throw new Error('Unwitnessed candidate positions '+coordinate);
         report.coordinateReconciliation.validatedVersePairs++;
         report.coordinateReconciliation.explicitNativePositions+=nativePositions.size;
-        if (table && !validateBerean(table,witness,records,manuscriptMatches).reason) report.coordinateReconciliation.bereanWitnessCompatible++;
+        const edges=report.coordinateReconciliation.edgeExamples;
+        edges[nativeRef.source]??=[reference,readerWitness];
+        if (ultEvidence) {
+          report.coordinateReconciliation.ultWitnessCompatible++;
+          edges.ult??=[referenceLink([address('ult',code+' '+label)],[readerAddress],
+            {kind:'ordered-witness',locator:'ULT milestones validated against '+witnessAddress.coordinate})];
+        }
+        if (table && !validateBerean(table,witness,records,manuscriptMatches).reason) {
+          report.coordinateReconciliation.bereanWitnessCompatible++;
+          edges.berean??=[referenceLink([address('berean-publisher',coordinate)],[readerAddress],
+            {kind:'ordered-witness',locator:'Berean ordered original rows validated against '+witnessAddress.coordinate})];
+        }
         const loaded=chapters.get(bookId+'/'+chapter+'.json')?.[verse];
         if (loaded && loaded[0]!==verseText) throw new Error('Mismatched Reader text '+coordinate);
         const prior=loaded?.[2]||[];

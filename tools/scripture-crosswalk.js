@@ -92,8 +92,11 @@ function referenceLink(from, to, evidence) {
   if (!Array.isArray(from) || !Array.isArray(to) || !from.length || !to.length ||
     ![...from,...to].every(checked) || !evidence?.locator ||
     !['declared-numbering','ordered-witness','human-review'].includes(evidence.kind)) return null;
-  const side = refs => refs.every(ref=>ref.source===refs[0].source &&
-    checked(ref).bookId===checked(refs[0]).bookId) && new Set(refs.map(key)).size===refs.length;
+  const ordered = (a,b) => a.source==='reader-ethiopian' ?
+    a.section.localeCompare(b.section,'en',{numeric:true})<0 || (a.section===b.section && a.line<b.line) :
+    a.chapter<b.chapter || (a.chapter===b.chapter && (a.verse<b.verse || (a.verse===b.verse && a.part<b.part)));
+  const side = refs => refs.every((ref,index)=>ref.source===refs[0].source &&
+    ref.bookId===refs[0].bookId && (!index || ordered(refs[index-1],ref)));
   if (from[0].source===to[0].source || from[0].bookId!==to[0].bookId || !side(from) || !side(to)) return null;
   const unresolvedCanon=[...from,...to].some(ref=>ref.source==='reader-ethiopian' ||
     (ref.source==='reader-dra' && canon.catholicOnly(ref.bookId,ref.chapter,ref.verse)));
@@ -160,8 +163,10 @@ function mapVerifiedPositions(ref, source, evidence, records) {
   const parts = new Map();
   for (const [position, ids] of source.entries()) {
     if (!ids.length || records[position].tokenIndex!==position) return null;
-    for(const id of ids) {
-      if (typeof id!=='string' || !id.slice(1).startsWith(ref.coordinate) || parts.has(id)) return null;
+    for(const [part,id] of ids.entries()) {
+      const hebrew=ref.source==='clear-wlcm';
+      const expected=(hebrew?'o':'n')+ref.coordinate+String(position+1).padStart(3,'0')+(hebrew?part+1:'');
+      if (id!==expected || parts.has(id)) return null;
       parts.set(id,position);
     }
   }
