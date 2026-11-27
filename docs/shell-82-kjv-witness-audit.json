@@ -1,0 +1,1165 @@
+{
+  "version": 1,
+  "baseline": "13d94205e959d332645ba7f4cb2a4b7d3da9ea2a",
+  "source": {
+    "revision": "d490be7e34762deb2c76cb2c1306d4808e27890d",
+    "checksum": "4bcbfe45722fca396adbeac9c81025bbb173cb1e30296da90864f0400cb0e3f5"
+  },
+  "trExperiment": {
+    "revision": "33af6e9361f8db0afd353714d05c75f44e5555b9",
+    "files": {
+      "parsed/MT.UTR": {
+        "sha256": "5aa69dc0f3119de714907e9279302e6bdada20f5c1c2f5a1fb0ed365be90dfe5",
+        "parsedVerses": 1056,
+        "issues": {
+          "unsupported TR markup": 15
+        }
+      },
+      "parsed/MR.UTR": {
+        "sha256": "214b774bfa4bfb29c67d02e92bb90e7cc20fd2c5a523557e51902e61e3a6bcfd",
+        "parsedVerses": 672,
+        "issues": {
+          "unsupported TR markup": 6
+        }
+      },
+      "parsed/LU.UTR": {
+        "sha256": "03e1b6480f666c7d04d6f7b00275f3f500fe09fc407683ee757cc1b11d8d1ba1",
+        "parsedVerses": 1143,
+        "issues": {
+          "unsupported TR markup": 8
+        }
+      },
+      "parsed/JOH.UTR": {
+        "sha256": "77fbb830ae3e11b79f7f47a8e68a119dc77f0722ebcc99bb00111702797bffe5",
+        "parsedVerses": 869,
+        "issues": {
+          "unsupported TR markup": 10
+        }
+      },
+      "parsed/AC.UTR": {
+        "sha256": "b824b95e4c2ee89fb040fc30e9ca33e4ad6672b6bedf372944c2f3c829b8bb50",
+        "parsedVerses": 998,
+        "issues": {
+          "unsupported TR markup": 9
+        }
+      },
+      "parsed/RO.UTR": {
+        "sha256": "01097a0d4322240c0620f198d49101feb5e55e87cc0d5ea2c8077a154003cfec",
+        "parsedVerses": 430,
+        "issues": {
+          "unsupported TR markup": 3
+        }
+      },
+      "parsed/1CO.UTR": {
+        "sha256": "37682df58a5dbd56c69d5b4d019a353b11443a3de96e686095546506f02db8b9",
+        "parsedVerses": 431,
+        "issues": {
+          "unsupported TR markup": 6
+        }
+      },
+      "parsed/2CO.UTR": {
+        "sha256": "bd3ec4a493d06f9173f273fd1e9971623e3a29683c0e0b40963ec8a42af8a40e",
+        "parsedVerses": 254,
+        "issues": {
+          "unsupported TR markup": 3
+        }
+      },
+      "parsed/GA.UTR": {
+        "sha256": "6d4a37fdc317ab54a38876425267f98a691fca6fdd2e7cf10098281c7b1bef75",
+        "parsedVerses": 147,
+        "issues": {
+          "unsupported TR markup": 2
+        }
+      },
+      "parsed/EPH.UTR": {
+        "sha256": "bc2d3631de9b311c03bcfaed5d1b4f0c1e6df4812c852ff54b3274ac03a7a0d1",
+        "parsedVerses": 153,
+        "issues": {
+          "unsupported TR markup": 2
+        }
+      },
+      "parsed/PHP.UTR": {
+        "sha256": "df5c55b552dbf44460ae33e39cc0238f112049f67ba05b46f15303b5a496bd58",
+        "parsedVerses": 101,
+        "issues": {
+          "unsupported TR markup": 3
+        }
+      },
+      "parsed/COL.UTR": {
+        "sha256": "43e74492989ebada1b4eceb1ff7cc7c80f1923e0702a021549b90ef24e348153",
+        "parsedVerses": 90,
+        "issues": {
+          "unsupported TR markup": 5
+        }
+      },
+      "parsed/1TH.UTR": {
+        "sha256": "1c1ba0f30dbe30d972e42241672dfe641f372eb182b26a2620556dee8cb17186",
+        "parsedVerses": 87,
+        "issues": {
+          "unsupported TR markup": 2
+        }
+      },
+      "parsed/2TH.UTR": {
+        "sha256": "d73d610d017ed8cc4a2090aa70f0e64838c51d7f870b603306c96c61d85215f5",
+        "parsedVerses": 46,
+        "issues": {
+          "unsupported TR markup": 1
+        }
+      },
+      "parsed/1TI.UTR": {
+        "sha256": "3326733e97a59df0bf35eb9ce0810dee0a0d482d11d5b90c7325b01dbaef6da8",
+        "parsedVerses": 110,
+        "issues": {
+          "unsupported TR markup": 3
+        }
+      },
+      "parsed/2TI.UTR": {
+        "sha256": "6d4945d80bad882886e3855ba8fd50d17bc035ec4c91d0791b8a6c906ca0a612",
+        "parsedVerses": 79,
+        "issues": {
+          "unsupported TR markup": 4
+        }
+      },
+      "parsed/TIT.UTR": {
+        "sha256": "7aea80e604446267a9ad09a8871a642766e579c725457a1b6c0143df1b3486d9",
+        "parsedVerses": 45,
+        "issues": {
+          "unsupported TR markup": 1
+        }
+      },
+      "parsed/PHM.UTR": {
+        "sha256": "a6a39a7ab3c55331a19a0814229edeb6b1a3d86c99de377a11c710de83604f4b",
+        "parsedVerses": 23,
+        "issues": {
+          "unsupported TR markup": 2
+        }
+      },
+      "parsed/HEB.UTR": {
+        "sha256": "5a3c907da1f2d88795905d1c626f3765b507b39c11c6ccc1396484ca8c346387",
+        "parsedVerses": 296,
+        "issues": {
+          "unsupported TR markup": 7
+        }
+      },
+      "parsed/JAS.UTR": {
+        "sha256": "fb3a867efcb0be09aa3c5104f594a93f4767e602dbecec71d3f9ee65bbc13663",
+        "parsedVerses": 106,
+        "issues": {
+          "unsupported TR markup": 2
+        }
+      },
+      "parsed/1PE.UTR": {
+        "sha256": "1d0e91f7f08c77db05d4ddb7367105a4df11b7936808e89bd27ce8a2f0ab1fc8",
+        "parsedVerses": 104,
+        "issues": {
+          "unsupported TR markup": 1
+        }
+      },
+      "parsed/2PE.UTR": {
+        "sha256": "8d864c32b383db350d4b8d269aa1c2545c41b1f1d22e539f9459ef087e7ac478",
+        "parsedVerses": 60,
+        "issues": {
+          "unsupported TR markup": 1
+        }
+      },
+      "parsed/1JO.UTR": {
+        "sha256": "4d47f13a274a6afd8be33b71cbc9f30d4b458704710dc0b060c16fcd9de80feb",
+        "parsedVerses": 103,
+        "issues": {
+          "unsupported TR markup": 2
+        }
+      },
+      "parsed/2JO.UTR": {
+        "sha256": "d726f61b2f23f0839680ae0ae22abe059eb9c4fe72e14a0922336662b5ca262f",
+        "parsedVerses": 13,
+        "issues": {}
+      },
+      "parsed/3JO.UTR": {
+        "sha256": "cdac972db4cd7d9752d893434b604c8c9e175f125ee964510ec5528dc3932617",
+        "parsedVerses": 13,
+        "issues": {
+          "unsupported TR markup": 1
+        }
+      },
+      "parsed/JUDE.UTR": {
+        "sha256": "46724d6ac953166269cc6b85fb44031dd33eef2b8e32f471da0af0448c087b90",
+        "parsedVerses": 25,
+        "issues": {}
+      },
+      "parsed/RE.UTR": {
+        "sha256": "1c641baca7e65947c583f5cd9723f0497e771ef819708f8817f803fad39e6624",
+        "parsedVerses": 398,
+        "issues": {
+          "unsupported TR markup": 6
+        }
+      }
+    },
+    "findings": {
+      "Greek position, surface or Strong identity differs": 1090,
+      "fully position-compatible with TR": 476,
+      "English text or supplied-word boundary differs": 187,
+      "missing or ambiguous position metadata": 6,
+      "Greek morphology differs": 192,
+      "TR reference missing": 59,
+      "unsupported markup": 11,
+      "Greek source sequence incomplete": 3
+    },
+    "byBook": {
+      "matthew": {
+        "Greek position, surface or Strong identity differs": 95,
+        "fully position-compatible with TR": 63,
+        "English text or supplied-word boundary differs": 29,
+        "missing or ambiguous position metadata": 2,
+        "Greek morphology differs": 10,
+        "TR reference missing": 9,
+        "unsupported markup": 2
+      },
+      "mark": {
+        "English text or supplied-word boundary differs": 22,
+        "Greek position, surface or Strong identity differs": 97,
+        "fully position-compatible with TR": 52,
+        "Greek morphology differs": 12,
+        "TR reference missing": 3,
+        "unsupported markup": 2,
+        "missing or ambiguous position metadata": 1
+      },
+      "luke": {
+        "English text or supplied-word boundary differs": 28,
+        "Greek morphology differs": 38,
+        "Greek position, surface or Strong identity differs": 141,
+        "fully position-compatible with TR": 67,
+        "TR reference missing": 5,
+        "unsupported markup": 2
+      },
+      "john": {
+        "English text or supplied-word boundary differs": 16,
+        "fully position-compatible with TR": 67,
+        "Greek position, surface or Strong identity differs": 80,
+        "TR reference missing": 5,
+        "Greek morphology differs": 21,
+        "unsupported markup": 1
+      },
+      "acts": {
+        "Greek position, surface or Strong identity differs": 171,
+        "English text or supplied-word boundary differs": 53,
+        "fully position-compatible with TR": 67,
+        "Greek morphology differs": 24,
+        "unsupported markup": 2,
+        "TR reference missing": 7,
+        "Greek source sequence incomplete": 1,
+        "missing or ambiguous position metadata": 2
+      },
+      "romans": {
+        "Greek position, surface or Strong identity differs": 35,
+        "Greek source sequence incomplete": 1,
+        "fully position-compatible with TR": 11,
+        "Greek morphology differs": 11,
+        "English text or supplied-word boundary differs": 3,
+        "TR reference missing": 1
+      },
+      "1-corinthians": {
+        "Greek position, surface or Strong identity differs": 32,
+        "fully position-compatible with TR": 15,
+        "English text or supplied-word boundary differs": 5,
+        "Greek morphology differs": 7,
+        "TR reference missing": 3
+      },
+      "2-corinthians": {
+        "Greek position, surface or Strong identity differs": 32,
+        "English text or supplied-word boundary differs": 4,
+        "fully position-compatible with TR": 7,
+        "Greek morphology differs": 6,
+        "TR reference missing": 1,
+        "missing or ambiguous position metadata": 1,
+        "Greek source sequence incomplete": 1
+      },
+      "galatians": {
+        "Greek position, surface or Strong identity differs": 11,
+        "fully position-compatible with TR": 2,
+        "Greek morphology differs": 2,
+        "English text or supplied-word boundary differs": 1
+      },
+      "ephesians": {
+        "Greek position, surface or Strong identity differs": 19,
+        "fully position-compatible with TR": 6,
+        "Greek morphology differs": 1,
+        "TR reference missing": 1
+      },
+      "philippians": {
+        "Greek position, surface or Strong identity differs": 13,
+        "Greek morphology differs": 1,
+        "fully position-compatible with TR": 1,
+        "English text or supplied-word boundary differs": 1,
+        "TR reference missing": 1
+      },
+      "colossians": {
+        "TR reference missing": 4,
+        "Greek position, surface or Strong identity differs": 8,
+        "Greek morphology differs": 3,
+        "English text or supplied-word boundary differs": 2,
+        "fully position-compatible with TR": 2
+      },
+      "1-thessalonians": {
+        "Greek position, surface or Strong identity differs": 8,
+        "fully position-compatible with TR": 4,
+        "TR reference missing": 1,
+        "English text or supplied-word boundary differs": 3,
+        "Greek morphology differs": 1
+      },
+      "2-thessalonians": {
+        "Greek position, surface or Strong identity differs": 6
+      },
+      "1-timothy": {
+        "Greek position, surface or Strong identity differs": 7,
+        "fully position-compatible with TR": 3,
+        "English text or supplied-word boundary differs": 4,
+        "Greek morphology differs": 8,
+        "TR reference missing": 2
+      },
+      "2-timothy": {
+        "TR reference missing": 2,
+        "English text or supplied-word boundary differs": 4,
+        "Greek position, surface or Strong identity differs": 8,
+        "fully position-compatible with TR": 2,
+        "Greek morphology differs": 3
+      },
+      "titus": {
+        "Greek position, surface or Strong identity differs": 3,
+        "Greek morphology differs": 1,
+        "fully position-compatible with TR": 2
+      },
+      "philemon": {
+        "Greek position, surface or Strong identity differs": 4,
+        "TR reference missing": 1
+      },
+      "hebrews": {
+        "fully position-compatible with TR": 9,
+        "TR reference missing": 5,
+        "Greek morphology differs": 8,
+        "Greek position, surface or Strong identity differs": 36,
+        "English text or supplied-word boundary differs": 4
+      },
+      "james": {
+        "fully position-compatible with TR": 6,
+        "Greek position, surface or Strong identity differs": 12,
+        "Greek morphology differs": 3
+      },
+      "1-peter": {
+        "Greek position, surface or Strong identity differs": 17,
+        "fully position-compatible with TR": 8,
+        "Greek morphology differs": 5
+      },
+      "2-peter": {
+        "Greek morphology differs": 4,
+        "fully position-compatible with TR": 2,
+        "Greek position, surface or Strong identity differs": 10,
+        "TR reference missing": 1
+      },
+      "1-john": {
+        "Greek position, surface or Strong identity differs": 13,
+        "Greek morphology differs": 2,
+        "English text or supplied-word boundary differs": 3,
+        "fully position-compatible with TR": 3,
+        "TR reference missing": 1
+      },
+      "2-john": {
+        "Greek position, surface or Strong identity differs": 2
+      },
+      "3-john": {
+        "Greek morphology differs": 2,
+        "Greek position, surface or Strong identity differs": 2
+      },
+      "jude": {
+        "Greek position, surface or Strong identity differs": 9
+      },
+      "revelation": {
+        "Greek position, surface or Strong identity differs": 219,
+        "fully position-compatible with TR": 77,
+        "English text or supplied-word boundary differs": 5,
+        "Greek morphology differs": 19,
+        "TR reference missing": 6,
+        "unsupported markup": 2
+      }
+    },
+    "words": 11103,
+    "priorityWords": 8670
+  },
+  "nt": {
+    "verses": 7957,
+    "strictReasons": {
+      "Greek position, surface or Strong identity differs": 1486,
+      "English text or supplied-word boundary differs": 189,
+      "Greek morphology differs": 314,
+      "missing or ambiguous position metadata": 11,
+      "Greek source sequence incomplete": 13,
+      "unsupported markup": 11
+    },
+    "findings": {
+      "original-evidence-mismatch": 1855,
+      "baseline": 5933,
+      "english-wording": 108,
+      "punctuation-or-supplied-boundaries": 39,
+      "ambiguous": 11,
+      "markup": 11
+    },
+    "originalFindings": {
+      "Greek position, surface or Strong identity differs": 1522,
+      "Greek morphology differs": 319,
+      "missing or ambiguous position metadata": 11,
+      "Greek source sequence incomplete": 14
+    },
+    "typographyOccurrences": 0,
+    "priorityOccurrences": 0,
+    "examples": {
+      "original-evidence-mismatch": [
+        "Matt.1.1",
+        "Matt.1.6",
+        "Matt.1.17"
+      ],
+      "english-wording": [
+        "Matt.2.1",
+        "Matt.2.5",
+        "Matt.2.22"
+      ],
+      "punctuation-or-supplied-boundaries": [
+        "Matt.3.15",
+        "Matt.11.27",
+        "Matt.13.17"
+      ],
+      "ambiguous": [
+        "Matt.7.20",
+        "Matt.17.26",
+        "Mark.14.17"
+      ],
+      "markup": [
+        "Matt.22.44",
+        "Matt.27.37",
+        "Mark.12.36"
+      ]
+    }
+  },
+  "ot": {
+    "verses": 23145,
+    "versesWithNativePositions": 0,
+    "versesWithoutWitness": 1,
+    "strongTagLeadsUnique": 186475,
+    "strongTagLeadsRepeated": 40933,
+    "strongTagLeadsAbsent": 1431
+  },
+  "books": {
+    "genesis": {
+      "verses": 1533,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 11953,
+      "strongTagLeadsRepeated": 3040,
+      "strongTagLeadsAbsent": 101
+    },
+    "exodus": {
+      "verses": 1213,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 9430,
+      "strongTagLeadsRepeated": 2773,
+      "strongTagLeadsAbsent": 52
+    },
+    "leviticus": {
+      "verses": 859,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 6505,
+      "strongTagLeadsRepeated": 1810,
+      "strongTagLeadsAbsent": 10
+    },
+    "numbers": {
+      "verses": 1288,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 9999,
+      "strongTagLeadsRepeated": 2553,
+      "strongTagLeadsAbsent": 60
+    },
+    "deuteronomy": {
+      "verses": 959,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 8169,
+      "strongTagLeadsRepeated": 1621,
+      "strongTagLeadsAbsent": 32
+    },
+    "joshua": {
+      "verses": 658,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 5556,
+      "strongTagLeadsRepeated": 1680,
+      "strongTagLeadsAbsent": 49
+    },
+    "judges": {
+      "verses": 618,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 5745,
+      "strongTagLeadsRepeated": 1395,
+      "strongTagLeadsAbsent": 82
+    },
+    "ruth": {
+      "verses": 85,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 712,
+      "strongTagLeadsRepeated": 187,
+      "strongTagLeadsAbsent": 4
+    },
+    "1-samuel": {
+      "verses": 810,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 7352,
+      "strongTagLeadsRepeated": 2103,
+      "strongTagLeadsAbsent": 150
+    },
+    "2-samuel": {
+      "verses": 695,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 6143,
+      "strongTagLeadsRepeated": 1825,
+      "strongTagLeadsAbsent": 94
+    },
+    "1-kings": {
+      "verses": 816,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 7323,
+      "strongTagLeadsRepeated": 2309,
+      "strongTagLeadsAbsent": 40
+    },
+    "2-kings": {
+      "verses": 719,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 6827,
+      "strongTagLeadsRepeated": 2220,
+      "strongTagLeadsAbsent": 54
+    },
+    "1-chronicles": {
+      "verses": 942,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 6871,
+      "strongTagLeadsRepeated": 1841,
+      "strongTagLeadsAbsent": 61
+    },
+    "2-chronicles": {
+      "verses": 822,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 8008,
+      "strongTagLeadsRepeated": 2160,
+      "strongTagLeadsAbsent": 78
+    },
+    "ezra": {
+      "verses": 280,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 2670,
+      "strongTagLeadsRepeated": 575,
+      "strongTagLeadsAbsent": 21
+    },
+    "nehemiah": {
+      "verses": 406,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 3498,
+      "strongTagLeadsRepeated": 682,
+      "strongTagLeadsAbsent": 56
+    },
+    "esther": {
+      "verses": 167,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 1765,
+      "strongTagLeadsRepeated": 522,
+      "strongTagLeadsAbsent": 4
+    },
+    "job": {
+      "verses": 1070,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 6012,
+      "strongTagLeadsRepeated": 247,
+      "strongTagLeadsAbsent": 41
+    },
+    "psalms": {
+      "verses": 2461,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 14570,
+      "strongTagLeadsRepeated": 895,
+      "strongTagLeadsAbsent": 44
+    },
+    "proverbs": {
+      "verses": 915,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 5656,
+      "strongTagLeadsRepeated": 251,
+      "strongTagLeadsAbsent": 38
+    },
+    "ecclesiastes": {
+      "verses": 222,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 1659,
+      "strongTagLeadsRepeated": 372,
+      "strongTagLeadsAbsent": 10
+    },
+    "song-of-solomon": {
+      "verses": 117,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 866,
+      "strongTagLeadsRepeated": 119,
+      "strongTagLeadsAbsent": 4
+    },
+    "isaiah": {
+      "verses": 1292,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 11372,
+      "strongTagLeadsRepeated": 1641,
+      "strongTagLeadsAbsent": 71
+    },
+    "jeremiah": {
+      "verses": 1364,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 12748,
+      "strongTagLeadsRepeated": 2519,
+      "strongTagLeadsAbsent": 106
+    },
+    "lamentations": {
+      "verses": 154,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 1153,
+      "strongTagLeadsRepeated": 78,
+      "strongTagLeadsAbsent": 6
+    },
+    "ezekiel": {
+      "verses": 1273,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 10714,
+      "strongTagLeadsRepeated": 2989,
+      "strongTagLeadsAbsent": 53
+    },
+    "daniel": {
+      "verses": 357,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 4096,
+      "strongTagLeadsRepeated": 942,
+      "strongTagLeadsAbsent": 24
+    },
+    "hosea": {
+      "verses": 197,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 1555,
+      "strongTagLeadsRepeated": 198,
+      "strongTagLeadsAbsent": 15
+    },
+    "joel": {
+      "verses": 73,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 639,
+      "strongTagLeadsRepeated": 110,
+      "strongTagLeadsAbsent": 4
+    },
+    "amos": {
+      "verses": 146,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 1359,
+      "strongTagLeadsRepeated": 179,
+      "strongTagLeadsAbsent": 11
+    },
+    "obadiah": {
+      "verses": 21,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 175,
+      "strongTagLeadsRepeated": 37,
+      "strongTagLeadsAbsent": 3
+    },
+    "jonah": {
+      "verses": 48,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 410,
+      "strongTagLeadsRepeated": 78,
+      "strongTagLeadsAbsent": 10
+    },
+    "micah": {
+      "verses": 105,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 969,
+      "strongTagLeadsRepeated": 99,
+      "strongTagLeadsAbsent": 10
+    },
+    "nahum": {
+      "verses": 47,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 409,
+      "strongTagLeadsRepeated": 46,
+      "strongTagLeadsAbsent": 3
+    },
+    "habakkuk": {
+      "verses": 56,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 483,
+      "strongTagLeadsRepeated": 39,
+      "strongTagLeadsAbsent": 3
+    },
+    "zephaniah": {
+      "verses": 53,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 517,
+      "strongTagLeadsRepeated": 60,
+      "strongTagLeadsAbsent": 7
+    },
+    "haggai": {
+      "verses": 38,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 341,
+      "strongTagLeadsRepeated": 102,
+      "strongTagLeadsAbsent": 1
+    },
+    "zechariah": {
+      "verses": 211,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 1740,
+      "strongTagLeadsRepeated": 519,
+      "strongTagLeadsAbsent": 16
+    },
+    "malachi": {
+      "verses": 55,
+      "findings": {},
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 506,
+      "strongTagLeadsRepeated": 117,
+      "strongTagLeadsAbsent": 3
+    },
+    "matthew": {
+      "verses": 1071,
+      "findings": {
+        "original-evidence-mismatch": 180,
+        "baseline": 861,
+        "english-wording": 13,
+        "punctuation-or-supplied-boundaries": 13,
+        "ambiguous": 2,
+        "markup": 2
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "mark": {
+      "verses": 678,
+      "findings": {
+        "baseline": 489,
+        "english-wording": 12,
+        "original-evidence-mismatch": 170,
+        "punctuation-or-supplied-boundaries": 4,
+        "markup": 2,
+        "ambiguous": 1
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "luke": {
+      "verses": 1151,
+      "findings": {
+        "baseline": 870,
+        "english-wording": 20,
+        "original-evidence-mismatch": 253,
+        "ambiguous": 1,
+        "punctuation-or-supplied-boundaries": 5,
+        "markup": 2
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "john": {
+      "verses": 879,
+      "findings": {
+        "baseline": 689,
+        "punctuation-or-supplied-boundaries": 3,
+        "original-evidence-mismatch": 179,
+        "english-wording": 6,
+        "markup": 1,
+        "ambiguous": 1
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "acts": {
+      "verses": 1007,
+      "findings": {
+        "original-evidence-mismatch": 278,
+        "baseline": 680,
+        "english-wording": 40,
+        "markup": 2,
+        "punctuation-or-supplied-boundaries": 4,
+        "ambiguous": 3
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "romans": {
+      "verses": 433,
+      "findings": {
+        "baseline": 371,
+        "original-evidence-mismatch": 59,
+        "punctuation-or-supplied-boundaries": 1,
+        "english-wording": 2
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "1-corinthians": {
+      "verses": 437,
+      "findings": {
+        "baseline": 375,
+        "original-evidence-mismatch": 57,
+        "english-wording": 2,
+        "punctuation-or-supplied-boundaries": 3
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "2-corinthians": {
+      "verses": 257,
+      "findings": {
+        "baseline": 205,
+        "original-evidence-mismatch": 48,
+        "english-wording": 1,
+        "punctuation-or-supplied-boundaries": 2,
+        "ambiguous": 1
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "galatians": {
+      "verses": 149,
+      "findings": {
+        "baseline": 133,
+        "original-evidence-mismatch": 15,
+        "english-wording": 1
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "ephesians": {
+      "verses": 155,
+      "findings": {
+        "baseline": 128,
+        "original-evidence-mismatch": 27
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "philippians": {
+      "verses": 104,
+      "findings": {
+        "baseline": 87,
+        "original-evidence-mismatch": 16,
+        "english-wording": 1
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "colossians": {
+      "verses": 95,
+      "findings": {
+        "baseline": 76,
+        "original-evidence-mismatch": 17,
+        "english-wording": 2
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "1-thessalonians": {
+      "verses": 89,
+      "findings": {
+        "baseline": 72,
+        "original-evidence-mismatch": 16,
+        "punctuation-or-supplied-boundaries": 1
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "2-thessalonians": {
+      "verses": 47,
+      "findings": {
+        "baseline": 41,
+        "original-evidence-mismatch": 6
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "1-timothy": {
+      "verses": 113,
+      "findings": {
+        "baseline": 89,
+        "original-evidence-mismatch": 22,
+        "english-wording": 2
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "2-timothy": {
+      "verses": 83,
+      "findings": {
+        "baseline": 64,
+        "original-evidence-mismatch": 15,
+        "english-wording": 4
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "titus": {
+      "verses": 46,
+      "findings": {
+        "baseline": 40,
+        "original-evidence-mismatch": 6
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "philemon": {
+      "verses": 25,
+      "findings": {
+        "baseline": 20,
+        "original-evidence-mismatch": 5
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "hebrews": {
+      "verses": 303,
+      "findings": {
+        "original-evidence-mismatch": 57,
+        "baseline": 241,
+        "ambiguous": 2,
+        "english-wording": 2,
+        "punctuation-or-supplied-boundaries": 1
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "james": {
+      "verses": 108,
+      "findings": {
+        "baseline": 87,
+        "original-evidence-mismatch": 21
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "1-peter": {
+      "verses": 105,
+      "findings": {
+        "original-evidence-mismatch": 30,
+        "baseline": 75
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "2-peter": {
+      "verses": 61,
+      "findings": {
+        "baseline": 44,
+        "original-evidence-mismatch": 17
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "1-john": {
+      "verses": 105,
+      "findings": {
+        "baseline": 83,
+        "original-evidence-mismatch": 20,
+        "punctuation-or-supplied-boundaries": 2
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "2-john": {
+      "verses": 13,
+      "findings": {
+        "baseline": 11,
+        "original-evidence-mismatch": 2
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "3-john": {
+      "verses": 14,
+      "findings": {
+        "baseline": 10,
+        "original-evidence-mismatch": 4
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "jude": {
+      "verses": 25,
+      "findings": {
+        "baseline": 16,
+        "original-evidence-mismatch": 9
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    },
+    "revelation": {
+      "verses": 404,
+      "findings": {
+        "baseline": 76,
+        "original-evidence-mismatch": 326,
+        "markup": 2
+      },
+      "typographyOccurrences": 0,
+      "priorityOccurrences": 0,
+      "strongTagLeadsUnique": 0,
+      "strongTagLeadsRepeated": 0,
+      "strongTagLeadsAbsent": 0
+    }
+  },
+  "publishedAdditions": 0
+}

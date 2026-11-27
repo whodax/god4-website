@@ -1,0 +1,994 @@
+{
+  "version": 1,
+  "baseline": "13d94205e959d332645ba7f4cb2a4b7d3da9ea2a",
+  "scope": "Entire 66-book canonical inventory and original Shell 81 candidate cohort",
+  "results": {
+    "baselineVerified": 1153,
+    "independentPending": 0,
+    "linguisticPending": 24271,
+    "ambiguous": 1803,
+    "rejected": 0
+  },
+  "publisherConsensus": {
+    "agreeingVerified": 0,
+    "agreeingPending": 2079,
+    "agreeingAmbiguous": 239,
+    "agreeingRejected": 0,
+    "heldoutCandidateWords": 142,
+    "priorityPendingWords": 1613
+  },
+  "books": {
+    "genesis": {
+      "verseSlots": 1533,
+      "displayedVerses": 1533,
+      "words": 35806,
+      "priorityWords": 29124,
+      "candidateWords": {
+        "baselineVerified": 45,
+        "independentPending": 0,
+        "linguisticPending": 1818,
+        "ambiguous": 110,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 190
+    },
+    "exodus": {
+      "verseSlots": 1213,
+      "displayedVerses": 1213,
+      "words": 30921,
+      "priorityWords": 25287,
+      "candidateWords": {
+        "baselineVerified": 53,
+        "independentPending": 0,
+        "linguisticPending": 1303,
+        "ambiguous": 164,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 149
+    },
+    "leviticus": {
+      "verseSlots": 859,
+      "displayedVerses": 859,
+      "words": 23484,
+      "priorityWords": 19297,
+      "candidateWords": {
+        "baselineVerified": 31,
+        "independentPending": 0,
+        "linguisticPending": 865,
+        "ambiguous": 75,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 66
+    },
+    "numbers": {
+      "verseSlots": 1288,
+      "displayedVerses": 1288,
+      "words": 31175,
+      "priorityWords": 25342,
+      "candidateWords": {
+        "baselineVerified": 34,
+        "independentPending": 0,
+        "linguisticPending": 1240,
+        "ambiguous": 163,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 141
+    },
+    "deuteronomy": {
+      "verseSlots": 959,
+      "displayedVerses": 959,
+      "words": 27326,
+      "priorityWords": 23228,
+      "candidateWords": {
+        "baselineVerified": 42,
+        "independentPending": 0,
+        "linguisticPending": 771,
+        "ambiguous": 102,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 45
+    },
+    "joshua": {
+      "verseSlots": 658,
+      "displayedVerses": 658,
+      "words": 17829,
+      "priorityWords": 14558,
+      "candidateWords": {
+        "baselineVerified": 21,
+        "independentPending": 0,
+        "linguisticPending": 664,
+        "ambiguous": 70,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 82
+    },
+    "judges": {
+      "verseSlots": 618,
+      "displayedVerses": 618,
+      "words": 17898,
+      "priorityWords": 14641,
+      "candidateWords": {
+        "baselineVerified": 16,
+        "independentPending": 0,
+        "linguisticPending": 543,
+        "ambiguous": 51,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 37
+    },
+    "ruth": {
+      "verseSlots": 85,
+      "displayedVerses": 85,
+      "words": 2436,
+      "priorityWords": 1992,
+      "candidateWords": {
+        "baselineVerified": 1,
+        "independentPending": 0,
+        "linguisticPending": 39,
+        "ambiguous": 6,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 2
+    },
+    "1-samuel": {
+      "verseSlots": 810,
+      "displayedVerses": 810,
+      "words": 23603,
+      "priorityWords": 19882,
+      "candidateWords": {
+        "baselineVerified": 22,
+        "independentPending": 0,
+        "linguisticPending": 801,
+        "ambiguous": 24,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 25
+    },
+    "2-samuel": {
+      "verseSlots": 695,
+      "displayedVerses": 695,
+      "words": 19426,
+      "priorityWords": 16072,
+      "candidateWords": {
+        "baselineVerified": 34,
+        "independentPending": 0,
+        "linguisticPending": 722,
+        "ambiguous": 49,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 62
+    },
+    "1-kings": {
+      "verseSlots": 816,
+      "displayedVerses": 816,
+      "words": 23058,
+      "priorityWords": 19135,
+      "candidateWords": {
+        "baselineVerified": 60,
+        "independentPending": 0,
+        "linguisticPending": 979,
+        "ambiguous": 74,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 111
+    },
+    "2-kings": {
+      "verseSlots": 719,
+      "displayedVerses": 719,
+      "words": 22210,
+      "priorityWords": 18506,
+      "candidateWords": {
+        "baselineVerified": 60,
+        "independentPending": 0,
+        "linguisticPending": 973,
+        "ambiguous": 64,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 89
+    },
+    "1-chronicles": {
+      "verseSlots": 942,
+      "displayedVerses": 942,
+      "words": 19197,
+      "priorityWords": 14480,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 1616,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 301
+    },
+    "2-chronicles": {
+      "verseSlots": 822,
+      "displayedVerses": 822,
+      "words": 24688,
+      "priorityWords": 20521,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 1387,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 165
+    },
+    "ezra": {
+      "verseSlots": 280,
+      "displayedVerses": 280,
+      "words": 7059,
+      "priorityWords": 5662,
+      "candidateWords": {
+        "baselineVerified": 52,
+        "independentPending": 0,
+        "linguisticPending": 272,
+        "ambiguous": 46,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 42
+    },
+    "nehemiah": {
+      "verseSlots": 406,
+      "displayedVerses": 406,
+      "words": 9976,
+      "priorityWords": 7818,
+      "candidateWords": {
+        "baselineVerified": 18,
+        "independentPending": 0,
+        "linguisticPending": 296,
+        "ambiguous": 79,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 79
+    },
+    "esther": {
+      "verseSlots": 167,
+      "displayedVerses": 167,
+      "words": 5406,
+      "priorityWords": 4186,
+      "candidateWords": {
+        "baselineVerified": 7,
+        "independentPending": 0,
+        "linguisticPending": 225,
+        "ambiguous": 6,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 25
+    },
+    "job": {
+      "verseSlots": 1070,
+      "displayedVerses": 1070,
+      "words": 17298,
+      "priorityWords": 13563,
+      "candidateWords": {
+        "baselineVerified": 101,
+        "independentPending": 0,
+        "linguisticPending": 623,
+        "ambiguous": 75,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 21
+    },
+    "psalms": {
+      "verseSlots": 2461,
+      "displayedVerses": 2461,
+      "words": 40751,
+      "priorityWords": 32621,
+      "candidateWords": {
+        "baselineVerified": 285,
+        "independentPending": 0,
+        "linguisticPending": 1426,
+        "ambiguous": 206,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 105
+    },
+    "proverbs": {
+      "verseSlots": 915,
+      "displayedVerses": 915,
+      "words": 14267,
+      "priorityWords": 10637,
+      "candidateWords": {
+        "baselineVerified": 126,
+        "independentPending": 0,
+        "linguisticPending": 1330,
+        "ambiguous": 158,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 139
+    },
+    "ecclesiastes": {
+      "verseSlots": 222,
+      "displayedVerses": 222,
+      "words": 5442,
+      "priorityWords": 4449,
+      "candidateWords": {
+        "baselineVerified": 17,
+        "independentPending": 0,
+        "linguisticPending": 160,
+        "ambiguous": 37,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 2
+    },
+    "song-of-solomon": {
+      "verseSlots": 117,
+      "displayedVerses": 117,
+      "words": 2434,
+      "priorityWords": 1753,
+      "candidateWords": {
+        "baselineVerified": 17,
+        "independentPending": 0,
+        "linguisticPending": 122,
+        "ambiguous": 25,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 8
+    },
+    "isaiah": {
+      "verseSlots": 1292,
+      "displayedVerses": 1292,
+      "words": 34830,
+      "priorityWords": 27752,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 1565,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 82
+    },
+    "jeremiah": {
+      "verseSlots": 1364,
+      "displayedVerses": 1364,
+      "words": 40761,
+      "priorityWords": 34167,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 1599,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 170
+    },
+    "lamentations": {
+      "verseSlots": 154,
+      "displayedVerses": 154,
+      "words": 3300,
+      "priorityWords": 2655,
+      "candidateWords": {
+        "baselineVerified": 20,
+        "independentPending": 0,
+        "linguisticPending": 123,
+        "ambiguous": 8,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 15
+    },
+    "ezekiel": {
+      "verseSlots": 1273,
+      "displayedVerses": 1273,
+      "words": 37560,
+      "priorityWords": 31096,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 1513,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 48
+    },
+    "daniel": {
+      "verseSlots": 357,
+      "displayedVerses": 357,
+      "words": 11283,
+      "priorityWords": 9063,
+      "candidateWords": {
+        "baselineVerified": 3,
+        "independentPending": 0,
+        "linguisticPending": 259,
+        "ambiguous": 25,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 9
+    },
+    "hosea": {
+      "verseSlots": 197,
+      "displayedVerses": 197,
+      "words": 4826,
+      "priorityWords": 3884,
+      "candidateWords": {
+        "baselineVerified": 19,
+        "independentPending": 0,
+        "linguisticPending": 82,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 6
+    },
+    "joel": {
+      "verseSlots": 73,
+      "displayedVerses": 73,
+      "words": 1878,
+      "priorityWords": 1467,
+      "candidateWords": {
+        "baselineVerified": 10,
+        "independentPending": 0,
+        "linguisticPending": 49,
+        "ambiguous": 10,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 2
+    },
+    "amos": {
+      "verseSlots": 146,
+      "displayedVerses": 146,
+      "words": 3922,
+      "priorityWords": 3169,
+      "candidateWords": {
+        "baselineVerified": 6,
+        "independentPending": 0,
+        "linguisticPending": 110,
+        "ambiguous": 28,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 5
+    },
+    "obadiah": {
+      "verseSlots": 21,
+      "displayedVerses": 21,
+      "words": 621,
+      "priorityWords": 510,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 10,
+        "ambiguous": 7,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 0
+    },
+    "jonah": {
+      "verseSlots": 48,
+      "displayedVerses": 48,
+      "words": 1271,
+      "priorityWords": 1012,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 24,
+        "ambiguous": 9,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 0
+    },
+    "micah": {
+      "verseSlots": 105,
+      "displayedVerses": 105,
+      "words": 2798,
+      "priorityWords": 2263,
+      "candidateWords": {
+        "baselineVerified": 7,
+        "independentPending": 0,
+        "linguisticPending": 81,
+        "ambiguous": 2,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 6
+    },
+    "nahum": {
+      "verseSlots": 47,
+      "displayedVerses": 47,
+      "words": 1202,
+      "priorityWords": 880,
+      "candidateWords": {
+        "baselineVerified": 6,
+        "independentPending": 0,
+        "linguisticPending": 15,
+        "ambiguous": 12,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 3
+    },
+    "habakkuk": {
+      "verseSlots": 56,
+      "displayedVerses": 56,
+      "words": 1351,
+      "priorityWords": 1030,
+      "candidateWords": {
+        "baselineVerified": 10,
+        "independentPending": 0,
+        "linguisticPending": 63,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 0
+    },
+    "zephaniah": {
+      "verseSlots": 53,
+      "displayedVerses": 53,
+      "words": 1554,
+      "priorityWords": 1255,
+      "candidateWords": {
+        "baselineVerified": 3,
+        "independentPending": 0,
+        "linguisticPending": 61,
+        "ambiguous": 31,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 6
+    },
+    "haggai": {
+      "verseSlots": 38,
+      "displayedVerses": 38,
+      "words": 1050,
+      "priorityWords": 898,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 134,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 13
+    },
+    "zechariah": {
+      "verseSlots": 211,
+      "displayedVerses": 211,
+      "words": 5936,
+      "priorityWords": 4979,
+      "candidateWords": {
+        "baselineVerified": 21,
+        "independentPending": 0,
+        "linguisticPending": 304,
+        "ambiguous": 56,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 29
+    },
+    "malachi": {
+      "verseSlots": 55,
+      "displayedVerses": 55,
+      "words": 1711,
+      "priorityWords": 1446,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 51,
+        "ambiguous": 6,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 0
+    },
+    "matthew": {
+      "verseSlots": 1071,
+      "displayedVerses": 1071,
+      "words": 22831,
+      "priorityWords": 18623,
+      "candidateWords": {
+        "baselineVerified": 1,
+        "independentPending": 0,
+        "linguisticPending": 2,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 0
+    },
+    "mark": {
+      "verseSlots": 678,
+      "displayedVerses": 678,
+      "words": 14259,
+      "priorityWords": 11517,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 2,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 0
+    },
+    "luke": {
+      "verseSlots": 1151,
+      "displayedVerses": 1150,
+      "words": 24395,
+      "priorityWords": 19855,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 0,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 0
+    },
+    "john": {
+      "verseSlots": 879,
+      "displayedVerses": 879,
+      "words": 18694,
+      "priorityWords": 16013,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 0,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 0
+    },
+    "acts": {
+      "verseSlots": 1007,
+      "displayedVerses": 1004,
+      "words": 23141,
+      "priorityWords": 18332,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 0,
+        "ambiguous": 5,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 5
+    },
+    "romans": {
+      "verseSlots": 434,
+      "displayedVerses": 433,
+      "words": 9411,
+      "priorityWords": 7679,
+      "candidateWords": {
+        "baselineVerified": 3,
+        "independentPending": 0,
+        "linguisticPending": 7,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 1
+    },
+    "1-corinthians": {
+      "verseSlots": 437,
+      "displayedVerses": 437,
+      "words": 9353,
+      "priorityWords": 7562,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 15,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 2
+    },
+    "2-corinthians": {
+      "verseSlots": 257,
+      "displayedVerses": 257,
+      "words": 6068,
+      "priorityWords": 4772,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 4,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 0
+    },
+    "galatians": {
+      "verseSlots": 149,
+      "displayedVerses": 149,
+      "words": 3121,
+      "priorityWords": 2580,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 0,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 0
+    },
+    "ephesians": {
+      "verseSlots": 155,
+      "displayedVerses": 155,
+      "words": 3084,
+      "priorityWords": 2532,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 2,
+        "ambiguous": 12,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 5
+    },
+    "philippians": {
+      "verseSlots": 104,
+      "displayedVerses": 104,
+      "words": 2219,
+      "priorityWords": 1789,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 0,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 0
+    },
+    "colossians": {
+      "verseSlots": 95,
+      "displayedVerses": 95,
+      "words": 1990,
+      "priorityWords": 1582,
+      "candidateWords": {
+        "baselineVerified": 2,
+        "independentPending": 0,
+        "linguisticPending": 2,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 2
+    },
+    "1-thessalonians": {
+      "verseSlots": 89,
+      "displayedVerses": 89,
+      "words": 1836,
+      "priorityWords": 1510,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 0,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 0
+    },
+    "2-thessalonians": {
+      "verseSlots": 47,
+      "displayedVerses": 47,
+      "words": 1036,
+      "priorityWords": 854,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 0,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 0
+    },
+    "1-timothy": {
+      "verseSlots": 113,
+      "displayedVerses": 113,
+      "words": 2237,
+      "priorityWords": 1632,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 3,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 3
+    },
+    "2-timothy": {
+      "verseSlots": 83,
+      "displayedVerses": 83,
+      "words": 1613,
+      "priorityWords": 1215,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 0,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 0
+    },
+    "titus": {
+      "verseSlots": 46,
+      "displayedVerses": 46,
+      "words": 898,
+      "priorityWords": 634,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 10,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 10
+    },
+    "philemon": {
+      "verseSlots": 25,
+      "displayedVerses": 25,
+      "words": 445,
+      "priorityWords": 349,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 0,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 0
+    },
+    "hebrews": {
+      "verseSlots": 303,
+      "displayedVerses": 303,
+      "words": 6876,
+      "priorityWords": 5471,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 1,
+        "ambiguous": 2,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 1
+    },
+    "james": {
+      "verseSlots": 108,
+      "displayedVerses": 108,
+      "words": 2251,
+      "priorityWords": 1743,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 0,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 0
+    },
+    "1-peter": {
+      "verseSlots": 105,
+      "displayedVerses": 105,
+      "words": 2394,
+      "priorityWords": 1834,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 5,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 5
+    },
+    "2-peter": {
+      "verseSlots": 61,
+      "displayedVerses": 61,
+      "words": 1516,
+      "priorityWords": 1153,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 0,
+        "ambiguous": 6,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 4
+    },
+    "1-john": {
+      "verseSlots": 105,
+      "displayedVerses": 105,
+      "words": 2455,
+      "priorityWords": 2150,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 0,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 0
+    },
+    "2-john": {
+      "verseSlots": 13,
+      "displayedVerses": 13,
+      "words": 296,
+      "priorityWords": 249,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 0,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 0
+    },
+    "3-john": {
+      "verseSlots": 14,
+      "displayedVerses": 14,
+      "words": 279,
+      "priorityWords": 225,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 0,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 0
+    },
+    "jude": {
+      "verseSlots": 25,
+      "displayedVerses": 25,
+      "words": 606,
+      "priorityWords": 449,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 0,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 0
+    },
+    "revelation": {
+      "verseSlots": 404,
+      "displayedVerses": 404,
+      "words": 11375,
+      "priorityWords": 9145,
+      "candidateWords": {
+        "baselineVerified": 0,
+        "independentPending": 0,
+        "linguisticPending": 0,
+        "ambiguous": 0,
+        "rejected": 0
+      },
+      "publisherAgreesUnverified": 0
+    }
+  },
+  "selected": {
+    "ruth": {
+      "counts": {
+        "reviewable": 85
+      },
+      "rows": 85,
+      "versesWithHints": 13,
+      "reviewBytes": 1189827,
+      "reviewSha256": "f994e0898e30ba179349fe174e402714b7bc6c70093514562925add7f0c5d99b",
+      "advisoryBytes": 7635,
+      "advisorySha256": "dd6dd7d00b29f548ecf10a3691752875715610f2522a9933e10f9379c8da4889"
+    },
+    "jonah": {
+      "counts": {
+        "reviewable": 48
+      },
+      "rows": 48,
+      "versesWithHints": 5,
+      "reviewBytes": 633669,
+      "reviewSha256": "f57e73ecc4e2545d8da629342bca19d0e65a9fd96e8fe176b3553d07d938ed52",
+      "advisoryBytes": 4764,
+      "advisorySha256": "9435524314a0b867a9abf705b96fcdc52cec59aa6198e151e774f67406cce71a"
+    },
+    "philemon": {
+      "counts": {
+        "reviewable": 25
+      },
+      "rows": 25,
+      "versesWithHints": 0,
+      "reviewBytes": 163186,
+      "reviewSha256": "c5e44b8f94c8e7e4fd2324f42ea192af40c0aa125dec61a97de05f8b11b82ef9",
+      "advisoryBytes": 239,
+      "advisorySha256": "68ab21ce3d1049fb6faa8cab64298cef184724db53c11f28f66c15c20305d354"
+    },
+    "genesis": {
+      "counts": {
+        "reviewable": 1530,
+        "held-out": 3
+      },
+      "rows": 1533,
+      "versesWithHints": 472,
+      "reviewBytes": 7836099,
+      "reviewSha256": "866f4a25a148f0ee54bb3da8f076f6af27eb391633dbef84c86045a7af4c3083",
+      "advisoryBytes": 321945,
+      "advisorySha256": "fbc2e9dbc7ecfe8fddec6d93f548d16e26ceb55ec3c72aa08fed4a3261140b30"
+    }
+  },
+  "newPublished": 0
+}

@@ -117,7 +117,22 @@ The published WEB index and chapter shards remain **555,937 bytes raw** and **26
 
 The first run recorded 190 passes and one static assertion failure. The upgrade fixture expected the alignment script to differ from Shell 80. Shell 81 intentionally leaves all 52 required assets byte-identical after line ending normalization. The corrected fixture asserts that equality and passed in isolation. All 191 outcomes were available before the Windows runner stalled during teardown. The isolated asset fixture and historical repetitions finished normally. Existing test deadlines and retry limits were kept.
 
-The 390px Cloudflare smoke verified zero alignment requests before selection, both English spans of “my tent” in Job 19:12, the contextual definition in Proverbs 6:21, and a full offline reload. Shell 81 physical Android and TalkBack acceptance is pending.
+The 390px Cloudflare smoke verified zero alignment requests before selection, both English spans of “my tent” in Job 19:12, the contextual definition in Proverbs 6:21, and a full offline reload.
+
+## Physical Android and TalkBack acceptance
+
+The owner reported **8 of 8 checks passed** on November 27, 2026, on preview `4581c563` at commit `13d94205e959d332645ba7f4cb2a4b7d3da9ea2a`.
+
+| Check | Result |
+| --- | --- |
+| WEB Job 19:12, tent | Pass |
+| WEB Job 19:12, my | Pass |
+| WEB Job 19:12, around | Pass |
+| WEB Proverbs 6:21, around | Pass |
+| KJV John 1:1, Word | Pass |
+| Close Word Study and TalkBack | Pass |
+| Full offline reload | Pass |
+| Ethiopian Read Aloud | Pass |
 
 ## Remaining release blockers and next milestone
 
