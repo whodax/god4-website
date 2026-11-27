@@ -9,14 +9,72 @@
         "exactEnglish": 23,
         "referenceRemappedOrUnavailable": 0,
         "exactNativeAtReaderReference": 23,
-        "eligibleForIndependentReview": 23
+        "eligibleForIndependentReview": 23,
+        "books": {
+          "matthew": {
+            "exactEnglish": 5,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 5
+          },
+          "luke": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 2
+          },
+          "john": {
+            "exactEnglish": 5,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 5
+          },
+          "acts": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 2
+          },
+          "romans": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 1
+          },
+          "1-corinthians": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 2
+          },
+          "2-corinthians": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 1
+          },
+          "1-thessalonians": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 1
+          },
+          "1-timothy": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 1
+          },
+          "hebrews": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 1
+          },
+          "1-john": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 2
+          }
+        }
       },
       "robinson-tr": {
         "screened": 476,
         "exactEnglish": 0,
         "referenceRemappedOrUnavailable": 0,
         "exactNativeAtReaderReference": 0,
-        "eligibleForIndependentReview": 0
+        "eligibleForIndependentReview": 0,
+        "books": {}
       }
     },
     "asv": {
@@ -25,14 +83,143 @@
         "exactEnglish": 306,
         "referenceRemappedOrUnavailable": 0,
         "exactNativeAtReaderReference": 306,
-        "eligibleForIndependentReview": 306
+        "eligibleForIndependentReview": 306,
+        "books": {
+          "matthew": {
+            "exactEnglish": 56,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 56
+          },
+          "mark": {
+            "exactEnglish": 31,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 31
+          },
+          "luke": {
+            "exactEnglish": 61,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 61
+          },
+          "john": {
+            "exactEnglish": 61,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 61
+          },
+          "acts": {
+            "exactEnglish": 28,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 28
+          },
+          "romans": {
+            "exactEnglish": 13,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 13
+          },
+          "1-corinthians": {
+            "exactEnglish": 17,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 17
+          },
+          "2-corinthians": {
+            "exactEnglish": 8,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 8
+          },
+          "galatians": {
+            "exactEnglish": 6,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 6
+          },
+          "ephesians": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 2
+          },
+          "philippians": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 1
+          },
+          "colossians": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 2
+          },
+          "1-thessalonians": {
+            "exactEnglish": 3,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 3
+          },
+          "2-thessalonians": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 1
+          },
+          "1-timothy": {
+            "exactEnglish": 3,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 3
+          },
+          "hebrews": {
+            "exactEnglish": 5,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 5
+          },
+          "1-john": {
+            "exactEnglish": 7,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 7
+          },
+          "revelation": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 1
+          }
+        }
       },
       "robinson-tr": {
         "screened": 476,
         "exactEnglish": 12,
         "referenceRemappedOrUnavailable": 0,
         "exactNativeAtReaderReference": 0,
-        "eligibleForIndependentReview": 0
+        "eligibleForIndependentReview": 0,
+        "books": {
+          "matthew": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "mark": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "luke": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "john": {
+            "exactEnglish": 5,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "acts": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "ephesians": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "revelation": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          }
+        }
       }
     },
     "ylt": {
@@ -41,14 +228,22 @@
         "exactEnglish": 1,
         "referenceRemappedOrUnavailable": 0,
         "exactNativeAtReaderReference": 1,
-        "eligibleForIndependentReview": 1
+        "eligibleForIndependentReview": 1,
+        "books": {
+          "john": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 1
+          }
+        }
       },
       "robinson-tr": {
         "screened": 476,
         "exactEnglish": 0,
         "referenceRemappedOrUnavailable": 0,
         "exactNativeAtReaderReference": 0,
-        "eligibleForIndependentReview": 0
+        "eligibleForIndependentReview": 0,
+        "books": {}
       }
     },
     "dby": {
@@ -57,14 +252,77 @@
         "exactEnglish": 41,
         "referenceRemappedOrUnavailable": 0,
         "exactNativeAtReaderReference": 41,
-        "eligibleForIndependentReview": 41
+        "eligibleForIndependentReview": 41,
+        "books": {
+          "matthew": {
+            "exactEnglish": 3,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 3
+          },
+          "mark": {
+            "exactEnglish": 6,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 6
+          },
+          "luke": {
+            "exactEnglish": 6,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 6
+          },
+          "john": {
+            "exactEnglish": 10,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 10
+          },
+          "acts": {
+            "exactEnglish": 3,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 3
+          },
+          "romans": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 1
+          },
+          "1-corinthians": {
+            "exactEnglish": 3,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 3
+          },
+          "2-corinthians": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 2
+          },
+          "1-thessalonians": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 1
+          },
+          "hebrews": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 2
+          },
+          "james": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 2
+          },
+          "1-john": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 2
+          }
+        }
       },
       "robinson-tr": {
         "screened": 476,
         "exactEnglish": 0,
         "referenceRemappedOrUnavailable": 0,
         "exactNativeAtReaderReference": 0,
-        "eligibleForIndependentReview": 0
+        "eligibleForIndependentReview": 0,
+        "books": {}
       }
     },
     "webster": {
@@ -73,14 +331,243 @@
         "exactEnglish": 1364,
         "referenceRemappedOrUnavailable": 0,
         "exactNativeAtReaderReference": 1364,
-        "eligibleForIndependentReview": 1364
+        "eligibleForIndependentReview": 1364,
+        "books": {
+          "matthew": {
+            "exactEnglish": 180,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 180
+          },
+          "mark": {
+            "exactEnglish": 102,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 102
+          },
+          "luke": {
+            "exactEnglish": 156,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 156
+          },
+          "john": {
+            "exactEnglish": 131,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 131
+          },
+          "acts": {
+            "exactEnglish": 143,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 143
+          },
+          "romans": {
+            "exactEnglish": 82,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 82
+          },
+          "1-corinthians": {
+            "exactEnglish": 108,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 108
+          },
+          "2-corinthians": {
+            "exactEnglish": 50,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 50
+          },
+          "galatians": {
+            "exactEnglish": 41,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 41
+          },
+          "ephesians": {
+            "exactEnglish": 35,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 35
+          },
+          "philippians": {
+            "exactEnglish": 26,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 26
+          },
+          "colossians": {
+            "exactEnglish": 17,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 17
+          },
+          "1-thessalonians": {
+            "exactEnglish": 21,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 21
+          },
+          "2-thessalonians": {
+            "exactEnglish": 14,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 14
+          },
+          "1-timothy": {
+            "exactEnglish": 32,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 32
+          },
+          "2-timothy": {
+            "exactEnglish": 21,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 21
+          },
+          "titus": {
+            "exactEnglish": 11,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 11
+          },
+          "philemon": {
+            "exactEnglish": 4,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 4
+          },
+          "hebrews": {
+            "exactEnglish": 76,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 76
+          },
+          "james": {
+            "exactEnglish": 33,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 33
+          },
+          "1-peter": {
+            "exactEnglish": 19,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 19
+          },
+          "2-peter": {
+            "exactEnglish": 9,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 9
+          },
+          "1-john": {
+            "exactEnglish": 25,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 25
+          },
+          "2-john": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 2
+          },
+          "3-john": {
+            "exactEnglish": 4,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 4
+          },
+          "jude": {
+            "exactEnglish": 4,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 4
+          },
+          "revelation": {
+            "exactEnglish": 18,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 18
+          }
+        }
       },
       "robinson-tr": {
         "screened": 476,
         "exactEnglish": 102,
         "referenceRemappedOrUnavailable": 0,
         "exactNativeAtReaderReference": 0,
-        "eligibleForIndependentReview": 0
+        "eligibleForIndependentReview": 0,
+        "books": {
+          "matthew": {
+            "exactEnglish": 6,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "mark": {
+            "exactEnglish": 6,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "luke": {
+            "exactEnglish": 12,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "john": {
+            "exactEnglish": 17,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "acts": {
+            "exactEnglish": 14,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "romans": {
+            "exactEnglish": 3,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "1-corinthians": {
+            "exactEnglish": 3,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "2-corinthians": {
+            "exactEnglish": 3,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "galatians": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "ephesians": {
+            "exactEnglish": 3,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "colossians": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "1-thessalonians": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "2-timothy": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "hebrews": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "james": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "1-peter": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "1-john": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "revelation": {
+            "exactEnglish": 25,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          }
+        }
       }
     },
     "rv": {
@@ -89,14 +576,148 @@
         "exactEnglish": 372,
         "referenceRemappedOrUnavailable": 0,
         "exactNativeAtReaderReference": 372,
-        "eligibleForIndependentReview": 372
+        "eligibleForIndependentReview": 372,
+        "books": {
+          "matthew": {
+            "exactEnglish": 74,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 74
+          },
+          "mark": {
+            "exactEnglish": 35,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 35
+          },
+          "luke": {
+            "exactEnglish": 70,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 70
+          },
+          "john": {
+            "exactEnglish": 77,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 77
+          },
+          "acts": {
+            "exactEnglish": 40,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 40
+          },
+          "romans": {
+            "exactEnglish": 13,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 13
+          },
+          "1-corinthians": {
+            "exactEnglish": 17,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 17
+          },
+          "2-corinthians": {
+            "exactEnglish": 8,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 8
+          },
+          "galatians": {
+            "exactEnglish": 5,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 5
+          },
+          "ephesians": {
+            "exactEnglish": 3,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 3
+          },
+          "philippians": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 1
+          },
+          "colossians": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 1
+          },
+          "1-thessalonians": {
+            "exactEnglish": 5,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 5
+          },
+          "2-thessalonians": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 1
+          },
+          "1-timothy": {
+            "exactEnglish": 4,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 4
+          },
+          "2-timothy": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 1
+          },
+          "hebrews": {
+            "exactEnglish": 7,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 7
+          },
+          "1-john": {
+            "exactEnglish": 8,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 8
+          },
+          "revelation": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 2
+          }
+        }
       },
       "robinson-tr": {
         "screened": 476,
         "exactEnglish": 14,
         "referenceRemappedOrUnavailable": 0,
         "exactNativeAtReaderReference": 0,
-        "eligibleForIndependentReview": 0
+        "eligibleForIndependentReview": 0,
+        "books": {
+          "matthew": {
+            "exactEnglish": 3,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "mark": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "luke": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "john": {
+            "exactEnglish": 4,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "acts": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "ephesians": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "revelation": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          }
+        }
       }
     },
     "gnv": {
@@ -105,14 +726,62 @@
         "exactEnglish": 18,
         "referenceRemappedOrUnavailable": 0,
         "exactNativeAtReaderReference": 18,
-        "eligibleForIndependentReview": 18
+        "eligibleForIndependentReview": 18,
+        "books": {
+          "matthew": {
+            "exactEnglish": 5,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 5
+          },
+          "luke": {
+            "exactEnglish": 3,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 3
+          },
+          "john": {
+            "exactEnglish": 3,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 3
+          },
+          "acts": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 1
+          },
+          "romans": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 2
+          },
+          "ephesians": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 1
+          },
+          "colossians": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 1
+          },
+          "1-thessalonians": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 1
+          },
+          "hebrews": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 1
+          }
+        }
       },
       "robinson-tr": {
         "screened": 476,
         "exactEnglish": 0,
         "referenceRemappedOrUnavailable": 0,
         "exactNativeAtReaderReference": 0,
-        "eligibleForIndependentReview": 0
+        "eligibleForIndependentReview": 0,
+        "books": {}
       }
     },
     "dra": {
@@ -121,14 +790,123 @@
         "exactEnglish": 115,
         "referenceRemappedOrUnavailable": 3,
         "exactNativeAtReaderReference": 112,
-        "eligibleForIndependentReview": 112
+        "eligibleForIndependentReview": 112,
+        "books": {
+          "matthew": {
+            "exactEnglish": 9,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 9
+          },
+          "mark": {
+            "exactEnglish": 12,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 12
+          },
+          "luke": {
+            "exactEnglish": 21,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 21
+          },
+          "john": {
+            "exactEnglish": 18,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 18
+          },
+          "acts": {
+            "exactEnglish": 12,
+            "referenceRemappedOrUnavailable": 3,
+            "exactNativeAtReaderReference": 9
+          },
+          "romans": {
+            "exactEnglish": 5,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 5
+          },
+          "1-corinthians": {
+            "exactEnglish": 6,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 6
+          },
+          "2-corinthians": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 2
+          },
+          "galatians": {
+            "exactEnglish": 4,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 4
+          },
+          "ephesians": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 2
+          },
+          "philippians": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 1
+          },
+          "colossians": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 2
+          },
+          "1-thessalonians": {
+            "exactEnglish": 3,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 3
+          },
+          "1-timothy": {
+            "exactEnglish": 4,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 4
+          },
+          "2-timothy": {
+            "exactEnglish": 2,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 2
+          },
+          "james": {
+            "exactEnglish": 3,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 3
+          },
+          "1-john": {
+            "exactEnglish": 5,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 5
+          },
+          "revelation": {
+            "exactEnglish": 4,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 4
+          }
+        }
       },
       "robinson-tr": {
         "screened": 476,
         "exactEnglish": 3,
         "referenceRemappedOrUnavailable": 0,
         "exactNativeAtReaderReference": 0,
-        "eligibleForIndependentReview": 0
+        "eligibleForIndependentReview": 0,
+        "books": {
+          "matthew": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "acts": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          },
+          "1-corinthians": {
+            "exactEnglish": 1,
+            "referenceRemappedOrUnavailable": 0,
+            "exactNativeAtReaderReference": 0
+          }
+        }
       }
     }
   }

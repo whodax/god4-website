@@ -41,23 +41,24 @@ async function run(){
     const byEdition=result.editions[id]={};
     for(const [source,verses] of datasets){
       const counts=byEdition[source]={screened:verses.length,exactEnglish:0,referenceRemappedOrUnavailable:0,
-        exactNativeAtReaderReference:0,eligibleForIndependentReview:0};
+        exactNativeAtReaderReference:0,eligibleForIndependentReview:0,books:{}};
       for(const {bookId,chapter,verse,verseText,tokens} of verses){
         const coordinate=[bookId,chapter,verse].join(':');
         const target=address('reader-'+id,coordinate);
         if(!target||bible[bookId]?.[chapter]?.verses?.[verse-1]!==verseText) continue;
-        counts.exactEnglish++;
+        const book=counts.books[bookId]||={exactEnglish:0,referenceRemappedOrUnavailable:0,exactNativeAtReaderReference:0};
+        counts.exactEnglish++;book.exactEnglish++;
         const {records}=await original.lookupVerse({translationId:id,bookId,chapter,verse,verseText});
         if(!records.length||records.some((record,index)=>record.bookId!==bookId||record.chapter!==chapter||
           record.verse!==verse||record.tokenIndex!==index||record.status!=='authoritative'||record.language!=='greek')){
-          counts.referenceRemappedOrUnavailable++;
+          counts.referenceRemappedOrUnavailable++;book.referenceRemappedOrUnavailable++;
           continue;
         }
         if(records.length===tokens.length&&records.every((record,index)=>{
           const [surface,id,morph]=tokens[index];
           return record.surface===surface&&record.strongsNumber===id&&record.morphology===morph;
         })){
-          counts.exactNativeAtReaderReference++;
+          counts.exactNativeAtReaderReference++;book.exactNativeAtReaderReference++;
           counts.eligibleForIndependentReview++;
         }
       }

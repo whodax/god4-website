@@ -21,3 +21,20 @@ test('Word Study keeps both catalog indexes while evicting chapters under the sh
 });
 
 test.use({serviceWorkers:'allow'});
+
+
+test('KJV supplied words remain outside Textus Receptus groups and contextual definitions follow the verified verb',async({page})=>{
+  await page.goto('/');
+  await page.evaluate(async()=>{await initializeBibleExperience();await changeTranslation('kjv');await navigateReaderToPassage('matthew',1,6);});
+  const verse=page.locator('#readerContent [data-verse-number="6"]');
+  const wife=verse.locator('i [data-word-study-term="wife"]');
+  await wife.press('Enter');
+  await expect(page.locator('#wordStudyOriginalIntro')).toContainText('Greek words from the Textus Receptus.');
+  await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('Exact word alignment is unavailable');
+  await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveCount(0);
+  await page.keyboard.press('Escape');
+  await expect(wife).toBeFocused();
+  await verse.locator('[data-word-study-term="begat"]').first().press('Enter');
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('Became the father of the person named next in this genealogy.');
+  await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveText('εγεννησεν');
+});
