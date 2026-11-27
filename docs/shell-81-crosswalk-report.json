@@ -1,0 +1,1252 @@
+{
+  "version": 1,
+  "baseline": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+  "sources": {
+    "reader-web": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+    "reader-kjv": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+    "reader-asv": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+    "reader-ylt": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+    "reader-dby": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+    "reader-webster": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+    "reader-rv": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+    "reader-gnv": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+    "reader-dra": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+    "reader-ethiopian": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+    "reader-hebrew-aramaic": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+    "reader-greek-byzantine": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+    "reader-greek-tr": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+    "clear-wlcm": "c99bd0ae6946775f932517656308ca19fc706921",
+    "clear-sblgnt": "c99bd0ae6946775f932517656308ca19fc706921",
+    "clear-bgnt": "c99bd0ae6946775f932517656308ca19fc706921",
+    "clear-bsb-ot": "c99bd0ae6946775f932517656308ca19fc706921",
+    "clear-bsb-nt": "c99bd0ae6946775f932517656308ca19fc706921",
+    "uhb": "d4ee137ec5a938251f9454fdfa21d3805e8bc36d00c75a90bd151e216eac2971",
+    "ugnt": "3a55bddb383c776dd56a3c7fb3401b2eb523e8611d31ea66aced26840064999e",
+    "ult": "9cb1f6d419b60adfe039c3a5a088a9a77499a91e22ddb9d505317caaa0a0f03f",
+    "berean-publisher": "aa2a9a0f004d015738cd1839c7c56c3be2549e0d4f4537090c2017268c223c60",
+    "crosswire-kjv": "d490be7e34762deb2c76cb2c1306d4808e27890d"
+  },
+  "referenceInventory": {
+    "crosswire": {
+      "addressed": 31102,
+      "readerPresent": 31102,
+      "exactKjvText": 24139,
+      "ambiguous": 0
+    },
+    "readerExceptions": [
+      {
+        "version": 1,
+        "from": [
+          {
+            "source": "reader-web",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "matthew:23:13",
+            "bookId": "matthew",
+            "chapter": 23,
+            "verse": 13,
+            "part": ""
+          }
+        ],
+        "to": [
+          {
+            "source": "reader-greek-byzantine",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "matthew:23:14",
+            "bookId": "matthew",
+            "chapter": 23,
+            "verse": 14,
+            "part": ""
+          }
+        ],
+        "relation": "one-to-one",
+        "evidence": {
+          "kind": "declared-numbering",
+          "locator": "Shell 80 Reader original-language provider reviewed verse coordinates"
+        }
+      },
+      {
+        "version": 1,
+        "from": [
+          {
+            "source": "reader-web",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "matthew:23:14",
+            "bookId": "matthew",
+            "chapter": 23,
+            "verse": 14,
+            "part": ""
+          }
+        ],
+        "to": [
+          {
+            "source": "reader-greek-byzantine",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "matthew:23:13",
+            "bookId": "matthew",
+            "chapter": 23,
+            "verse": 13,
+            "part": ""
+          }
+        ],
+        "relation": "one-to-one",
+        "evidence": {
+          "kind": "declared-numbering",
+          "locator": "Shell 80 Reader original-language provider reviewed verse coordinates"
+        }
+      },
+      {
+        "version": 1,
+        "from": [
+          {
+            "source": "reader-web",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "romans:14:24",
+            "bookId": "romans",
+            "chapter": 14,
+            "verse": 24,
+            "part": ""
+          }
+        ],
+        "to": [
+          {
+            "source": "reader-greek-byzantine",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "romans:16:25",
+            "bookId": "romans",
+            "chapter": 16,
+            "verse": 25,
+            "part": ""
+          }
+        ],
+        "relation": "one-to-one",
+        "evidence": {
+          "kind": "declared-numbering",
+          "locator": "Shell 80 Reader original-language provider reviewed verse coordinates"
+        }
+      },
+      {
+        "version": 1,
+        "from": [
+          {
+            "source": "reader-web",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "romans:14:25",
+            "bookId": "romans",
+            "chapter": 14,
+            "verse": 25,
+            "part": ""
+          }
+        ],
+        "to": [
+          {
+            "source": "reader-greek-byzantine",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "romans:16:26",
+            "bookId": "romans",
+            "chapter": 16,
+            "verse": 26,
+            "part": ""
+          }
+        ],
+        "relation": "one-to-one",
+        "evidence": {
+          "kind": "declared-numbering",
+          "locator": "Shell 80 Reader original-language provider reviewed verse coordinates"
+        }
+      },
+      {
+        "version": 1,
+        "from": [
+          {
+            "source": "reader-web",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "romans:14:26",
+            "bookId": "romans",
+            "chapter": 14,
+            "verse": 26,
+            "part": ""
+          }
+        ],
+        "to": [
+          {
+            "source": "reader-greek-byzantine",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "romans:16:27",
+            "bookId": "romans",
+            "chapter": 16,
+            "verse": 27,
+            "part": ""
+          }
+        ],
+        "relation": "one-to-one",
+        "evidence": {
+          "kind": "declared-numbering",
+          "locator": "Shell 80 Reader original-language provider reviewed verse coordinates"
+        }
+      },
+      {
+        "version": 1,
+        "from": [
+          {
+            "source": "reader-kjv",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "acts:8:37",
+            "bookId": "acts",
+            "chapter": 8,
+            "verse": 37,
+            "part": ""
+          }
+        ],
+        "to": [
+          {
+            "source": "reader-greek-tr",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "acts:8:37",
+            "bookId": "acts",
+            "chapter": 8,
+            "verse": 37,
+            "part": ""
+          }
+        ],
+        "relation": "one-to-one",
+        "evidence": {
+          "kind": "declared-numbering",
+          "locator": "Shell 80 Reader explicitly names Textus Receptus variant for this KJV text"
+        }
+      },
+      {
+        "version": 1,
+        "from": [
+          {
+            "source": "reader-kjv",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "acts:15:34",
+            "bookId": "acts",
+            "chapter": 15,
+            "verse": 34,
+            "part": ""
+          }
+        ],
+        "to": [
+          {
+            "source": "reader-greek-tr",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "acts:15:34",
+            "bookId": "acts",
+            "chapter": 15,
+            "verse": 34,
+            "part": ""
+          }
+        ],
+        "relation": "one-to-one",
+        "evidence": {
+          "kind": "declared-numbering",
+          "locator": "Shell 80 Reader explicitly names Textus Receptus variant for this KJV text"
+        }
+      },
+      {
+        "version": 1,
+        "from": [
+          {
+            "source": "reader-kjv",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "acts:24:7",
+            "bookId": "acts",
+            "chapter": 24,
+            "verse": 7,
+            "part": ""
+          }
+        ],
+        "to": [
+          {
+            "source": "reader-greek-tr",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "acts:24:7",
+            "bookId": "acts",
+            "chapter": 24,
+            "verse": 7,
+            "part": ""
+          }
+        ],
+        "relation": "one-to-one",
+        "evidence": {
+          "kind": "declared-numbering",
+          "locator": "Shell 80 Reader explicitly names Textus Receptus variant for this KJV text"
+        }
+      },
+      {
+        "version": 1,
+        "from": [
+          {
+            "source": "reader-kjv",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "luke:17:36",
+            "bookId": "luke",
+            "chapter": 17,
+            "verse": 36,
+            "part": ""
+          }
+        ],
+        "to": [
+          {
+            "source": "reader-greek-tr",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "luke:17:36",
+            "bookId": "luke",
+            "chapter": 17,
+            "verse": 36,
+            "part": ""
+          }
+        ],
+        "relation": "one-to-one",
+        "evidence": {
+          "kind": "declared-numbering",
+          "locator": "Shell 80 Reader explicitly names Textus Receptus variant for this KJV text"
+        }
+      },
+      {
+        "version": 1,
+        "from": [
+          {
+            "source": "reader-dra",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "numbers:13:1",
+            "bookId": "numbers",
+            "chapter": 13,
+            "verse": 1,
+            "part": ""
+          }
+        ],
+        "to": [
+          {
+            "source": "reader-hebrew-aramaic",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "numbers:12:16",
+            "bookId": "numbers",
+            "chapter": 12,
+            "verse": 16,
+            "part": ""
+          }
+        ],
+        "relation": "one-to-one",
+        "evidence": {
+          "kind": "declared-numbering",
+          "locator": "Shell 80 Reader original-language provider reviewed DRA coordinates"
+        }
+      },
+      {
+        "version": 1,
+        "from": [
+          {
+            "source": "reader-dra",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "numbers:30:1",
+            "bookId": "numbers",
+            "chapter": 30,
+            "verse": 1,
+            "part": ""
+          }
+        ],
+        "to": [
+          {
+            "source": "reader-hebrew-aramaic",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "numbers:29:40",
+            "bookId": "numbers",
+            "chapter": 29,
+            "verse": 40,
+            "part": ""
+          }
+        ],
+        "relation": "one-to-one",
+        "evidence": {
+          "kind": "declared-numbering",
+          "locator": "Shell 80 Reader original-language provider reviewed DRA coordinates"
+        }
+      },
+      {
+        "version": 1,
+        "from": [
+          {
+            "source": "reader-dra",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "matthew:5:4",
+            "bookId": "matthew",
+            "chapter": 5,
+            "verse": 4,
+            "part": ""
+          }
+        ],
+        "to": [
+          {
+            "source": "reader-greek-byzantine",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "matthew:5:5",
+            "bookId": "matthew",
+            "chapter": 5,
+            "verse": 5,
+            "part": ""
+          }
+        ],
+        "relation": "one-to-one",
+        "evidence": {
+          "kind": "declared-numbering",
+          "locator": "Shell 80 Reader original-language provider reviewed DRA coordinates"
+        }
+      },
+      {
+        "version": 1,
+        "from": [
+          {
+            "source": "reader-dra",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "mark:8:39",
+            "bookId": "mark",
+            "chapter": 8,
+            "verse": 39,
+            "part": ""
+          }
+        ],
+        "to": [
+          {
+            "source": "reader-greek-byzantine",
+            "revision": "82042e8cc29875d3d69aeea241c1a131368ec15b",
+            "coordinate": "mark:9:1",
+            "bookId": "mark",
+            "chapter": 9,
+            "verse": 1,
+            "part": ""
+          }
+        ],
+        "relation": "one-to-one",
+        "evidence": {
+          "kind": "declared-numbering",
+          "locator": "Shell 80 Reader original-language provider reviewed DRA coordinates"
+        }
+      }
+    ],
+    "WLCM": {
+      "rows": 48372,
+      "unusable": 0,
+      "coordinateLinks": 2084,
+      "relationCounts": {
+        "one-to-one": 2084
+      },
+      "examples": [
+        {
+          "version": 1,
+          "from": [
+            {
+              "source": "clear-bsb-ot",
+              "revision": "c99bd0ae6946775f932517656308ca19fc706921",
+              "coordinate": "01031055",
+              "bookId": "genesis",
+              "chapter": 31,
+              "verse": 55,
+              "part": ""
+            }
+          ],
+          "to": [
+            {
+              "source": "clear-wlcm",
+              "revision": "c99bd0ae6946775f932517656308ca19fc706921",
+              "coordinate": "01032001",
+              "bookId": "genesis",
+              "chapter": 32,
+              "verse": 1,
+              "part": ""
+            }
+          ],
+          "relation": "one-to-one",
+          "evidence": {
+            "kind": "declared-numbering",
+            "locator": "Pinned BSB target TSV source_verse"
+          }
+        },
+        {
+          "version": 1,
+          "from": [
+            {
+              "source": "clear-bsb-ot",
+              "revision": "c99bd0ae6946775f932517656308ca19fc706921",
+              "coordinate": "01032001",
+              "bookId": "genesis",
+              "chapter": 32,
+              "verse": 1,
+              "part": ""
+            }
+          ],
+          "to": [
+            {
+              "source": "clear-wlcm",
+              "revision": "c99bd0ae6946775f932517656308ca19fc706921",
+              "coordinate": "01032002",
+              "bookId": "genesis",
+              "chapter": 32,
+              "verse": 2,
+              "part": ""
+            }
+          ],
+          "relation": "one-to-one",
+          "evidence": {
+            "kind": "declared-numbering",
+            "locator": "Pinned BSB target TSV source_verse"
+          }
+        },
+        {
+          "version": 1,
+          "from": [
+            {
+              "source": "clear-bsb-ot",
+              "revision": "c99bd0ae6946775f932517656308ca19fc706921",
+              "coordinate": "01032002",
+              "bookId": "genesis",
+              "chapter": 32,
+              "verse": 2,
+              "part": ""
+            }
+          ],
+          "to": [
+            {
+              "source": "clear-wlcm",
+              "revision": "c99bd0ae6946775f932517656308ca19fc706921",
+              "coordinate": "01032003",
+              "bookId": "genesis",
+              "chapter": 32,
+              "verse": 3,
+              "part": ""
+            }
+          ],
+          "relation": "one-to-one",
+          "evidence": {
+            "kind": "declared-numbering",
+            "locator": "Pinned BSB target TSV source_verse"
+          }
+        },
+        {
+          "version": 1,
+          "from": [
+            {
+              "source": "clear-bsb-ot",
+              "revision": "c99bd0ae6946775f932517656308ca19fc706921",
+              "coordinate": "01032003",
+              "bookId": "genesis",
+              "chapter": 32,
+              "verse": 3,
+              "part": ""
+            }
+          ],
+          "to": [
+            {
+              "source": "clear-wlcm",
+              "revision": "c99bd0ae6946775f932517656308ca19fc706921",
+              "coordinate": "01032004",
+              "bookId": "genesis",
+              "chapter": 32,
+              "verse": 4,
+              "part": ""
+            }
+          ],
+          "relation": "one-to-one",
+          "evidence": {
+            "kind": "declared-numbering",
+            "locator": "Pinned BSB target TSV source_verse"
+          }
+        },
+        {
+          "version": 1,
+          "from": [
+            {
+              "source": "clear-bsb-ot",
+              "revision": "c99bd0ae6946775f932517656308ca19fc706921",
+              "coordinate": "01032004",
+              "bookId": "genesis",
+              "chapter": 32,
+              "verse": 4,
+              "part": ""
+            }
+          ],
+          "to": [
+            {
+              "source": "clear-wlcm",
+              "revision": "c99bd0ae6946775f932517656308ca19fc706921",
+              "coordinate": "01032005",
+              "bookId": "genesis",
+              "chapter": 32,
+              "verse": 5,
+              "part": ""
+            }
+          ],
+          "relation": "one-to-one",
+          "evidence": {
+            "kind": "declared-numbering",
+            "locator": "Pinned BSB target TSV source_verse"
+          }
+        }
+      ]
+    },
+    "SBLGNT": {
+      "rows": 11,
+      "unusable": 0,
+      "coordinateLinks": 1,
+      "relationCounts": {
+        "one-to-one": 1
+      },
+      "examples": [
+        {
+          "version": 1,
+          "from": [
+            {
+              "source": "clear-bsb-nt",
+              "revision": "c99bd0ae6946775f932517656308ca19fc706921",
+              "coordinate": "44019041",
+              "bookId": "acts",
+              "chapter": 19,
+              "verse": 41,
+              "part": ""
+            }
+          ],
+          "to": [
+            {
+              "source": "clear-sblgnt",
+              "revision": "c99bd0ae6946775f932517656308ca19fc706921",
+              "coordinate": "44019040",
+              "bookId": "acts",
+              "chapter": 19,
+              "verse": 40,
+              "part": ""
+            }
+          ],
+          "relation": "one-to-one",
+          "evidence": {
+            "kind": "declared-numbering",
+            "locator": "Pinned BSB target TSV source_verse"
+          }
+        }
+      ]
+    }
+  },
+  "screens": {
+    "WLCM": {
+      "words": 27143,
+      "verses": 6222,
+      "counts": {
+        "baselineVerified": 1147,
+        "independentPending": 0,
+        "linguisticPending": 24218,
+        "ambiguous": 1778,
+        "rejected": 0
+      },
+      "groups": {
+        "baselineVerified": 707,
+        "independentPending": 0,
+        "linguisticPending": 13339,
+        "ambiguous": 892,
+        "rejected": 0
+      },
+      "byBook": {
+        "genesis": {
+          "baselineVerified": 45,
+          "independentPending": 0,
+          "linguisticPending": 1818,
+          "ambiguous": 110,
+          "rejected": 0
+        },
+        "exodus": {
+          "baselineVerified": 53,
+          "independentPending": 0,
+          "linguisticPending": 1303,
+          "ambiguous": 164,
+          "rejected": 0
+        },
+        "leviticus": {
+          "baselineVerified": 31,
+          "independentPending": 0,
+          "linguisticPending": 865,
+          "ambiguous": 75,
+          "rejected": 0
+        },
+        "numbers": {
+          "baselineVerified": 34,
+          "independentPending": 0,
+          "linguisticPending": 1240,
+          "ambiguous": 163,
+          "rejected": 0
+        },
+        "deuteronomy": {
+          "baselineVerified": 42,
+          "independentPending": 0,
+          "linguisticPending": 771,
+          "ambiguous": 102,
+          "rejected": 0
+        },
+        "joshua": {
+          "baselineVerified": 21,
+          "independentPending": 0,
+          "linguisticPending": 664,
+          "ambiguous": 70,
+          "rejected": 0
+        },
+        "judges": {
+          "baselineVerified": 16,
+          "independentPending": 0,
+          "linguisticPending": 543,
+          "ambiguous": 51,
+          "rejected": 0
+        },
+        "ruth": {
+          "baselineVerified": 1,
+          "independentPending": 0,
+          "linguisticPending": 39,
+          "ambiguous": 6,
+          "rejected": 0
+        },
+        "1-samuel": {
+          "baselineVerified": 22,
+          "independentPending": 0,
+          "linguisticPending": 801,
+          "ambiguous": 24,
+          "rejected": 0
+        },
+        "2-samuel": {
+          "baselineVerified": 34,
+          "independentPending": 0,
+          "linguisticPending": 722,
+          "ambiguous": 49,
+          "rejected": 0
+        },
+        "1-kings": {
+          "baselineVerified": 60,
+          "independentPending": 0,
+          "linguisticPending": 979,
+          "ambiguous": 74,
+          "rejected": 0
+        },
+        "2-kings": {
+          "baselineVerified": 60,
+          "independentPending": 0,
+          "linguisticPending": 973,
+          "ambiguous": 64,
+          "rejected": 0
+        },
+        "1-chronicles": {
+          "baselineVerified": 0,
+          "independentPending": 0,
+          "linguisticPending": 1616,
+          "ambiguous": 0,
+          "rejected": 0
+        },
+        "2-chronicles": {
+          "baselineVerified": 0,
+          "independentPending": 0,
+          "linguisticPending": 1387,
+          "ambiguous": 0,
+          "rejected": 0
+        },
+        "ezra": {
+          "baselineVerified": 52,
+          "independentPending": 0,
+          "linguisticPending": 272,
+          "ambiguous": 46,
+          "rejected": 0
+        },
+        "nehemiah": {
+          "baselineVerified": 18,
+          "independentPending": 0,
+          "linguisticPending": 296,
+          "ambiguous": 79,
+          "rejected": 0
+        },
+        "esther": {
+          "baselineVerified": 7,
+          "independentPending": 0,
+          "linguisticPending": 225,
+          "ambiguous": 6,
+          "rejected": 0
+        },
+        "job": {
+          "baselineVerified": 101,
+          "independentPending": 0,
+          "linguisticPending": 623,
+          "ambiguous": 75,
+          "rejected": 0
+        },
+        "psalms": {
+          "baselineVerified": 285,
+          "independentPending": 0,
+          "linguisticPending": 1426,
+          "ambiguous": 206,
+          "rejected": 0
+        },
+        "proverbs": {
+          "baselineVerified": 126,
+          "independentPending": 0,
+          "linguisticPending": 1330,
+          "ambiguous": 158,
+          "rejected": 0
+        },
+        "ecclesiastes": {
+          "baselineVerified": 17,
+          "independentPending": 0,
+          "linguisticPending": 160,
+          "ambiguous": 37,
+          "rejected": 0
+        },
+        "song-of-solomon": {
+          "baselineVerified": 17,
+          "independentPending": 0,
+          "linguisticPending": 122,
+          "ambiguous": 25,
+          "rejected": 0
+        },
+        "isaiah": {
+          "baselineVerified": 0,
+          "independentPending": 0,
+          "linguisticPending": 1565,
+          "ambiguous": 0,
+          "rejected": 0
+        },
+        "jeremiah": {
+          "baselineVerified": 0,
+          "independentPending": 0,
+          "linguisticPending": 1599,
+          "ambiguous": 0,
+          "rejected": 0
+        },
+        "lamentations": {
+          "baselineVerified": 20,
+          "independentPending": 0,
+          "linguisticPending": 123,
+          "ambiguous": 8,
+          "rejected": 0
+        },
+        "ezekiel": {
+          "baselineVerified": 0,
+          "independentPending": 0,
+          "linguisticPending": 1513,
+          "ambiguous": 0,
+          "rejected": 0
+        },
+        "daniel": {
+          "baselineVerified": 3,
+          "independentPending": 0,
+          "linguisticPending": 259,
+          "ambiguous": 25,
+          "rejected": 0
+        },
+        "hosea": {
+          "baselineVerified": 19,
+          "independentPending": 0,
+          "linguisticPending": 82,
+          "ambiguous": 0,
+          "rejected": 0
+        },
+        "joel": {
+          "baselineVerified": 10,
+          "independentPending": 0,
+          "linguisticPending": 49,
+          "ambiguous": 10,
+          "rejected": 0
+        },
+        "amos": {
+          "baselineVerified": 6,
+          "independentPending": 0,
+          "linguisticPending": 110,
+          "ambiguous": 28,
+          "rejected": 0
+        },
+        "obadiah": {
+          "baselineVerified": 0,
+          "independentPending": 0,
+          "linguisticPending": 10,
+          "ambiguous": 7,
+          "rejected": 0
+        },
+        "jonah": {
+          "baselineVerified": 0,
+          "independentPending": 0,
+          "linguisticPending": 24,
+          "ambiguous": 9,
+          "rejected": 0
+        },
+        "micah": {
+          "baselineVerified": 7,
+          "independentPending": 0,
+          "linguisticPending": 81,
+          "ambiguous": 2,
+          "rejected": 0
+        },
+        "nahum": {
+          "baselineVerified": 6,
+          "independentPending": 0,
+          "linguisticPending": 15,
+          "ambiguous": 12,
+          "rejected": 0
+        },
+        "habakkuk": {
+          "baselineVerified": 10,
+          "independentPending": 0,
+          "linguisticPending": 63,
+          "ambiguous": 0,
+          "rejected": 0
+        },
+        "zephaniah": {
+          "baselineVerified": 3,
+          "independentPending": 0,
+          "linguisticPending": 61,
+          "ambiguous": 31,
+          "rejected": 0
+        },
+        "haggai": {
+          "baselineVerified": 0,
+          "independentPending": 0,
+          "linguisticPending": 134,
+          "ambiguous": 0,
+          "rejected": 0
+        },
+        "zechariah": {
+          "baselineVerified": 21,
+          "independentPending": 0,
+          "linguisticPending": 304,
+          "ambiguous": 56,
+          "rejected": 0
+        },
+        "malachi": {
+          "baselineVerified": 0,
+          "independentPending": 0,
+          "linguisticPending": 51,
+          "ambiguous": 6,
+          "rejected": 0
+        }
+      }
+    },
+    "SBLGNT": {
+      "words": 84,
+      "verses": 21,
+      "counts": {
+        "baselineVerified": 6,
+        "independentPending": 0,
+        "linguisticPending": 53,
+        "ambiguous": 25,
+        "rejected": 0
+      },
+      "groups": {
+        "baselineVerified": 6,
+        "independentPending": 0,
+        "linguisticPending": 36,
+        "ambiguous": 18,
+        "rejected": 0
+      },
+      "byBook": {
+        "matthew": {
+          "baselineVerified": 1,
+          "independentPending": 0,
+          "linguisticPending": 2,
+          "ambiguous": 0,
+          "rejected": 0
+        },
+        "mark": {
+          "baselineVerified": 0,
+          "independentPending": 0,
+          "linguisticPending": 2,
+          "ambiguous": 0,
+          "rejected": 0
+        },
+        "acts": {
+          "baselineVerified": 0,
+          "independentPending": 0,
+          "linguisticPending": 0,
+          "ambiguous": 5,
+          "rejected": 0
+        },
+        "romans": {
+          "baselineVerified": 3,
+          "independentPending": 0,
+          "linguisticPending": 7,
+          "ambiguous": 0,
+          "rejected": 0
+        },
+        "1-corinthians": {
+          "baselineVerified": 0,
+          "independentPending": 0,
+          "linguisticPending": 15,
+          "ambiguous": 0,
+          "rejected": 0
+        },
+        "2-corinthians": {
+          "baselineVerified": 0,
+          "independentPending": 0,
+          "linguisticPending": 4,
+          "ambiguous": 0,
+          "rejected": 0
+        },
+        "ephesians": {
+          "baselineVerified": 0,
+          "independentPending": 0,
+          "linguisticPending": 2,
+          "ambiguous": 12,
+          "rejected": 0
+        },
+        "colossians": {
+          "baselineVerified": 2,
+          "independentPending": 0,
+          "linguisticPending": 2,
+          "ambiguous": 0,
+          "rejected": 0
+        },
+        "1-timothy": {
+          "baselineVerified": 0,
+          "independentPending": 0,
+          "linguisticPending": 3,
+          "ambiguous": 0,
+          "rejected": 0
+        },
+        "titus": {
+          "baselineVerified": 0,
+          "independentPending": 0,
+          "linguisticPending": 10,
+          "ambiguous": 0,
+          "rejected": 0
+        },
+        "hebrews": {
+          "baselineVerified": 0,
+          "independentPending": 0,
+          "linguisticPending": 1,
+          "ambiguous": 2,
+          "rejected": 0
+        },
+        "1-peter": {
+          "baselineVerified": 0,
+          "independentPending": 0,
+          "linguisticPending": 5,
+          "ambiguous": 0,
+          "rejected": 0
+        },
+        "2-peter": {
+          "baselineVerified": 0,
+          "independentPending": 0,
+          "linguisticPending": 0,
+          "ambiguous": 6,
+          "rejected": 0
+        }
+      }
+    }
+  },
+  "counts": {
+    "baselineVerified": 1153,
+    "independentPending": 0,
+    "linguisticPending": 24271,
+    "ambiguous": 1803,
+    "rejected": 0
+  },
+  "groups": {
+    "baselineVerified": 713,
+    "independentPending": 0,
+    "linguisticPending": 13375,
+    "ambiguous": 910,
+    "rejected": 0
+  },
+  "comparison": {
+    "noComparableIndependentProjection": 13745,
+    "partial": 399,
+    "disagreement": 68,
+    "exact": 786
+  },
+  "priority": {
+    "don't": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 0,
+      "ambiguous": 0,
+      "rejected": 0
+    },
+    "says": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 9,
+      "ambiguous": 0,
+      "rejected": 0
+    },
+    "didn't": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 0,
+      "ambiguous": 0,
+      "rejected": 0
+    },
+    "spoke": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 26,
+      "ambiguous": 0,
+      "rejected": 0
+    },
+    "brothers": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 9,
+      "ambiguous": 1,
+      "rejected": 0
+    },
+    "doesn't": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 0,
+      "ambiguous": 0,
+      "rejected": 0
+    },
+    "comes": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 5,
+      "ambiguous": 0,
+      "rejected": 0
+    },
+    "listen": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 5,
+      "ambiguous": 1,
+      "rejected": 0
+    },
+    "today": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 4,
+      "ambiguous": 0,
+      "rejected": 0
+    },
+    "king's": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 15,
+      "ambiguous": 0,
+      "rejected": 0
+    },
+    "everyone": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 1,
+      "ambiguous": 0,
+      "rejected": 0
+    },
+    "won't": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 0,
+      "ambiguous": 0,
+      "rejected": 0
+    },
+    "does": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 7,
+      "ambiguous": 1,
+      "rejected": 0
+    },
+    "philistines": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 24,
+      "ambiguous": 1,
+      "rejected": 0
+    },
+    "whoever": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 2,
+      "ambiguous": 0,
+      "rejected": 0
+    },
+    "show": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 0,
+      "ambiguous": 1,
+      "rejected": 0
+    },
+    "can't": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 0,
+      "ambiguous": 0,
+      "rejected": 0
+    },
+    "inhabitants": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 0,
+      "ambiguous": 1,
+      "rejected": 0
+    },
+    "let's": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 0,
+      "ambiguous": 0,
+      "rejected": 0
+    },
+    "loving": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 1,
+      "ambiguous": 0,
+      "rejected": 0
+    },
+    "families": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 2,
+      "ambiguous": 0,
+      "rejected": 0
+    },
+    "news": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 1,
+      "ambiguous": 0,
+      "rejected": 0
+    },
+    "moab": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 17,
+      "ambiguous": 4,
+      "rejected": 0
+    },
+    "isn't": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 0,
+      "ambiguous": 0,
+      "rejected": 0
+    },
+    "whatever": {
+      "baselineVerified": 0,
+      "independentPending": 0,
+      "linguisticPending": 1,
+      "ambiguous": 0,
+      "rejected": 0
+    }
+  },
+  "coordinateReconciliation": {
+    "newlyResolvedReferences": 0,
+    "newlyResolvedTokens": 0,
+    "validatedVersePairs": 6243,
+    "bereanWitnessCompatible": 4939,
+    "byLanguage": {
+      "hebrew": 14854,
+      "aramaic": 84,
+      "greek": 60
+    },
+    "explicitNativePositions": 117422,
+    "groupsWithMultipleNativeMorphemes": 6593
+  },
+  "publishedAdditions": 0,
+  "review": {
+    "development": 29,
+    "holdout": 33,
+    "humanReviewed": 0,
+    "adjudicated": 0
+  }
+}

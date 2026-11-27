@@ -215,4 +215,4 @@ if(require.main===module){
   if(!input || !output) throw new Error('Usage: node tools/import-crosswire-kjv-alignment.js <pinned-osis.xml> <fresh-output-directory>');
   console.log(JSON.stringify(generate(input,output),null,2));
 }
-module.exports={readTaggedVerse,validateVerse,generate,revision,checksum};
+module.exports={readTaggedVerse,validateVerse,generate,revision,checksum,osisCodes};

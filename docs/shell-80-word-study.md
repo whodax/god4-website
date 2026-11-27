@@ -133,7 +133,25 @@ All 489 unit checks passed, including source validation, importer and false-posi
 
 The browser cases used the existing deadlines and no retries. No historical timeout recurred in these runs. Windows commit headroom was 12.07 GiB when sampled. That measurement does not establish the cause of the earlier timeouts. The deployed 390px smoke also verified both English spans of “my tent,” the contextual meaning of “around” in Proverbs 6:21, and full offline reload. [Smoke-tested candidate](https://7b23f3ca.god4-us.pages.dev)
 
-Shell 80 physical Android and TalkBack acceptance is pending.
+## Physical Android and TalkBack acceptance
+
+The owner reported **13 of 13 passed** on November 27, 2026, on preview `66bb6743` at commit `82042e8cc29875d3d69aeea241c1a131368ec15b`.
+
+| Check | Result |
+| --- | --- |
+| WEB Job 19:12, tent | Pass |
+| WEB Job 19:12, my | Pass |
+| WEB Job 19:12, around | Pass |
+| WEB Proverbs 6:21, around | Pass |
+| WEB Numbers 13:8, Ephraim | Pass |
+| WEB Galatians 5:22, kindness | Pass |
+| KJV John 1:1, Word | Pass |
+| KJV Acts 8:37, Christ | Pass |
+| Dark theme | Pass |
+| Close Word Study | Pass |
+| TalkBack | Pass |
+| Full offline reload | Pass |
+| Ethiopian Read Aloud | Pass |
 
 ## Remaining release blockers and next milestone
 

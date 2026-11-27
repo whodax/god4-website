@@ -161,7 +161,7 @@ function validatePackageVerse(dataset,ref,witness,records) {
     }
   }
   const groups=candidates.filter(([,indices])=>indices.every(index=>!incomplete.has(index)));
-  return groups.length?{text:target.text,groups,incompleteWords:incomplete.size}:reject('no complete original word groups');
+  return groups.length?{text:target.text,groups,incompleteWords:incomplete.size,positionIds:words.map(parts=>parts.map(part=>part.id))}:reject('no complete original word groups');
 }
 
 module.exports={loadPackage,targetVerse,validatePackageVerse};

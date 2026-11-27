@@ -73,8 +73,9 @@ function compareHeldout(report,bookId,chapter,verse,prior,projected) {
   }
 }
 
-async function audit(id,directory,ultDir,uhb,ugnt,bereanInput,baselineDirectory,candidateOutput) {
+async function audit(id,directory,ultDir,uhb,ugnt,bereanInput,baselineDirectory,candidateOutput,observer) {
   const dataset=loadPackage(directory,id,clearPins.sha256);
+  observer?.package?.(dataset);
   const hebrew=dataset.hebrew;
   const source=loadSource(hebrew?uhb:ugnt,witnessPins[hebrew?1:2]);
   const ult=loadSource(ultDir,require('./web-alignment-v92-source.json'));
@@ -151,7 +152,10 @@ async function audit(id,directory,ultDir,uhb,ugnt,bereanInput,baselineDirectory,
     const tagged=ult.get(code)?.get(label);
     const parsed=tagged&&readAlignment(tagged);
     const verified=parsed&&!parsed.reason&&validateVerse(parsed.english,tagged,witness,records);
-    const clearAndUlt=verified&&!verified.reason&&validatePhrases(verseText,{text:parsed.english,groups:verified.alignments},evidence).groups;
+    const ultEvidence=verified&&!verified.reason?{text:parsed.english,groups:verified.alignments}:null;
+    const consensus=ultEvidence&&validatePhrases(verseText,ultEvidence,evidence);
+    const clearAndUlt=consensus?.groups;
+    observer?.verse?.({id,ref,code,label,context,records,witness,evidence,clearOnly,existing,ultEvidence,consensus,table});
     recordResult(report,'clearAndUlt',bookId,verseText,clearAndUlt,existing);
     if (!clearAndUlt?.length) continue;
     const third=table&&validateBerean(table,witness,records,manuscriptMatches);
