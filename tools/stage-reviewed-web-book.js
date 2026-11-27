@@ -8,9 +8,10 @@ const {gate}=require('./audit-web-book-coverage');
 const {verifyBaseline}=require('./audit-shell81-crosswalk');
 const {loadBibleLibrary}=require('./audit-word-study-coverage');
 const {provider}=require('./import-web-alignment');
-const alignment=require('../js/word-study/alignment');
+const {runtime}=require('./audit-word-study-corpus');
 
 const editionPublication=require('../docs/shell-83-edition-publication.json');
+const corpusPublication=require('../docs/shell-84-corpus-publication.json');
 
 const identity=['bookId','chapter','verse','surface','language','strongsNumber','morphology','source'];
 
@@ -19,16 +20,30 @@ function exactWitness(packetTokens,live) {
     packetTokens[index]?.index===token.tokenIndex&&identity.every(field=>packetTokens[index][field]===token[field]));
 }
 
+function supplement(accepted,submitted){
+  const key=group=>JSON.stringify(group);
+  const prior=new Set(accepted.map(key));
+  const novel=submitted.filter(group=>!prior.has(key(group)));
+  const conflicts=novel.some(([spans,positions])=>accepted.some(([oldSpans,oldPositions])=>
+    positions.some(position=>oldPositions.includes(position)) ||
+    spans.some(([a,b])=>oldSpans.some(([c,d])=>a<d&&c<b))));
+  return conflicts?null:novel;
+}
+
+function pinnedIndex(folder,publication){
+  const bytes=fs.readFileSync(path.join(__dirname,'../data/word-study/alignment',folder,'index.json'));
+  if(createHash('sha256').update(bytes).digest('hex')!==publication.files['index.json'].sha256)
+    throw new Error('Alignment index does not match its publication report: '+folder);
+  return JSON.parse(bytes).web;
+}
 async function stage(bytes,submissions,roster) {
   const assessed=assessBook(bytes,submissions,roster);
   const packet=JSON.parse(bytes), rows=new Map(packet.rows.map(row=>[row.id,row]));
   const web=loadBibleLibrary('web.js','webLibrary'), lookup=provider(), existing=verifyBaseline();
-  const editionBytes=fs.readFileSync(path.join(__dirname,'../data/word-study/alignment/editions/index.json'));
-  if(createHash('sha256').update(editionBytes).digest('hex')!==editionPublication.files['index.json'].sha256)
-    throw new Error('Edition alignment index does not match its publication report');
-  const editions=JSON.parse(editionBytes).web;
+  const editions=pinnedIndex('editions',editionPublication), corpus=pinnedIndex('corpus',corpusPublication);
+  const alignment=runtime();
   const staged={version:1,bookId:packet.bookId,reviewPacketSha256:assessed.reviewPacketSha256,
-    counts:{...assessed.counts,staged:0,invalidLiveWitness:0,existingVerifiedVerse:0,emptyReviewedVerse:0},chapters:{}};
+    counts:{...assessed.counts,staged:0,invalidLiveWitness:0,existingVerifiedVerse:0,emptyReviewedVerse:0,conflictsWithPublished:0},chapters:{}};
   for(const decision of assessed.decisions){
     if(!['agreed','resolved'].includes(decision.status)) continue;
     if(!decision.groups.length) {staged.counts.emptyReviewedVerse++;continue;}
@@ -42,15 +57,34 @@ async function stage(bytes,submissions,roster) {
       staged.counts.invalidLiveWitness++;
       continue;
     }
-    if(Object.hasOwn(existing.get(bookId+'/'+chapter+'.json')||{},verse)||
-      editions?.[bookId]?.[chapter]?.includes(verse)||alignment.lookup(context,records).status==='available'){
+    const hasChapter=Object.hasOwn(existing.get(bookId+'/'+chapter+'.json')||{},verse);
+    const hasEdition=editions?.[bookId]?.[chapter]?.includes(verse);
+    const hasCorpus=corpus?.[bookId]?.[chapter]?.includes(verse);
+    let prior=alignment.lookup(context,records);
+    if(prior?.status!=='available'&&hasChapter) prior=await alignment.lookupChapter(context,records);
+    if(prior?.status!=='available'&&hasEdition) prior=await alignment.lookupEdition(context,records);
+    if(prior?.status!=='available'&&hasCorpus) prior=await alignment.lookupCorpus(context,records);
+    if((hasChapter||hasEdition||hasCorpus)&&prior?.status!=='available'){
+      staged.counts.invalidLiveWitness++;
+      continue;
+    }
+    const priorGroups=prior?.status==='available'?prior.groups.map(group=>[
+      group.english.map(span=>[span.start,span.end]),Array.from(group.original)
+    ]):[];
+    const added=supplement(priorGroups,decision.groups);
+    if(!added){
+      staged.counts.conflictsWithPublished++;
+      continue;
+    }
+    if(!added.length){
       staged.counts.existingVerifiedVerse++;
       continue;
     }
     const chapterRows=staged.chapters[chapter]||={};
     chapterRows[verse]={
       text,tokens:records.map(token=>identity.map(field=>token[field])),
-      groups:decision.groups,reviewId:decision.id,reviewers:decision.reviewers,
+      groups:added,priorGroupsSha256:createHash('sha256').update(JSON.stringify(priorGroups)).digest('hex'),
+      reviewId:decision.id,reviewers:decision.reviewers,
       adjudicator:decision.adjudicator||null,decision:decision.status,
       evidence:submissions.passages[decision.id]
     };
@@ -71,4 +105,4 @@ if(require.main===module){
     .catch(error=>{console.error(error);process.exitCode=1;});
 }
 
-module.exports={stage,exactWitness};
+module.exports={stage,exactWitness,supplement};

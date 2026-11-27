@@ -32,3 +32,12 @@ test('review import stages only independently reviewed groups anchored to the li
   const pending=await stage(bytes,submissions,['first']);
   assert.equal(pending.counts.staged,0);
 });
+
+test('a partially aligned verse can stage disjoint groups without replacing published evidence',()=>{
+  const {supplement}=require('../tools/stage-reviewed-web-book');
+  const prior=[[[[5,12]],[2]]], unrelated=[[[[16,20]],[4]]];
+  assert.deepEqual(supplement(prior,prior.concat(unrelated)),unrelated);
+  assert.deepEqual(supplement(prior,prior),[]);
+  assert.equal(supplement(prior,[[[[9,15]],[4]]]),null);
+  assert.equal(supplement(prior,[[[[16,20]],[2]]]),null);
+});

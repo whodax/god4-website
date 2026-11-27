@@ -223,6 +223,8 @@ var WordStudyController = (function createWordStudyController(){
     var intro = document.getElementById('wordStudyOriginalIntro');
     intro.querySelector('.word-study-original-note').textContent = rightToLeft ?
       'Original-language words in this verse. Read from right to left.' :
+      result.records[0].source?.startsWith('Scrivener 1894') ?
+        'Greek words from the Scrivener 1894 Textus Receptus.' :
       result.records[0].source?.startsWith('Textus Receptus,') ?
         'Greek words from the Textus Receptus.' : 'Original-language words in this verse';
     intro.hidden = false;
@@ -297,9 +299,17 @@ var WordStudyController = (function createWordStudyController(){
           }
         }
         if(!current()) return;
-        if(study.alignmentTextVerified && verified?.status !== 'available' && alignmentApi.lookupEdition){
-          var compatible = alignmentApi.lookupEdition(study,result.records);
-          if(compatible) verified = await compatible;
+        if(study.alignmentTextVerified && verified?.status !== 'available'){
+          var candidates = await Promise.all([
+            alignmentApi.lookupEdition?.(study,result.records),
+            alignmentApi.lookupCorpus?.(study,result.records),
+            !result.records[0]?.source?.startsWith('Textus Receptus,') && alignmentApi.lookupScrivenerWitness?.(study)
+          ]);
+          verified = candidates[0] || candidates[1];
+          if(!verified && candidates[2]){
+            result=candidates[2];
+            verified=result.alignment;
+          }
         }
         if(!current()) return;
         renderOriginalLanguage(result, verified);

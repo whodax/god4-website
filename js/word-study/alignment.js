@@ -270,7 +270,7 @@
     });
   }
   var chapterRequests = new Map();
-  var webIndexRequest, trIndexRequest, editionIndexRequest;
+  var webIndexRequest, editionIndexRequest, corpusIndexRequest;
   var editionBase = '/data/word-study/alignment/editions/';
   var editionNames = {kjv:'KJV',web:'WEB',asv:'ASV',ylt:'YLT',dby:'DBY',webster:'WBS',rv:'RV',gnv:'GNV',dra:'Douay-Rheims'};
   var trBase = '/data/word-study/alignment/kjv-tr/';
@@ -280,6 +280,20 @@
     reference:'/data/word-study/alignment/kjv-tr/NOTICE.md',
     revision:trRevision
   });
+  var trWitness = {base:trBase,revision:trRevision,source:trSource,
+    label:"Textus Receptus, Maurice A. Robinson's parsed edition (" + trRevision + ')',
+    token:/^[\u0370-\u03ff]+$/};
+  var scrivenerWitness = {
+    base:'/data/word-study/alignment/kjv-scrivener/',
+    revision:'2bac2dae4a0961c84d6d544a40cbef8b8d8c4e32',
+    label:'Scrivener 1894 Textus Receptus, parsed transcription',
+    token:/^[\p{Script=Greek}\p{Mark}]+$/u,
+    source:Object.assign({},crosswireSource,{
+      title:'KJV CrossWire and Scrivener 1894 Textus Receptus',
+      reference:'/data/word-study/alignment/kjv-scrivener/NOTICE.md',
+      revision:'2bac2dae4a0961c84d6d544a40cbef8b8d8c4e32'
+    })
+  };
   var webBase = '/data/word-study/alignment/web/';
   function requestJson(url){
     var abort = new AbortController();
@@ -373,22 +387,65 @@
     return Promise.race([data,new Promise(function(resolve){timeout=setTimeout(function(){resolve(null);},3000);})])
       .finally(function(){clearTimeout(timeout);});
   }
-  function matchKjvWitness(context, chapter){
-    if(!chapter || chapter.revision !== trRevision || chapter.bookId !== context.bookId ||
+  var corpusBase = '/data/word-study/alignment/corpus/';
+  var corpusMethods = {
+    'dual-hebrew':'Clear.Bible and unfoldingWord Hebrew alignment',
+    'dual-greek':'Clear.Bible and unfoldingWord Greek alignment',
+    'dual-names':'Clear.Bible and unfoldingWord Hebrew names',
+    'dual-hebrew-and-names':'Clear.Bible and unfoldingWord Hebrew alignment and names',
+    'crosswire-hebrew':'CrossWire KJV with Clear.Bible and unfoldingWord Hebrew positions',
+    'crosswire-and-names':'CrossWire KJV, Clear.Bible and unfoldingWord Hebrew alignment and names',
+    'crosswire-title':'CrossWire KJV verified Greek alignment',
+    'crosswire-supplied':'CrossWire KJV positions outside supplied words'
+  };
+  function lookupCorpus(context,records){
+    var edition=context.translationId;
+    if(!Object.hasOwn(editionNames,edition) || !records.length || !/^[a-z0-9-]+$/.test(context.bookId) ||
+      !Number.isInteger(context.chapter) || context.chapter < 1 || !Number.isInteger(context.verse) || context.verse < 1) return null;
+    if(!corpusIndexRequest){
+      corpusIndexRequest=requestJson(corpusBase+'index.json').catch(function(){corpusIndexRequest=null;return null;});
+    }
+    var timer;
+    var data=corpusIndexRequest.then(async function(index){
+      var list=index?.[edition]?.[context.bookId]?.[context.chapter];
+      if(!Array.isArray(list) || !list.includes(context.verse)) return null;
+      var chapter=await loadChapter(corpusBase+context.bookId+'/'+context.chapter+'.json');
+      var row=chapter?.editions?.[edition]?.[context.verse];
+      var tokens=chapter?.witnesses?.[context.verse];
+      if(!Array.isArray(row) || !Object.hasOwn(corpusMethods,row[2]) || typeof row[0]!=='string') return null;
+      var marked=[...row[0].matchAll(/\[[^\[\]{}<>]+\]/g)];
+      if(/[[\]{}<>]/.test(row[0].replace(/\[[^\[\]{}<>]+\]/g,'')) || row[1].some(function(group){
+        return group[0].some(function(span){
+          return marked.some(function(word){return word.index<span[1]&&word.index+word[0].length>span[0];});
+        });
+      })) return null;
+      var witness=({hebrew:'Hebrew',aramaic:'Aramaic',greek:'Greek'})[records[0].language];
+      if(!witness) return null;
+      var method=corpusMethods[row[2]];
+      if(witness==='Aramaic') method=method.replace('Hebrew','Aramaic');
+      var source={title:editionNames[edition]+' / '+method+' ('+witness+' witness)',
+        reference:corpusBase+'NOTICE.md',revision:'Shell 84 corpus',corpusPlan:true,reviewedBy:'GOD4.us verified source agreement and exact word positions'};
+      return matchChapterRow(context,records,[row[0],tokens,row[1]],source);
+    }).catch(function(){return null;});
+    return Promise.race([data,new Promise(function(resolve){timer=setTimeout(function(){resolve(null);},3000);})])
+      .finally(function(){clearTimeout(timer);});
+  }
+  function matchKjvWitness(context, chapter, witness){
+    if(!chapter || chapter.revision !== witness.revision || chapter.bookId !== context.bookId ||
       chapter.chapter !== context.chapter || !chapter.lexicon ||
       !Object.hasOwn(chapter.verses || {}, context.verse)) return null;
     var row = chapter.verses[context.verse];
     if(!Array.isArray(row) || row[0] !== context.verseText ||
       !Array.isArray(row[1]) || !Array.isArray(row[2])) return null;
     if(!row[1].every(function(token){
-      return Array.isArray(token) && token.length === 3 && typeof token[0] === 'string' && /^[\u0370-\u03ff]+$/.test(token[0]) &&
+      return Array.isArray(token) && token.length === 3 && typeof token[0] === 'string' && witness.token.test(token[0]) &&
         typeof token[1] === 'string' && /^G[1-9]\d{0,4}$/.test(token[1]) &&
         typeof token[2] === 'string' && /^[A-Z][A-Z0-9-]+$/.test(token[2]);
     })) return null;
     var records = row[1].map(function(token, index){
       var fields = chapter.lexicon[token[1]];
       var lexical = function(i){ return typeof fields?.[i] === 'string' ? fields[i] : null; };
-      return {status:'authoritative',language:'greek',source:"Textus Receptus, Maurice A. Robinson's parsed edition (" + trRevision + ')',
+      return {status:'authoritative',language:'greek',source:witness.label,
         bookId:context.bookId,chapter:context.chapter,verse:context.verse,tokenIndex:index,
         surface:token[0],strongsNumber:token[1],morphology:token[2],lemma:lexical(0),
         transliteration:lexical(1),pronunciation:lexical(2),definition:lexical(3),partOfSpeech:null};
@@ -396,27 +453,30 @@
     var groups = row[2].map(function(group){
       return {english:group[0].map(function(span){return {start:span[0],end:span[1]};}),original:group[1]};
     });
-    var entry = {status:'verified',source:trSource,translationId:'kjv',bookId:context.bookId,
+    var entry = {status:'verified',source:witness.source,translationId:'kjv',bookId:context.bookId,
       chapter:context.chapter,verse:context.verse,englishText:row[0],originalTokens:records,groups:groups};
     return valid(entry,context,records) ?
-      {status:'available',records:records,alignment:{status:'available',groups:groups,source:trSource}} : null;
+      {status:'available',records:records,alignment:{status:'available',groups:groups,source:witness.source}} : null;
   }
-  function lookupKjvWitness(context){
+  function lookupKjvWitness(context,witness=trWitness){
     if(context.translationId !== 'kjv' || typeof BibleCanon === 'undefined' ||
       !/^[a-z0-9-]+$/.test(context.bookId) || BibleCanon.book(context.bookId)?.testament !== 'new' ||
       !Number.isInteger(context.chapter) || context.chapter < 1 ||
       !Number.isInteger(context.verse) || context.verse < 1) return null;
-    if(!trIndexRequest){
-      trIndexRequest = requestJson(trBase + 'index.json').catch(function(){
-        trIndexRequest = null;
+    if(!witness.indexRequest){
+      witness.indexRequest = requestJson(witness.base + 'index.json').catch(function(){
+        witness.indexRequest = null;
         return null;
       });
     }
-    return trIndexRequest.then(function(index){
+    return witness.indexRequest.then(function(index){
       var verses = index?.[context.bookId]?.[context.chapter];
       return Array.isArray(verses) && verses.includes(context.verse) ?
-        loadChapter(trBase + context.bookId + '/' + context.chapter + '.json') : null;
-    }).then(function(chapter){return matchKjvWitness(context,chapter);}).catch(function(){return null;});
+        loadChapter(witness.base + context.bookId + '/' + context.chapter + '.json') : null;
+    }).then(function(chapter){return matchKjvWitness(context,chapter,witness);}).catch(function(){return null;});
+  }
+  function lookupScrivenerWitness(context){
+    return lookupKjvWitness(context,scrivenerWitness);
   }
   function contextualDefinition(study, records, alignment){
     if(alignment?.status !== 'available') return null;
@@ -427,6 +487,21 @@
     var partOfSpeech='noun';
     if(term === 'Christ'){
       sense = ['G5547','The Anointed One, the Messiah.','Greek Christos'];
+    }else if(alignment.source.corpusPlan){
+      if(term === 'Moab' && study.bookId === 'numbers' && study.chapter === 21 && study.verse === 20){
+        sense=['H4124','The territory east of the Dead Sea. This verse names it while describing Israel’s route.','Hebrew Moab'];
+        noun=/^HNp$/;
+      }else if(term === 'Moab' && study.bookId === '2-kings' && study.chapter === 3 && study.verse === 23){
+        sense=['H4124','The Moabite people, called to take what they think is abandoned enemy property.','Hebrew Moab'];
+        noun=/^HNp$/;
+      }else if(term === 'Philistines' && study.bookId === '1-samuel' && study.chapter === 23 && study.verse === 1){
+        sense=['H6430','The people attacking Keilah and taking grain from its threshing floors.','Hebrew Pelishtim'];
+        noun=/^HNgmpa$/;
+      }else if(term === 'spoke' && study.bookId === 'judges' && study.chapter === 14 && study.verse === 7){
+        sense=['H1696','Talked with the woman. Samson went down to meet her and speak with her.','Hebrew dabar'];
+        noun=/^HC\/Vpw3ms$/;
+        partOfSpeech='verb';
+      }
     }else if(alignment.source.editionPlan){
       if(term === 'Word' && study.bookId === 'john' && study.chapter === 1 && study.verse === 1){
         sense=['G3056','The title John uses here for the one who was with God and was God.','Greek logos'];
@@ -493,6 +568,6 @@
     })) return null;
     return {partOfSpeech:partOfSpeech,definition:sense[1],source:'Scripture context · ' + sense[2] + ' (' + sense[0] + ')'};
   }
-  return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookupChapter:lookupChapter, lookupKjvWitness:lookupKjvWitness, lookupEdition:lookupEdition, hasReviewedVerse:hasReviewedVerse,
+  return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookupChapter:lookupChapter, lookupKjvWitness:lookupKjvWitness, lookupEdition:lookupEdition, lookupCorpus:lookupCorpus, lookupScrivenerWitness:lookupScrivenerWitness, hasReviewedVerse:hasReviewedVerse,
     contextualDefinition:contextualDefinition, lookup:createProvider(reviewedCatalog).lookup};
 }));

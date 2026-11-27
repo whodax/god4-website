@@ -53,6 +53,7 @@ function readTaggedVerse(body){
       const tag={
         start:text.length+(pendingSpace && text.length ? 1 : 0),end:text.length,
         indexes:attr(item,'src').trim().split(/\s+/).filter(Boolean).map(Number),
+        hebrewIds:[...attr(item,'lemma').matchAll(/(?:^|\s)strong:H0*(\d+)(?=\s|$)/g)].map(match=>'H'+Number(match[1])),
         ids:[...attr(item,'lemma').matchAll(/(?:^|\s)strong:G0*(\d+)/g)].map(match=>'G'+Number(match[1])),
         forms:[...attr(item,'lemma').matchAll(/(?:^|\s)lemma\.TR:([^\s]+)/g)].map(match=>surface(decode(match[1]))),
         morphology:[...attr(item,'morph').matchAll(/(?:^|\s)robinson:([^\s]+)/g)].map(match=>match[1]),

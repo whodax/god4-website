@@ -38,7 +38,7 @@ function ignoreTransparentMarkup(body){
   return !unknown&&!stack.length?result:body;
 }
 
-async function run(input,repository){
+async function run(input,repository,onVerifiedTitle){
   const bytes=fs.readFileSync(input);
   if(sha(bytes)!==checksum) throw new Error('Unexpected source OSIS checksum');
   const rows=new Map();
@@ -87,6 +87,9 @@ async function run(input,repository){
       const baseline=validateVerse(verseText,normalized,records);
       const alternative=witness&&validateVerse(verseText,normalized,witness);
       if(baseline.alignments||alternative?.alignments) findings.wrapperTrial.fullyValidated++;
+      if(normalized!==body && baseline.alignments) {
+        onVerifiedTitle?.({context,records,groups:baseline.alignments});
+      }
       findings.wrapperTrial.cases.push({ref,transparent:normalized!==body,englishExact:after.text===verseText,
         installed:baseline.reason||'fully validated',tr:alternative?.reason||(alternative?'fully validated':'reference missing')});
     }

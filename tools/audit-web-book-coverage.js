@@ -50,18 +50,18 @@ function appendHint(candidate,positionGroup,record) {
   return hint;
 }
 
-async function prepareBook(bookId,library,lookup,hints) {
+async function prepareBook(bookId,library,lookup,hints,{translationId='web',revision=baseline}={}) {
   const rows=[],evidence=[],counts={};
   const book=library[bookId];
   for(let chapter=1;chapter<=book.chapters;chapter++) {
     for(const [index,text] of book[chapter].verses.entries()) {
       const verse=index+1;
-      const context={translationId:'web',bookId,chapter,verse,verseText:text};
-      const coordinate=location(context), passage=address('reader-web',coordinate);
+      const context={translationId,bookId,chapter,verse,verseText:text};
+      const coordinate=location(context), passage=address('reader-'+translationId,coordinate);
       const {records}=await lookup.lookupVerse(context);
       const status=gate(context,records);
       measure(counts,status);
-      const id=hash(baseline+'/'+coordinate).slice(0,20);
+      const id=hash(revision+'/'+coordinate).slice(0,20);
       if (status==='held-out') {
         rows.push({id,passage,status});
         continue;
@@ -75,7 +75,7 @@ async function prepareBook(bookId,library,lookup,hints) {
       }
     }
   }
-  return {version:1,baseline,bookId,counts,rows,hints:evidence};
+  return {version:1,baseline:revision,bookId,counts,rows,hints:evidence};
 }
 
 async function run(clearDir,ult,uhb,ugnt,berean,shell79,books) {
