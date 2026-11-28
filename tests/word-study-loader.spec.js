@@ -202,7 +202,7 @@ test.describe('installed offline runtime',()=>{
   async function installed(page){await open(page);await page.evaluate(()=>navigator.serviceWorker.ready.then(()=>true));if(!await page.evaluate(()=>!!navigator.serviceWorker.controller))await page.reload();await page.evaluate(()=>initializeBibleExperience());}
   test('cache 26 preserves six runtimes; unused runtime first activates offline with local fallback and no durable JSON',async({page,context})=>{
     await installed(page);
-  const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-84')).keys()).map(r=>new URL(r.url).pathname));
+  const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-85')).keys()).map(r=>new URL(r.url).pathname));
     for(const dep of dependencies)expect(assets).toContain(dep);expect(assets).toContain('/js/word-study/loader.js');expect(assets).toContain('/js/word-study/alignment.js');
     expect(await page.evaluate(()=>typeof WordStudyController)).toBe('undefined');
     await context.setOffline(true);await word(page).press('Enter');
@@ -239,6 +239,7 @@ test.describe('installed offline runtime',()=>{
     const matched=page.locator('#wordStudyOriginalTokens [data-aligned="true"]');
     await expect(matched).toHaveCount(1);
     expect(await cachePaths()).toEqual([
+      '/data/word-study/alignment/extensions/index.json',
       '/data/word-study/alignment/web/index.json',
       '/data/word-study/alignment/web/numbers/32.json',
       '/data/word-study/original-language/numbers/32.json'

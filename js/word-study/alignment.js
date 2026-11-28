@@ -478,6 +478,65 @@
   function lookupScrivenerWitness(context){
     return lookupKjvWitness(context,scrivenerWitness);
   }
+  var extensionBase='/data/word-study/alignment/extensions/';
+  var extensionIndexRequest;
+  var extensionMethods={
+    'exact-edition':'exact wording and original-language witness',
+    'exact-clause':'exact clause and original-language witness',
+    'berean-ult':'Berean and unfoldingWord positional agreement',
+    'crosswire-position':'CrossWire KJV positions with a verified Greek witness',
+    'greek-inflection':'verified Greek person and tense'
+  };
+  function lookupExtension(context,records,previous){
+    var edition=context.translationId;
+    if(!Object.hasOwn(editionNames,edition)||!/^[a-z0-9-]+$/.test(context.bookId)||
+      !Number.isInteger(context.chapter)||context.chapter<1||!Number.isInteger(context.verse)||context.verse<1) return null;
+    if(!extensionIndexRequest){
+      extensionIndexRequest=requestJson(extensionBase+'index.json').catch(function(){extensionIndexRequest=null;return null;});
+    }
+    var timer;
+    var data=extensionIndexRequest.then(async function(index){
+      if(!index?.[edition]?.[context.bookId]?.[context.chapter]?.includes(context.verse)) return null;
+      var chapter=await loadChapter(extensionBase+context.bookId+'/'+context.chapter+'.json');
+      var row=chapter?.editions?.[edition]?.[context.verse];
+      if(!Array.isArray(row)||row[0]!==context.verseText||!Array.isArray(row[3])||
+        !row[3].length||row[3].some(function(method){return !Object.hasOwn(extensionMethods,method);})||
+        !['reader','scrivener'].includes(row[4])) return null;
+      var witness=chapter.witnesses?.[row[1]];
+      var source={title:editionNames[edition]+' / '+row[3].map(function(method){return extensionMethods[method];}).join(', '),
+        reference:extensionBase+'NOTICE.md',revision:'Shell 85 extension',reviewedBy:'GOD4.us exact spans and positional validation'};
+      var supplement;
+      if(row[4]==='scrivener'){
+        if(edition!=='kjv'||previous?.status==='available'||records[0]?.source?.startsWith('Textus Receptus,')) return null;
+        var alternate=matchKjvWitness(context,{revision:scrivenerWitness.revision,bookId:context.bookId,
+          chapter:context.chapter,lexicon:{},verses:{[context.verse]:[row[0],witness?.map(function(token){return token.slice(0,3);}),row[2]]}},scrivenerWitness);
+        if(!alternate) return null;
+        records=alternate.records;
+        supplement=alternate.alignment;
+        source.title=editionNames[edition]+' / CrossWire and Scrivener 1894 Textus Receptus';
+      }else{
+        supplement=matchChapterRow(context,records,[row[0],witness,row[2]],source);
+      }
+      if(!supplement) return null;
+      var groups=previous?.status==='available'?previous.groups:[];
+      var added=supplement.groups.filter(function(candidate,index){
+        var grammatical=row[3].includes('greek-inflection')&&row[6]?.includes(index);
+        return !groups.some(function(group){
+          return (!grammatical&&candidate.original.some(function(position){return group.original.includes(position);}))||
+            candidate.english.some(function(span){return group.english.some(function(other){
+              return span.start<other.end&&other.start<span.end;
+            });});
+        });
+      });
+      if(!added.length) return null;
+      added.forEach(function(group){group.source=source;});
+      return {status:'available',records:records,alignment:{
+        status:'available',groups:groups.concat(added),source:groups.length?previous.source:source
+      }};
+    }).catch(function(){return null;});
+    return Promise.race([data,new Promise(function(resolve){timer=setTimeout(function(){resolve(null);},3000);})])
+      .finally(function(){clearTimeout(timer);});
+  }
   function contextualDefinition(study, records, alignment){
     if(alignment?.status !== 'available') return null;
     var term = study.displayWord;
@@ -560,6 +619,33 @@
         sense = ['G26','Care for others that goes beyond affection for those close to you.','Greek agapē'];
       }
     }
+    if(!sense){
+      // These senses require more than the English spelling. The edge and
+      // morphology check below also applies when the surrounding phrase is aligned.
+      if(/^(?:charity|love)$/i.test(term) && study.bookId==='1-corinthians' && study.chapter===13){
+        sense=['G26','Love expressed in patient, generous care for others.','Greek agape'];
+      }else if(/^bishop$/i.test(term) && study.bookId==='titus' && study.chapter===1 && study.verse===7){
+        sense=['G1985','An overseer responsible for caring for the church. This verse describes the character required of that person.','Greek episkopos'];
+      }else if(/^bowels$/i.test(term) && study.bookId==='philemon' && study.chapter===1 &&
+        (study.verse===7||study.verse===12||study.verse===20)){
+        sense=['G4698',study.verse===12?'My own heart. Paul expresses his deep affection for Onesimus.':
+          'The heart as the place of deep feeling and affection.','Greek splanchna'];
+      }else if(/^king['\u2019]s$/i.test(term) && study.bookId==='acts' && study.chapter===12 && study.verse===20){
+        if(/^\s+chamberlain\b/.test(text.slice(study.englishEnd))){
+          sense=['G935','Belonging to King Herod Agrippa I. Blastus served as his chamberlain.','Greek basileus'];
+          noun=/^N-GSM$/;
+        }else if(/^\s+\[country\]/.test(text.slice(study.englishEnd))){
+          sense=['G937','Under King Herod’s rule. Tyre and Sidon depended on his territory for food.','Greek basilikos'];
+          noun=/^A-GSF$/;
+          partOfSpeech='adjective';
+        }
+      }else if(/^king['\u2019]s$/i.test(term) && study.bookId==='hebrews' && study.chapter===11 && study.verse===23){
+        sense=['G935','Of the Egyptian ruler who gave the order to kill the Hebrew baby boys.','Greek basileus'];
+        noun=/^N-GSM$/;
+      }else if(/^fellow(?:labourer|laborer)s?$/i.test(term) && study.bookId==='philemon'){
+        sense=['G4904','A person who shares in Paul’s work.','Greek synergos'];
+      }
+    }
     if(!sense) return null;
     var linked = new Set(matchingGroups(alignment,{start:study.englishStart,end:study.englishEnd})
       .flatMap(function(group){ return group.original; }));
@@ -568,6 +654,6 @@
     })) return null;
     return {partOfSpeech:partOfSpeech,definition:sense[1],source:'Scripture context · ' + sense[2] + ' (' + sense[0] + ')'};
   }
-  return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookupChapter:lookupChapter, lookupKjvWitness:lookupKjvWitness, lookupEdition:lookupEdition, lookupCorpus:lookupCorpus, lookupScrivenerWitness:lookupScrivenerWitness, hasReviewedVerse:hasReviewedVerse,
+  return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookupChapter:lookupChapter, lookupKjvWitness:lookupKjvWitness, lookupEdition:lookupEdition, lookupCorpus:lookupCorpus, lookupScrivenerWitness:lookupScrivenerWitness, lookupExtension:lookupExtension, hasReviewedVerse:hasReviewedVerse,
     contextualDefinition:contextualDefinition, lookup:createProvider(reviewedCatalog).lookup};
 }));

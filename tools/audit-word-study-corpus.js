@@ -81,14 +81,15 @@ function reportEthiopian(){
   return {...total,unit:'displayed lines, including prose entries',books};
 }
 
-async function run({includeCorpus=true}={}){
+async function run({includeCorpus=true,includeExtensions=true}={}){
   const engine=runtime(), lookup=provider(), definitions=dictionary();
   const key=({translationId,bookId,chapter,verse})=>[translationId,bookId,chapter,verse].join(':');
   const inline=new Set(engine.catalog.map(key));
   const indexes=Object.fromEntries(['web','kjv-tr','editions'].map(id=>[id,read(base+id+'/index.json')]));
   const scrivener=includeCorpus&&engine.lookupScrivenerWitness&&fs.existsSync(repo(base+'kjv-scrivener/index.json'))?read(base+'kjv-scrivener/index.json'):null;
   const corpus=includeCorpus&&engine.lookupCorpus&&fs.existsSync(repo(base+'corpus/index.json'))?read(base+'corpus/index.json'):null;
-  const report={version:1,baseline,coverageRule:'Aligned spans cover every eligible Reader word in a fully aligned verse. KJV supplied words counted separately.',
+  const extensions=includeExtensions&&engine.lookupExtension&&fs.existsSync(repo(base+'extensions/index.json'))?read(base+'extensions/index.json'):null;
+  const report={version:1,baseline:extensions?'748defc3fa1628dd79575ff3ca492a6a0836f8b0':baseline,coverageRule:'Aligned spans cover every eligible Reader word in a fully aligned verse. KJV supplied words counted separately.',
     editions:{},ethiopian:reportEthiopian(),priority:{},cohorts:{
       shell83:read('docs/shell-83-edition-publication.json').initialBreakdown,
       webReview:read('docs/shell-81-crosswalk-report.json').counts,
@@ -117,7 +118,8 @@ async function run({includeCorpus=true}={}){
           if(!inline.has(key(context))&&!primary[verse]&&!(id==='web'&&indexes.web[book]?.includes(chapter))&&
             !(id==='kjv'&&indexes['kjv-tr'][book]?.[chapter]?.includes(verse))&&
             !indexes.editions[id]?.[book]?.[chapter]?.includes(verse)&&!corpus?.[id]?.[book]?.[chapter]?.includes(verse)&&
-            !(id==='kjv'&&scrivener?.[book]?.[chapter]?.includes(verse))) continue;
+            !(id==='kjv'&&scrivener?.[book]?.[chapter]?.includes(verse))&&
+            !extensions?.[id]?.[book]?.[chapter]?.includes(verse)) continue;
           let {records}=await lookup.lookupVerse(context);
           let resolved=engine.lookup(context,records);
           if(resolved?.status!=='available'&&id==='kjv'&&indexes['kjv-tr'][book]?.[chapter]?.includes(verse)){
@@ -133,6 +135,12 @@ async function run({includeCorpus=true}={}){
           if(resolved?.status!=='available'&&id==='kjv'&&scrivener?.[book]?.[chapter]?.includes(verse)){
             const alternate=await engine.lookupScrivenerWitness(context);
             if(alternate?.records){records=alternate.records;resolved=alternate.alignment;}
+          }
+          if(extensions?.[id]?.[book]?.[chapter]?.includes(verse)){
+            const supplement=await engine.lookupExtension(context,records,resolved);
+            if(!supplement) throw Error('Published extension unavailable for '+key(context));
+            records=supplement.records;
+            resolved=supplement.alignment;
           }
           if(resolved?.status!=='available') continue;
           let matched=0;

@@ -6,3 +6,4 @@ data/word-study/alignment/kjv-tr/**/*.json -text
 data/word-study/alignment/editions/**/*.json -text
 data/word-study/alignment/corpus/**/*.json -text
 data/word-study/alignment/kjv-scrivener/**/*.json -text
+data/word-study/alignment/extensions/**/*.json -text

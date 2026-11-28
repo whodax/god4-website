@@ -2,7 +2,7 @@
 importScripts('/js/bible/translation-manifest.js', '/js/pwa/translation-cache-protocol.js');
 
 const CACHE_PREFIX = 'god4-shell-';
-const SHELL_CACHE = CACHE_PREFIX + 'compact-reader-84';
+const SHELL_CACHE = CACHE_PREFIX + 'compact-reader-85';
 const PREVIOUS_SHELL_CACHE = CACHE_PREFIX + 'compact-reader-24';
 const VENDOR_PATH = '/js/vendor/supabase-js-2.117.0.min.js';
 const VENDOR_CACHE_PREFIX = 'god4-auth-vendor-';
@@ -269,7 +269,7 @@ async function wordStudyData(request){
     var cache = await caches.open(WORD_STUDY_CACHE);
     await cache.put(request,copy);
     var keys = await cache.keys();
-    var removable = keys.filter(function(key){ return !/\/alignment\/(?:web|kjv-tr|editions|corpus|kjv-scrivener)\/index\.json$/.test(key.url); });
+    var removable = keys.filter(function(key){ return !/\/alignment\/(?:web|kjv-tr|editions|corpus|kjv-scrivener|extensions)\/index\.json$/.test(key.url); });
     await Promise.all(removable.slice(0,Math.max(0,keys.length-WORD_STUDY_LIMIT)).map(function(key){ return cache.delete(key); }));
   }).catch(function(){});
   await wordStudyWrites;
@@ -287,7 +287,7 @@ self.addEventListener('fetch', function(event){
   if(isPrivateOrCloudflareRequest(request, url)) return;
   // Word Study runtime route begins
   if(url.origin === self.location.origin && !url.search &&
-    /^\/data\/word-study\/(?:alignment\/(?:(?:web|kjv-tr|editions|corpus|kjv-scrivener)\/index|(?:web|kjv|kjv-tr|editions|corpus|kjv-scrivener)\/[a-z0-9-]+\/[1-9]\d*)|original-language\/[a-z0-9-]+\/[1-9]\d*|original-language-variants\/[a-z0-9-]+-\d+-\d+)\.json$/.test(url.pathname)){
+    /^\/data\/word-study\/(?:alignment\/(?:(?:web|kjv-tr|editions|corpus|kjv-scrivener|extensions)\/index|(?:web|kjv|kjv-tr|editions|corpus|kjv-scrivener|extensions)\/[a-z0-9-]+\/[1-9]\d*)|original-language\/[a-z0-9-]+\/[1-9]\d*|original-language-variants\/[a-z0-9-]+-\d+-\d+)\.json$/.test(url.pathname)){
     event.respondWith(wordStudyData(request));
     return;
   }

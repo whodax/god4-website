@@ -111,8 +111,9 @@ var WordStudyController = (function createWordStudyController(){
       if(linked) button.setAttribute('aria-description', 'Aligned with the highlighted English phrase.');
       else button.removeAttribute('aria-description');
     });
+    var sources = [...new Set(groups.map(function(group){return (group.source || activeAlignment.source).title;}))];
     document.getElementById('wordStudyAlignmentStatus').textContent = groups.length ?
-      'Verified phrase alignment: ' + activeAlignment.source.title + '.' :
+      'Verified phrase alignment: ' + sources.join(' / ') + '.' :
       'Exact word alignment is unavailable for this selection. Original-language entries, when available, describe the whole verse.';
   }
 
@@ -309,6 +310,14 @@ var WordStudyController = (function createWordStudyController(){
           if(!verified && candidates[2]){
             result=candidates[2];
             verified=result.alignment;
+          }
+        }
+        if(!current()) return;
+        if(study.alignmentTextVerified && alignmentApi.lookupExtension){
+          var supplemental = await alignmentApi.lookupExtension(study,result.records,verified);
+          if(supplemental){
+            result=supplemental;
+            verified=supplemental.alignment;
           }
         }
         if(!current()) return;
