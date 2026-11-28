@@ -49,27 +49,46 @@ function form(text, language) {
     folded.replace(/[\u0591-\u05af\u05bd\u05be\u05c0\u05c3\u2060/]/g,'');
 }
 
-function morphology(source, record) {
+function morphology(source, record, extended=false) {
   if (source.language==='greek') {
     const fixed = {Prep:'PREP',Conj:'CONJ',Adv:'ADV',Interj:'INJ'};
     if (Object.hasOwn(fixed,source.morph)) return fixed[source.morph]===record.morphology;
+    if(extended){
+      // The publisher writes tense, mood, voice. The installed Robinson codes
+      // use tense, voice, mood. Refuse slash alternatives and missing features.
+      const finite=source.morph.match(/^V-([PIFARL])([ISOM])([AMP])-([123][SP])$/);
+      if(finite) return 'V-'+finite[1]+finite[3]+finite[2]+'-'+finite[4]===record.morphology;
+      const infinitive=source.morph.match(/^V-([PIFARL])N([AMP])$/);
+      if(infinitive) return 'V-'+infinitive[1]+infinitive[2]+'N'===record.morphology;
+      const participle=source.morph.match(/^V-([PIFARL])P([AMP])-([NGDAV])([MFN])([SPD])$/);
+      if(participle) return 'V-'+participle[1]+participle[2]+'P-'+participle[3]+participle[5]+participle[4]===record.morphology;
+    }
     const nominal = source.morph.match(/^(N|Art|Adj)-([NGDAV])([MFN])([SPD])$/);
     if (nominal) return ({N:'N',Art:'T',Adj:'A'}[nominal[1]]+'-'+nominal[2]+nominal[4]+nominal[3])===record.morphology;
     return /^V-[A-Z]{3}-[1-3][SP]$/.test(source.morph) && source.morph===record.morphology;
   }
   const language = source.language==='hebrew'?'H':'A';
   const fields = source.morph.split(' | ');
+  const ending=extended&&/^[123][mfc][sp]$/.test(fields.at(-1))?'/Sp'+fields.pop():'';
   const lexical = fields.pop();
   const affixCodes = {'Conj-w':'C','Art':'Td','Prep-b':'R','Prep-l':'R','Prep-k':'R','Prep-m':'R'};
   if (fields.some(field=>!Object.hasOwn(affixCodes,field))) return false;
   const prefix = language + fields.map(field=>affixCodes[field]+'/').join('');
-  if (/^N-proper-[mf][sp]$/.test(lexical)) return prefix+'Np'===record.morphology;
+  if (/^N-proper-[mf][sp]$/.test(lexical)) return prefix+'Np'+ending===record.morphology;
   const noun = lexical.match(/^N-([mf])([spd])(c?)$/);
-  if (noun) return new RegExp('^'+prefix+'N[c]'+noun[1]+noun[2]+(noun[3]||'[a]')+'$').test(record.morphology);
+  if (noun) return new RegExp('^'+prefix+'N[c]'+noun[1]+noun[2]+(noun[3]||'[a]')+ending+'$').test(record.morphology);
+  if(!extended||language!=='H'||ending) return false;
+  const adjective=lexical.match(/^Adj-([mf])([spd])(c?)$/);
+  if(adjective) return prefix+'Aa'+adjective[1]+adjective[2]+(adjective[3]||'a')===record.morphology;
+  const verb=lexical.match(/^V-(Qal|Nifal|Piel|Pual|Hifil|Hofal|Hitpael)-(Perf|Imperf|ConsecImperf|ConjPerf)-([123][mfc][sp])$/);
+  if(!verb) return false;
+  const stem={Qal:'q',Nifal:'N',Piel:'p',Pual:'P',Hifil:'h',Hofal:'H',Hitpael:'t'}[verb[1]];
+  const conjugation={Perf:'p',Imperf:'i',ConsecImperf:'w',ConjPerf:'q'}[verb[2]];
+  return prefix+'V'+stem+conjugation+verb[3]===record.morphology;
   return false;
 }
 
-function validate(verse, witness, records, manuscriptMatches) {
+function validate(verse, witness, records, manuscriptMatches, extended=false) {
   if (verse.rows.some((row,index)=>index && row.englishOrder<=verse.rows[index-1].englishOrder)) return reject('ambiguous Berean English positions',true);
   const native = verse.rows.filter(row=>row.form).sort((a,b)=>a.order-b.order);
   if (!records?.length || native.length!==records.length || witness.length!==records.length) return reject('Berean witness token count differs');
@@ -83,11 +102,11 @@ function validate(verse, witness, records, manuscriptMatches) {
       !/^\d+$/.test(entry.id) || (entry.language==='greek'?'G':'H')+Number(entry.id)!==record.strongsNumber) {
       return reject('Berean witness order, identity, surface or morphology differs');
     }
-    if (entry.start===entry.end || /[\[\]{}<>]/.test(entry.words) || !morphology(entry,record)) continue;
+    if (entry.start===entry.end || /[\[\]{}<>]/.test(entry.words) || !morphology(entry,record,extended)) continue;
     const spans = [...entry.words.matchAll(READER_TOKEN_PATTERN)].map(word=>[entry.start+word.index,entry.start+word.index+word[0].length]);
     if (spans.length) groups.push([spans,[index]]);
   }
   return groups.length ? {groups} : reject('Berean has no nonsupplied group with supported morphology');
 }
 
-module.exports = {load,validate};
+module.exports = {load,validate,morphology};

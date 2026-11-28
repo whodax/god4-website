@@ -339,16 +339,17 @@
       return matchChapterRow(context,records,row,source);
     }).catch(function(){ return null; });
   }
-  function matchChapterRow(context,records,row,source){
-    if(!Array.isArray(row) || row[0] !== context.verseText || !Array.isArray(row[1]) ||
-      row[1].length !== records.length || !Array.isArray(row[2])) return null;
-    if(!records.every(function(record,index){
-      var token = row[1][index];
+  function sameWitness(context,records,tokens){
+    return Array.isArray(tokens)&&tokens.length===records.length&&records.every(function(record,index){
+      var token=tokens[index];
       return record.bookId === context.bookId && record.chapter === context.chapter && record.verse === context.verse &&
         record.tokenIndex === index && Array.isArray(token) &&
         record.language === (token[3] || 'greek') && record.surface === token[0] &&
         record.strongsNumber === token[1] && record.morphology === token[2];
-    })) return null;
+    });
+  }
+  function matchChapterRow(context,records,row,source){
+    if(!Array.isArray(row)||row[0]!==context.verseText||!sameWitness(context,records,row[1])||!Array.isArray(row[2])) return null;
     var groups = row[2].map(function(group){
       return {english:group[0].map(function(span){return {start:span[0],end:span[1]};}),original:group[1]};
     });
@@ -479,32 +480,36 @@
     return lookupKjvWitness(context,scrivenerWitness);
   }
   var extensionBase='/data/word-study/alignment/extensions/';
-  var extensionIndexRequest;
+  var extensionCatalog={base:extensionBase,revision:'Shell 85 extension'};
+  var continuationCatalog={base:'/data/word-study/alignment/continuations/',revision:'Shell 86 continuation'};
   var extensionMethods={
     'exact-edition':'exact wording and original-language witness',
     'exact-clause':'exact clause and original-language witness',
     'berean-ult':'Berean and unfoldingWord positional agreement',
     'crosswire-position':'CrossWire KJV positions with a verified Greek witness',
-    'greek-inflection':'verified Greek person and tense'
+    'greek-inflection':'verified Greek person and tense',
+    'terminal-punctuation':'exact verse wording with a different terminal punctuation mark',
+    'berean-ult-morphology':'Berean and unfoldingWord positions with compatible morphology'
   };
-  function lookupExtension(context,records,previous){
+  function lookupExtension(context,records,previous,catalog=extensionCatalog){
     var edition=context.translationId;
     if(!Object.hasOwn(editionNames,edition)||!/^[a-z0-9-]+$/.test(context.bookId)||
       !Number.isInteger(context.chapter)||context.chapter<1||!Number.isInteger(context.verse)||context.verse<1) return null;
-    if(!extensionIndexRequest){
-      extensionIndexRequest=requestJson(extensionBase+'index.json').catch(function(){extensionIndexRequest=null;return null;});
+    if(!catalog.indexRequest){
+      catalog.indexRequest=requestJson(catalog.base+'index.json').catch(function(){catalog.indexRequest=null;return null;});
     }
     var timer;
-    var data=extensionIndexRequest.then(async function(index){
+    var data=catalog.indexRequest.then(async function(index){
       if(!index?.[edition]?.[context.bookId]?.[context.chapter]?.includes(context.verse)) return null;
-      var chapter=await loadChapter(extensionBase+context.bookId+'/'+context.chapter+'.json');
+      var chapter=await loadChapter(catalog.base+context.bookId+'/'+context.chapter+'.json');
+      var cross=catalog===continuationCatalog&&edition==='kjv'&&chapter?.crossVerse?.[context.verse];
       var row=chapter?.editions?.[edition]?.[context.verse];
       if(!Array.isArray(row)||row[0]!==context.verseText||!Array.isArray(row[3])||
         !row[3].length||row[3].some(function(method){return !Object.hasOwn(extensionMethods,method);})||
-        !['reader','scrivener'].includes(row[4])) return null;
+        !['reader','scrivener'].includes(row[4])) return cross?matchCrossVerse(context,records,previous,cross):null;
       var witness=chapter.witnesses?.[row[1]];
       var source={title:editionNames[edition]+' / '+row[3].map(function(method){return extensionMethods[method];}).join(', '),
-        reference:extensionBase+'NOTICE.md',revision:'Shell 85 extension',reviewedBy:'GOD4.us exact spans and positional validation'};
+        reference:catalog.base+'NOTICE.md',revision:catalog.revision,reviewedBy:'GOD4.us exact spans and positional validation'};
       var supplement;
       if(row[4]==='scrivener'){
         if(edition!=='kjv'||previous?.status==='available'||records[0]?.source?.startsWith('Textus Receptus,')) return null;
@@ -517,7 +522,7 @@
       }else{
         supplement=matchChapterRow(context,records,[row[0],witness,row[2]],source);
       }
-      if(!supplement) return null;
+      if(!supplement) return cross?matchCrossVerse(context,records,previous,cross):null;
       var groups=previous?.status==='available'?previous.groups:[];
       var added=supplement.groups.filter(function(candidate,index){
         var grammatical=row[3].includes('greek-inflection')&&row[6]?.includes(index);
@@ -528,14 +533,83 @@
             });});
         });
       });
-      if(!added.length) return null;
-      added.forEach(function(group){group.source=source;});
-      return {status:'available',records:records,alignment:{
-        status:'available',groups:groups.concat(added),source:groups.length?previous.source:source
-      }};
+      if(!added.length) return cross?matchCrossVerse(context,records,previous,cross):null;
+      added.forEach(function(group){
+        group.source=source;
+        if(row[3].includes('greek-inflection')&&row[6]?.includes(supplement.groups.indexOf(group))) group.grammatical=true;
+      });
+      var alignment={status:'available',groups:groups.concat(added),source:groups.length?previous.source:source};
+      return (cross&&matchCrossVerse(context,records,alignment,cross))||{status:'available',records:records,alignment:alignment};
     }).catch(function(){return null;});
     return Promise.race([data,new Promise(function(resolve){timer=setTimeout(function(){resolve(null);},3000);})])
       .finally(function(){clearTimeout(timer);});
+  }
+  function matchCrossVerse(context,records,previous,row){
+    if(context.translationId!=='kjv'||row.revision!==scrivenerWitness.revision||
+      records[0]?.source!==scrivenerWitness.label||previous?.status!=='available'||
+      row.text!==context.verseText||!sameWitness(context,records,row.local)||
+      !records.every(function(record){return record.status==='authoritative'&&record.source===scrivenerWitness.label;})||
+      !Array.isArray(row.targets)||!Array.isArray(row.groups)||!row.groups.length) return null;
+    var positions=new Map(), foreign=[], claimed=new Set(), groups=[];
+    var previouslyOwned=new Set(previous.groups.flatMap(function(group){return group.original;}));
+    row.targets.forEach(function(target){
+      if(target.chapter!==context.chapter||Math.abs(target.verse-context.verse)!==1||
+        !Number.isInteger(target.verse)||target.verse<1||!Array.isArray(target.tokens)) return;
+      target.tokens.forEach(function(token){
+        if(!Array.isArray(token)||token.length!==5) return;
+        var [position,surface,identity,morphology,language]=token;
+        var key=[target.chapter,target.verse,position].join(':');
+        if(positions.has(key)||!Number.isInteger(position)||position<0||!(position<target.length)||language!=='greek'||
+          !scrivenerWitness.token.test(surface)||!/^G[1-9]\d{0,4}$/.test(identity)||
+          !/^[A-Z][A-Z0-9-]+$/.test(morphology)){positions.set(key,null);return;}
+        var record={status:'authoritative',language:language,surface:surface,strongsNumber:identity,morphology:morphology,
+          bookId:context.bookId,chapter:target.chapter,verse:target.verse,tokenIndex:position,
+          panelTokenIndex:records.length+foreign.length,source:scrivenerWitness.label,
+          adjacentReference:(context.bookName||BibleCanon.book(context.bookId)?.name||context.bookId)+' '+target.chapter+':'+target.verse};
+        positions.set(key,record);
+        foreign.push(record);
+      });
+    });
+    var supplied=Array.from(context.verseText.matchAll(/\[[^\]]*\]/g));
+    var existing=previous.groups.flatMap(function(group){return group.english;});
+    for(var group of row.groups){
+      if(!Array.isArray(group.english)||!group.english.length||!Array.isArray(group.native)||!group.native.length) return null;
+      if(group.english.some(function(pair){return !Array.isArray(pair)||pair.length!==2;})) return null;
+      var spans=group.english.map(function(pair){return {start:pair[0],end:pair[1]};});
+      if(spans.some(function(span){
+        return !Number.isInteger(span.start)||!Number.isInteger(span.end)||span.start<0||span.end<=span.start||
+          span.end>context.verseText.length||!/^\S(?:.*\S)?$/.test(context.verseText.slice(span.start,span.end))||
+          /[\p{L}\p{N}]/u.test(context.verseText[span.start-1]||'')&&/[\p{L}\p{N}]/u.test(context.verseText[span.start])||
+          /[\p{L}\p{N}]/u.test(context.verseText[span.end]||'')&&/[\p{L}\p{N}]/u.test(context.verseText[span.end-1])||
+          supplied.some(function(mark){return mark.index<span.end&&mark.index+mark[0].length>span.start;})||
+          existing.some(function(used){return used.start<span.end&&used.end>span.start;});
+      })) return null;
+      var linked=[];
+      for(var ref of group.native){
+        if(!Array.isArray(ref)||ref.length!==3||ref.some(function(n){return !Number.isInteger(n);})) return null;
+        var key=ref.join(':');
+        var local=ref[0]===context.chapter&&ref[1]===context.verse;
+        var token=local?records[ref[2]]:positions.get(key);
+        if(!token||claimed.has(key)||local&&previouslyOwned.has(ref[2])) return null;
+        claimed.add(key);
+        linked.push(token.panelTokenIndex??token.tokenIndex);
+      }
+      existing.push(...spans);
+      var labels=[...new Set(foreign.filter(function(record){return linked.includes(record.panelTokenIndex);})
+        .map(function(record){return record.adjacentReference;}))];
+      if(!labels.length) return null;
+      var source=Object.assign({},scrivenerWitness.source,{
+        title:'Scrivener 1894 Textus Receptus / Greek at '+labels.join(', ')
+      });
+      groups.push({english:spans,original:linked,source:source});
+    }
+    if(foreign.some(function(record){return !claimed.has([record.chapter,record.verse,record.tokenIndex].join(':'));})) return null;
+    return {status:'available',records:records.concat(foreign),alignment:{
+      status:'available',groups:previous.groups.concat(groups),source:previous.source
+    }};
+  }
+  function lookupContinuation(context,records,previous){
+    return lookupExtension(context,records,previous,continuationCatalog);
   }
   function contextualDefinition(study, records, alignment){
     if(alignment?.status !== 'available') return null;
@@ -646,14 +720,29 @@
         sense=['G4904','A person who shares in Paul’s work.','Greek synergos'];
       }
     }
+    if(!sense){
+      if(/^begat$/i.test(term)&&study.bookId==='matthew'&&study.chapter===1){
+        sense=['G1080','Became the father of the person named next in this genealogy.','Greek gennao'];
+        noun=/^V-AAI-3S$/;
+        partOfSpeech='verb';
+      }else if(/^faith$/i.test(term)&&study.bookId==='hebrews'&&study.chapter===11){
+        sense=['G4102','Trust in God and in what he has promised, expressed in what people do.','Greek pistis'];
+      }else if(/^inheritance$/i.test(term)&&study.bookId==='ephesians'&&study.chapter===1&&[14,18].includes(study.verse)){
+        sense=['G2817',study.verse===14?'What God has promised his people. Paul says the Spirit is its guarantee.':
+          'The inheritance Paul prays believers will understand.','Greek kleronomia'];
+      }else if(/^covenant$/i.test(term)&&study.bookId==='genesis'&&study.chapter===17){
+        sense=['H1285','The binding agreement God establishes with Abraham and his descendants.','Hebrew berit'];
+        noun=/^H(?:[^/]+\/)*Nc/;
+      }
+    }
     if(!sense) return null;
     var linked = new Set(matchingGroups(alignment,{start:study.englishStart,end:study.englishEnd})
       .flatMap(function(group){ return group.original; }));
     if(!records.some(function(record){
-      return linked.has(record.tokenIndex) && record.strongsNumber === sense[0] && noun.test(record.morphology);
+      return linked.has(record.panelTokenIndex??record.tokenIndex) && record.strongsNumber === sense[0] && noun.test(record.morphology);
     })) return null;
     return {partOfSpeech:partOfSpeech,definition:sense[1],source:'Scripture context · ' + sense[2] + ' (' + sense[0] + ')'};
   }
-  return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookupChapter:lookupChapter, lookupKjvWitness:lookupKjvWitness, lookupEdition:lookupEdition, lookupCorpus:lookupCorpus, lookupScrivenerWitness:lookupScrivenerWitness, lookupExtension:lookupExtension, hasReviewedVerse:hasReviewedVerse,
+  return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookupChapter:lookupChapter, lookupKjvWitness:lookupKjvWitness, lookupEdition:lookupEdition, lookupCorpus:lookupCorpus, lookupScrivenerWitness:lookupScrivenerWitness, lookupExtension:lookupExtension, lookupContinuation:lookupContinuation, hasReviewedVerse:hasReviewedVerse,
     contextualDefinition:contextualDefinition, lookup:createProvider(reviewedCatalog).lookup};
 }));

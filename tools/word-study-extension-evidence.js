@@ -51,6 +51,16 @@ function sharedText(source,target,groups){
   return {groups:wholeWordGroups(target,accepted),method:'exact-clause'};
 }
 
+function terminalPunctuationProjection(source,target,groups){
+  // A full declarative verse with the same body and a changed editorial
+  // terminal full stop, colon or semicolon. Internal punctuation and case matter.
+  if([source,target].some(text=>marked.test(text)||sensitive.test(text)||/["\u201c\u201d?!]/.test(text))) return [];
+  const tail=/[.:;]$/;
+  if(!tail.test(source)||!tail.test(target)||source.at(-1)===target.at(-1)) return [];
+  const edges=groups.filter(([spans])=>spans.every(([,end])=>end<source.length));
+  return wholeWordGroups(target,projectExactTypography(source.slice(0,-1),target.slice(0,-1),edges)||[]);
+}
+
 function selectGroups(prior,candidates){
   const grouped=new Map();
   const existing=new Set(prior.map(key));
@@ -169,4 +179,4 @@ function finiteSecondPerson(text,records,groups){
   return [{group:[[phrase.indices[1]],[12]],method:'greek-inflection',shared:true}];
 }
 
-module.exports={nativeTuple,key,conflict,wholeWordGroups,sharedText,selectGroups,taggedGreek,finiteSecondPerson};
+module.exports={nativeTuple,key,conflict,wholeWordGroups,sharedText,terminalPunctuationProjection,selectGroups,taggedGreek,finiteSecondPerson};

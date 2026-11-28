@@ -74,9 +74,15 @@ test('Shell 85 distinguishes both occurrences of king’s in KJV Acts 12:20',asy
   await expect(page.locator('#wordStudySource')).toContainText('Scripture context');
 });
 
-test('Shell 85 Ephesians keeps the manuscript label and withholds a cross-verse phrase',async({page})=>{
+test('Shell 85 Ephesians keeps its accepted manuscript label and Shell 86 links the adjacent phrase',async({page,context})=>{
+  const requests=[];
+  page.on('request',r=>{if(r.url().includes('/data/word-study/alignment/')) requests.push(r.url());});
   await page.goto('/');
+  await page.evaluate(()=>navigator.serviceWorker.ready.then(()=>true));
+  if(!await page.evaluate(()=>!!navigator.serviceWorker.controller)) await page.reload();
+  await page.evaluate(async()=>{if(!(await BibleTranslationLoader.retain('kjv')).ok)throw Error('KJV retention failed');});
   await navigate(page,'kjv','ephesians',6,17);
+  expect(requests).toEqual([]);
   await word(page,17,'helmet').press('Enter');
   await expect(status(page)).toContainText('Scrivener 1894 Textus Receptus');
   await expect(aligned(page)).toHaveCount(2);
@@ -84,5 +90,37 @@ test('Shell 85 Ephesians keeps the manuscript label and withholds a cross-verse 
   await navigate(page,'kjv','ephesians',1,10);
   await word(page,10,'him').press('Enter');
   await expect(page.locator('#wordStudyOriginalTokens button').first()).toBeVisible();
-  await expect(status(page)).toContainText('Exact word alignment is unavailable');
+  await expect(status(page)).toContainText('Greek at Ephesians 1:11');
+  await expect(aligned(page)).toHaveCount(2);
+  await expect(page.locator('#wordStudyOriginalIntro')).toContainText('from Ephesians 1:11');
+  await expect(aligned(page).first()).toHaveAttribute('aria-label',/token 1 at Ephesians 1:11/);
+  await aligned(page).first().press('Enter');
+  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('Ephesians 1:11');
+  await page.keyboard.press('Escape');
+  await expect(word(page,10,'him')).toBeFocused();
+  await navigate(page,'kjv','ephesians',1,11);
+  await word(page,11,'whom').press('Enter');
+  await expect(status(page)).toContainText('CrossWire KJV');
+  await expect(aligned(page)).toHaveCount(1);
+  await expect(page.locator('#wordStudyOriginalIntro')).not.toContainText('Includes corresponding');
+  await context.setOffline(true);
+  try{
+    await page.reload();
+    await navigate(page,'kjv','ephesians',1,10);
+    await word(page,10,'him').press('Enter');
+    await expect(status(page)).toContainText('Greek at Ephesians 1:11');
+    await expect(aligned(page)).toHaveCount(2);
+  }finally{await context.setOffline(false);}
+});
+
+test('Shell 86 Matthew indirect question maps all three selected words to one local Greek token',async({page})=>{
+  await page.goto('/');
+  await navigate(page,'kjv','matthew',2,4);
+  await word(page,4,'born').press('Enter');
+  await expect(status(page)).toContainText('verified Greek person and tense');
+  await expect(aligned(page)).toHaveCount(1);
+  await expect(aligned(page)).toHaveAttribute('data-original-language-token-index','15');
+  const verse=page.locator('#readerContent [data-verse-number="4"]');
+  await expect(verse.locator('[data-aligned="true"]')).toHaveText(['should','be','born']);
+  await expect(page.locator('#wordStudyOriginalIntro')).not.toContainText('Includes corresponding');
 });

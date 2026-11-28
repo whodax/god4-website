@@ -146,7 +146,7 @@ var WordStudyController = (function createWordStudyController(){
 
   function showOriginalDetails(record, selectedButton){
     var view = elements();
-    var groups = alignmentApi.matchingGroups(activeAlignment, {tokenIndex:record.tokenIndex});
+    var groups = alignmentApi.matchingGroups(activeAlignment, {tokenIndex:record.panelTokenIndex??record.tokenIndex});
     var phrases = groups.flatMap(function(group){
       return group.english.map(function(span){ return activeContext.verseText.slice(span.start, span.end).trim(); });
     });
@@ -157,6 +157,7 @@ var WordStudyController = (function createWordStudyController(){
     }
     var fields = [
       ['inThisVerse', 'In this verse'],
+      ['adjacentReference', 'Greek source reference'],
       ['surface', 'Surface'],
       ['language', 'Language'],
       ['lemma', 'Lemma'],
@@ -179,7 +180,7 @@ var WordStudyController = (function createWordStudyController(){
       view.originalDetails.appendChild(detail);
     });
     view.originalDetails.hidden = false;
-    highlightAlignment({tokenIndex:record.tokenIndex});
+    highlightAlignment({tokenIndex:record.panelTokenIndex??record.tokenIndex});
     view.originalTokens.querySelectorAll('button').forEach(function(button){ button.setAttribute('aria-pressed', button === selectedButton ? 'true' : 'false'); });
     keepStudyFocusVisible(selectedButton);
   }
@@ -228,6 +229,9 @@ var WordStudyController = (function createWordStudyController(){
         'Greek words from the Scrivener 1894 Textus Receptus.' :
       result.records[0].source?.startsWith('Textus Receptus,') ?
         'Greek words from the Textus Receptus.' : 'Original-language words in this verse';
+    var adjacent = [...new Set(result.records.map(function(record){return record.adjacentReference;}).filter(Boolean))];
+    if(adjacent.length) intro.querySelector('.word-study-original-note').textContent +=
+      ' Includes corresponding Greek words from '+adjacent.join(', ')+'.';
     intro.hidden = false;
     view.originalTokens.setAttribute('dir', rightToLeft ? 'rtl' : 'ltr');
     result.records.forEach(function(record){
@@ -235,10 +239,10 @@ var WordStudyController = (function createWordStudyController(){
       button.type = 'button';
       button.className = 'word-study-original-token';
       button.textContent = record.surface;
-      button.setAttribute('aria-label', 'Original-language token ' + record.surface + ', ' + displayLanguage(record.language) + ', token ' + (record.tokenIndex + 1));
+      button.setAttribute('aria-label', 'Original-language token ' + record.surface + ', ' + displayLanguage(record.language) + ', token ' + (record.tokenIndex + 1) + (record.adjacentReference ? ' at '+record.adjacentReference : ''));
       button.setAttribute('aria-pressed', 'false');
       button.setAttribute('aria-describedby', 'wordStudyAlignmentStatus');
-      button.setAttribute('data-original-language-token-index', String(record.tokenIndex));
+      button.setAttribute('data-original-language-token-index', String(record.panelTokenIndex??record.tokenIndex));
       button.setAttribute('lang', record.language === 'hebrew' ? 'he' : record.language === 'aramaic' ? 'arc' : 'grc');
       button.__originalLanguageRecord = record;
       view.originalTokens.appendChild(button);
@@ -319,6 +323,11 @@ var WordStudyController = (function createWordStudyController(){
             result=supplemental;
             verified=supplemental.alignment;
           }
+        }
+        if(!current()) return;
+        if(study.alignmentTextVerified && alignmentApi.lookupContinuation){
+          var continuation=await alignmentApi.lookupContinuation(study,result.records,verified);
+          if(continuation){result=continuation;verified=continuation.alignment;}
         }
         if(!current()) return;
         renderOriginalLanguage(result, verified);

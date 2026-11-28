@@ -6,6 +6,7 @@ const vm=require('node:vm');
 const {createHash}=require('node:crypto');
 const {TRANSLATIONS,loadBibleLibrary,READER_TOKEN_PATTERN,normalizeDictionaryTerm}=require('./audit-word-study-coverage');
 const {provider}=require('./import-web-alignment');
+const {studyClass}=require('./word-study-grammar');
 const canon=require('../js/bible/canon');
 const root=path.resolve(__dirname,'..');
 const repo=file=>path.join(root,file);
@@ -81,7 +82,7 @@ function reportEthiopian(){
   return {...total,unit:'displayed lines, including prose entries',books};
 }
 
-async function run({includeCorpus=true,includeExtensions=true}={}){
+async function run({includeCorpus=true,includeExtensions=true,includeContinuations=true}={}){
   const engine=runtime(), lookup=provider(), definitions=dictionary();
   const key=({translationId,bookId,chapter,verse})=>[translationId,bookId,chapter,verse].join(':');
   const inline=new Set(engine.catalog.map(key));
@@ -89,11 +90,13 @@ async function run({includeCorpus=true,includeExtensions=true}={}){
   const scrivener=includeCorpus&&engine.lookupScrivenerWitness&&fs.existsSync(repo(base+'kjv-scrivener/index.json'))?read(base+'kjv-scrivener/index.json'):null;
   const corpus=includeCorpus&&engine.lookupCorpus&&fs.existsSync(repo(base+'corpus/index.json'))?read(base+'corpus/index.json'):null;
   const extensions=includeExtensions&&engine.lookupExtension&&fs.existsSync(repo(base+'extensions/index.json'))?read(base+'extensions/index.json'):null;
-  const report={version:1,baseline:extensions?'748defc3fa1628dd79575ff3ca492a6a0836f8b0':baseline,coverageRule:'Aligned spans cover every eligible Reader word in a fully aligned verse. KJV supplied words counted separately.',
+  const continuation=includeContinuations&&engine.lookupContinuation&&fs.existsSync(repo(base+'continuations/index.json'))?read(base+'continuations/index.json'):null;
+  const report={version:1,baseline:continuation?'170063fcbb98fb7222202194ff986527032adef4':extensions?'748defc3fa1628dd79575ff3ca492a6a0836f8b0':baseline,coverageRule:'Aligned spans cover every eligible Reader word in a fully aligned verse. KJV supplied words counted separately.',
     editions:{},ethiopian:reportEthiopian(),priority:{},cohorts:{
       shell83:read('docs/shell-83-edition-publication.json').initialBreakdown,
       webReview:read('docs/shell-81-crosswalk-report.json').counts,
       kjvNT:read('docs/shell-83-kjv-residual.json').unchangedReasons}};
+  if(continuation) report.grammar={verifiedOccurrences:0,proposed:[]};
   for(const {id,file,variable} of editionList){
     const text=loadBibleLibrary(file,variable), result={...counts(),books:{}};
     const wordForms=Object.fromEntries(Object.keys(priority).map(form=>[form,{eligible:0,verified:0,linkedContext:0,definition:null}]));
@@ -119,7 +122,7 @@ async function run({includeCorpus=true,includeExtensions=true}={}){
             !(id==='kjv'&&indexes['kjv-tr'][book]?.[chapter]?.includes(verse))&&
             !indexes.editions[id]?.[book]?.[chapter]?.includes(verse)&&!corpus?.[id]?.[book]?.[chapter]?.includes(verse)&&
             !(id==='kjv'&&scrivener?.[book]?.[chapter]?.includes(verse))&&
-            !extensions?.[id]?.[book]?.[chapter]?.includes(verse)) continue;
+            !extensions?.[id]?.[book]?.[chapter]?.includes(verse)&&!continuation?.[id]?.[book]?.[chapter]?.includes(verse)) continue;
           let {records}=await lookup.lookupVerse(context);
           let resolved=engine.lookup(context,records);
           if(resolved?.status!=='available'&&id==='kjv'&&indexes['kjv-tr'][book]?.[chapter]?.includes(verse)){
@@ -142,9 +145,20 @@ async function run({includeCorpus=true,includeExtensions=true}={}){
             records=supplement.records;
             resolved=supplement.alignment;
           }
+          if(continuation?.[id]?.[book]?.[chapter]?.includes(verse)){
+            const extra=await engine.lookupContinuation(context,records,resolved);
+            if(!extra) throw Error('Published continuation unavailable for '+key(context));
+            records=extra.records;
+            resolved=extra.alignment;
+          }
           if(resolved?.status!=='available') continue;
           let matched=0;
           for(const word of eligible){
+            if(continuation&&id==='kjv'&&(['philemon','titus','matthew'].includes(book))){
+              const classification=studyClass(context,word,resolved);
+              if(classification.category==='verified-grammatical') report.grammar.verifiedOccurrences++;
+              if(classification.proposed) report.grammar.proposed.push({book,chapter,verse,word:word.displayWord,...classification});
+            }
             if(!resolved.groups.some(group=>group.english.some(span=>span.start<=word.start&&span.end>=word.end))) continue;
             matched++;
             const linked=engine.contextualDefinition({...context,displayWord:word.displayWord,

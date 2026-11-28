@@ -232,6 +232,6 @@ test.describe('installed offline',()=>{
     await next(page).press('Enter');
     await expect(status(page)).toHaveText('Love: Romans 5:8 (WEB)');
     expect(await text(page)).toBe(catalog.topics[0].passages[1].text);
-    expect(await page.evaluate(()=>caches.keys())).toEqual(['god4-shell-compact-reader-85']);
+    expect(await page.evaluate(()=>caches.keys())).toEqual(['god4-shell-compact-reader-86']);
   });
 });

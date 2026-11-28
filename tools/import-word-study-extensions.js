@@ -11,7 +11,7 @@ const {englishAgreement,nativeKjvAgreement,properNameAgreement}=require('./impor
 const {load:loadBerean,validate:validateBerean}=require('./word-study-berean');
 const {readTaggedVerse,checksum,osisCodes}=require('./import-crosswire-kjv-alignment');
 const {ignoreTransparentMarkup}=require('./audit-kjv-residual');
-const {sharedText,nativeTuple,wholeWordGroups,selectGroups,taggedGreek,finiteSecondPerson}=require('./word-study-extension-evidence');
+const {sharedText,terminalPunctuationProjection,nativeTuple,wholeWordGroups,selectGroups,taggedGreek,finiteSecondPerson}=require('./word-study-extension-evidence');
 const {pins:scrivenerPin}=require('./audit-scrivener-witness');
 const {address}=require('./scripture-crosswalk');
 const canon=require('../js/bible/canon');
@@ -34,9 +34,10 @@ const ultPin=require('./web-alignment-v92-source.json');
 const count=(record,label,delta=1)=>{record[label]=(record[label]||0)+delta;};
 const includes=(group,word)=>group[0].some(([a,b])=>a<=word.start&&b>=word.end);
 
-function loadAccepted(){
+function loadAccepted(includeExtensions=false){
+  const inputs=includeExtensions?{...witnesses,extensions:'85-alignment-publication'}:witnesses;
   const files={};
-  for(const [folder,name] of Object.entries(witnesses)){
+  for(const [folder,name] of Object.entries(inputs)){
     const manifest=require('../docs/shell-'+name+'.json');
     files[folder]={};
     for(const [filename,pin] of Object.entries(manifest.files)){
@@ -86,9 +87,9 @@ function authoritative(records,context){
 }
 
 async function build(args){
-  const {osis,scrivener,notice,ult,uhb,ugnt,berean,output}=args;
+  const {osis,scrivener,notice,ult,uhb,ugnt,berean,output,continuation=false}=args;
   if(fs.existsSync(output)) throw Error('Use a fresh directory for extension output');
-  const previous=loadAccepted(), engine=runtime(), original=provider();
+  const previous=loadAccepted(continuation), engine=runtime(), original=provider();
   const {rows,alternate}=sourceFiles(osis,scrivener,notice);
   const [hebrew,greek]=[loadSource(uhb,originalPins[0]),loadSource(ugnt,originalPins[1])];
   const literal=loadSource(ult,ultPin), publisher=loadBerean(berean);
@@ -97,7 +98,7 @@ async function build(args){
   const inline=new Set(engine.catalog.map(row=>row.translationId+':'+coordinate(row)));
   const sourcePins={crossWire:checksum,scrivener:scrivenerPin,ult:ultPin,original:originalPins,
     berean:{sha256:sha(fs.readFileSync(berean)),license:'CC0 1.0',source:'https://bereanbible.com/downloads.htm'}};
-  const report={baseline,sourcePins,protectedPassages:heldout.length,screening:{},editions:{},files:{},priorityBooks:{}};
+  const report={baseline:continuation?'170063fcbb98fb7222202194ff986527032adef4':baseline,sourcePins,protectedPassages:heldout.length,screening:{},editions:{},files:{},priorityBooks:{}};
   const index={}, chapters=new Map();
   const metrics=()=>({newVerses:0,improvedVerses:0,occurrences:0,groups:0,methods:{},screening:{},priority:{},books:{}});
   for(const {id} of ids) report.editions[id]=metrics();
@@ -114,15 +115,21 @@ async function build(args){
     if(resolved?.status!=='available'&&hasPrimary) resolved=await engine.lookupChapter(context,records);
     if(resolved?.status!=='available'&&hasTR){
       const hit=await engine.lookupKjvWitness(context);
-      if(hit) return {records:hit.records,groups:compact(hit.alignment),alternate:true};
+      if(hit){records=hit.records;resolved=hit.alignment;}
     }
     if(resolved?.status!=='available'&&hasEdition) resolved=await engine.lookupEdition(context,records);
     if(resolved?.status!=='available'&&hasCorpus) resolved=await engine.lookupCorpus(context,records);
     if(resolved?.status!=='available'&&hasScrivener){
       const hit=await engine.lookupScrivenerWitness(context);
-      if(hit) return {records:hit.records,groups:compact(hit.alignment),alternate:true};
+      if(hit){records=hit.records;resolved=hit.alignment;}
     }
-    return {records,groups:compact(resolved),alternate:false};
+    if(continuation&&previous.extensions[file]?.editions?.[id]?.[verse]){
+      const hit=await engine.lookupExtension(context,records,resolved);
+      if(!hit) throw Error('Accepted extension missing '+id+':'+coordinate(context));
+      records=hit.records;
+      resolved=hit.alignment;
+    }
+    return {records,groups:compact(resolved),alternate:/^(?:Scrivener 1894|Textus Receptus,)/.test(records[0]?.source||'')};
   }
 
   function save(context,file,records,mode,selected,existing){
@@ -200,7 +207,7 @@ async function build(args){
         // Berean annotation, or a Strong number by itself, is insufficient.
         if(raw&&br&&rawWitness&&!variant){
           const anchor=readOriginal(rawWitness), parsed=readAlignment(raw);
-          const bereanHit=validateBerean(br,anchor,native,manuscriptMatches);
+          const bereanHit=validateBerean(br,anchor,native,manuscriptMatches,continuation);
           if(!parsed.reason&&bereanHit.groups){
             const ultHit=validateVerse(parsed.english,raw,anchor,native);
             if(ultHit.alignments){
@@ -216,7 +223,7 @@ async function build(args){
                   const body=rows.get(full);
                   if(body) groups.push(...nativeKjvAgreement(text,readTaggedVerse(ignoreTransparentMarkup(body)),left,right,native));
                 }
-                row.candidates.push(...wholeWordGroups(text,groups).map(group=>({group,method:'berean-ult'})));
+                row.candidates.push(...wholeWordGroups(text,groups).map(group=>({group,method:continuation?'berean-ult-morphology':'berean-ult'})));
               }
             }else count(report.screening,'ULT '+ultHit.reason);
           }else count(report.screening,parsed.reason?'ULT '+parsed.reason:'Berean '+bereanHit.reason);
@@ -229,6 +236,14 @@ async function build(args){
               signature!==JSON.stringify(donor.records.map(nativeTuple))) continue;
             const {groups,method}=sharedText(donor.context.verseText,target.context.verseText,donor.groups);
             target.candidates.push(...groups.map(group=>({group,method,donor:donor.context.translationId})));
+          }
+          if(continuation){
+            for(const donor of evaluations){
+              if(donor===target||!donor.groups.length||!authoritative(donor.records,location)||
+                signature!==JSON.stringify(donor.records.map(nativeTuple))) continue;
+              const groups=terminalPunctuationProjection(donor.context.verseText,target.context.verseText,donor.groups);
+              target.candidates.push(...groups.map(group=>({group,method:'terminal-punctuation',donor:donor.context.translationId})));
+            }
           }
           const {accepted,counts}=selectGroups(target.groups,target.candidates);
           const metrics=report.editions[target.context.translationId];
@@ -261,10 +276,10 @@ async function build(args){
 }
 
 if(require.main===module){
-  const [osis,scrivener,notice,ult,uhb,ugnt,berean,output,report]=process.argv.slice(2);
+  const [osis,scrivener,notice,ult,uhb,ugnt,berean,output,report,mode]=process.argv.slice(2);
   if(!report) throw Error('Expected CrossWire OSIS, Scrivener JSON and README, ULT, UHB, UGNT, Berean TSV, fresh output and report');
-  build({osis,scrivener,notice,ult,uhb,ugnt,berean,output}).then(value=>fs.writeFileSync(report,JSON.stringify(value,null,2)+'\n'))
+  build({osis,scrivener,notice,ult,uhb,ugnt,berean,output,continuation:mode==='continuation'}).then(value=>fs.writeFileSync(report,JSON.stringify(value,null,2)+'\n'))
     .catch(error=>{console.error(error);process.exitCode=1;});
 }
 
-module.exports={build};
+module.exports={build,sourceFiles,alternateRecords};

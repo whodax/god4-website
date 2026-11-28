@@ -24,7 +24,7 @@ const preview67='36a83c644db7a510f634d692866968a431837a78';
 const preview68='7014c91849364dae244b89b44dd0a515fa1c98d1';
 const preview69='885831216ca3e85bf5426ec5940e1a9105a3afd4';
 const preview70='558845a0d9f12a61d8911b4db47cb363a4ad281e';
-const currentVersion=85;
+const currentVersion=86;
 const production55='90a13c28afc64526bf27b6c2bb7021dd516d6493';
 const discoveryAssets=["/js/home-discovery.js","/js/home-discovery-catalog.json"];
 const discoveryPins={"/":"0dbb79fc2df882e469eb86e752cf7953e85078aa60e615362603597b5596fd15","/js/app.js":"498e0a2f3ce4b5c735d4ba3ea43bfb6a70709181849c7627067c339d4b31eab2","/js/home-discovery.js":"d123dff0bc63e160beb2f512dcb05341931abb0241233eebd77d864cb460eee3","/js/home-discovery-catalog.json":"5bb67690dbf8e1ff44af50617d0d9f30ae30aa5e78f95bdd024952c632b4555a","/css/components.css":"401ba5d477482de2fd3647da880bd9a266fc3f7dc4d134f93f9eae95e3ccca95"};
@@ -80,7 +80,8 @@ for(const previous of [
   {version:81,commit:'13d94205e959d332645ba7f4cb2a4b7d3da9ea2a',assets:52},
   {version:82,commit:'cce89e56de5fe07b40207928128e3d735f41ef1d',assets:52},
   {version:83,commit:'99d5deb81ce7ddac555f61a5d0a8f87923e3988f',assets:52},
-  {version:84,commit:'748defc3fa1628dd79575ff3ca492a6a0836f8b0',assets:52}
+  {version:84,commit:'748defc3fa1628dd79575ff3ca492a6a0836f8b0',assets:52},
+  {version:85,commit:'170063fcbb98fb7222202194ff986527032adef4',assets:52}
 ])test.describe(`installed cache ${previous.version}`,()=>{
 const baseline=previous.commit;
 const oldCache='god4-shell-compact-reader-'+previous.version,newCache='god4-shell-compact-reader-'+currentVersion;
@@ -111,10 +112,11 @@ const saved=[{ref:'John 1:1',text:'Installed-user saved verse',location:{transla
 test.use({viewport:{width:320,height:844},hasTouch:true,serviceWorkers:'allow'});
 if(previous.version>=52)test.use({userAgent:'Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36'});
 
-test('shell 85 preserves activation, Bible caches and the exact required assets',()=>{
+test('shell 86 preserves activation, Bible caches and the exact required assets',()=>{
   const worker=fs.readFileSync(path.join(root,'sw.js'),'utf8');
-  let normalized=worker.replace(/\r\n/g,'\n').replace("'compact-reader-85'","'compact-reader-"+previous.version+"'");
-  normalized=normalized.replaceAll('|extensions','');
+  let normalized=worker.replace(/\r\n/g,'\n').replace("'compact-reader-86'","'compact-reader-"+previous.version+"'");
+  normalized=normalized.replaceAll('|continuations','');
+  if(previous.version<85) normalized=normalized.replaceAll('|extensions','');
   if(previous.version<84) normalized=normalized.replaceAll('editions|corpus|kjv-scrivener','editions');
   if(previous.version<83) normalized=normalized.replaceAll('web|kjv-tr|editions','web|kjv-tr').replaceAll('web|kjv|kjv-tr|editions','web|kjv|kjv-tr');
   if(previous.version>=78&&previous.version<82) normalized=normalized
@@ -139,10 +141,10 @@ test('shell 85 preserves activation, Bible caches and the exact required assets'
     '/js/word-study/provider.js':'7d66b02670df844217585cb57680dd41812555619a3e4851dcbd5122273fb3e8',
     '/':'2b4f020a910a66406fa04cdfd3d8abe6200068b599107d3e33de7d0d61e396e6',
     '/css/companion.css':'afe7794ac43078b655794831a0571918a0b96731ab3da5930c8204d9fdc4c986',
-    [alignmentPath]:'93c91b4d031002e34f702cf6108ca8cf456bafa34675faa4dcf103d2b4f91480',
+    [alignmentPath]:'e09c1a044884cb10d43584fa7f5c953263c3dc5960923baa13beb1871d9e30c3',
     [dictionaryPath]:'d2370962a5c5d5f8785fc0d9d4c9f717a639b5a4aa4646204ecc66f0470995ef',
     [lexiconProviderPath]:'26442c26186010cad9ea56aaecd624c09b016c9d6f41556d3e630ea4f02c150e',
-    '/js/word-study/controller.js':'5cb7bec00de950d5f00d8cc94c5200cb333672277d5e561c88f3e2e127931a24'
+    '/js/word-study/controller.js':'1cdbeb509a6221020dbcb5270f2368dc2d2e08b52692bad8811e9ed33d906031'
   };
   for(const asset of requiredAssets){
     const body=fs.readFileSync(path.join(root,fileFor(asset)));
@@ -583,7 +585,7 @@ for(const width of previous.version>=44?[1280,320,390]:[320,390])test(`installed
   }finally{await context.setOffline(false);await server.stop(context);}
 });
 
-test(`failed shell-85 installation leaves installed shell ${previous.version} usable offline and retries without data loss`,async({page,context})=>{
+test(`failed shell-86 installation leaves installed shell ${previous.version} usable offline and retries without data loss`,async({page,context})=>{
   test.setTimeout(60000);
   const server=await fixture();
   try{
@@ -623,7 +625,7 @@ test(`failed shell-85 installation leaves installed shell ${previous.version} us
   }finally{await context.setOffline(false);await server.stop(context);}
 });
 
-test(`interrupted shell-85 precache keeps shell ${previous.version} recoverable and retries offline safely`,async({page,context})=>{
+test(`interrupted shell-86 precache keeps shell ${previous.version} recoverable and retries offline safely`,async({page,context})=>{
   test.setTimeout(60000);const server=await fixture();
   try{
     await installOld(page,server.origin);const before=await retainedState(page),requests=server.state.bibleRequests.slice();
