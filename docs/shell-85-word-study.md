@@ -78,17 +78,25 @@ python -B tools/prepare-translation-witness-review.py <Clementine USFX> <1 Enoch
 | --- | --- |
 | Unit checks, including every generated extension row | 523 passed |
 | Focused Chromium | 155 cases passed across the main run, isolated replays and the new two-occurrence test. |
-| Upgrade fixtures | 21 passed, including all 11 Shell 84-to-85 cases and the historical Shell 74–83 asset fixtures. |
+| Upgrade fixtures | 26 passed across two runs. |
 | Additional PWA checks | 10 passed |
 | Asset and Ethiopian education static checks | Passed |
 | Local 390px smoke | Scrivener label, second-person future, distinct *king’s* definitions, full offline reload, focus return and zero startup alignment requests passed. |
 
 The focused main run passed 151 of 154 cases. The existing cached WEB assertion needed the new lazy index in its exact cache inventory. Two additional cases reached the existing 20-second limit when the historical upgrade run was also active. Their snapshots reached Reader initialization or the first selection. The cache assertion and both timeouts passed an isolated replay with the same deadlines. WEB John 1:1 passed in the main run. The 320px dark-theme checks passed.
 
-Physical acceptance is limited to these new interactions.
+The primary run (shell85-upgrade.log) passed 21 upgrade cases, including all 11 Shell 84-to-85 cases and 10 historical asset checks. The supplemental run (shell85-additional.log) passed five additional upgrade cases, comprising 320px activation from Shells 74, 78 and 82 and cached Word Study reloads from Shells 80 and 82. Its five Ethiopian Reader checks are separate from the 26 upgrade checks.
 
-1. In **KJV Philemon 1:12**, select *bowels*. Check the Scrivener label, gold Greek highlight and the definition *My own heart*. Close Word Study and confirm focus returns to the selected word. Retain KJV, warm the chapter and repeat after an offline reload.
-2. In **KJV Philemon 1:21**, select *wilt*. Check that *thou wilt* is highlighted and *also* remains separate. Confirm TalkBack announces the alignment.
-3. In **KJV Acts 12:20**, select each *king’s* in order. Check that the first explains the chamberlain’s relation to Herod and the second explains the territory. The two selections should highlight different Greek positions.
+The automated 390px smoke passed locally. Network access blocked the automated smoke on the hosted build.
+
+### Hosted physical Android and TalkBack acceptance
+
+All three checks passed on November 27, 2026, on the [Shell 85 Cloudflare preview](https://233de653.god4-us.pages.dev/#companion) at commit `170063fcbb98fb7222202194ff986527032adef4`.
+
+| Passage and selection | Result |
+| --- | --- |
+| KJV Philemon 1:12, *bowels* | Pass |
+| KJV Philemon 1:21, *wilt* | Pass |
+| KJV Acts 12:20, *king's* | Pass |
 
 Bible-wide verified alignment remains a release blocker. KJV still has 605 New Testament verses with no verified groups and 21,365 Old Testament verses with no verified groups. The next substantial milestone is a cross-verse witness path with explicit positional and editorial-word decisions, together with adjudication of complete short-book WEB, Latin and Ge’ez packets. Priority contractions need compound selection and verified scope evidence.
