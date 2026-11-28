@@ -79,6 +79,16 @@ The primary focused run passed 149 of 155 cases. All six outstanding cases passe
 
 ## Physical acceptance for the new behavior
 
+All three hosted Android and TalkBack checks passed on the [Shell 86 Cloudflare preview](https://d32b3b7a.god4-us.pages.dev/#companion) for commit `2a4e786edde1dd8d7012bdf0499710f5816fbec6`.
+
+| Check | Result |
+| --- | --- |
+| KJV Ephesians 1:10 cross-verse alignment | Pass |
+| Cross-verse offline alignment and isolation | Pass |
+| KJV Matthew 2:4 grammatical phrase | Pass |
+
+### Acceptance checklist
+
 1. In **KJV Ephesians 1:10**, select the final *him*. Check gold Greek on both words, the visible and spoken **Ephesians 1:11** source, and the Scrivener witness label. Activate either Greek word to return the gold emphasis to *in him*. *Even* should remain outside the gold span.
 2. Keep KJV offline and warm this selection. Reload offline, repeat the study and close it to confirm that focus returns to *him*. In **1:11**, *whom* should still use its own positional group.
 3. In **KJV Matthew 2:4**, select *born*. Confirm *should be born* highlights together and the one Greek passive verb receives gold highlighting in the same verse.
