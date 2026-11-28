@@ -1,4 +1,10 @@
-# Preserve the reviewed Romans shard bytes across checkouts on every platform.
-data/word-study/original-language/romans/*.json -text
-# Preserve the deterministic Isaiah publication manifest checksums on Windows.
-data/word-study/original-language/isaiah/*.json -text
+# Preserve the original-language publication checksums across platforms.
+data/word-study/original-language/*/*.json -text
+data/word-study/alignment/kjv/*/*.json -text
+data/word-study/alignment/web/**/*.json -text
+data/word-study/alignment/kjv-tr/**/*.json -text
+data/word-study/alignment/editions/**/*.json -text
+data/word-study/alignment/corpus/**/*.json -text
+data/word-study/alignment/kjv-scrivener/**/*.json -text
+data/word-study/alignment/extensions/**/*.json -text
+data/word-study/alignment/continuations/**/*.json -text

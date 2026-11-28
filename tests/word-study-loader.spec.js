@@ -17,7 +17,7 @@ async function open(page){
   await expect(page.locator('#readerContent')).toContainText('John 1');
 }
 function word(page, term='beginning'){ return page.locator('#readerContent [data-word-study-term="'+term+'"]').first(); }
-async function result(page){ await expect(page.locator('#wordStudyDefinition')).toContainText('The act of doing that which begins anything'); }
+async function result(page){ await expect(page.locator('#wordStudyDefinition')).toHaveText('The start of something.'); }
 async function gate(page){
   let release;
   const barrier=new Promise(resolve=>release=resolve);
@@ -202,7 +202,7 @@ test.describe('installed offline runtime',()=>{
   async function installed(page){await open(page);await page.evaluate(()=>navigator.serviceWorker.ready.then(()=>true));if(!await page.evaluate(()=>!!navigator.serviceWorker.controller))await page.reload();await page.evaluate(()=>initializeBibleExperience());}
   test('cache 26 preserves six runtimes; unused runtime first activates offline with local fallback and no durable JSON',async({page,context})=>{
     await installed(page);
-  const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-64')).keys()).map(r=>new URL(r.url).pathname));
+  const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-86')).keys()).map(r=>new URL(r.url).pathname));
     for(const dep of dependencies)expect(assets).toContain(dep);expect(assets).toContain('/js/word-study/loader.js');expect(assets).toContain('/js/word-study/alignment.js');
     expect(await page.evaluate(()=>typeof WordStudyController)).toBe('undefined');
     await context.setOffline(true);await word(page).press('Enter');
@@ -210,7 +210,7 @@ test.describe('installed offline runtime',()=>{
     await expect(page.locator('#wordStudyOriginalLanguage')).toBeHidden();
     expect(await page.evaluate(async()=>{const all=[];for(const n of await caches.keys())all.push(...(await(await caches.open(n)).keys()).map(r=>r.url));return all.some(u=>u.includes('/data/word-study/'));})).toBe(false);
   });
-  test('warm data survives in-page offline use but offline reload preserves only runtime and local fallback',async({page,context})=>{
+  test('warm original-language data survives in-page use and offline reload',async({page,context})=>{
     await installed(page);await word(page).click();await result(page);await expect(page.locator('#wordStudyOriginalTokens button')).toHaveCount(17);
     await page.keyboard.press('Escape');await context.setOffline(true);await word(page).click();await result(page);await expect(page.locator('#wordStudyOriginalTokens button')).toHaveCount(17);
     const offlineContext=await page.locator('#wordStudyOriginalTokens button').first().evaluate(button=>{
@@ -225,11 +225,108 @@ test.describe('installed offline runtime',()=>{
     });
     expect(offlineContext).toEqual({position:'static',headerPosition:'static',gap:4,hit:true});
     await page.reload();await page.evaluate(()=>initializeBibleExperience());expect(await page.evaluate(()=>typeof WordStudyController)).toBe('undefined');
-    await word(page).click();await expect(page.locator('#wordStudyDefinition')).toHaveText('The first part, point, or origin of something.');await expect(page.locator('#wordStudyOriginalLanguage')).toBeHidden();
+    await word(page).click();await expect(page.locator('#wordStudyDefinition')).toHaveText('The first part, point, or origin of something.');
+    await expect(page.locator('#wordStudyOriginalTokens button')).toHaveCount(17);
+  });
+  test('a previously loaded WEB alignment shard survives an installed offline reload',async({page,context})=>{
+    await installed(page);
+    const cacheName='god4-word-study-data-v1';
+    const cachePaths=()=>page.evaluate(async name=>(await(await caches.open(name)).keys()).map(r=>new URL(r.url).pathname).sort(),cacheName);
+    expect(await cachePaths()).toEqual([]);
+    await page.evaluate(()=>navigateReaderToPassage('numbers',32,3));
+    await word(page,'dibon').click();
+    await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('Berean translation tables');
+    const matched=page.locator('#wordStudyOriginalTokens [data-aligned="true"]');
+    await expect(matched).toHaveCount(1);
+    expect(await cachePaths()).toEqual([
+      '/data/word-study/alignment/continuations/index.json',
+      '/data/word-study/alignment/extensions/index.json',
+      '/data/word-study/alignment/web/index.json',
+      '/data/word-study/alignment/web/numbers/32.json',
+      '/data/word-study/original-language/numbers/32.json'
+    ]);
+    await context.setOffline(true);
+    await page.reload();await page.evaluate(()=>initializeBibleExperience());
+    await page.evaluate(()=>navigateReaderToPassage('numbers',32,3));
+    await word(page,'dibon').click();
+    await expect(matched).toHaveCount(1);
+    await matched.press('Enter');
+    await expect(page.locator('#wordStudyOriginalDetails')).toContainText('H1769');
   });
   test('first-use shell-hit readiness latency is measured',async({page})=>{
     await installed(page);const timing=await page.evaluate(async()=>{const start=performance.now();await WordStudyLoader.ensure();return performance.now()-start;});
     console.log('Word Study shell-hit readiness ms:',timing);expect(timing).toBeGreaterThanOrEqual(0);
+  });
+  test('phrase highlights and context survive reload after the runtime cache starts evicting',async({page,context})=>{
+    await installed(page);
+    const cache=await page.evaluate(async()=>{
+      const base='/data/word-study/alignment/web/';
+      const catalog=await (await fetch(base+'index.json')).json();
+      const urls=Object.entries(catalog).flatMap(([book,chapters])=>chapters.map(chapter=>base+book+'/'+chapter+'.json')).slice(0,50);
+      for(const url of urls)await (await fetch(url)).json();
+      const entries=await (await caches.open('god4-word-study-data-v1')).keys();
+      const paths=entries.map(item=>new URL(item.url).pathname);
+      return {count:paths.length,index:paths.includes(base+'index.json'),evicted:!paths.includes(urls[0])};
+    });
+    expect(cache).toEqual({count:48,index:true,evicted:true});
+    const study=()=>word(page,'kindness').press('Enter');
+    const definition=page.locator('#wordStudyDefinition');
+    await page.evaluate(()=>navigateReaderToPassage('galatians',5,22));
+    await study();
+    await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('WEB phrase verified against ULT and Berean');
+    await expect(definition).toContainText('fruit of the Spirit');
+    await context.setOffline(true);
+    await page.reload();
+    await page.evaluate(async()=>{await initializeBibleExperience();await navigateReaderToPassage('galatians',5,22);});
+    await study();
+    await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveCount(1);
+    await expect(definition).toContainText('fruit of the Spirit');
+  });
+
+  test('KJV Textus Receptus pairs the visible witness and phrase through offline reload',async({page,context})=>{
+    const alignmentRequests=[];
+    page.on('request',request=>{if(request.url().includes('/data/word-study/alignment/'))alignmentRequests.push(request.url());});
+    await installed(page);
+    const navigate=()=>page.evaluate(async()=>{
+      await initializeBibleExperience();
+      await changeTranslation('kjv');
+      await navigateReaderToPassage('revelation',17,2);
+    });
+    await page.evaluate(async()=>{if(!(await BibleTranslationLoader.retain('kjv')).ok)throw new Error('KJV retention failed');});
+    await navigate();
+    expect(alignmentRequests).toEqual([]);
+    const selected=page.locator('#readerContent [data-verse-number="2"] [data-word-study-term="inhabitants"]');
+    const status=page.locator('#wordStudyAlignmentStatus');
+    const original=page.locator('#wordStudyOriginalTokens [data-aligned="true"]');
+    const check=async()=>{
+      await selected.press('Enter');
+      await expect(status).toContainText("Robinson's Textus Receptus");
+      await expect(page.locator('#wordStudyOriginalIntro')).toContainText('Greek words from the Textus Receptus.');
+      await expect(original).toHaveText('κατοικουντες');
+      await expect(page.locator('#wordStudyDefinition')).toContainText('People who live on the earth');
+      await original.press('Enter');
+      await expect(page.locator('#wordStudyOriginalDetails')).toContainText('G2730');
+    };
+    await check();
+    await context.setOffline(true);
+    await page.reload();await navigate();
+    await check();await page.keyboard.press('Escape');
+    await expect(selected).toBeFocused();
+  });
+  test('Clear.Bible Word Study preserves both English spans and its definition offline',async({page,context})=>{
+    await installed(page);
+    const navigate=()=>page.evaluate(async()=>{
+      await initializeBibleExperience();await navigateReaderToPassage('job',19,12);
+    });
+    const study=()=>page.locator('#readerContent [data-verse-number="12"] [data-word-study-term="tent"]').press('Enter');
+    const matches=page.locator('#wordStudyVerse [data-aligned="true"]');
+    await navigate();await study();
+    await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('Clear.Bible Hebrew');
+    await expect(matches).toHaveText(['my','tent']);
+    await context.setOffline(true);
+    await page.reload();await navigate();await study();
+    await expect(matches).toHaveText(['my','tent']);
+    await expect(page.locator('#wordStudyDefinition')).toHaveText('A portable shelter. Job pictures troops surrounding his dwelling.');
   });
 });
 

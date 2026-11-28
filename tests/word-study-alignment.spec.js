@@ -1,4 +1,4 @@
-const {toggleReaderFullscreen}=require('./reader-navigation-test-helper');
+const {selectCompareOption,toggleReaderFullscreen}=require('./reader-navigation-test-helper');
 const {test,expect}=require('@playwright/test');
 test.use({contextOptions:{reducedMotion:'reduce'},serviceWorkers:'block'});
 
@@ -28,7 +28,8 @@ for(const [translationId,bookId,chapter,verse] of [['kjv','isaiah',53,5],['web',
   for(const [mode,width,height,fullscreen] of [['desktop',1280,844,false],['mobile',390,844,false],['fullscreen',390,844,true],['narrow',320,844,false],['narrow fullscreen',320,844,true],['desktop fullscreen',1280,844,true],['short',320,480,false]]){
     test(`${translationId} ${mode}: unavailable alignment preserves words without overlapping context`,async({page},info)=>{
       await page.setViewportSize({width,height});
-      const word=await open(page,translationId,bookId,chapter,verse);
+      let word=await open(page,translationId,bookId,chapter,verse);
+      if(bookId==='john')word=page.locator('#readerContent [data-verse-number="1"] [data-word-study-term="the"]').first();
       if(fullscreen)await toggleReaderFullscreen(page);
       await word.press('Enter');
       await expect(page.locator('#wordStudyOriginalLanguage')).toBeVisible();
@@ -123,8 +124,283 @@ for(const drift of ['word','italic marker'])test(`KJV ${drift} drift rejects can
   await expect(page.locator('#wordStudyVerse [data-selected="true"]')).toHaveCount(0);
 });
 
+test('WEB Genesis 1:1 aligns God with the published Hebrew token in both directions',async({page})=>{
+  await open(page,'web','genesis',1,1);
+  const verse=page.locator('#readerContent [data-verse-number="1"]');
+  const god=verse.locator('[data-word-study-term="god"]');
+  const hebrew=page.locator('#wordStudyOriginalTokens [data-original-language-token-index="2"]');
+  const status=page.locator('#wordStudyAlignmentStatus');
+
+  await god.press('Enter');
+  await expect(status).toContainText('Verified phrase alignment');
+  await expect(hebrew).toHaveText('אֱלֹהִ֑ים');
+  await expect(hebrew).toHaveAttribute('data-aligned','true');
+  await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveCount(1);
+  await expect(verse.locator('[data-aligned="true"]')).toHaveText('God');
+
+  await page.getByRole('button',{name:'Identify aligned phrase created'}).press('Enter');
+  await expect(status).toContainText('Verified phrase alignment');
+  await expect(verse.locator('[data-aligned="true"]')).toHaveText('created');
+  await hebrew.press('Enter');
+  await expect(verse.locator('[data-aligned="true"]')).toHaveText('God');
+  await expect(page.locator('#wordStudyVerse [data-aligned="true"]')).toHaveText('God');
+  await expect(hebrew).toBeFocused();
+});
+
+test('a cold Word Study selection uses alignment that arrives before the Hebrew tokens',async({page})=>{
+  let alignmentRequest, hebrewRequest;
+  await page.route('**/js/word-study/alignment.js',route=>{alignmentRequest=route;});
+  await page.route('**/data/word-study/original-language/genesis/1.json',route=>{hebrewRequest=route;});
+  await open(page,'web','genesis',1,1,false,false);
+  const god=page.locator('#readerContent [data-verse-number="1"] [data-word-study-term="god"]');
+  await god.press('Enter');
+  await expect.poll(()=>Boolean(alignmentRequest && hebrewRequest)).toBe(true);
+  await alignmentRequest.continue();
+  await page.waitForFunction(()=>Boolean(window.WordStudyAlignment));
+  await hebrewRequest.continue();
+  await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('Verified phrase alignment');
+  await expect(god).toHaveAttribute('data-aligned','true');
+});
+
+test('WEB Genesis 1:1 explains created and links the Hebrew verb',async({page})=>{
+  await open(page,'web','genesis',1,1);
+  const word=page.locator('#readerContent [data-verse-number="1"] [data-word-study-term="created"]');
+  await word.press('Enter');
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('Made or brought into existence. In this verse, God made the heavens and the earth.');
+  await expect(page.locator('#wordStudyPartOfSpeech')).toHaveText('verb');
+  const hebrew=page.locator('#wordStudyOriginalTokens [data-original-language-token-index="1"]');
+  await expect(hebrew).toHaveAttribute('data-aligned','true');
+  await hebrew.press('Enter');
+  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('H1254');
+});
+
+test('WEB Mark 2:7 shows God’s verified Greek match and biblical sense',async({page})=>{
+  await open(page,'web','mark',2,7);
+  const word=page.locator('#readerContent [data-verse-number="7"] [data-word-study-term="god"]');
+  const greek=page.locator('#wordStudyOriginalTokens [data-original-language-token-index="13"]');
+  await word.press('Enter');
+  await expect(page.locator('#wordStudyDefinition')).toContainText('The Supreme Being');
+  await expect(page.locator('#wordStudySource')).toHaveText('Bible usage · Matched to this verse');
+  await expect(page.locator('#wordStudyRelated')).toBeEmpty();
+  await expect(greek).toHaveAttribute('data-aligned','true');
+  await greek.press('Enter');
+  const details=page.locator('#wordStudyOriginalDetails');
+  await expect(details.locator('dt').first()).toHaveText('In this verse');
+  await expect(details.locator('dd').first()).toHaveText('God');
+  await expect(details).toContainText('G2316');
+  await expect(details).toContainText('A deity, especially the supreme Divinity');
+});
+
+test('WEB Exodus 10 identifies LORD as the divine name and aligns it in verse 1',async({page})=>{
+  await open(page,'web','exodus',10,2);
+  const word=page.locator('#readerContent [data-verse-number="1"] [data-word-study-term="lord"]');
+  const hebrew=page.locator('#wordStudyOriginalTokens [data-original-language-token-index="1"]');
+  await word.press('Enter');
+  await expect(page.locator('#wordStudyReference')).toHaveText('Exodus 10:1');
+  await expect(page.locator('#wordStudyDefinition')).toContainText('YHWH (Yahweh), the personal name of God');
+  await expect(page.locator('#wordStudyRelated')).toBeEmpty();
+  await expect(hebrew).toHaveAttribute('data-aligned','true');
+  await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveCount(1);
+  await hebrew.press('Enter');
+  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('H3068');
+  await expect(page.locator('#wordStudyVerse [data-aligned="true"]')).toHaveText('LORD');
+});
+
+for(const [book,chapter,verse,title] of [['genesis',18,12,'lord'],['john',20,28,'Lord']]){
+  test('WEB '+book+' '+chapter+':'+verse+' explains '+title+' as a title',async({page})=>{
+    await open(page,'web',book,chapter,verse);
+    const word=page.locator('#readerContent [data-verse-number="'+verse+'"] [data-word-study-term="lord"]');
+    await expect(word).toHaveText(title);
+    await word.press('Enter');
+    await expect(page.locator('#wordStudyDefinition')).toContainText('A title expressing authority or respect');
+  });
+}
+
+test('WEB Exodus 10 identifies Moses as a person and aligns his name in verse 1',async({page})=>{
+  await open(page,'web','exodus',10,2);
+  const moses=page.locator('#readerContent [data-verse-number="1"] [data-word-study-term="moses"]');
+  const tokens=page.locator('#wordStudyOriginalTokens button');
+  const hebrew=page.locator('#wordStudyOriginalTokens [data-original-language-token-index="3"]');
+  await moses.press('Enter');
+  await expect(page.locator('#wordStudyReference')).toHaveText('Exodus 10:1');
+  await expect(page.locator('#wordStudyPartOfSpeech')).toHaveText('proper noun');
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('The man God called to lead the Israelites out of Egypt.');
+  await expect(page.locator('#wordStudyRelated')).toBeEmpty();
+  await expect(moses).toHaveAttribute('data-aligned','true');
+  await expect(hebrew).toHaveAttribute('data-aligned','true');
+  await hebrew.press('Enter');
+  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('H4872');
+  await tokens.nth(16).press('Enter');
+  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('H7896');
+  await expect(moses).toHaveAttribute('data-aligned','false');
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('The man God called to lead the Israelites out of Egypt.');
+});
+
+test('KJV Moses receives the biblical name definition without an exact alignment',async({page})=>{
+  await open(page,'kjv','exodus',3,4);
+  const moses=page.locator('#readerContent [data-verse-number="4"] [data-word-study-term="moses"]').first();
+  await moses.press('Enter');
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('The man God called to lead the Israelites out of Egypt.');
+  await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('Exact word alignment is unavailable');
+});
+
+test('WEB John 1:1 highlights beginning and each occurrence of Word and God in Greek',async({page})=>{
+  await open(page,'web','john',1,1);
+  const verse=page.locator('#readerContent [data-verse-number="1"]');
+  const matched=page.locator('#wordStudyOriginalTokens [data-aligned="true"]');
+  const select=(term,index=0)=>verse.locator('[data-word-study-term="'+term+'"]').nth(index);
+  await select('beginning').press('Enter');
+  await expect(matched).toHaveAttribute('data-original-language-token-index','1');
+  await matched.press('Enter');
+  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('G746');
+  await expect(page.locator('#wordStudyVerse [data-aligned="true"]')).toHaveText('beginning');
+  for(const [term,index,token] of [['Word',0,4],['Word',1,7],['Word',2,16],['God',0,11],['God',1,13]]){
+    await page.getByRole('button',{name:'Identify aligned phrase '+term,exact:true}).nth(index).press('Enter');
+    await expect(matched).toHaveCount(1);
+    await expect(matched).toHaveAttribute('data-original-language-token-index',String(token));
+  }
+  await page.keyboard.press('Escape');
+  await select('the').press('Enter');
+  await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('Exact word alignment is unavailable');
+  await expect(matched).toHaveCount(0);
+});
+
+test('WEB John 1:3 highlights both Greek words for nothing in either direction',async({page})=>{
+  await open(page,'web','john',1,3);
+  const nothing=page.locator('#readerContent [data-verse-number="3"] [data-word-study-term="nothing"]');
+  await nothing.press('Enter');
+  const matched=page.locator('#wordStudyOriginalTokens [data-aligned="true"]');
+  await expect(matched).toHaveText(['ουδε','εν']);
+  await matched.last().press('Enter');
+  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('G1520');
+  await expect(page.locator('#wordStudyVerse [data-aligned="true"]')).toHaveText('nothing');
+  await expect(matched).toHaveText(['ουδε','εν']);
+});
+
+test('KJV Acts 8:37 visibly highlights Christ and each word of a Greek phrase',async({page})=>{
+  await open(page,'kjv','acts',8,37);
+  const verse=page.locator('#readerContent [data-verse-number="37"]');
+  const christ=verse.locator('[data-word-study-term="christ"]');
+  const matched=page.locator('#wordStudyOriginalTokens [data-aligned="true"]');
+  await christ.press('Enter');
+  await expect(matched).toHaveText('χριστον');
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('The Anointed One, the Messiah.');
+  await expect(page.locator('#wordStudySource')).toContainText('Scripture context');
+  await expect(matched).toHaveCSS('color','rgb(23, 36, 58)');
+  await expect(matched).toHaveCSS('outline-style','solid');
+  expect(await matched.evaluate(element=>getComputedStyle(element).backgroundColor))
+    .not.toBe(await page.locator('#wordStudyOriginalTokens button').first().evaluate(element=>getComputedStyle(element).backgroundColor));
+  await matched.press('Enter');
+  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('G5547');
+  await page.getByRole('button',{name:'Identify aligned phrase with all thine heart'}).press('Enter');
+  await expect(matched).toHaveText(['εξ','ολης','της','καρδιας']);
+  await matched.last().press('Enter');
+  await expect(matched).toHaveCount(4);
+  await expect(page.locator('#wordStudyVerse [data-aligned="true"]')).toHaveText('with all thine heart');
+});
+
+for(const [book,chapter,verse,word,expected] of [
+  ['matthew',5,3,'poor',['πτωχοι']],
+  ['john',1,1,'word',['ο','λογος']],
+  ['acts',8,38,'chariot',['το','αρμα']],
+  ['romans',8,28,'together',['συνεργει']],
+  ['hebrews',11,1,'faith',['πιστις']],
+  ['revelation',22,20,'amen',['αμην']]
+]){
+  test('CrossWire chapter alignment opens '+book+' '+chapter+':'+verse,async({page})=>{
+    const path='/data/word-study/alignment/kjv/'+book+'/'+chapter+'.json';
+    const requests=[];
+    page.on('request',request=>{if(new URL(request.url()).pathname===path) requests.push(request);});
+    await open(page,'kjv',book,chapter,verse);
+    expect(requests).toHaveLength(0);
+    const selected=page.locator('#readerContent [data-verse-number="'+verse+'"] [data-word-study-term="'+word+'"]').first();
+    await selected.press('Enter');
+    await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveText(expected);
+    await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('CrossWire KJV');
+    await page.keyboard.press('Escape');
+    await expect(selected).toBeFocused();
+    expect(requests).toHaveLength(1);
+  });
+}
+
+test('a missing CrossWire chapter keeps Word Study usable',async({page})=>{
+  await page.route('**/data/word-study/alignment/kjv/john/1.json',route=>route.abort());
+  const word=await open(page,'kjv','john',1,1);
+  await word.press('Enter');
+  await expect(page.locator('#wordStudyOriginalTokens button').first()).toBeVisible();
+  await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveCount(0);
+  await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('Exact word alignment is unavailable');
+  await page.keyboard.press('Escape');
+  await expect(word).toBeFocused();
+});
+
+test('a loaded CrossWire chapter can align another word after going offline',async({page,context})=>{
+  await open(page,'kjv','john',1,1);
+  const verse=page.locator('#readerContent [data-verse-number="1"]');
+  await verse.locator('[data-word-study-term="beginning"]').press('Enter');
+  await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('CrossWire KJV');
+  await page.keyboard.press('Escape');
+  await context.setOffline(true);
+  try{
+    await verse.locator('[data-word-study-term="word"]').first().press('Enter');
+    await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveText(['ο','λογος']);
+  }finally{await context.setOffline(false);}
+});
+
+test('WEB Genesis 1:1 highlights the Hebrew for heavens',async({page})=>{
+  await open(page,'web','genesis',1,1);
+  await page.locator('#readerContent [data-verse-number="1"] [data-word-study-term="heavens"]').press('Enter');
+  const matched=page.locator('#wordStudyOriginalTokens [data-aligned="true"]');
+  await expect(matched).toHaveCount(1);
+  await expect(matched).toHaveAttribute('data-original-language-token-index','4');
+  await matched.press('Enter');
+  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('H8064');
+});
+
+test('WEB Hebrew chapter is lazy and still aligns a two-word phrase after going offline',async({page,context})=>{
+  const paths=[];
+  page.on('request',request=>{
+    const path=new URL(request.url()).pathname;
+    if(path.includes('/alignment/web/')) paths.push(path);
+  });
+  await open(page,'web','exodus',1,2);
+  expect(paths).toEqual([]);
+  const verse=page.locator('#readerContent [data-verse-number="2"]');
+  const judah=verse.locator('[data-word-study-term="judah"]');
+  await judah.press('Enter');
+  const matched=page.locator('#wordStudyOriginalTokens [data-aligned="true"]');
+  await expect(matched).toHaveAttribute('data-original-language-token-index','3');
+  await expect(page.locator('#wordStudyVerse [data-aligned="true"]')).toHaveText(['and','Judah']);
+  await matched.press('Enter');
+  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('H3063');
+  await page.getByRole('button',{name:'Close Word Study',exact:true}).press('Enter');
+  await expect(judah).toBeFocused();
+  await context.setOffline(true);
+  try{
+    await verse.locator('[data-word-study-term="reuben"]').press('Enter');
+    await expect(matched).toHaveAttribute('data-original-language-token-index','0');
+    await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('WEB checked against ULT');
+  }finally{await context.setOffline(false);}
+  expect(paths).toEqual(['/data/word-study/alignment/web/index.json','/data/word-study/alignment/web/exodus/1.json']);
+});
+
+test('WEB Greek highlights both original tokens and shows the verified contextual sense',async({page})=>{
+  await open(page,'web','matthew',12,8);
+  const verse=page.locator('#readerContent [data-verse-number="8"]');
+  await verse.locator('[data-word-study-term="man"]').press('Enter');
+  const matched=page.locator('#wordStudyOriginalTokens [data-aligned="true"]');
+  await expect(matched).toHaveCount(2);
+  await expect(page.locator('#wordStudyVerse [data-aligned="true"]')).toHaveText(['of','Man']);
+  await expect(matched.first()).toHaveCSS('outline-style','solid');
+  await page.keyboard.press('Escape');
+  await verse.locator('[data-word-study-term="lord"]').press('Enter');
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('The one who has authority over the Sabbath.');
+  await expect(page.locator('#wordStudySource')).toContainText('Scripture context');
+});
+
 test('lexical definitions never create inferred alignment',async({page})=>{
-  const word=await open(page,'web','john',1,1);
+  await open(page,'web','john',1,1);
+  const word=page.locator('#readerContent [data-verse-number="1"] [data-word-study-term="the"]').first();
   await page.evaluate(()=>{WordStudyProvider.lookup=()=>Promise.resolve({status:'available',definition:'λογος means word',relatedWords:['word']});});
   await word.press('Enter');
   await expect(page.locator('#wordStudyDefinition')).toHaveText('λογος means word');
@@ -166,7 +442,7 @@ for(const [translationId,bookId,chapter,verse] of [['kjv','genesis',1,1],['kjv',
     await word.press('Enter');
     await expect(page.locator('#wordStudyPanel')).not.toHaveAttribute('data-word-study-state','loading');
     await expect(page.locator('#wordStudyOriginalTokens button').first()).toBeVisible();
-    if(bookId==='genesis')await expect(page.locator('#wordStudyDefinition')).toHaveText('The act of doing that which begins anything; commencement of an action, state, or space of time; entrance into being or upon a course; the first act, effort, or state of a succession of acts or states. In the beginning God created the heaven and the earth. Gen. i. 1.');
+    if(bookId==='genesis')await expect(page.locator('#wordStudyDefinition')).toHaveText('The start of something.');
     await expect(page.locator('script[src="/js/word-study/alignment.js"]')).toHaveCount(1);
     await page.waitForTimeout(3100);
     await expect(page.locator('script[src="/js/word-study/alignment.js"]')).toHaveCount(0);
@@ -232,4 +508,41 @@ test('overlapping phrases preserve whitespace without empty keyboard controls',a
   await page.keyboard.press('Space');await expect(controls.nth(1)).toHaveAttribute('aria-pressed','true');
   await page.keyboard.press('Enter');await expect(controls.nth(1)).toBeFocused();
   await page.keyboard.press('Escape');await expect(word).toBeFocused();
+});
+
+
+test('unavailable or mismatched Textus Receptus data keeps the original verse without alternate highlighting',async({page})=>{
+  await page.route('**/alignment/kjv-tr/revelation/17.json',async route=>{
+    const response=await route.fetch(),body=await response.json();
+    body.verses[2][0]+=' Wrong edition.';
+    await route.fulfill({response,json:body});
+  });
+  await open(page,'kjv','revelation',17,2);
+  await page.locator('#readerContent [data-verse-number="2"] [data-word-study-term="inhabitants"]').press('Enter');
+  await expect(page.locator('#wordStudyOriginalTokens button').first()).toBeVisible();
+  await expect(page.locator('#wordStudyOriginalIntro')).not.toContainText('Textus Receptus');
+  await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('Exact word alignment is unavailable');
+  await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveCount(0);
+});
+
+test('a Textus Receptus chapter is scoped to KJV and Compare still renders both editions',async({page})=>{
+  const requests=[];
+  page.on('request',request=>{if(request.url().includes('/alignment/kjv-tr/')) requests.push(request.url());});
+  await open(page,'web','john',1,28);
+  await page.locator('#readerContent [data-verse-number="28"] [data-word-study-term="john"]').press('Enter');
+  await expect(page.locator('#wordStudyOriginalTokens button').first()).toBeVisible();
+  await expect(page.locator('#wordStudyOriginalIntro')).not.toContainText('Textus Receptus');
+  expect(requests).toEqual([]);
+  await page.keyboard.press('Escape');
+  await page.evaluate(async()=>{await changeTranslation('kjv');await navigateReaderToPassage('john',1,28);});
+  await page.getByRole('button',{name:'Compare',exact:true}).click();
+  await expect(page.locator('#compareGrid .compare-col')).toHaveCount(2);
+  await expect(page.locator('#compareGrid .compare-col').first()).toContainText('Bethabara');
+  await selectCompareOption(page.locator('[data-compare-index="1"]'),'web');
+  await expect(page.locator('#compareGrid .compare-col').nth(1)).not.toContainText('Bethabara');
+  expect(requests).toEqual([]);
+  await page.getByRole('button',{name:'Reader',exact:true}).click();
+  await page.locator('#readerContent [data-verse-number="28"] [data-word-study-term="bethabara"]').press('Enter');
+  await expect(page.locator('#wordStudyAlignmentStatus')).toContainText("Robinson's Textus Receptus");
+  await expect(page.locator('#wordStudyDefinition')).toContainText('beyond the Jordan');
 });

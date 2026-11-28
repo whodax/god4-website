@@ -1,0 +1,2125 @@
+{
+  "revision": "d490be7e34762deb2c76cb2c1306d4808e27890d",
+  "checksum": "4bcbfe45722fca396adbeac9c81025bbb173cb1e30296da90864f0400cb0e3f5",
+  "books": {
+    "genesis": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 38262,
+      "alignedWords": 0,
+      "priorityWords": 29179,
+      "alignedPriorityWords": 0
+    },
+    "exodus": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 32685,
+      "alignedWords": 0,
+      "priorityWords": 24699,
+      "alignedPriorityWords": 0
+    },
+    "leviticus": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 24541,
+      "alignedWords": 0,
+      "priorityWords": 19001,
+      "alignedPriorityWords": 0
+    },
+    "numbers": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 32896,
+      "alignedWords": 0,
+      "priorityWords": 25355,
+      "alignedPriorityWords": 0
+    },
+    "deuteronomy": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 28352,
+      "alignedWords": 0,
+      "priorityWords": 20772,
+      "alignedPriorityWords": 0
+    },
+    "joshua": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 18854,
+      "alignedWords": 0,
+      "priorityWords": 14878,
+      "alignedPriorityWords": 0
+    },
+    "judges": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 18966,
+      "alignedWords": 0,
+      "priorityWords": 14697,
+      "alignedPriorityWords": 0
+    },
+    "ruth": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 2574,
+      "alignedWords": 0,
+      "priorityWords": 1945,
+      "alignedPriorityWords": 0
+    },
+    "1-samuel": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 25048,
+      "alignedWords": 0,
+      "priorityWords": 19836,
+      "alignedPriorityWords": 0
+    },
+    "2-samuel": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 20600,
+      "alignedWords": 0,
+      "priorityWords": 15952,
+      "alignedPriorityWords": 0
+    },
+    "1-kings": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 24513,
+      "alignedWords": 0,
+      "priorityWords": 19213,
+      "alignedPriorityWords": 0
+    },
+    "2-kings": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 23517,
+      "alignedWords": 0,
+      "priorityWords": 18781,
+      "alignedPriorityWords": 0
+    },
+    "1-chronicles": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 20365,
+      "alignedWords": 0,
+      "priorityWords": 14990,
+      "alignedPriorityWords": 0
+    },
+    "2-chronicles": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 26069,
+      "alignedWords": 0,
+      "priorityWords": 20905,
+      "alignedPriorityWords": 0
+    },
+    "ezra": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 7440,
+      "alignedWords": 0,
+      "priorityWords": 5807,
+      "alignedPriorityWords": 0
+    },
+    "nehemiah": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 10480,
+      "alignedWords": 0,
+      "priorityWords": 7851,
+      "alignedPriorityWords": 0
+    },
+    "esther": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 5633,
+      "alignedWords": 0,
+      "priorityWords": 4262,
+      "alignedPriorityWords": 0
+    },
+    "job": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 18098,
+      "alignedWords": 0,
+      "priorityWords": 13066,
+      "alignedPriorityWords": 0
+    },
+    "psalms": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 43716,
+      "alignedWords": 0,
+      "priorityWords": 31232,
+      "alignedPriorityWords": 0
+    },
+    "proverbs": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 15038,
+      "alignedWords": 0,
+      "priorityWords": 10844,
+      "alignedPriorityWords": 0
+    },
+    "ecclesiastes": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 5579,
+      "alignedWords": 0,
+      "priorityWords": 4377,
+      "alignedPriorityWords": 0
+    },
+    "song-of-solomon": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 2658,
+      "alignedWords": 0,
+      "priorityWords": 1752,
+      "alignedPriorityWords": 0
+    },
+    "isaiah": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 37036,
+      "alignedWords": 0,
+      "priorityWords": 27357,
+      "alignedPriorityWords": 0
+    },
+    "jeremiah": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 42654,
+      "alignedWords": 0,
+      "priorityWords": 32902,
+      "alignedPriorityWords": 0
+    },
+    "lamentations": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 3411,
+      "alignedWords": 0,
+      "priorityWords": 2455,
+      "alignedPriorityWords": 0
+    },
+    "ezekiel": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 39401,
+      "alignedWords": 0,
+      "priorityWords": 29760,
+      "alignedPriorityWords": 0
+    },
+    "daniel": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 11602,
+      "alignedWords": 0,
+      "priorityWords": 8794,
+      "alignedPriorityWords": 0
+    },
+    "hosea": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 5174,
+      "alignedWords": 0,
+      "priorityWords": 3988,
+      "alignedPriorityWords": 0
+    },
+    "joel": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 2033,
+      "alignedWords": 0,
+      "priorityWords": 1538,
+      "alignedPriorityWords": 0
+    },
+    "amos": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 4216,
+      "alignedWords": 0,
+      "priorityWords": 3215,
+      "alignedPriorityWords": 0
+    },
+    "obadiah": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 669,
+      "alignedWords": 0,
+      "priorityWords": 478,
+      "alignedPriorityWords": 0
+    },
+    "jonah": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 1320,
+      "alignedWords": 0,
+      "priorityWords": 974,
+      "alignedPriorityWords": 0
+    },
+    "micah": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 3152,
+      "alignedWords": 0,
+      "priorityWords": 2368,
+      "alignedPriorityWords": 0
+    },
+    "nahum": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 1284,
+      "alignedWords": 0,
+      "priorityWords": 867,
+      "alignedPriorityWords": 0
+    },
+    "habakkuk": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 1475,
+      "alignedWords": 0,
+      "priorityWords": 1038,
+      "alignedPriorityWords": 0
+    },
+    "zephaniah": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 1616,
+      "alignedWords": 0,
+      "priorityWords": 1249,
+      "alignedPriorityWords": 0
+    },
+    "haggai": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 1130,
+      "alignedWords": 0,
+      "priorityWords": 900,
+      "alignedPriorityWords": 0
+    },
+    "zechariah": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 6443,
+      "alignedWords": 0,
+      "priorityWords": 5072,
+      "alignedPriorityWords": 0
+    },
+    "malachi": {
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "words": 1781,
+      "alignedWords": 0,
+      "priorityWords": 1347,
+      "alignedPriorityWords": 0
+    },
+    "matthew": {
+      "accepted": 861,
+      "rejected": 208,
+      "ambiguous": 2,
+      "words": 23688,
+      "alignedWords": 18078,
+      "priorityWords": 18000,
+      "alignedPriorityWords": 13718
+    },
+    "mark": {
+      "accepted": 489,
+      "rejected": 188,
+      "ambiguous": 1,
+      "words": 15179,
+      "alignedWords": 10255,
+      "priorityWords": 11735,
+      "alignedPriorityWords": 7874
+    },
+    "luke": {
+      "accepted": 870,
+      "rejected": 280,
+      "ambiguous": 1,
+      "words": 25964,
+      "alignedWords": 18236,
+      "priorityWords": 20119,
+      "alignedPriorityWords": 14064
+    },
+    "john": {
+      "accepted": 689,
+      "rejected": 189,
+      "ambiguous": 1,
+      "words": 19104,
+      "alignedWords": 14271,
+      "priorityWords": 15041,
+      "alignedPriorityWords": 11244
+    },
+    "acts": {
+      "accepted": 680,
+      "rejected": 324,
+      "ambiguous": 3,
+      "words": 24289,
+      "alignedWords": 15398,
+      "priorityWords": 18371,
+      "alignedPriorityWords": 11605
+    },
+    "romans": {
+      "accepted": 371,
+      "rejected": 62,
+      "ambiguous": 0,
+      "words": 9422,
+      "alignedWords": 7664,
+      "priorityWords": 7289,
+      "alignedPriorityWords": 5897
+    },
+    "1-corinthians": {
+      "accepted": 375,
+      "rejected": 62,
+      "ambiguous": 0,
+      "words": 9462,
+      "alignedWords": 7700,
+      "priorityWords": 7356,
+      "alignedPriorityWords": 5966
+    },
+    "2-corinthians": {
+      "accepted": 205,
+      "rejected": 51,
+      "ambiguous": 1,
+      "words": 6065,
+      "alignedWords": 4441,
+      "priorityWords": 4589,
+      "alignedPriorityWords": 3330
+    },
+    "galatians": {
+      "accepted": 133,
+      "rejected": 16,
+      "ambiguous": 0,
+      "words": 3084,
+      "alignedWords": 2624,
+      "priorityWords": 2409,
+      "alignedPriorityWords": 2048
+    },
+    "ephesians": {
+      "accepted": 128,
+      "rejected": 27,
+      "ambiguous": 0,
+      "words": 3022,
+      "alignedWords": 2410,
+      "priorityWords": 2336,
+      "alignedPriorityWords": 1846
+    },
+    "philippians": {
+      "accepted": 87,
+      "rejected": 17,
+      "ambiguous": 0,
+      "words": 2183,
+      "alignedWords": 1684,
+      "priorityWords": 1668,
+      "alignedPriorityWords": 1276
+    },
+    "colossians": {
+      "accepted": 76,
+      "rejected": 19,
+      "ambiguous": 0,
+      "words": 1981,
+      "alignedWords": 1499,
+      "priorityWords": 1490,
+      "alignedPriorityWords": 1105
+    },
+    "1-thessalonians": {
+      "accepted": 72,
+      "rejected": 17,
+      "ambiguous": 0,
+      "words": 1837,
+      "alignedWords": 1395,
+      "priorityWords": 1416,
+      "alignedPriorityWords": 1068
+    },
+    "2-thessalonians": {
+      "accepted": 41,
+      "rejected": 6,
+      "ambiguous": 0,
+      "words": 1022,
+      "alignedWords": 836,
+      "priorityWords": 810,
+      "alignedPriorityWords": 656
+    },
+    "1-timothy": {
+      "accepted": 89,
+      "rejected": 24,
+      "ambiguous": 0,
+      "words": 2247,
+      "alignedWords": 1672,
+      "priorityWords": 1559,
+      "alignedPriorityWords": 1158
+    },
+    "2-timothy": {
+      "accepted": 64,
+      "rejected": 19,
+      "ambiguous": 0,
+      "words": 1669,
+      "alignedWords": 1222,
+      "priorityWords": 1189,
+      "alignedPriorityWords": 861
+    },
+    "titus": {
+      "accepted": 40,
+      "rejected": 6,
+      "ambiguous": 0,
+      "words": 896,
+      "alignedWords": 742,
+      "priorityWords": 608,
+      "alignedPriorityWords": 499
+    },
+    "philemon": {
+      "accepted": 20,
+      "rejected": 5,
+      "ambiguous": 0,
+      "words": 430,
+      "alignedWords": 335,
+      "priorityWords": 292,
+      "alignedPriorityWords": 223
+    },
+    "hebrews": {
+      "accepted": 241,
+      "rejected": 60,
+      "ambiguous": 2,
+      "words": 6899,
+      "alignedWords": 5221,
+      "priorityWords": 5261,
+      "alignedPriorityWords": 3966
+    },
+    "james": {
+      "accepted": 87,
+      "rejected": 21,
+      "ambiguous": 0,
+      "words": 2304,
+      "alignedWords": 1742,
+      "priorityWords": 1672,
+      "alignedPriorityWords": 1251
+    },
+    "1-peter": {
+      "accepted": 75,
+      "rejected": 30,
+      "ambiguous": 0,
+      "words": 2476,
+      "alignedWords": 1595,
+      "priorityWords": 1794,
+      "alignedPriorityWords": 1141
+    },
+    "2-peter": {
+      "accepted": 44,
+      "rejected": 17,
+      "ambiguous": 0,
+      "words": 1553,
+      "alignedWords": 1047,
+      "priorityWords": 1141,
+      "alignedPriorityWords": 763
+    },
+    "1-john": {
+      "accepted": 83,
+      "rejected": 22,
+      "ambiguous": 0,
+      "words": 2517,
+      "alignedWords": 1906,
+      "priorityWords": 2085,
+      "alignedPriorityWords": 1565
+    },
+    "2-john": {
+      "accepted": 11,
+      "rejected": 2,
+      "ambiguous": 0,
+      "words": 298,
+      "alignedWords": 233,
+      "priorityWords": 231,
+      "alignedPriorityWords": 181
+    },
+    "3-john": {
+      "accepted": 10,
+      "rejected": 4,
+      "ambiguous": 0,
+      "words": 294,
+      "alignedWords": 175,
+      "priorityWords": 198,
+      "alignedPriorityWords": 113
+    },
+    "jude": {
+      "accepted": 16,
+      "rejected": 9,
+      "ambiguous": 0,
+      "words": 608,
+      "alignedWords": 376,
+      "priorityWords": 430,
+      "alignedPriorityWords": 272
+    },
+    "revelation": {
+      "accepted": 76,
+      "rejected": 328,
+      "ambiguous": 0,
+      "words": 11995,
+      "alignedWords": 1947,
+      "priorityWords": 9277,
+      "alignedPriorityWords": 1506
+    }
+  },
+  "reasons": {
+    "Greek position, surface or Strong identity differs": 1486,
+    "English text or supplied-word boundary differs": 189,
+    "Greek morphology differs": 314,
+    "missing or ambiguous position metadata": 11,
+    "Greek source sequence incomplete": 13,
+    "unsupported markup": 11
+  },
+  "priorityForms": [
+    "a",
+    "aaron",
+    "able",
+    "about",
+    "above",
+    "abraham",
+    "according",
+    "afraid",
+    "after",
+    "again",
+    "against",
+    "all",
+    "also",
+    "altar",
+    "am",
+    "among",
+    "an",
+    "and",
+    "angel",
+    "anger",
+    "another",
+    "answer",
+    "answered",
+    "any",
+    "are",
+    "ark",
+    "armies",
+    "army",
+    "as",
+    "asked",
+    "assembly",
+    "at",
+    "away",
+    "babylon",
+    "back",
+    "battle",
+    "be",
+    "bear",
+    "became",
+    "because",
+    "become",
+    "been",
+    "before",
+    "began",
+    "behold",
+    "being",
+    "believe",
+    "benjamin",
+    "between",
+    "blessed",
+    "blood",
+    "body",
+    "book",
+    "border",
+    "born",
+    "both",
+    "bread",
+    "bring",
+    "broken",
+    "brother",
+    "brought",
+    "build",
+    "built",
+    "burned",
+    "burnt",
+    "but",
+    "by",
+    "call",
+    "called",
+    "came",
+    "can",
+    "carried",
+    "cast",
+    "cause",
+    "chief",
+    "child",
+    "children",
+    "christ",
+    "cities",
+    "city",
+    "come",
+    "coming",
+    "commanded",
+    "concerning",
+    "country",
+    "covenant",
+    "cry",
+    "cubits",
+    "cut",
+    "darkness",
+    "daughter",
+    "daughters",
+    "day",
+    "days",
+    "dead",
+    "death",
+    "deliver",
+    "delivered",
+    "destroy",
+    "destroyed",
+    "did",
+    "die",
+    "died",
+    "disciples",
+    "do",
+    "done",
+    "door",
+    "down",
+    "drink",
+    "dwell",
+    "each",
+    "earth",
+    "eat",
+    "egypt",
+    "elders",
+    "end",
+    "enemies",
+    "enter",
+    "even",
+    "every",
+    "evil",
+    "eyes",
+    "face",
+    "faith",
+    "fall",
+    "far",
+    "father",
+    "fathers",
+    "fear",
+    "feet",
+    "fell",
+    "field",
+    "filled",
+    "find",
+    "fire",
+    "first",
+    "five",
+    "flesh",
+    "food",
+    "for",
+    "found",
+    "four",
+    "from",
+    "fruit",
+    "full",
+    "gate",
+    "gathered",
+    "gave",
+    "give",
+    "given",
+    "glory",
+    "go",
+    "god",
+    "god's",
+    "gods",
+    "gold",
+    "gone",
+    "good",
+    "great",
+    "ground",
+    "had",
+    "hand",
+    "hands",
+    "have",
+    "having",
+    "he",
+    "head",
+    "heads",
+    "hear",
+    "heard",
+    "heart",
+    "heaven",
+    "her",
+    "here",
+    "high",
+    "him",
+    "himself",
+    "his",
+    "holy",
+    "house",
+    "houses",
+    "how",
+    "hundred",
+    "i",
+    "if",
+    "in",
+    "inheritance",
+    "iniquity",
+    "into",
+    "is",
+    "israel",
+    "it",
+    "jacob",
+    "jerusalem",
+    "jesus",
+    "jews",
+    "jordan",
+    "joseph",
+    "joy",
+    "judah",
+    "judge",
+    "judgment",
+    "keep",
+    "kept",
+    "kill",
+    "killed",
+    "kindness",
+    "king",
+    "kingdom",
+    "kings",
+    "know",
+    "knowledge",
+    "known",
+    "laid",
+    "land",
+    "law",
+    "lay",
+    "left",
+    "lest",
+    "let",
+    "levites",
+    "life",
+    "light",
+    "like",
+    "little",
+    "live",
+    "lived",
+    "living",
+    "long",
+    "lord",
+    "lord's",
+    "love",
+    "made",
+    "make",
+    "male",
+    "man",
+    "many",
+    "may",
+    "me",
+    "men",
+    "middle",
+    "might",
+    "mighty",
+    "month",
+    "more",
+    "morning",
+    "moses",
+    "most",
+    "mother",
+    "mountain",
+    "mountains",
+    "mouth",
+    "much",
+    "multitude",
+    "must",
+    "my",
+    "name",
+    "nation",
+    "nations",
+    "near",
+    "neither",
+    "new",
+    "night",
+    "no",
+    "nor",
+    "not",
+    "nothing",
+    "now",
+    "of",
+    "off",
+    "offer",
+    "offering",
+    "offerings",
+    "offspring",
+    "oil",
+    "old",
+    "on",
+    "one",
+    "only",
+    "or",
+    "other",
+    "our",
+    "out",
+    "over",
+    "own",
+    "part",
+    "pass",
+    "peace",
+    "people",
+    "peoples",
+    "pharaoh",
+    "place",
+    "places",
+    "please",
+    "poor",
+    "power",
+    "praise",
+    "priest",
+    "priests",
+    "princes",
+    "prophet",
+    "prophets",
+    "put",
+    "receive",
+    "reign",
+    "reigned",
+    "rejoice",
+    "remember",
+    "rest",
+    "return",
+    "returned",
+    "right",
+    "righteous",
+    "righteousness",
+    "sacrifice",
+    "said",
+    "salvation",
+    "same",
+    "sanctuary",
+    "sat",
+    "saul",
+    "save",
+    "saw",
+    "say",
+    "saying",
+    "sea",
+    "second",
+    "see",
+    "seek",
+    "seen",
+    "send",
+    "sent",
+    "servant",
+    "servants",
+    "serve",
+    "set",
+    "seven",
+    "shall",
+    "she",
+    "sheep",
+    "should",
+    "side",
+    "sight",
+    "silver",
+    "sin",
+    "sins",
+    "six",
+    "sky",
+    "so",
+    "solomon",
+    "some",
+    "son",
+    "sons",
+    "soul",
+    "speak",
+    "spirit",
+    "spoken",
+    "stand",
+    "still",
+    "stone",
+    "stones",
+    "stood",
+    "strength",
+    "strong",
+    "struck",
+    "such",
+    "surely",
+    "sword",
+    "take",
+    "taken",
+    "tell",
+    "temple",
+    "ten",
+    "than",
+    "that",
+    "the",
+    "their",
+    "them",
+    "themselves",
+    "then",
+    "there",
+    "therefore",
+    "these",
+    "they",
+    "thing",
+    "things",
+    "third",
+    "this",
+    "those",
+    "though",
+    "thousand",
+    "three",
+    "throne",
+    "through",
+    "time",
+    "times",
+    "to",
+    "together",
+    "told",
+    "took",
+    "toward",
+    "tree",
+    "tribe",
+    "truth",
+    "turn",
+    "turned",
+    "twelve",
+    "two",
+    "unclean",
+    "under",
+    "understanding",
+    "until",
+    "up",
+    "us",
+    "very",
+    "voice",
+    "walk",
+    "wall",
+    "war",
+    "was",
+    "water",
+    "waters",
+    "way",
+    "ways",
+    "we",
+    "well",
+    "went",
+    "were",
+    "what",
+    "when",
+    "where",
+    "which",
+    "while",
+    "who",
+    "whole",
+    "whom",
+    "whose",
+    "why",
+    "wicked",
+    "wife",
+    "wilderness",
+    "will",
+    "wine",
+    "wisdom",
+    "wise",
+    "with",
+    "within",
+    "without",
+    "woman",
+    "women",
+    "word",
+    "words",
+    "work",
+    "works",
+    "world",
+    "would",
+    "wrath",
+    "written",
+    "year",
+    "years",
+    "yes",
+    "yet",
+    "you",
+    "young",
+    "your",
+    "yourselves"
+  ],
+  "files": {
+    "matthew/1.json": {
+      "bytes": 18228,
+      "sha256": "dd6d40d2669c07f258e07618dd43886f756c3d071b814835e446a9d9b0a58e50"
+    },
+    "matthew/2.json": {
+      "bytes": 19168,
+      "sha256": "c0929570a396874cbf704a444e37de877afada4f2e606097fed00ede62f3ec7d"
+    },
+    "matthew/3.json": {
+      "bytes": 12833,
+      "sha256": "c9f8687dceffde181c0bf7fed653a1f9d7051a099a089155b6c784ec05aacce9"
+    },
+    "matthew/4.json": {
+      "bytes": 19047,
+      "sha256": "482528242a392d6b00307c0b6b2cb4d071ad49308619915f93d33045e522bb4e"
+    },
+    "matthew/5.json": {
+      "bytes": 35802,
+      "sha256": "e0fd66805f1f14f20326f588cd3b507912a60847bc93d06c411bebc8095deeae"
+    },
+    "matthew/6.json": {
+      "bytes": 30845,
+      "sha256": "215040ad95d5f9a923dc694e27fea77d313122ddaddf62759e5fa96266b96899"
+    },
+    "matthew/7.json": {
+      "bytes": 24854,
+      "sha256": "e1968fbb873501d292854e910ac22a2bdcd023bb9751a32b47c43a14c308ed3e"
+    },
+    "matthew/8.json": {
+      "bytes": 26413,
+      "sha256": "291611522546b7afeaa467f84e306feac1099014bcb85a66f2246853b75cfbfd"
+    },
+    "matthew/9.json": {
+      "bytes": 25789,
+      "sha256": "5121c07fe750bf741d6b7b6ab51642670d07a177b23e6baf0de7a10106041c9d"
+    },
+    "matthew/10.json": {
+      "bytes": 32557,
+      "sha256": "e160e5d850b25bae0b3f6a9511b6f6b7d5773012f686331eabb2b8cfb6501b55"
+    },
+    "matthew/11.json": {
+      "bytes": 19908,
+      "sha256": "53495cb62fe2d87cbcd93e6cb843e54dd93e38aee33fd31ce134634129d45f46"
+    },
+    "matthew/12.json": {
+      "bytes": 34128,
+      "sha256": "9b7835fab51a1976357d1e9308565ba3744935b76e74e4d2efc21f92e92fde54"
+    },
+    "matthew/13.json": {
+      "bytes": 46883,
+      "sha256": "b19eff87404c5cad9a2eee09b9cf306cd2824ddf76b878c1b4c539e435382e42"
+    },
+    "matthew/14.json": {
+      "bytes": 26096,
+      "sha256": "3855cb6eebdc85a2e53468bbe5ecd6dea15ca9cb2b48163cc01fcf83593919b7"
+    },
+    "matthew/15.json": {
+      "bytes": 26893,
+      "sha256": "c558c9265ce4cc3187f815d5a1da88edad594dee6e580ff7bb86ad9616a457b3"
+    },
+    "matthew/16.json": {
+      "bytes": 20682,
+      "sha256": "ef593e637a5bc371d2cfcd6bff4d831b31e98c850847dc95624e08c7877a7f52"
+    },
+    "matthew/17.json": {
+      "bytes": 19300,
+      "sha256": "1df21c551090a47794807933db788488c7a407cec6e6dac6e089fb25c8000112"
+    },
+    "matthew/18.json": {
+      "bytes": 25668,
+      "sha256": "b08fc6280216dc967d3b9887ce1c8e93a2f3a58291a4cef11d5007fa5a8761f1"
+    },
+    "matthew/19.json": {
+      "bytes": 23888,
+      "sha256": "54524bcb4cd6cd59e0acd5db90b6f916ba8ee29a74e25faeea7d0f3defef6334"
+    },
+    "matthew/20.json": {
+      "bytes": 20187,
+      "sha256": "2256f5be9847640ba00764233c05043a41d4410be09ff85831ebb6fd5b4bf2db"
+    },
+    "matthew/21.json": {
+      "bytes": 32808,
+      "sha256": "2fd115b02714a8924ce4a9233fedfdb642e234ee141b12cb3b164fc691ad81ec"
+    },
+    "matthew/22.json": {
+      "bytes": 27146,
+      "sha256": "ccf98a68fee5293b7d37c7f9c4d36485f439201899eac34e0ae63ca3c6a3a3b4"
+    },
+    "matthew/23.json": {
+      "bytes": 27291,
+      "sha256": "ff861dbda2d097a1fb29082cfe0d690cf0235bafd791849ad15b60b3373377df"
+    },
+    "matthew/24.json": {
+      "bytes": 37846,
+      "sha256": "f488200387f79a94312ed964ba3822d014deb0ce32ff060fe529064d7768d043"
+    },
+    "matthew/25.json": {
+      "bytes": 32490,
+      "sha256": "6bca4d4d8edce44a023409d963f95c6f5adebd6567dc2ef13cefc55bc4fffda0"
+    },
+    "matthew/26.json": {
+      "bytes": 47063,
+      "sha256": "11d93a0876b9ba9604d40d1144c968419ef20e95f968a2de6fdfc45775746678"
+    },
+    "matthew/27.json": {
+      "bytes": 45151,
+      "sha256": "aeee0a6d962759dbacd398f5b0f5eee44201267c910ea1055c45d83aefdb558b"
+    },
+    "matthew/28.json": {
+      "bytes": 14725,
+      "sha256": "d069e8b7130435691acf333317d240faa3c104e75bbea66bba48dfe89b73c7e3"
+    },
+    "mark/1.json": {
+      "bytes": 30794,
+      "sha256": "d100e127653c415ed569edf629f993732cef6ff53b8e1bf8c7d7bca93f92c559"
+    },
+    "mark/2.json": {
+      "bytes": 19740,
+      "sha256": "c01621f8d82db10cd79a20fa4dc851ded130533b48fd40ef1f1ab4c105607b5f"
+    },
+    "mark/3.json": {
+      "bytes": 20798,
+      "sha256": "100e227c88f8d26d4146447fa01d49f57083f9e4b898fd6c79e354b274ed27a4"
+    },
+    "mark/4.json": {
+      "bytes": 27301,
+      "sha256": "82a397b6219ddf0509e39f21350ae54f811c54d1093e648c44d946d4dc59cf4f"
+    },
+    "mark/5.json": {
+      "bytes": 27444,
+      "sha256": "cba0a28328df427cd3adda50f8f1ce53d47748112b62fd0d678825f8f305e71a"
+    },
+    "mark/6.json": {
+      "bytes": 36886,
+      "sha256": "dc37e49ca365d31c831a9b90df8f92cbaf2da33457329e125e981789ae451fad"
+    },
+    "mark/7.json": {
+      "bytes": 30797,
+      "sha256": "f1d628d843e4967a9e099a36f925e524a5c57904fa984c606873d11740cf0895"
+    },
+    "mark/8.json": {
+      "bytes": 20553,
+      "sha256": "31a476986e238a75f65fbf68a2314f74b71f516b729f342b1da2c9fc48ebcaae"
+    },
+    "mark/9.json": {
+      "bytes": 36931,
+      "sha256": "a8779d1ee5a7b6559b32d0b695c5123c4f24df2c5053164f30bed8c78455b7cb"
+    },
+    "mark/10.json": {
+      "bytes": 24918,
+      "sha256": "1ab1023569f6d0300675af3975f7e236c994d2305f6d8bea6c3efb51323b0882"
+    },
+    "mark/11.json": {
+      "bytes": 18656,
+      "sha256": "2a24df3c29f50fde0d6a7968b986aa24e858c2961600e69993897e1be05eb278"
+    },
+    "mark/12.json": {
+      "bytes": 23979,
+      "sha256": "24ae2fa39a837f5b1e615116de8ab78c52497a20c758899c6e43f7f38d0e26f6"
+    },
+    "mark/13.json": {
+      "bytes": 23064,
+      "sha256": "44952f9839f94034b8b7f1a7ccca74aed50f5a6922420a9b519b6f6c18b9b2c0"
+    },
+    "mark/14.json": {
+      "bytes": 45688,
+      "sha256": "ec6929973c35d0179b449de8beeaeeeb52c51b6335b129281b46d91097191186"
+    },
+    "mark/15.json": {
+      "bytes": 27442,
+      "sha256": "69f89c8c3802fa6024d2aa722ed2c4d35650fee6b4205df13b54ff4647c330af"
+    },
+    "mark/16.json": {
+      "bytes": 12651,
+      "sha256": "2f61f4090c15ee3d722c5503591f25647a181bd8c7dc0ce44d6cff8e59ccb6d0"
+    },
+    "luke/1.json": {
+      "bytes": 44116,
+      "sha256": "b795aed2104a895d98c1f25de43854a43e630413ff29240ed2b760cbf787f278"
+    },
+    "luke/2.json": {
+      "bytes": 33413,
+      "sha256": "9c9d4a40727dfd22fa145da9d9c93112f50c900d8e45a6d516333ea2233cb5d5"
+    },
+    "luke/3.json": {
+      "bytes": 24836,
+      "sha256": "140ce8cd3b40100a7ba689b6e6d0acb90dfc2f10eeb8959b10d4baa0aec74e53"
+    },
+    "luke/4.json": {
+      "bytes": 30058,
+      "sha256": "652c95e9e1e5f7da7a6f2daed53fac0ffcaa0ba246441bfb68c42782e897eb23"
+    },
+    "luke/5.json": {
+      "bytes": 25223,
+      "sha256": "3c0132ce16d5902211b741eff28fb73552475a4dc2f5b4df1ffa26089720d0c4"
+    },
+    "luke/6.json": {
+      "bytes": 35190,
+      "sha256": "c45e087264de675a06933b04bd987d8374cf37448176d2e0db55e03697b10a4b"
+    },
+    "luke/7.json": {
+      "bytes": 32032,
+      "sha256": "81b0bbdd8e1bc13914d2e361c8870004e105efff8aa485ac15d082cf7add0b4b"
+    },
+    "luke/8.json": {
+      "bytes": 48546,
+      "sha256": "b5a798941bd9d9cbede3b99ea7cc1499ff2acd106cdfac7d784f7e87743a65c3"
+    },
+    "luke/9.json": {
+      "bytes": 41609,
+      "sha256": "f4349e61454b23391d60b049eb95fb2e0237d8e5b411a3330e5b5188b9fbd506"
+    },
+    "luke/10.json": {
+      "bytes": 27805,
+      "sha256": "f4dbc94660ac0b97916f7e6988e74ca3f0aa255abfca3893c25ac30295442360"
+    },
+    "luke/11.json": {
+      "bytes": 39523,
+      "sha256": "442f819d8f499cc0e3a25495d57c69ff4074a4e8286cfd8a61c937f9574390ea"
+    },
+    "luke/12.json": {
+      "bytes": 44291,
+      "sha256": "00fbffc1789d41d9fc80ba69dfcc60e0534920830bd218e33ea9634f2dd5be8f"
+    },
+    "luke/13.json": {
+      "bytes": 24983,
+      "sha256": "d8b44011f5281fccaaacb649df8ad33a724c029fbe819a743a963ee1c7b6659c"
+    },
+    "luke/14.json": {
+      "bytes": 19306,
+      "sha256": "8f3284c8f6c8d86799feb949242f20069a815a9d3e14cdeb1837195cd28adf52"
+    },
+    "luke/15.json": {
+      "bytes": 21317,
+      "sha256": "c60836f79ef98e1fc09193a28ec1314ee2b10c7a92e33433d7e80d86fca40ab6"
+    },
+    "luke/16.json": {
+      "bytes": 24417,
+      "sha256": "9be91f9164456e5e7a6c37f4cdc2de1b3987cfd14b1f0320f21d797c7f62edc2"
+    },
+    "luke/17.json": {
+      "bytes": 22955,
+      "sha256": "71359386a6ea2dae990acfba44c0e5dd415ecee6814960fa840ed74334b4903a"
+    },
+    "luke/18.json": {
+      "bytes": 30238,
+      "sha256": "f8172e53b4f0212131bf20a64461c5f7ad9fb922ea71e3653d4587df8b6c97bb"
+    },
+    "luke/19.json": {
+      "bytes": 30010,
+      "sha256": "2b8d912a245acb8d716d6ce69b13bf301336e6954f92f89b4bd13aff5153ee68"
+    },
+    "luke/20.json": {
+      "bytes": 27704,
+      "sha256": "17998355a18ea970bf9dfd612b71033c5280e181748f97c8c5332448a0a27c5c"
+    },
+    "luke/21.json": {
+      "bytes": 21478,
+      "sha256": "785605cae4087e8d5c1723b5e2079a1c5aa1e2ab4fa4abf2720a13b4dc64004c"
+    },
+    "luke/22.json": {
+      "bytes": 43337,
+      "sha256": "455b2a5d6da7481a81e1c6ec1bb21bc7ee8a1ded48878d2d52181518fe0a1834"
+    },
+    "luke/23.json": {
+      "bytes": 35881,
+      "sha256": "3153807c75eb8007fed1dcde8ce4c60baae84c69004b15096e011948c53e3ba1"
+    },
+    "luke/24.json": {
+      "bytes": 39205,
+      "sha256": "92f15c33ee5ac4036e82c438424d7b24e89e27048e420a279497f1d3524012eb"
+    },
+    "john/1.json": {
+      "bytes": 33410,
+      "sha256": "20becbab73104f6eda067b142319681e6911118d27332144fa7607a8c68daa61"
+    },
+    "john/2.json": {
+      "bytes": 18282,
+      "sha256": "bf06c73da71cd44beabdd9723062ebf955cf52ccec518f360513cd634e4b2eeb"
+    },
+    "john/3.json": {
+      "bytes": 25473,
+      "sha256": "af611723590e288f8700216870946c8026bc4180a9ce4edd7427025e2340d85b"
+    },
+    "john/4.json": {
+      "bytes": 32844,
+      "sha256": "6c814f69a9488eb48e780e9bf6d33631c22a1162ec9a8e4aeb4562bdaa53fcbe"
+    },
+    "john/5.json": {
+      "bytes": 36756,
+      "sha256": "6e0c571e4edb16e24bc57a1b0738b0aaf6fe34c29ea0c15d2c5b287078c5aaac"
+    },
+    "john/6.json": {
+      "bytes": 53225,
+      "sha256": "196131709be3e5a3d42814a44d942effb560ab43598302fb88518ef24eb3f8bc"
+    },
+    "john/7.json": {
+      "bytes": 32311,
+      "sha256": "5641158fa46a6118d02bcc6c26baf910ad48295643b9914a55a0bf9ebe36a58a"
+    },
+    "john/8.json": {
+      "bytes": 38277,
+      "sha256": "55b2e0edb7060cedae1ad00d781fe5b585a5deebd2e579b7e5649b8bd639f05b"
+    },
+    "john/9.json": {
+      "bytes": 31056,
+      "sha256": "f06a15f42263b6d82abfcba5f895b22d9d53088fb0726eab18bc302a606e0783"
+    },
+    "john/10.json": {
+      "bytes": 33481,
+      "sha256": "0004ab7a561e9403a39a83e88ac8a8adb86b1d07057ae09b28eb8bef5704f653"
+    },
+    "john/11.json": {
+      "bytes": 38734,
+      "sha256": "0d9a7acbd9d3d52ed4def6f112f90575902908344b8994d7613a15384d89a869"
+    },
+    "john/12.json": {
+      "bytes": 37122,
+      "sha256": "65e8c61e1803473704800233b02d95648fa608be41da1abc3e56d4711aa99f90"
+    },
+    "john/13.json": {
+      "bytes": 28463,
+      "sha256": "48334bfc89b36c84ba8668c282c3d4ee8ef186cd83b4e30ac94f9384e339cc05"
+    },
+    "john/14.json": {
+      "bytes": 23680,
+      "sha256": "62d806a293bcdb16eaada34514125579f67a2a13e452f78225ff08d51c09c035"
+    },
+    "john/15.json": {
+      "bytes": 22017,
+      "sha256": "6cdccd816ae1ee18776486856bb89c15872f973608f4a4bff85c93ecdd3517a3"
+    },
+    "john/16.json": {
+      "bytes": 21324,
+      "sha256": "b5f0cffb9751251563e5a5e06ef2e9de4e6e201b68b0165bd56c8fb3b994e11b"
+    },
+    "john/17.json": {
+      "bytes": 22965,
+      "sha256": "a394915522f4ebc00842c7abce51d60fa0c34c7d2f528ced8b6375dfb9b7a45d"
+    },
+    "john/18.json": {
+      "bytes": 27809,
+      "sha256": "16142b4dee29164aa48d4fe70b9484ac043e2c289d936341dae154193978b71f"
+    },
+    "john/19.json": {
+      "bytes": 20662,
+      "sha256": "0a656c6427a834c24da94137dbf60ed65dce0e2287c33618c59e4a752ac92328"
+    },
+    "john/20.json": {
+      "bytes": 24591,
+      "sha256": "e7a6094b228b8844a7564d21fc1575182771e1d199074008b22d180a65476c84"
+    },
+    "john/21.json": {
+      "bytes": 22809,
+      "sha256": "b503d7e4f3ca12dcd1acd6a3db58935953caee7c174f42edd810edbbf62719b5"
+    },
+    "acts/1.json": {
+      "bytes": 17084,
+      "sha256": "51a21f748fcfeea00b48ad25498839feb9d0db6e3e3ebf443941ecc1f4ed913c"
+    },
+    "acts/2.json": {
+      "bytes": 34301,
+      "sha256": "183700e199d04e32cdcc5345ac22e9cc498a4f40bf7d00d44f45c330506357aa"
+    },
+    "acts/3.json": {
+      "bytes": 14283,
+      "sha256": "55956e709f3166f4f72353a8ccc2f9c51fb1968dbbddd4a61e4a82eaca75bbd6"
+    },
+    "acts/4.json": {
+      "bytes": 18583,
+      "sha256": "76644631569c40bcf7077bf7f1a2ad4d3b6773a2038e477400e2e92dd23f33cb"
+    },
+    "acts/5.json": {
+      "bytes": 30837,
+      "sha256": "abfea4112f0cab8945a604bae3c4265b7a4abe60da50da952ce037ab5cace30e"
+    },
+    "acts/6.json": {
+      "bytes": 9540,
+      "sha256": "c29c14116bfeb313d3891cece1406f10a0aaa421d03100564a4dcca7fbdb2495"
+    },
+    "acts/7.json": {
+      "bytes": 36506,
+      "sha256": "46e0fadaa0c7ba40730e2b5c964182652a05984fe3b496e5f89f720141e0c759"
+    },
+    "acts/8.json": {
+      "bytes": 26654,
+      "sha256": "0937a17040c381b7355966a254926cfadf110ae82f32fcc58bd366986cb581aa"
+    },
+    "acts/9.json": {
+      "bytes": 20243,
+      "sha256": "2ce7640b70f4e98566bc36d1087f9a5cfdd3cd0127665139e171380b53abdfc5"
+    },
+    "acts/10.json": {
+      "bytes": 29797,
+      "sha256": "b3cc24231651d504e1d9cb75fb91a4c785f93a27ca2ac86cbc7c7b883cda0d84"
+    },
+    "acts/11.json": {
+      "bytes": 18663,
+      "sha256": "b71add5e28e9f7f7657126d8652503c22f1a384108b0515ca6d82a8635c55f8b"
+    },
+    "acts/12.json": {
+      "bytes": 19497,
+      "sha256": "047da8a1aec0db8f20992c10a5a98a8fe69a2332b7a9003a2079ae3bddcf54a9"
+    },
+    "acts/13.json": {
+      "bytes": 27433,
+      "sha256": "559eb2e11fdb68165daba16d8a8aa09b04630fcea3fc59a638a4f02342287c50"
+    },
+    "acts/14.json": {
+      "bytes": 19155,
+      "sha256": "c84beeaf5b812b73aabdceaa37b688dccd0e303020d6014be938fce4b1fb7610"
+    },
+    "acts/15.json": {
+      "bytes": 28197,
+      "sha256": "66b0f2eaece87318b7b78af5c1768ed952f11ac95c24eadfb140ceb32cce1e6f"
+    },
+    "acts/16.json": {
+      "bytes": 33672,
+      "sha256": "7ee1d4a0d88b136167d9763980a7ef7f1e880b232676ccb1ab842d9836c7b7dd"
+    },
+    "acts/17.json": {
+      "bytes": 24401,
+      "sha256": "73f9b8c32dcb29601afd4eb6bfe3b5984d1573dc6697b38443d0960900345b1d"
+    },
+    "acts/18.json": {
+      "bytes": 20710,
+      "sha256": "427101bf83fdff6fa967f0ad89b7cbf9fd8572257123e1a835656f1784e7c907"
+    },
+    "acts/19.json": {
+      "bytes": 26915,
+      "sha256": "f3e0160e59b7aa0c21e4e4907313981458aae92bb437ff5589066da341ea93ea"
+    },
+    "acts/20.json": {
+      "bytes": 22749,
+      "sha256": "204cdc85d3f676fe67f6348f00a0d8828bc0ed9998c20dfc0bbc95e03a74f1bd"
+    },
+    "acts/21.json": {
+      "bytes": 25494,
+      "sha256": "1c4c5481def70ba5695dcb78345462ee5439e648a55caa17ed4fabb766c3788d"
+    },
+    "acts/22.json": {
+      "bytes": 26840,
+      "sha256": "60a5236cdcc554619a4c3ade38d5df957169a96942db8f9f01fa2cce53ace034"
+    },
+    "acts/23.json": {
+      "bytes": 26132,
+      "sha256": "d722134b935a86f0e7f583d157dfeb254b3581ec8a8156800ed3add9405f18e1"
+    },
+    "acts/24.json": {
+      "bytes": 16103,
+      "sha256": "1dbebd44dc05f715367c5fa7984c3730db241859ff13db03da6dcbb1234b365f"
+    },
+    "acts/25.json": {
+      "bytes": 15965,
+      "sha256": "1f4b37aec80b001e782a6b12667e483dab1ce87e8ab4e33cb2e104e50a44ff54"
+    },
+    "acts/26.json": {
+      "bytes": 18587,
+      "sha256": "775e066d18da9cf708e20ebdc9449ec076667e50423a05d95d4c5ef39a21b444"
+    },
+    "acts/27.json": {
+      "bytes": 25250,
+      "sha256": "6e4f6c452a59eb3f7e461232531fbf71b1333a1c0aa40bb201489ea7304f507c"
+    },
+    "acts/28.json": {
+      "bytes": 23234,
+      "sha256": "e06a594cb498859846f2e2fc3f934ddd7964be6a0d0a67ba702b96cd7b39fd23"
+    },
+    "romans/1.json": {
+      "bytes": 24516,
+      "sha256": "4b336a6574903501534d4761366d7e81ce3d9a759a825df5466ebc8715bebf76"
+    },
+    "romans/2.json": {
+      "bytes": 22266,
+      "sha256": "8894b9639a0022ea0fcb6a62e630adeda8b591023078bb316c951ec2ef51c987"
+    },
+    "romans/3.json": {
+      "bytes": 18942,
+      "sha256": "59fbe77ee57931c058e894087ab4278f46adeda0093de8d53800205ff37c99a1"
+    },
+    "romans/4.json": {
+      "bytes": 17763,
+      "sha256": "2234f6653c1bae8e252fcbfce4d81877f861a3f32c06cf46a1bb25e6e45678a6"
+    },
+    "romans/5.json": {
+      "bytes": 20851,
+      "sha256": "e1128036c04cd6492cf9abed363c346f6db4739fd1b5e0631a5e83fd218fed11"
+    },
+    "romans/6.json": {
+      "bytes": 18101,
+      "sha256": "4208760489898832a5c393cdcff6bd6e336b84c7d07c00038253c663bda34438"
+    },
+    "romans/7.json": {
+      "bytes": 22777,
+      "sha256": "5edb6a5719db4b1fd8d5f10a154c8255ff267931dc880f5db7ba0d51ce8bda99"
+    },
+    "romans/8.json": {
+      "bytes": 30096,
+      "sha256": "89e920645fd9c5869c0aa643ce4a2b73284cb6f5942e096c79b9dd7183b2965a"
+    },
+    "romans/9.json": {
+      "bytes": 25116,
+      "sha256": "11a4934192eedffd3e41196704d2f94d30783f341bcca628919538243442a0c2"
+    },
+    "romans/10.json": {
+      "bytes": 16397,
+      "sha256": "0c18d8add391578e926d902e2f237c06f57462de6be9e7db433372bbd8778bd7"
+    },
+    "romans/11.json": {
+      "bytes": 24030,
+      "sha256": "c0574f192ca34ef66c9d2a8362464986755762d291188213b84936f87f4c52f7"
+    },
+    "romans/12.json": {
+      "bytes": 12930,
+      "sha256": "20583a2ef844ab9b1573a0e0f803092f78124f66f1f25366439fc47d1e65526c"
+    },
+    "romans/13.json": {
+      "bytes": 10808,
+      "sha256": "f72cefea3042d4b99d9b9fd73b74e0c1d1234f5840473c6f6c36e6bcfae9e8ec"
+    },
+    "romans/14.json": {
+      "bytes": 16053,
+      "sha256": "345455d522636a3baed01483641915c57363246784de43da17460b2c201eec16"
+    },
+    "romans/15.json": {
+      "bytes": 22425,
+      "sha256": "87c6c35e203f4974202064c8eb9231a4198281006cc92ea1acb2c582a2ac3766"
+    },
+    "romans/16.json": {
+      "bytes": 17598,
+      "sha256": "878d1eac5abaf4535d006cf8555d34df0d78a8f765c2c029050d0a2b1eec427f"
+    },
+    "1-corinthians/1.json": {
+      "bytes": 25216,
+      "sha256": "ae355002d0386066745e99e9fa1b790c87eb4696368a99fe9c6eb87f73f7d83c"
+    },
+    "1-corinthians/2.json": {
+      "bytes": 15275,
+      "sha256": "53176cd4bcc368e1e6c7397b05712c2c6a6c2c2f31c31ca93dc6a5a61e029ae1"
+    },
+    "1-corinthians/3.json": {
+      "bytes": 15664,
+      "sha256": "f6fbaeed765636709a3eaf84cb23de68501a87c8765c5b1f7443f0cd6f13a1e3"
+    },
+    "1-corinthians/4.json": {
+      "bytes": 17383,
+      "sha256": "431f5b6ed9495698c11e26cf119dddb53cf70d697dd864b70b32b033f4bb69ac"
+    },
+    "1-corinthians/5.json": {
+      "bytes": 8074,
+      "sha256": "6899765d6df20c2613678ff72083c9852106dd49171e16b2412f59aadba9ddee"
+    },
+    "1-corinthians/6.json": {
+      "bytes": 14250,
+      "sha256": "433d02f841ae27d1021922a9b8ff5a7df882c3d41de419372030eb497d56ec5e"
+    },
+    "1-corinthians/7.json": {
+      "bytes": 30792,
+      "sha256": "77b11322d1d5688e006d649d538a9969cc4a327c9bead08c2a041d6202bae0d1"
+    },
+    "1-corinthians/8.json": {
+      "bytes": 9819,
+      "sha256": "b0365a2b1e476656dd4bd92398f8fe7daa7b9bf972ae9d9ffd855327b73684ab"
+    },
+    "1-corinthians/9.json": {
+      "bytes": 22764,
+      "sha256": "d8c43a144e37b0b2051067ee61b6c46a6f8b6ffd8533b5242c46e6eddb200a78"
+    },
+    "1-corinthians/10.json": {
+      "bytes": 19566,
+      "sha256": "97f0dff136e7d6cb5ad0182377030a6e4cf198b2aa2f8a737a4901e0f3fa5cd3"
+    },
+    "1-corinthians/11.json": {
+      "bytes": 22435,
+      "sha256": "c6fbc177358a0286b0b8b20fa456333ef98cb9f7ee72d48b1ae9dcfb46e77ed5"
+    },
+    "1-corinthians/12.json": {
+      "bytes": 21077,
+      "sha256": "023038515cf27cff55a6805a2cb483060dedced323129ecafea5fb6b48a8e460"
+    },
+    "1-corinthians/13.json": {
+      "bytes": 8233,
+      "sha256": "2ed02537a53683d410720f778fd26735c68c82e56ac61bb8474a38b9c994909c"
+    },
+    "1-corinthians/14.json": {
+      "bytes": 27322,
+      "sha256": "3ddbac42c4c603e3008d02640e5337d75783bcc87dc0dec1f0933f8d7d004a0d"
+    },
+    "1-corinthians/15.json": {
+      "bytes": 37438,
+      "sha256": "fad477cfcc1fb9b83a3615677bde966d86c2b45bc517b3444832df87f2892286"
+    },
+    "1-corinthians/16.json": {
+      "bytes": 16991,
+      "sha256": "65e031fce17ade994f50fb3ec43f45c4af0e1961f546944d4a8c52d3b5b4e151"
+    },
+    "2-corinthians/1.json": {
+      "bytes": 17753,
+      "sha256": "fbde551900af3146eb9162884c0acea53e96ac3ec6252ef6762865ccca0e6600"
+    },
+    "2-corinthians/2.json": {
+      "bytes": 11940,
+      "sha256": "7cf17eb6eec0c9bc3ab229f80f0db45d8558a3fc975e17cc0dec9b92d13e6e5d"
+    },
+    "2-corinthians/3.json": {
+      "bytes": 9281,
+      "sha256": "f634e1abcf81c46b40d117bd4d5477f0396980afe0b9b496deb2d410cf8dac6d"
+    },
+    "2-corinthians/4.json": {
+      "bytes": 12416,
+      "sha256": "59f1267745b5470947bbd6e94144493797d94cf6121eb8ca6403682cafd44df0"
+    },
+    "2-corinthians/5.json": {
+      "bytes": 17951,
+      "sha256": "daaf77754f60079cb8aa1ac1bfa7f6e930ac5c87f88b3bf718ff5c9ff25d65fc"
+    },
+    "2-corinthians/6.json": {
+      "bytes": 13385,
+      "sha256": "1f777ed5f0b89028908d4a12c4ddf2695f8308ce2959fae53b174f57c4b0436b"
+    },
+    "2-corinthians/7.json": {
+      "bytes": 13033,
+      "sha256": "2043401a3f28836569e8154d81a09a0865ba037329f177a6fc78522267c8c472"
+    },
+    "2-corinthians/8.json": {
+      "bytes": 12003,
+      "sha256": "ed47442cacbf50318acb9e496ef2c4f0dca6272275abae62d4a1220d71c85971"
+    },
+    "2-corinthians/9.json": {
+      "bytes": 11319,
+      "sha256": "25ba28c64c4c91c3887f3747b6e8fa709a3c03b5373cf16cabd348580f6d2923"
+    },
+    "2-corinthians/10.json": {
+      "bytes": 17339,
+      "sha256": "a47adddbd87b46dcfaa991cb46d6d029cd84bfa82e68356284e726c00695e942"
+    },
+    "2-corinthians/11.json": {
+      "bytes": 23991,
+      "sha256": "953c7d8a1fe46e334cf5c8a87d06ec209950d45a7dd4f3d4d720ef8571e0db2c"
+    },
+    "2-corinthians/12.json": {
+      "bytes": 16243,
+      "sha256": "07b44fc0bfc95c0bd4038dc8313483484ef63734dae6b0025fe5cc1f65cf9500"
+    },
+    "2-corinthians/13.json": {
+      "bytes": 10572,
+      "sha256": "02b45ee2bfd5e6c5059270310042071b3bc8e6fdf3c5d6f4890f17f24688fd9e"
+    },
+    "galatians/1.json": {
+      "bytes": 15971,
+      "sha256": "0f96cc4b08277c7aeb04681396889b8ca367ff4c2b50696510f3a46509abffaa"
+    },
+    "galatians/2.json": {
+      "bytes": 17516,
+      "sha256": "a5740415c3ae8bd011c51092966d90f8ab129ae3c673e8e3f700a6e287f4690e"
+    },
+    "galatians/3.json": {
+      "bytes": 22784,
+      "sha256": "bb7546633a1037016c600cbf41003a46e119ea23f5d85b60e65d39016bd3484c"
+    },
+    "galatians/4.json": {
+      "bytes": 21381,
+      "sha256": "fb93babf178731a6efedd7a055b6cf7172acaa76021cd74044526897f90c79c4"
+    },
+    "galatians/5.json": {
+      "bytes": 16619,
+      "sha256": "088ba4d9280f91893d2babf1c6a6a00c6e30219f64a4335b4490894bc0c717c7"
+    },
+    "galatians/6.json": {
+      "bytes": 12599,
+      "sha256": "871901761043e848346d1171e1e5c08413ec7d8c5d4f42aabf8ee71e3d3b4f9d"
+    },
+    "ephesians/1.json": {
+      "bytes": 15440,
+      "sha256": "8cda89d7175eae79a93277d62057dff49e7c8ce1896a1ce78c7731cfadf0bc8b"
+    },
+    "ephesians/2.json": {
+      "bytes": 18457,
+      "sha256": "4361538fe90c3ace28892d9e26bcf42531acf46562189439f04b676f8f28f66f"
+    },
+    "ephesians/3.json": {
+      "bytes": 9418,
+      "sha256": "dc2147c7b917cabfb0be349a78751878d0f939900c4afd12e80b6f8ac75afbf7"
+    },
+    "ephesians/4.json": {
+      "bytes": 22295,
+      "sha256": "6c00c6e36269e257a78fd8e27a76a2d3988b77466b0ff9aac3931e009b2a68b4"
+    },
+    "ephesians/5.json": {
+      "bytes": 22031,
+      "sha256": "a8016f27d798abfb6fac847057430bbd31c4db45b2d9125b0594e9dd69010075"
+    },
+    "ephesians/6.json": {
+      "bytes": 18345,
+      "sha256": "9cc3167fdaa14ddefef7fa750b26e30c0632d9da0f56b1a30414baea40a5a2f6"
+    },
+    "philippians/1.json": {
+      "bytes": 21885,
+      "sha256": "e9c6b1ce933930aca270b816a08ae68bdcf386d6d1d1a14e9de952da6b7d843b"
+    },
+    "philippians/2.json": {
+      "bytes": 20043,
+      "sha256": "ba3ff408e1f4397dd85ce968511c46d901743058b801d2fe0496bf79587a6388"
+    },
+    "philippians/3.json": {
+      "bytes": 15354,
+      "sha256": "39b9f29c607c4538933f1a55734d58b74ca29a1e3a7c328a6fd1f7364827bf0a"
+    },
+    "philippians/4.json": {
+      "bytes": 13294,
+      "sha256": "e88782cce2a1afa14e9e617522ebfe8035745c4446f31f93e8d803418eecf075"
+    },
+    "colossians/1.json": {
+      "bytes": 19938,
+      "sha256": "1900d7e9f881838b266cfee1934f8421eb4a8fc26809694d92bc74b00a013a5b"
+    },
+    "colossians/2.json": {
+      "bytes": 18741,
+      "sha256": "535259a9e98fbcecf3280ff0650c4b3d16145e07c72fd63f7b77c8e3c525388f"
+    },
+    "colossians/3.json": {
+      "bytes": 15287,
+      "sha256": "32c0e097f8aced5633b13de36b020a21025b32ac60086209f2ca0e24380346a2"
+    },
+    "colossians/4.json": {
+      "bytes": 12973,
+      "sha256": "baf27cb17ca11f46aa97e23e557f7b5a3089797430cf1f16525e054848cb4ae6"
+    },
+    "1-thessalonians/1.json": {
+      "bytes": 8653,
+      "sha256": "4d03fb9fe270ecf6600c07d3387e369185e377e7f112bb974ca0f354c01ca8f1"
+    },
+    "1-thessalonians/2.json": {
+      "bytes": 12911,
+      "sha256": "72164d88cc9a6684d8f7899c6c3226e16a5331f7c8e02436571a76be3e8306af"
+    },
+    "1-thessalonians/3.json": {
+      "bytes": 12122,
+      "sha256": "ff94c0c3ee450c8da2e5f8ce07bc50bcbb2e9ad9d2b5b1da291d9a3a9dfe14b1"
+    },
+    "1-thessalonians/4.json": {
+      "bytes": 11706,
+      "sha256": "636f0410dae3a3b6ed0d68d6426145a711de1aeba7bd43958f0d27090f9f906e"
+    },
+    "1-thessalonians/5.json": {
+      "bytes": 16766,
+      "sha256": "dd3963b2f1389d82fd8c459c6f2a747d4c4a9767562f6b7c1961e1b2211eba7a"
+    },
+    "2-thessalonians/1.json": {
+      "bytes": 8964,
+      "sha256": "9243feea65adaa8e0d231410f1b8bf68dc17aecafefe2e67ede6593113b805d5"
+    },
+    "2-thessalonians/2.json": {
+      "bytes": 15609,
+      "sha256": "9ed2b70742802a2aaa446289d4595c2f650a8c296fed43dc3c6494eeaed8441f"
+    },
+    "2-thessalonians/3.json": {
+      "bytes": 12384,
+      "sha256": "c09f4115e946114573e1af620d5160252d15ed5e8aa450a55f19993c408be8a3"
+    },
+    "1-timothy/1.json": {
+      "bytes": 12645,
+      "sha256": "00beb731280c22d8ae73918f331420724848347d417aec5712b51feb7e79e063"
+    },
+    "1-timothy/2.json": {
+      "bytes": 8482,
+      "sha256": "98dbf0353f34c2f8588a13751f2a9bd161ab5d7cc42003b805960b57d802cb40"
+    },
+    "1-timothy/3.json": {
+      "bytes": 10547,
+      "sha256": "59555957794ef4648cb217abcfe16c4a8d209492e7bd075b1e6e4f092b048220"
+    },
+    "1-timothy/4.json": {
+      "bytes": 10422,
+      "sha256": "ccfe5f29c3eaf9b1479bd10314d19a4df821388ba1938f17d9d4a1b60eea5516"
+    },
+    "1-timothy/5.json": {
+      "bytes": 12761,
+      "sha256": "bea13089f98009f43624f1e7230f7ca8be50d8d044a7431f131b99727ca390ac"
+    },
+    "1-timothy/6.json": {
+      "bytes": 14271,
+      "sha256": "493eed2eabf87df69ca71a90f95cff1ec227c5b22aadbee218a5a11aa59c0863"
+    },
+    "2-timothy/1.json": {
+      "bytes": 12985,
+      "sha256": "4bd649155107110e294143a92b57565fbc4db20ca7573b0edd074e29de983039"
+    },
+    "2-timothy/2.json": {
+      "bytes": 14525,
+      "sha256": "673b42f2f12cee591b4d155c59a56a339473117e32ee7127235f8b1361f383ec"
+    },
+    "2-timothy/3.json": {
+      "bytes": 9141,
+      "sha256": "fee083a5cf3ac7209492d3afdc7e6a9858a2c05f64f2a9b50f31f2fc3b127e76"
+    },
+    "2-timothy/4.json": {
+      "bytes": 14422,
+      "sha256": "83939fb5e37d92b8b29c80a70309cf01d2ef62e365386a7709d272376f2ec6d7"
+    },
+    "titus/1.json": {
+      "bytes": 12080,
+      "sha256": "c6502dd0b1a20935421f9ea7af6ed63d0d2bec81cc5957626fad21e073964661"
+    },
+    "titus/2.json": {
+      "bytes": 8967,
+      "sha256": "3bf085f1902eae8c14d41b7d207b669fe1bbe53b2be5d43e43abb98915b8385d"
+    },
+    "titus/3.json": {
+      "bytes": 11089,
+      "sha256": "9f9d3e393e732b14bbe0642f353c03e158297bc574719215ba761191884b6df3"
+    },
+    "philemon/1.json": {
+      "bytes": 14440,
+      "sha256": "5cf6727c0386f98b82db103e2a85a31be2e67b259e7ae096369df0cd3da4cb9e"
+    },
+    "hebrews/1.json": {
+      "bytes": 11266,
+      "sha256": "753518435674bee8b6d9b527a450c935db5ec31bf06813034fa534c7d6e7ffa7"
+    },
+    "hebrews/2.json": {
+      "bytes": 16757,
+      "sha256": "9f84553240339e7a067eba12cc971283d1e834e5dcd5d36d479e38ce2b727863"
+    },
+    "hebrews/3.json": {
+      "bytes": 8156,
+      "sha256": "9fb3875fa3a2ae57ed2420cee80e6c7a2b7430ce5d777b3c1e605d43caee849e"
+    },
+    "hebrews/4.json": {
+      "bytes": 11265,
+      "sha256": "c8620de7eab7018ac024dcba10c91afc004334242c39d7b36e6e1659eae65c31"
+    },
+    "hebrews/5.json": {
+      "bytes": 11837,
+      "sha256": "5dce229b437360e80860ed189d4280aacf50c9b6043106542fb110f0ad55e80c"
+    },
+    "hebrews/6.json": {
+      "bytes": 13441,
+      "sha256": "ddbdb40e37d16e9a6006985f3be064f48c4280d906e918897150b472f3dac68d"
+    },
+    "hebrews/7.json": {
+      "bytes": 21362,
+      "sha256": "ddfef6784b531890918a2c5dfd40ebe3ab606dbc497e52f990dd5510836cac0c"
+    },
+    "hebrews/8.json": {
+      "bytes": 11270,
+      "sha256": "1dba80adc003350ad5bbe580d81664eecc5f47698b6bb886df1e18d1fe264c07"
+    },
+    "hebrews/9.json": {
+      "bytes": 23672,
+      "sha256": "6fe90a551d6638086f6daea8b49994574848d3ea41f2db79d6a8bd0120a4f3f4"
+    },
+    "hebrews/10.json": {
+      "bytes": 24403,
+      "sha256": "aa22a9df0d666cbe0e9a2fb4918cbc801878db43b3b82db6c863f6579bf08664"
+    },
+    "hebrews/11.json": {
+      "bytes": 25515,
+      "sha256": "26eb521977f9baf517442c93dcf15b56ee365948e460fe72e94b289f983d2311"
+    },
+    "hebrews/12.json": {
+      "bytes": 18508,
+      "sha256": "bb8bc889f456203691298c4b39539db61b7a9a17bffcebc36aaa64f534e63696"
+    },
+    "hebrews/13.json": {
+      "bytes": 15777,
+      "sha256": "6d7fb7b1389a002d2e9ab65dc8d3ae60f49cc42d04783b088bcfb8c31c6397df"
+    },
+    "james/1.json": {
+      "bytes": 17985,
+      "sha256": "d084442399c71a091d641dfc7921342bdd83a12620e59cc8d8b15c75ebde5601"
+    },
+    "james/2.json": {
+      "bytes": 18809,
+      "sha256": "493ca221e1933ef6bae44bfa4cbe44b2c3dec73ad38bd5efc3d7e7313aa9fe3e"
+    },
+    "james/3.json": {
+      "bytes": 14907,
+      "sha256": "eb1db8ec45bcb3de9973a97d303063fcf1e4f60ab90a35866bd85e2cb3ef063c"
+    },
+    "james/4.json": {
+      "bytes": 10347,
+      "sha256": "1559c18c86195d211eca4938493a5f628ac4cbf74b72686bba70c2fe892f3446"
+    },
+    "james/5.json": {
+      "bytes": 11684,
+      "sha256": "af95022fa2288c45225dc5efe27a028e4b3ffc85abe74c30682b3dae49e946fb"
+    },
+    "1-peter/1.json": {
+      "bytes": 16917,
+      "sha256": "277763141bf24483c7c3ef7b5b0416c7a19ec5203e99914f3d2cebb9e2f283de"
+    },
+    "1-peter/2.json": {
+      "bytes": 16925,
+      "sha256": "595a8b04ded0c8243f23828ba09f1bc6c4c8026dce15c853d09a036d51814dea"
+    },
+    "1-peter/3.json": {
+      "bytes": 7762,
+      "sha256": "f5e18b1db6e79b9655b0bf1eab24eec66425c290db53f5377948897e4f5aeb66"
+    },
+    "1-peter/4.json": {
+      "bytes": 13821,
+      "sha256": "5ba727a37494544db82ab733b0650d7fd884f5b5986ac289cda88f38741aa122"
+    },
+    "1-peter/5.json": {
+      "bytes": 9133,
+      "sha256": "e7e04a5178e6e4cd896a78c5e72cab7820eb6d7ef23bd77a59433cfb7ed1ea09"
+    },
+    "2-peter/1.json": {
+      "bytes": 15242,
+      "sha256": "d503dabc537bd57695ad4ff214d253ee974e79eda44bfc07e154f40f7a5aed17"
+    },
+    "2-peter/2.json": {
+      "bytes": 12946,
+      "sha256": "e8137443772beef4aa98abaf10825e4bcac15386c0680678ea57e2274ebbbbbb"
+    },
+    "2-peter/3.json": {
+      "bytes": 15930,
+      "sha256": "b6fbbdd5dab22dd235f4f63f957c70c500ae77a00076f549d730d56774aa94ca"
+    },
+    "1-john/1.json": {
+      "bytes": 9095,
+      "sha256": "ea86d13812fcc915f04a9f228f5f950f937985f32fd95fd63b93cb67c13d37b9"
+    },
+    "1-john/2.json": {
+      "bytes": 28547,
+      "sha256": "94e5e3335c7787bb1e20e2b2f60c9ae43ff3208665a0b4b00335a7bd75c9794d"
+    },
+    "1-john/3.json": {
+      "bytes": 16589,
+      "sha256": "6d8fa5e690027529ae2c98858949a906483c3874883bb4613d5f52ad662765fc"
+    },
+    "1-john/4.json": {
+      "bytes": 18174,
+      "sha256": "daceca3a0037edf712c7e34ea6383745f63e46ea2f422b0c35fbdd565ba37faa"
+    },
+    "1-john/5.json": {
+      "bytes": 13071,
+      "sha256": "d70b7ae8ce005d0d5c67ce779185a2ce797e4f0b51aee15043884b039554eb9b"
+    },
+    "2-john/1.json": {
+      "bytes": 10537,
+      "sha256": "443bf63e8b842334691c5ddea0708691d74c32d89e7766682caa6bdcc40e90e3"
+    },
+    "3-john/1.json": {
+      "bytes": 7567,
+      "sha256": "ff17eb3272b218587091b8fbaadcc6c3f0f6ae42588e308e1f27ae0615bc96db"
+    },
+    "jude/1.json": {
+      "bytes": 15751,
+      "sha256": "ffa61d61b233cafc9bb78939f90a25a0f3b0d1fb19b2548e409049b932f83074"
+    },
+    "revelation/1.json": {
+      "bytes": 5869,
+      "sha256": "da8633f7d9e9ea0485e8c8737ef40a60fa95674ffd45aaf18bb27f862941adb4"
+    },
+    "revelation/2.json": {
+      "bytes": 7064,
+      "sha256": "394452eab4c6c73e4c5f8987b717bfa0bdaf2c53aaab7a1d58f02286f265cbd9"
+    },
+    "revelation/3.json": {
+      "bytes": 8834,
+      "sha256": "3c1d1fc6670ff470ebabb461b9afe1514e07397f9387a34a0edf4f544054d3c1"
+    },
+    "revelation/5.json": {
+      "bytes": 1846,
+      "sha256": "cc3c4dc3f1336940be027f93e7e1af266fcc937b86cd8a71fcacecf741c55317"
+    },
+    "revelation/6.json": {
+      "bytes": 3278,
+      "sha256": "fc4b6413e37c4f7e9011d0267dba7b0515874f28b3a5188400f54da4c07dae99"
+    },
+    "revelation/7.json": {
+      "bytes": 2446,
+      "sha256": "1af961e6b1568169e3d9f2afc7aa62b40a39fdbf80f262a1132e3eafbe47dae9"
+    },
+    "revelation/8.json": {
+      "bytes": 1414,
+      "sha256": "25e1bf1db9772131cc6ff892754e3426bf2e31f72dc0591fe81b0958639d439b"
+    },
+    "revelation/9.json": {
+      "bytes": 8406,
+      "sha256": "25304ce55c279726a03c3b44e7478ea50595da98b5637cc0fedd0b66f95719c7"
+    },
+    "revelation/10.json": {
+      "bytes": 907,
+      "sha256": "ebebdae24cdf6f483099dfd44359ef29935ff98e660e4c4e5f48b2d2b98ad378"
+    },
+    "revelation/11.json": {
+      "bytes": 3119,
+      "sha256": "d582ab64acf69636d8f5e3cfe3e7be0a61f2c2976fa5db348d12f4200edd6b3b"
+    },
+    "revelation/12.json": {
+      "bytes": 4577,
+      "sha256": "11f603f91d531ef95758998f62fbb0b14a3ed72525c400391955a98212139d94"
+    },
+    "revelation/13.json": {
+      "bytes": 1231,
+      "sha256": "e84c7ec3cbc3aec19d44f5d28d758802e24649c929a0c20facd793e9908a6a90"
+    },
+    "revelation/14.json": {
+      "bytes": 3779,
+      "sha256": "ac4c71c9d3e3c1d56722c3649dde47d2a5fa597a6b84e992ac4c5ab960c9b57a"
+    },
+    "revelation/15.json": {
+      "bytes": 2492,
+      "sha256": "ee34a4b4e5a2e1c33de13c005fcdd55704ecfba6fe66355d7710aae014fae9a8"
+    },
+    "revelation/16.json": {
+      "bytes": 5396,
+      "sha256": "a6c2f68393ab00ba5847842f2cf804529db9f2f20cf20cdd08d02ea12fd4cf5a"
+    },
+    "revelation/17.json": {
+      "bytes": 5537,
+      "sha256": "12f73390bb640d1bce779ba1f2ccc731d77b570b65f70e80f2a5289e0866f0f2"
+    },
+    "revelation/18.json": {
+      "bytes": 6375,
+      "sha256": "f82002f964523f0ba576c55ca6b53bb550741f62decfddab9ff61a3a8e297ad9"
+    },
+    "revelation/19.json": {
+      "bytes": 3449,
+      "sha256": "becbe32da9056ecabb60a653f2caf88ec5da5a0679e9dc54fb33c0277811030d"
+    },
+    "revelation/20.json": {
+      "bytes": 649,
+      "sha256": "36307641beef2ae78b3e2dfdca57d6e246e495c0d5096c6a03439d6c4dbc2a14"
+    },
+    "revelation/21.json": {
+      "bytes": 4312,
+      "sha256": "9c7ff508d603eb2dc0d2b98845d5993a0c2cecafea88782945d068d02f3db1ac"
+    },
+    "revelation/22.json": {
+      "bytes": 2463,
+      "sha256": "fa053db04f3c88e1b2db9e5edd06ce7d75245bd912e32a1356710fdd1414b223"
+    }
+  },
+  "preliminary": {
+    "accepted": 5932,
+    "rejected": 434,
+    "ambiguous": 5,
+    "strictAcceptedOutsideScreen": 1
+  },
+  "oldTestament": {
+    "verses": 23145,
+    "anyPositionAttributes": 0,
+    "aligned": 0
+  }
+}

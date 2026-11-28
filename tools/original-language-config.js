@@ -130,7 +130,7 @@ function validateBookConfig(config){
   const mapping = config.referenceMapping;
   if(!mapping || !['identity','identity-with-exceptions','explicit'].includes(mapping.strategy) || typeof mapping.verified !== 'boolean' || typeof mapping.evidence !== 'string' || !mapping.evidence.trim()) throw new TypeError('Explicit reference mapping strategy/evidence is required');
   if(mapping.verified && /^unknown(?:\/unverified)?$/i.test(mapping.evidence.trim())) throw new TypeError('Verified mapping needs reference evidence');
-  if(mapping.strategy === 'identity' && (mapping.overrides || mapping.ranges || mapping.tokenSplits)) throw new TypeError('Identity mapping cannot contain exceptions');
+  if(mapping.strategy === 'identity' && (mapping.overrides || mapping.ranges || mapping.tokenSplits || mapping.mergedTargets || mapping.omittedReaderVerses)) throw new TypeError('Identity mapping cannot contain exceptions');
   if(mapping.overrides && (typeof mapping.overrides !== 'object' || Array.isArray(mapping.overrides))) throw new TypeError('Invalid mapping overrides');
   for(const key of Object.keys(mapping.overrides || {})){
     if(!/^[1-9]\d*:[1-9]\d*$/.test(key)) throw new TypeError('Invalid source mapping key');
@@ -158,16 +158,32 @@ function validateBookConfig(config){
     if(next !== split.tokenCount) throw new TypeError('Uncovered split tokens');
     sourceTargets(config,ch,v);
   }
-  const targets = new Set();
+  const targets = new Map();
   config.sourceVerseCounts.forEach((count, i) => {
     for(let verse = 1; verse <= count; verse++){
       for(const target of sourceTargets(config, i + 1, verse)){
         const key = target.chapter + ':' + target.verse;
-        if(targets.has(key)) throw new TypeError('Reference mapping collision: ' + key);
-        targets.add(key);
+        if(!targets.has(key)) targets.set(key, []);
+        targets.get(key).push((i + 1) + ':' + verse);
       }
     }
   });
+  for(const [key, owners] of targets){
+    const merge = mapping.mergedTargets?.[key];
+    if(owners.length > 1 && (!Array.isArray(merge) || merge.length !== owners.length ||
+        owners.some((owner,index) => merge[index] !== owner || mapping.tokenSplits?.[owner]))) {
+      throw new TypeError('Reference mapping collision: ' + key);
+    }
+  }
+  for(const key of Object.keys(mapping.mergedTargets || {})){
+    if(!(targets.get(key)?.length > 1)) throw new TypeError('Invalid merged Reader reference: ' + key);
+  }
+  for(const [key, reason] of Object.entries(mapping.omittedReaderVerses || {})){
+    if(typeof reason !== 'string' || !reason.trim() || targets.get(key)?.length !== 1 ||
+        targets.get(key)[0] !== key || mapping.tokenSplits?.[key]){
+      throw new TypeError('Invalid omitted Reader reference: ' + key);
+    }
+  }
   for(let ch = 1; ch <= reader.chapters; ch++) for(let v = 1; v <= reader[ch].verses.length; v++){
     if(!targets.has(ch + ':' + v)) throw new TypeError('Missing Reader mapping: ' + ch + ':' + v);
   }

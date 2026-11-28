@@ -9,6 +9,28 @@ var WordStudyController = (function createWordStudyController(){
   var alignmentApi = fallbackAlignmentApi;
   var activeContext = null;
   var activeAlignment = {status:'unavailable', groups:[]};
+  var floatingClose;
+  var floatingClosePosition;
+
+  function updateFloatingClose(){
+    if(!floatingClose) return;
+    var view = elements();
+    if(view.panel.hidden || !view.panel.getClientRects().length){
+      floatingClose.hidden = true;
+      return;
+    }
+    var bounds = view.close.getBoundingClientRect();
+    var top = readerVisibleTop();
+    floatingClose.hidden = document.activeElement !== floatingClose &&
+      bounds.top >= top && bounds.bottom <= window.innerHeight;
+    if(!floatingClose.hidden && floatingClosePosition){
+      var right = document.documentElement.clientWidth - view.panel.getBoundingClientRect().right;
+      var width = floatingClose.offsetWidth;
+      floatingClosePosition.setProperty('top', Math.max(8, Math.min(top + 8, window.innerHeight - floatingClose.offsetHeight - 8)) + 'px');
+      floatingClosePosition.setProperty('right', Math.max(12, right >= width + 24 ? right - width - 12 :
+        document.documentElement.clientWidth - bounds.right) + 'px');
+    }
+  }
 
   function elements(){
     return {
@@ -38,11 +60,20 @@ var WordStudyController = (function createWordStudyController(){
     view.partOfSpeech.textContent = state === 'available' && result.partOfSpeech ? result.partOfSpeech : '';
     if(view.verse.textContent !== context.verseText) view.verse.textContent = context.verseText;
     view.definition.textContent = state === 'loading' ? 'Looking up this word...' : state === 'available' ? result.definition : result.message;
-    view.related.textContent = state === 'available' && Array.isArray(result.relatedWords) && result.relatedWords.length ? 'Related words: ' + result.relatedWords.join(', ') : '';
-    view.source.textContent = state === 'available' ? 'Public Domain Word Study' : '';
+    var webster = state === 'available' && typeof result.source === 'string' && result.source.startsWith('Webster');
+    view.related.textContent = state === 'available' && Array.isArray(result.relatedWords) && result.relatedWords.length ?
+      (webster ? 'Thesaurus suggestions: ' : 'Related words: ') + result.relatedWords.join(', ') : '';
+    view.source.textContent = state === 'available' ? (webster ? 'Historical English dictionary · Webster’s Unabridged' : result.source || '') : '';
+    if(state === 'available' && view.source.textContent.startsWith('Open English Wordnet')){
+      var attribution = document.createElement('a');
+      attribution.href = '/data/word-study/modern/NOTICE.txt';
+      attribution.textContent = view.source.textContent;
+      view.source.replaceChildren(attribution);
+    }
     view.status.textContent = state === 'loading' ? 'Looking up ' + context.displayWord + '.' : 'Studying ' + context.displayWord + ', ' + context.bookName + ' ' + context.chapter + ':' + context.verse + '.';
     var heading = document.getElementById('wordStudyHeading');
     if(heading && document.activeElement === activatingWord) heading.focus();
+    updateFloatingClose();
   }
 
   function clearOriginalLanguage(){
@@ -80,8 +111,9 @@ var WordStudyController = (function createWordStudyController(){
       if(linked) button.setAttribute('aria-description', 'Aligned with the highlighted English phrase.');
       else button.removeAttribute('aria-description');
     });
+    var sources = [...new Set(groups.map(function(group){return (group.source || activeAlignment.source).title;}))];
     document.getElementById('wordStudyAlignmentStatus').textContent = groups.length ?
-      'Verified phrase alignment: ' + activeAlignment.source.title + '.' :
+      'Verified phrase alignment: ' + sources.join(' / ') + '.' :
       'Exact word alignment is unavailable for this selection. Original-language entries, when available, describe the whole verse.';
   }
 
@@ -114,7 +146,18 @@ var WordStudyController = (function createWordStudyController(){
 
   function showOriginalDetails(record, selectedButton){
     var view = elements();
+    var groups = alignmentApi.matchingGroups(activeAlignment, {tokenIndex:record.panelTokenIndex??record.tokenIndex});
+    var phrases = groups.flatMap(function(group){
+      return group.english.map(function(span){ return activeContext.verseText.slice(span.start, span.end).trim(); });
+    });
+    var details = Object.assign({}, record, {inThisVerse:[...new Set(phrases)].join(' … '), language:displayLanguage(record.language)});
+    // The main G2316 sense appears in the XML derivation field and was dropped by the import.
+    if(details.language === 'Greek' && details.strongsNumber === 'G2316' && details.definition === 'figuratively, a magistrate; by Hebraism, very'){
+      details.definition = 'A deity, especially the supreme Divinity when used with the definite article. Figuratively, a magistrate; by Hebraism, very.';
+    }
     var fields = [
+      ['inThisVerse', 'In this verse'],
+      ['adjacentReference', 'Greek source reference'],
       ['surface', 'Surface'],
       ['language', 'Language'],
       ['lemma', 'Lemma'],
@@ -127,7 +170,7 @@ var WordStudyController = (function createWordStudyController(){
     ];
     view.originalDetails.textContent = '';
     fields.forEach(function(field){
-      var value = field[0] === 'language' ? displayLanguage(record[field[0]]) : record[field[0]];
+      var value = details[field[0]];
       if(value === null || value === undefined || value === '') return;
       var label = document.createElement('dt');
       var detail = document.createElement('dd');
@@ -137,7 +180,7 @@ var WordStudyController = (function createWordStudyController(){
       view.originalDetails.appendChild(detail);
     });
     view.originalDetails.hidden = false;
-    highlightAlignment({tokenIndex:record.tokenIndex});
+    highlightAlignment({tokenIndex:record.panelTokenIndex??record.tokenIndex});
     view.originalTokens.querySelectorAll('button').forEach(function(button){ button.setAttribute('aria-pressed', button === selectedButton ? 'true' : 'false'); });
     keepStudyFocusVisible(selectedButton);
   }
@@ -163,60 +206,138 @@ var WordStudyController = (function createWordStudyController(){
         var clearanceInset = closing ? 5 : 8;
         var top = readerVisibleTop() + clearanceInset;
         var bottom = window.innerHeight - clearanceInset;
+        if(!closing && floatingClose && !floatingClose.hidden){
+          var floating = floatingClose.getBoundingClientRect();
+          if(token.left < floating.right && token.right > floating.left) top = Math.max(top, floating.bottom + clearanceInset);
+        }
         var clearance = token.top < top ? token.top - top : token.bottom > bottom ? token.bottom - bottom : 0;
         if(clearance) surface.scrollBy({top:clearance<0?Math.floor(clearance):Math.ceil(clearance),behavior:'instant'});
       });
     });
   }
 
-  function renderOriginalLanguage(result){
+  function renderOriginalLanguage(result, verifiedAlignment){
     var view = elements();
     clearOriginalLanguage();
     if(!view.original || !result || result.status !== 'available' || !Array.isArray(result.records) || !result.records.length) return;
     view.original.hidden = false;
-    document.getElementById('wordStudyOriginalIntro').hidden = false;
-    view.originalTokens.setAttribute('dir', result.records.some(function(record){ return record.language === 'hebrew' || record.language === 'aramaic'; }) ? 'rtl' : 'ltr');
+    var rightToLeft = result.records.some(function(record){ return record.language === 'hebrew' || record.language === 'aramaic'; });
+    var intro = document.getElementById('wordStudyOriginalIntro');
+    intro.querySelector('.word-study-original-note').textContent = rightToLeft ?
+      'Original-language words in this verse. Read from right to left.' :
+      result.records[0].source?.startsWith('Scrivener 1894') ?
+        'Greek words from the Scrivener 1894 Textus Receptus.' :
+      result.records[0].source?.startsWith('Textus Receptus,') ?
+        'Greek words from the Textus Receptus.' : 'Original-language words in this verse';
+    var adjacent = [...new Set(result.records.map(function(record){return record.adjacentReference;}).filter(Boolean))];
+    if(adjacent.length) intro.querySelector('.word-study-original-note').textContent +=
+      ' Includes corresponding Greek words from '+adjacent.join(', ')+'.';
+    intro.hidden = false;
+    view.originalTokens.setAttribute('dir', rightToLeft ? 'rtl' : 'ltr');
     result.records.forEach(function(record){
       var button = document.createElement('button');
       button.type = 'button';
       button.className = 'word-study-original-token';
       button.textContent = record.surface;
-      button.setAttribute('aria-label', 'Original-language token ' + record.surface + ', ' + displayLanguage(record.language) + ', token ' + (record.tokenIndex + 1));
+      button.setAttribute('aria-label', 'Original-language token ' + record.surface + ', ' + displayLanguage(record.language) + ', token ' + (record.tokenIndex + 1) + (record.adjacentReference ? ' at '+record.adjacentReference : ''));
       button.setAttribute('aria-pressed', 'false');
       button.setAttribute('aria-describedby', 'wordStudyAlignmentStatus');
-      button.setAttribute('data-original-language-token-index', String(record.tokenIndex));
+      button.setAttribute('data-original-language-token-index', String(record.panelTokenIndex??record.tokenIndex));
       button.setAttribute('lang', record.language === 'hebrew' ? 'he' : record.language === 'aramaic' ? 'arc' : 'grc');
       button.__originalLanguageRecord = record;
       view.originalTokens.appendChild(button);
     });
-    activeAlignment = activeContext.alignmentTextVerified ? alignmentApi.lookup(activeContext, result.records) : {status:'unavailable',groups:[]};
+    // A cold open can load alignment while the verse's Hebrew or Greek data is in flight.
+    // Use it for the first rendering of these tokens, without revisiting a rendered panel.
+    if(alignmentApi !== readyAlignmentApi) activeContext = contextWithAlignment(activatingWord, activeContext);
+    activeAlignment = activeContext.alignmentTextVerified ?
+      (verifiedAlignment || alignmentApi.lookup(activeContext, result.records)) : {status:'unavailable',groups:[]};
     renderEnglishVerse();
+  }
+
+  function contextWithAlignment(word, context){
+    alignmentApi = readyAlignmentApi;
+    var englishWords = alignmentApi.wordSpans(word.closest('.reader-verse'));
+    var verified = englishWords.includes(word);
+    return Object.assign({}, context, {
+      alignmentTextVerified:verified,
+      englishStart:verified ? Number(word.getAttribute('data-word-study-start')) : null,
+      englishEnd:verified ? Number(word.getAttribute('data-word-study-end')) : null
+    });
   }
 
   function openFromWord(word, context, isCurrent){
     if(!word || !word.isConnected || !context || (isCurrent && !isCurrent())) return;
-    alignmentApi = readyAlignmentApi;
-    var englishWords = alignmentApi.wordSpans(word.closest('.reader-verse'));
-    context = Object.assign({}, context, {alignmentTextVerified:englishWords.includes(word), englishStart:Number(word.getAttribute('data-word-study-start')), englishEnd:Number(word.getAttribute('data-word-study-end'))});
+    context = contextWithAlignment(word, context);
     activatingWord = word;
     activeContext = context;
     activeAlignment = {status:'unavailable', groups:[]};
     var activeRequest = ++requestId;
+    var contextualDefinition = false;
+    function current(){ return activeRequest === requestId && word.isConnected && (!isCurrent || isCurrent()); }
     clearOriginalLanguage();
     setPanelState('loading', context, {});
     renderEnglishVerse();
     WordStudyProvider.lookup(context).then(function(result){
-      if(activeRequest !== requestId || !word.isConnected || (isCurrent && !isCurrent())) return;
+      if(!current() || contextualDefinition) return;
       setPanelState(result.status, context, result);
     }).catch(function(){
-      if(activeRequest !== requestId || !word.isConnected || (isCurrent && !isCurrent())) return;
+      if(!current() || contextualDefinition) return;
       setPanelState('unavailable', context, { message: 'Definition not available yet.' });
     });
     if(typeof OriginalLanguageWordStudyProvider !== 'undefined' && typeof OriginalLanguageWordStudyProvider.lookupVerse === 'function'){
-      OriginalLanguageWordStudyProvider.lookupVerse(context).then(function(result){
-        if(activeRequest === requestId && word.isConnected && (!isCurrent || isCurrent())) renderOriginalLanguage(result);
+      OriginalLanguageWordStudyProvider.lookupVerse(context).then(async function(result){
+        if(!current()) return;
+        if(alignmentApi !== readyAlignmentApi) activeContext = contextWithAlignment(word, activeContext);
+        var study = activeContext;
+        var verified = study.alignmentTextVerified && alignmentApi.lookup(study, result.records);
+        if(study.alignmentTextVerified && verified?.status !== 'available' && alignmentApi.lookupChapter){
+          var primary = alignmentApi.lookupChapter(study, result.records);
+          var alternate = !result.records[0]?.source?.startsWith('Textus Receptus,') && alignmentApi.lookupKjvWitness?.(study);
+          if(primary) verified = await primary;
+          if(verified?.status !== 'available' && alternate){
+            var witness = await alternate;
+            if(witness){
+              result = witness;
+              verified = witness.alignment;
+            }
+          }
+        }
+        if(!current()) return;
+        if(study.alignmentTextVerified && verified?.status !== 'available'){
+          var candidates = await Promise.all([
+            alignmentApi.lookupEdition?.(study,result.records),
+            alignmentApi.lookupCorpus?.(study,result.records),
+            !result.records[0]?.source?.startsWith('Textus Receptus,') && alignmentApi.lookupScrivenerWitness?.(study)
+          ]);
+          verified = candidates[0] || candidates[1];
+          if(!verified && candidates[2]){
+            result=candidates[2];
+            verified=result.alignment;
+          }
+        }
+        if(!current()) return;
+        if(study.alignmentTextVerified && alignmentApi.lookupExtension){
+          var supplemental = await alignmentApi.lookupExtension(study,result.records,verified);
+          if(supplemental){
+            result=supplemental;
+            verified=supplemental.alignment;
+          }
+        }
+        if(!current()) return;
+        if(study.alignmentTextVerified && alignmentApi.lookupContinuation){
+          var continuation=await alignmentApi.lookupContinuation(study,result.records,verified);
+          if(continuation){result=continuation;verified=continuation.alignment;}
+        }
+        if(!current()) return;
+        renderOriginalLanguage(result, verified);
+        var definition = alignmentApi.contextualDefinition?.(study,result.records,activeAlignment);
+        if(definition){
+          contextualDefinition = true;
+          setPanelState('available',study,definition);
+        }
       }).catch(function(){
-        if(activeRequest === requestId && word.isConnected && (!isCurrent || isCurrent())) clearOriginalLanguage();
+        if(current()) clearOriginalLanguage();
       });
     }
   }
@@ -285,7 +406,26 @@ var WordStudyController = (function createWordStudyController(){
       if(button && originalTokens.contains(button)) keepStudyFocusVisible(button);
     });
     var closeButton = elements().close;
-    if(closeButton) closeButton.addEventListener('focus', function(){ keepStudyFocusVisible(closeButton); });
+    if(closeButton){
+      closeButton.addEventListener('focus', function(){ keepStudyFocusVisible(closeButton); });
+      floatingClose = document.createElement('button');
+      floatingClose.type = 'button';
+      floatingClose.className = 'word-study-floating-close';
+      floatingClose.textContent = 'Close';
+      floatingClose.setAttribute('aria-label', 'Close Word Study panel');
+      floatingClose.hidden = true;
+      var sheet = Array.from(document.styleSheets).find(function(candidate){
+        return candidate.href && /\/css\/companion\.css(?:\?|$)/.test(candidate.href);
+      });
+      if(sheet){
+        var ruleIndex = sheet.insertRule('.word-study-floating-close {}', sheet.cssRules.length);
+        floatingClosePosition = sheet.cssRules[ruleIndex].style;
+      }
+      floatingClose.addEventListener('click', function(){ closeButton.click(); });
+      elements().panel.appendChild(floatingClose);
+      window.addEventListener('scroll', updateFloatingClose, {capture:true, passive:true});
+      window.addEventListener('resize', updateFloatingClose);
+    }
     if(originalTokens) originalTokens.addEventListener('click', function(event){
       var button = event.target.closest('[data-original-language-token-index]');
       if(button && originalTokens.contains(button)) showOriginalDetails(button.__originalLanguageRecord, button);

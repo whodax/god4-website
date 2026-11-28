@@ -1,0 +1,403 @@
+{
+  "sourceSha256": {
+    "vulgate": "5da5f3c07fa6896d4a2b45f5f309c3ece43e554fd059b31b8ae3688bbd182baf",
+    "enoch": "61dd5b372894e54c10f661740d0dd3fbfbfaeef4c99c55690eed4b4aae03f6d9",
+    "jubilees": "d8c6eaa3857c35d8e467a6c150178fc02395fc569527bedfc7687c43cc68d87f"
+  },
+  "verifiedEnglishAlignments": 0,
+  "clementine": {
+    "books": 73,
+    "byBook": {
+      "GEN": {
+        "numericAddresses": 1530,
+        "nonnumericRecords": 0,
+        "witnessNumericAddresses": 1530,
+        "englishNumericAddresses": 1531,
+        "sharedUniqueNumericAddresses": 1530,
+        "ambiguousWitnessAddresses": 0,
+        "witnessOnlyNumericAddresses": 0,
+        "englishOnlyNumericAddresses": 1
+      },
+      "EXO": {
+        "numericAddresses": 1211,
+        "nonnumericRecords": 0
+      },
+      "LEV": {
+        "numericAddresses": 858,
+        "nonnumericRecords": 0
+      },
+      "NUM": {
+        "numericAddresses": 1288,
+        "nonnumericRecords": 0
+      },
+      "DEU": {
+        "numericAddresses": 959,
+        "nonnumericRecords": 0
+      },
+      "JOS": {
+        "numericAddresses": 658,
+        "nonnumericRecords": 0
+      },
+      "JDG": {
+        "numericAddresses": 618,
+        "nonnumericRecords": 0
+      },
+      "RUT": {
+        "numericAddresses": 85,
+        "nonnumericRecords": 0
+      },
+      "1SA": {
+        "numericAddresses": 811,
+        "nonnumericRecords": 0
+      },
+      "2SA": {
+        "numericAddresses": 695,
+        "nonnumericRecords": 0
+      },
+      "1KI": {
+        "numericAddresses": 817,
+        "nonnumericRecords": 0
+      },
+      "2KI": {
+        "numericAddresses": 719,
+        "nonnumericRecords": 0
+      },
+      "1CH": {
+        "numericAddresses": 940,
+        "nonnumericRecords": 0
+      },
+      "2CH": {
+        "numericAddresses": 822,
+        "nonnumericRecords": 0
+      },
+      "EZR": {
+        "numericAddresses": 280,
+        "nonnumericRecords": 0
+      },
+      "NEH": {
+        "numericAddresses": 404,
+        "nonnumericRecords": 0
+      },
+      "TOB": {
+        "numericAddresses": 298,
+        "nonnumericRecords": 0,
+        "witnessNumericAddresses": 298,
+        "englishNumericAddresses": 298,
+        "sharedUniqueNumericAddresses": 298,
+        "ambiguousWitnessAddresses": 0,
+        "witnessOnlyNumericAddresses": 0,
+        "englishOnlyNumericAddresses": 0
+      },
+      "JDT": {
+        "numericAddresses": 346,
+        "nonnumericRecords": 0,
+        "witnessNumericAddresses": 346,
+        "englishNumericAddresses": 345,
+        "sharedUniqueNumericAddresses": 345,
+        "ambiguousWitnessAddresses": 0,
+        "witnessOnlyNumericAddresses": 1,
+        "englishOnlyNumericAddresses": 0
+      },
+      "EST": {
+        "numericAddresses": 275,
+        "nonnumericRecords": 0,
+        "witnessNumericAddresses": 275,
+        "englishNumericAddresses": 275,
+        "sharedUniqueNumericAddresses": 275,
+        "ambiguousWitnessAddresses": 0,
+        "witnessOnlyNumericAddresses": 0,
+        "englishOnlyNumericAddresses": 0
+      },
+      "JOB": {
+        "numericAddresses": 1070,
+        "nonnumericRecords": 0
+      },
+      "PSA": {
+        "numericAddresses": 2527,
+        "nonnumericRecords": 0,
+        "witnessNumericAddresses": 2527,
+        "englishNumericAddresses": 2530,
+        "sharedUniqueNumericAddresses": 2526,
+        "ambiguousWitnessAddresses": 0,
+        "witnessOnlyNumericAddresses": 1,
+        "englishOnlyNumericAddresses": 4
+      },
+      "PRO": {
+        "numericAddresses": 915,
+        "nonnumericRecords": 0
+      },
+      "ECC": {
+        "numericAddresses": 222,
+        "nonnumericRecords": 0
+      },
+      "SNG": {
+        "numericAddresses": 116,
+        "nonnumericRecords": 0
+      },
+      "WIS": {
+        "numericAddresses": 439,
+        "nonnumericRecords": 0,
+        "witnessNumericAddresses": 439,
+        "englishNumericAddresses": 439,
+        "sharedUniqueNumericAddresses": 439,
+        "ambiguousWitnessAddresses": 0,
+        "witnessOnlyNumericAddresses": 0,
+        "englishOnlyNumericAddresses": 0
+      },
+      "SIR": {
+        "numericAddresses": 1592,
+        "nonnumericRecords": 0,
+        "witnessNumericAddresses": 1592,
+        "englishNumericAddresses": 1591,
+        "sharedUniqueNumericAddresses": 1591,
+        "ambiguousWitnessAddresses": 0,
+        "witnessOnlyNumericAddresses": 1,
+        "englishOnlyNumericAddresses": 0
+      },
+      "ISA": {
+        "numericAddresses": 1292,
+        "nonnumericRecords": 0
+      },
+      "JER": {
+        "numericAddresses": 1363,
+        "nonnumericRecords": 0
+      },
+      "LAM": {
+        "numericAddresses": 154,
+        "nonnumericRecords": 0
+      },
+      "BAR": {
+        "numericAddresses": 213,
+        "nonnumericRecords": 0,
+        "witnessNumericAddresses": 213,
+        "englishNumericAddresses": 213,
+        "sharedUniqueNumericAddresses": 213,
+        "ambiguousWitnessAddresses": 0,
+        "witnessOnlyNumericAddresses": 0,
+        "englishOnlyNumericAddresses": 0
+      },
+      "EZK": {
+        "numericAddresses": 1272,
+        "nonnumericRecords": 0
+      },
+      "DAN": {
+        "numericAddresses": 531,
+        "nonnumericRecords": 0,
+        "witnessNumericAddresses": 531,
+        "englishNumericAddresses": 531,
+        "sharedUniqueNumericAddresses": 531,
+        "ambiguousWitnessAddresses": 0,
+        "witnessOnlyNumericAddresses": 0,
+        "englishOnlyNumericAddresses": 0
+      },
+      "HOS": {
+        "numericAddresses": 198,
+        "nonnumericRecords": 0
+      },
+      "JOL": {
+        "numericAddresses": 73,
+        "nonnumericRecords": 0
+      },
+      "AMO": {
+        "numericAddresses": 147,
+        "nonnumericRecords": 0
+      },
+      "OBA": {
+        "numericAddresses": 21,
+        "nonnumericRecords": 0
+      },
+      "JON": {
+        "numericAddresses": 48,
+        "nonnumericRecords": 0
+      },
+      "MIC": {
+        "numericAddresses": 104,
+        "nonnumericRecords": 0
+      },
+      "NAM": {
+        "numericAddresses": 47,
+        "nonnumericRecords": 0
+      },
+      "HAB": {
+        "numericAddresses": 56,
+        "nonnumericRecords": 0
+      },
+      "ZEP": {
+        "numericAddresses": 53,
+        "nonnumericRecords": 0
+      },
+      "HAG": {
+        "numericAddresses": 38,
+        "nonnumericRecords": 0
+      },
+      "ZEC": {
+        "numericAddresses": 211,
+        "nonnumericRecords": 0
+      },
+      "MAL": {
+        "numericAddresses": 55,
+        "nonnumericRecords": 0
+      },
+      "1MA": {
+        "numericAddresses": 929,
+        "nonnumericRecords": 0,
+        "witnessNumericAddresses": 929,
+        "englishNumericAddresses": 929,
+        "sharedUniqueNumericAddresses": 929,
+        "ambiguousWitnessAddresses": 0,
+        "witnessOnlyNumericAddresses": 0,
+        "englishOnlyNumericAddresses": 0
+      },
+      "2MA": {
+        "numericAddresses": 558,
+        "nonnumericRecords": 0,
+        "witnessNumericAddresses": 558,
+        "englishNumericAddresses": 558,
+        "sharedUniqueNumericAddresses": 558,
+        "ambiguousWitnessAddresses": 0,
+        "witnessOnlyNumericAddresses": 0,
+        "englishOnlyNumericAddresses": 0
+      },
+      "MAT": {
+        "numericAddresses": 1070,
+        "nonnumericRecords": 0
+      },
+      "MRK": {
+        "numericAddresses": 677,
+        "nonnumericRecords": 0
+      },
+      "LUK": {
+        "numericAddresses": 1151,
+        "nonnumericRecords": 0
+      },
+      "JHN": {
+        "numericAddresses": 879,
+        "nonnumericRecords": 0,
+        "witnessNumericAddresses": 879,
+        "englishNumericAddresses": 880,
+        "sharedUniqueNumericAddresses": 879,
+        "ambiguousWitnessAddresses": 0,
+        "witnessOnlyNumericAddresses": 0,
+        "englishOnlyNumericAddresses": 1
+      },
+      "ACT": {
+        "numericAddresses": 1004,
+        "nonnumericRecords": 0,
+        "witnessNumericAddresses": 1004,
+        "englishNumericAddresses": 1004,
+        "sharedUniqueNumericAddresses": 1004,
+        "ambiguousWitnessAddresses": 0,
+        "witnessOnlyNumericAddresses": 0,
+        "englishOnlyNumericAddresses": 0
+      },
+      "ROM": {
+        "numericAddresses": 433,
+        "nonnumericRecords": 0
+      },
+      "1CO": {
+        "numericAddresses": 437,
+        "nonnumericRecords": 0
+      },
+      "2CO": {
+        "numericAddresses": 255,
+        "nonnumericRecords": 0
+      },
+      "GAL": {
+        "numericAddresses": 149,
+        "nonnumericRecords": 0
+      },
+      "EPH": {
+        "numericAddresses": 155,
+        "nonnumericRecords": 0
+      },
+      "PHP": {
+        "numericAddresses": 104,
+        "nonnumericRecords": 0
+      },
+      "COL": {
+        "numericAddresses": 95,
+        "nonnumericRecords": 0
+      },
+      "1TH": {
+        "numericAddresses": 89,
+        "nonnumericRecords": 0
+      },
+      "2TH": {
+        "numericAddresses": 47,
+        "nonnumericRecords": 0
+      },
+      "1TI": {
+        "numericAddresses": 113,
+        "nonnumericRecords": 0
+      },
+      "2TI": {
+        "numericAddresses": 83,
+        "nonnumericRecords": 0
+      },
+      "TIT": {
+        "numericAddresses": 46,
+        "nonnumericRecords": 0
+      },
+      "PHM": {
+        "numericAddresses": 25,
+        "nonnumericRecords": 0
+      },
+      "HEB": {
+        "numericAddresses": 303,
+        "nonnumericRecords": 0
+      },
+      "JAS": {
+        "numericAddresses": 108,
+        "nonnumericRecords": 0
+      },
+      "1PE": {
+        "numericAddresses": 105,
+        "nonnumericRecords": 0
+      },
+      "2PE": {
+        "numericAddresses": 61,
+        "nonnumericRecords": 0
+      },
+      "1JN": {
+        "numericAddresses": 105,
+        "nonnumericRecords": 0
+      },
+      "2JN": {
+        "numericAddresses": 13,
+        "nonnumericRecords": 0
+      },
+      "3JN": {
+        "numericAddresses": 14,
+        "nonnumericRecords": 0
+      },
+      "JUD": {
+        "numericAddresses": 25,
+        "nonnumericRecords": 0
+      },
+      "REV": {
+        "numericAddresses": 405,
+        "nonnumericRecords": 0
+      }
+    }
+  },
+  "enoch": {
+    "witnessNumericAddresses": 1058,
+    "englishNumericAddresses": 1032,
+    "sharedUniqueNumericAddresses": 1027,
+    "ambiguousWitnessAddresses": 0,
+    "witnessOnlyNumericAddresses": 31,
+    "englishOnlyNumericAddresses": 5,
+    "nonnumericWitnessRecords": 0,
+    "branch": "EOTCed"
+  },
+  "jubilees": {
+    "witnessNumericAddresses": 1292,
+    "englishNumericAddresses": 1305,
+    "sharedUniqueNumericAddresses": 1290,
+    "ambiguousWitnessAddresses": 0,
+    "witnessOnlyNumericAddresses": 2,
+    "englishOnlyNumericAddresses": 15,
+    "nonnumericWitnessRecords": 2,
+    "branch": "EOTCed"
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "version": "ULT v91",
+    "revision": "35d215957f3203fd2e2fac5702ce14902d417f9d",
+    "archive": "https://git.door43.org/unfoldingWord/en_ult/archive/v91.zip",
+    "archiveSha256": "f5c08f7a50ef88afe7b4811acdee352b0302e9f0bf1269f217d97121d2113d44",
+    "contentsSha256": "e1491888e6534209b90d6ddc845f50e72fa63379997cfcab435659b4dd1f7c76",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "version": "UHB v3.0.0",
+    "revision": "74022f0fed012a3ef169886f595dd98e7b200543",
+    "archive": "https://git.door43.org/unfoldingWord/hbo_uhb/archive/v3.0.0.zip",
+    "archiveSha256": "c4abce7cad1532d9481b289fc3819d8ab0ca01ef41899e205117cd3dc8cac8b5",
+    "contentsSha256": "d4ee137ec5a938251f9454fdfa21d3805e8bc36d00c75a90bd151e216eac2971",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "version": "UGNT v0.34",
+    "revision": "fc95b2b8aad08bb65ab54628ab685413a1139e97",
+    "archive": "https://git.door43.org/unfoldingWord/el-x-koine_ugnt/archive/v0.34.zip",
+    "archiveSha256": "07318be27d0027146a62363c20ffedd0db695d7680f4b32c8ae8bd3020a29d00",
+    "contentsSha256": "3a55bddb383c776dd56a3c7fb3401b2eb523e8611d31ea66aced26840064999e",
+    "license": "CC BY-SA 4.0"
+  }
+]

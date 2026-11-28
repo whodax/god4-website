@@ -1,0 +1,6539 @@
+{
+  "baseline": "170063fcbb98fb7222202194ff986527032adef4",
+  "sourcePins": {
+    "crossWire": "4bcbfe45722fca396adbeac9c81025bbb173cb1e30296da90864f0400cb0e3f5",
+    "scrivener": {
+      "revision": "2bac2dae4a0961c84d6d544a40cbef8b8d8c4e32",
+      "sha256": "e61655e16e3c2d4078d4d0ae2fe063c3b9f90b109ede894a08d5f825b67f0b0b",
+      "noticeSha256": "f49cb4a21b5ed937c6163faa4e12bb1c21b839c43c7c59be615b376d10bc38e6"
+    },
+    "ult": {
+      "version": "ULT v92",
+      "revision": "e26603a14749fc3c2c908c2aa08b4367658ccf6c",
+      "archive": "https://git.door43.org/unfoldingWord/en_ult/archive/v92.zip",
+      "archiveSha256": "07151aafda1e40c372934c482411d3b9fc745935d30ebd587124227ff0a2473e",
+      "contentsSha256": "9cb1f6d419b60adfe039c3a5a088a9a77499a91e22ddb9d505317caaa0a0f03f",
+      "license": "CC BY-SA 4.0"
+    },
+    "original": [
+      {
+        "version": "UHB v3.0.0",
+        "revision": "74022f0fed012a3ef169886f595dd98e7b200543",
+        "archive": "https://git.door43.org/unfoldingWord/hbo_uhb/archive/v3.0.0.zip",
+        "archiveSha256": "c4abce7cad1532d9481b289fc3819d8ab0ca01ef41899e205117cd3dc8cac8b5",
+        "contentsSha256": "d4ee137ec5a938251f9454fdfa21d3805e8bc36d00c75a90bd151e216eac2971",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "version": "UGNT v0.34",
+        "revision": "fc95b2b8aad08bb65ab54628ab685413a1139e97",
+        "archive": "https://git.door43.org/unfoldingWord/el-x-koine_ugnt/archive/v0.34.zip",
+        "archiveSha256": "07318be27d0027146a62363c20ffedd0db695d7680f4b32c8ae8bd3020a29d00",
+        "contentsSha256": "3a55bddb383c776dd56a3c7fb3401b2eb523e8611d31ea66aced26840064999e",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "berean": {
+      "sha256": "aa2a9a0f004d015738cd1839c7c56c3be2549e0d4f4537090c2017268c223c60",
+      "license": "CC0 1.0",
+      "source": "https://bereanbible.com/downloads.htm"
+    }
+  },
+  "protectedPassages": 33,
+  "screening": {
+    "both external positional datasets resolved": 3909,
+    "ULT ambiguous original occurrence": 6192,
+    "Berean Berean witness order, identity, surface or morphology differs": 12283,
+    "ULT English tag splits or lacks selectable words": 66,
+    "Berean Berean witness token count differs": 2570,
+    "held-out": 33,
+    "Berean Berean has no nonsupplied group with supported morphology": 90,
+    "ULT explicit milestone identity or morphology differs": 33,
+    "ULT unbalanced alignment": 2,
+    "Reader witness unavailable or shifted": 1,
+    "ULT unsupported English markup": 229,
+    "CrossWire positional groups passed": 2556,
+    "KJV English or supplied-word boundaries differ": 153,
+    "CrossWire groups withheld for morphology": 360,
+    "ordered Greek witness differs": 436,
+    "missing position metadata": 11,
+    "incomplete Greek witness": 5
+  },
+  "editions": {
+    "web": {
+      "newVerses": 23,
+      "improvedVerses": 21,
+      "occurrences": 98,
+      "groups": 57,
+      "methods": {
+        "berean-ult-morphology": 27,
+        "exact-clause": 2,
+        "exact-edition": 12,
+        "terminal-punctuation": 3
+      },
+      "screening": {
+        "alreadyCovered": 2952,
+        "edition reference or witness differs": 2,
+        "overlap": 29
+      },
+      "priority": {
+        "gold": 1,
+        "of": 9,
+        "people": 1,
+        "joseph": 1,
+        "in": 3,
+        "your": 1,
+        "and": 4,
+        "a": 1,
+        "days": 1,
+        "flesh": 2,
+        "my": 7,
+        "the": 2,
+        "forever": 2,
+        "nations": 1,
+        "his": 1,
+        "mouth": 1,
+        "strength": 1,
+        "our": 1,
+        "god": 2,
+        "i": 3,
+        "will": 2,
+        "their": 1,
+        "to": 1,
+        "with": 2,
+        "save": 1,
+        "you": 1,
+        "have": 1,
+        "broken": 1,
+        "down": 1,
+        "heart": 1,
+        "has": 2,
+        "become": 1,
+        "out": 1,
+        "jerusalem": 1,
+        "but": 1,
+        "judah": 1,
+        "sheep": 1,
+        "hear": 1,
+        "voice": 1,
+        "know": 1,
+        "them": 1,
+        "they": 1,
+        "me": 1,
+        "love": 1
+      },
+      "books": {
+        "exodus": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 1,
+          "groups": 1,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "gold": 1
+          },
+          "books": {}
+        },
+        "numbers": {
+          "newVerses": 3,
+          "improvedVerses": 9,
+          "occurrences": 21,
+          "groups": 12,
+          "methods": {
+            "berean-ult-morphology": 2,
+            "exact-clause": 1,
+            "exact-edition": 9
+          },
+          "screening": {},
+          "priority": {
+            "of": 9,
+            "people": 1,
+            "joseph": 1
+          },
+          "books": {}
+        },
+        "deuteronomy": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 3,
+          "groups": 1,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "in": 1,
+            "your": 1
+          },
+          "books": {}
+        },
+        "1-samuel": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "exact-clause": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 1
+          },
+          "books": {}
+        },
+        "1-kings": {
+          "newVerses": 0,
+          "improvedVerses": 2,
+          "occurrences": 4,
+          "groups": 2,
+          "methods": {
+            "terminal-punctuation": 1,
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "in": 1,
+            "a": 1
+          },
+          "books": {}
+        },
+        "nehemiah": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 1,
+          "groups": 1,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "days": 1
+          },
+          "books": {}
+        },
+        "job": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 1,
+          "groups": 1,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "flesh": 1
+          },
+          "books": {}
+        },
+        "psalms": {
+          "newVerses": 14,
+          "improvedVerses": 4,
+          "occurrences": 43,
+          "groups": 21,
+          "methods": {
+            "berean-ult-morphology": 17,
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "my": 5,
+            "the": 2,
+            "forever": 2,
+            "nations": 1,
+            "his": 1,
+            "mouth": 1,
+            "strength": 1,
+            "our": 1,
+            "god": 2,
+            "i": 2,
+            "will": 2,
+            "their": 1,
+            "to": 1,
+            "with": 1,
+            "save": 1,
+            "and": 1,
+            "flesh": 1,
+            "you": 1,
+            "have": 1,
+            "broken": 1,
+            "down": 1,
+            "heart": 1,
+            "has": 1,
+            "become": 1,
+            "out": 1
+          },
+          "books": {}
+        },
+        "ecclesiastes": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "in": 1,
+            "jerusalem": 1
+          },
+          "books": {}
+        },
+        "joel": {
+          "newVerses": 2,
+          "improvedVerses": 0,
+          "occurrences": 4,
+          "groups": 2,
+          "methods": {
+            "berean-ult-morphology": 2
+          },
+          "screening": {},
+          "priority": {
+            "has": 1,
+            "but": 1,
+            "judah": 1
+          },
+          "books": {}
+        },
+        "luke": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 1,
+          "groups": 1,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {},
+          "books": {}
+        },
+        "john": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 13,
+          "groups": 11,
+          "methods": {
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "my": 2,
+            "sheep": 1,
+            "hear": 1,
+            "voice": 1,
+            "and": 2,
+            "i": 1,
+            "know": 1,
+            "them": 1,
+            "they": 1,
+            "me": 1
+          },
+          "books": {}
+        },
+        "2-corinthians": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 1,
+          "groups": 1,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "with": 1
+          },
+          "books": {}
+        },
+        "galatians": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 1,
+          "groups": 1,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "love": 1
+          },
+          "books": {}
+        }
+      }
+    },
+    "asv": {
+      "newVerses": 45,
+      "improvedVerses": 23,
+      "occurrences": 391,
+      "groups": 260,
+      "methods": {
+        "exact-clause": 13,
+        "exact-edition": 25,
+        "berean-ult-morphology": 12,
+        "terminal-punctuation": 19
+      },
+      "screening": {
+        "alreadyCovered": 13490,
+        "overlap": 9
+      },
+      "priority": {
+        "the": 22,
+        "ark": 2,
+        "days": 3,
+        "gold": 1,
+        "priest": 2,
+        "of": 18,
+        "people": 1,
+        "joseph": 1,
+        "and": 27,
+        "take": 1,
+        "our": 1,
+        "a": 8,
+        "king": 2,
+        "in": 8,
+        "covenant": 1,
+        "like": 1,
+        "man": 2,
+        "his": 3,
+        "mouth": 1,
+        "my": 6,
+        "strength": 1,
+        "their": 2,
+        "to": 7,
+        "year": 1,
+        "will": 3,
+        "save": 1,
+        "flesh": 1,
+        "god": 6,
+        "heart": 1,
+        "i": 6,
+        "out": 1,
+        "jerusalem": 2,
+        "but": 4,
+        "he": 9,
+        "answered": 1,
+        "said": 3,
+        "him": 8,
+        "that": 8,
+        "told": 1,
+        "is": 4,
+        "mother": 1,
+        "who": 1,
+        "are": 1,
+        "commanded": 1,
+        "multitude": 1,
+        "down": 1,
+        "on": 1,
+        "ground": 1,
+        "shall": 3,
+        "receive": 1,
+        "one": 2,
+        "such": 1,
+        "little": 1,
+        "child": 1,
+        "name": 1,
+        "me": 1,
+        "jesus": 1,
+        "christ": 1,
+        "son": 2,
+        "they": 2,
+        "were": 2,
+        "with": 2,
+        "after": 1,
+        "took": 1,
+        "them": 2,
+        "put": 1,
+        "away": 1,
+        "wife": 1,
+        "another": 1,
+        "against": 3,
+        "her": 1,
+        "both": 1,
+        "righteous": 1,
+        "all": 2,
+        "lord": 1,
+        "angel": 1,
+        "am": 1,
+        "stand": 1,
+        "was": 4,
+        "dead": 1,
+        "sat": 1,
+        "up": 3,
+        "speak": 1,
+        "be": 3,
+        "found": 1,
+        "then": 2,
+        "nation": 2,
+        "kingdom": 2,
+        "as": 1,
+        "moses": 1,
+        "wilderness": 1,
+        "even": 1,
+        "so": 1,
+        "must": 1,
+        "now": 1,
+        "about": 1,
+        "off": 1,
+        "have": 1,
+        "should": 1,
+        "you": 3,
+        "at": 2,
+        "therefore": 2,
+        "jews": 1,
+        "made": 1,
+        "over": 1,
+        "egypt": 1,
+        "house": 1,
+        "well": 1,
+        "done": 1,
+        "come": 2,
+        "there": 1,
+        "no": 1,
+        "fear": 1,
+        "eyes": 1,
+        "until": 1,
+        "love": 1,
+        "for": 1,
+        "first": 1,
+        "these": 1,
+        "things": 1,
+        "great": 1,
+        "yourselves": 1,
+        "under": 1,
+        "mighty": 1,
+        "hand": 1,
+        "may": 1,
+        "time": 1
+      },
+      "books": {
+        "genesis": {
+          "newVerses": 2,
+          "improvedVerses": 0,
+          "occurrences": 5,
+          "groups": 3,
+          "methods": {
+            "exact-clause": 1,
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "the": 2,
+            "ark": 2,
+            "days": 1
+          },
+          "books": {}
+        },
+        "exodus": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 1,
+          "groups": 1,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "gold": 1
+          },
+          "books": {}
+        },
+        "leviticus": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "the": 1,
+            "priest": 1
+          },
+          "books": {}
+        },
+        "numbers": {
+          "newVerses": 5,
+          "improvedVerses": 12,
+          "occurrences": 32,
+          "groups": 19,
+          "methods": {
+            "berean-ult-morphology": 2,
+            "exact-clause": 2,
+            "exact-edition": 10,
+            "terminal-punctuation": 3
+          },
+          "screening": {},
+          "priority": {
+            "of": 9,
+            "people": 1,
+            "joseph": 1,
+            "the": 2,
+            "and": 1,
+            "priest": 1,
+            "days": 1,
+            "take": 1,
+            "our": 1
+          },
+          "books": {}
+        },
+        "deuteronomy": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 5,
+          "groups": 2,
+          "methods": {
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "a": 2,
+            "and": 1
+          },
+          "books": {}
+        },
+        "1-samuel": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 1
+          },
+          "books": {}
+        },
+        "2-samuel": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "the": 1,
+            "king": 1
+          },
+          "books": {}
+        },
+        "1-kings": {
+          "newVerses": 0,
+          "improvedVerses": 3,
+          "occurrences": 6,
+          "groups": 3,
+          "methods": {
+            "terminal-punctuation": 1,
+            "exact-edition": 2
+          },
+          "screening": {},
+          "priority": {
+            "in": 1,
+            "a": 2
+          },
+          "books": {}
+        },
+        "nehemiah": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 1,
+          "groups": 1,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "days": 1
+          },
+          "books": {}
+        },
+        "job": {
+          "newVerses": 2,
+          "improvedVerses": 0,
+          "occurrences": 5,
+          "groups": 2,
+          "methods": {
+            "exact-clause": 1,
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "a": 2,
+            "covenant": 1,
+            "like": 1,
+            "man": 1
+          },
+          "books": {}
+        },
+        "psalms": {
+          "newVerses": 7,
+          "improvedVerses": 1,
+          "occurrences": 21,
+          "groups": 10,
+          "methods": {
+            "berean-ult-morphology": 7,
+            "exact-clause": 1
+          },
+          "screening": {},
+          "priority": {
+            "his": 1,
+            "mouth": 1,
+            "my": 3,
+            "strength": 1,
+            "their": 1,
+            "to": 1,
+            "the": 1,
+            "year": 1,
+            "will": 1,
+            "save": 1,
+            "and": 1,
+            "flesh": 1,
+            "god": 1,
+            "heart": 1,
+            "i": 1,
+            "out": 1
+          },
+          "books": {}
+        },
+        "ecclesiastes": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "in": 1,
+            "jerusalem": 1
+          },
+          "books": {}
+        },
+        "daniel": {
+          "newVerses": 2,
+          "improvedVerses": 0,
+          "occurrences": 2,
+          "groups": 2,
+          "methods": {
+            "exact-edition": 2
+          },
+          "screening": {},
+          "priority": {},
+          "books": {}
+        },
+        "joel": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 4,
+          "groups": 2,
+          "methods": {
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "in": 1,
+            "a": 1
+          },
+          "books": {}
+        },
+        "micah": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "exact-clause": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 1
+          },
+          "books": {}
+        },
+        "matthew": {
+          "newVerses": 3,
+          "improvedVerses": 0,
+          "occurrences": 42,
+          "groups": 31,
+          "methods": {
+            "exact-edition": 1,
+            "terminal-punctuation": 2
+          },
+          "screening": {},
+          "priority": {
+            "but": 1,
+            "he": 2,
+            "answered": 1,
+            "and": 4,
+            "said": 1,
+            "him": 2,
+            "that": 1,
+            "told": 1,
+            "is": 1,
+            "my": 3,
+            "mother": 1,
+            "who": 1,
+            "are": 1,
+            "commanded": 1,
+            "the": 2,
+            "multitude": 1,
+            "to": 1,
+            "down": 1,
+            "on": 1,
+            "ground": 1,
+            "shall": 1,
+            "receive": 1,
+            "one": 1,
+            "such": 1,
+            "little": 1,
+            "child": 1,
+            "in": 1,
+            "name": 1,
+            "me": 1
+          },
+          "books": {}
+        },
+        "mark": {
+          "newVerses": 4,
+          "improvedVerses": 0,
+          "occurrences": 48,
+          "groups": 33,
+          "methods": {
+            "terminal-punctuation": 3,
+            "exact-clause": 1
+          },
+          "screening": {},
+          "priority": {
+            "the": 3,
+            "of": 3,
+            "jesus": 1,
+            "christ": 1,
+            "son": 1,
+            "god": 1,
+            "and": 5,
+            "they": 1,
+            "that": 1,
+            "were": 1,
+            "with": 1,
+            "him": 4,
+            "after": 1,
+            "took": 1,
+            "to": 1,
+            "he": 1,
+            "them": 1,
+            "shall": 1,
+            "put": 1,
+            "away": 1,
+            "his": 1,
+            "wife": 1,
+            "another": 1,
+            "against": 1,
+            "her": 1
+          },
+          "books": {}
+        },
+        "luke": {
+          "newVerses": 6,
+          "improvedVerses": 0,
+          "occurrences": 71,
+          "groups": 49,
+          "methods": {
+            "exact-edition": 1,
+            "exact-clause": 4,
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 9,
+            "they": 1,
+            "were": 1,
+            "both": 1,
+            "righteous": 1,
+            "god": 2,
+            "in": 2,
+            "all": 1,
+            "the": 3,
+            "of": 2,
+            "lord": 1,
+            "angel": 1,
+            "said": 2,
+            "him": 1,
+            "i": 1,
+            "am": 1,
+            "that": 2,
+            "stand": 1,
+            "he": 4,
+            "was": 2,
+            "dead": 1,
+            "sat": 1,
+            "up": 1,
+            "to": 3,
+            "speak": 1,
+            "be": 2,
+            "is": 1,
+            "found": 1,
+            "then": 1,
+            "them": 1,
+            "nation": 2,
+            "shall": 1,
+            "against": 2,
+            "kingdom": 2
+          },
+          "books": {}
+        },
+        "john": {
+          "newVerses": 3,
+          "improvedVerses": 0,
+          "occurrences": 58,
+          "groups": 37,
+          "methods": {
+            "terminal-punctuation": 2,
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 1,
+            "as": 1,
+            "moses": 1,
+            "up": 2,
+            "the": 6,
+            "in": 1,
+            "wilderness": 1,
+            "even": 1,
+            "so": 1,
+            "must": 1,
+            "son": 1,
+            "of": 2,
+            "man": 1,
+            "be": 1,
+            "now": 1,
+            "was": 1,
+            "jerusalem": 1,
+            "about": 1,
+            "off": 1,
+            "but": 1,
+            "have": 1,
+            "a": 1,
+            "that": 2,
+            "i": 2,
+            "should": 1,
+            "you": 2,
+            "one": 1,
+            "at": 1,
+            "will": 1,
+            "therefore": 1,
+            "king": 1,
+            "jews": 1
+          },
+          "books": {}
+        },
+        "acts": {
+          "newVerses": 2,
+          "improvedVerses": 0,
+          "occurrences": 20,
+          "groups": 15,
+          "methods": {
+            "exact-clause": 2
+          },
+          "screening": {},
+          "priority": {
+            "and": 3,
+            "he": 1,
+            "made": 1,
+            "him": 1,
+            "over": 1,
+            "egypt": 1,
+            "all": 1,
+            "his": 1,
+            "house": 1,
+            "well": 1,
+            "done": 1,
+            "that": 1,
+            "come": 1
+          },
+          "books": {}
+        },
+        "romans": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 8,
+          "groups": 6,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "there": 1,
+            "is": 1,
+            "no": 1,
+            "fear": 1,
+            "of": 1,
+            "god": 1,
+            "their": 1,
+            "eyes": 1
+          },
+          "books": {}
+        },
+        "1-corinthians": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 8,
+          "groups": 6,
+          "methods": {
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "but": 1,
+            "i": 1,
+            "will": 1,
+            "at": 1,
+            "until": 1
+          },
+          "books": {}
+        },
+        "galatians": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 1,
+          "groups": 1,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "love": 1
+          },
+          "books": {}
+        },
+        "1-timothy": {
+          "newVerses": 3,
+          "improvedVerses": 0,
+          "occurrences": 26,
+          "groups": 21,
+          "methods": {
+            "terminal-punctuation": 3,
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "for": 1,
+            "was": 1,
+            "first": 1,
+            "then": 1,
+            "these": 1,
+            "things": 1,
+            "i": 1,
+            "to": 1,
+            "come": 1,
+            "but": 1,
+            "with": 1,
+            "is": 1,
+            "great": 1
+          },
+          "books": {}
+        },
+        "1-peter": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 17,
+          "groups": 11,
+          "methods": {
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "yourselves": 1,
+            "therefore": 1,
+            "under": 1,
+            "the": 1,
+            "mighty": 1,
+            "hand": 1,
+            "of": 1,
+            "god": 1,
+            "that": 1,
+            "he": 1,
+            "may": 1,
+            "you": 1,
+            "in": 1,
+            "time": 1
+          },
+          "books": {}
+        }
+      }
+    },
+    "kjv": {
+      "newVerses": 79,
+      "improvedVerses": 72,
+      "occurrences": 389,
+      "groups": 183,
+      "methods": {
+        "berean-ult-morphology": 151
+      },
+      "screening": {
+        "alreadyCovered": 72716,
+        "overlap": 36
+      },
+      "priority": {
+        "and": 20,
+        "again": 1,
+        "her": 1,
+        "came": 2,
+        "their": 11,
+        "stood": 1,
+        "my": 51,
+        "son": 4,
+        "fathers": 1,
+        "people": 2,
+        "sword": 1,
+        "do": 1,
+        "i": 21,
+        "have": 8,
+        "will": 5,
+        "out": 2,
+        "he": 7,
+        "found": 3,
+        "his": 19,
+        "children": 1,
+        "gave": 2,
+        "given": 1,
+        "shall": 2,
+        "stand": 2,
+        "know": 1,
+        "said": 2,
+        "they": 5,
+        "father": 4,
+        "turned": 1,
+        "the": 13,
+        "mighty": 1,
+        "work": 1,
+        "heard": 2,
+        "in": 3,
+        "house": 1,
+        "had": 1,
+        "destroyed": 1,
+        "am": 4,
+        "our": 9,
+        "god": 9,
+        "we": 2,
+        "far": 1,
+        "sons": 1,
+        "head": 2,
+        "righteous": 3,
+        "heart": 4,
+        "mouth": 2,
+        "king": 2,
+        "feet": 5,
+        "wicked": 6,
+        "name": 1,
+        "on": 1,
+        "many": 2,
+        "strength": 2,
+        "is": 3,
+        "up": 2,
+        "life": 4,
+        "years": 1,
+        "cut": 1,
+        "off": 1,
+        "from": 3,
+        "evil": 4,
+        "see": 1,
+        "enemies": 1,
+        "fall": 1,
+        "to": 2,
+        "voice": 1,
+        "covenant": 1,
+        "most": 1,
+        "high": 1,
+        "return": 1,
+        "for": 1,
+        "save": 1,
+        "that": 1,
+        "may": 1,
+        "dwell": 1,
+        "set": 1,
+        "of": 1,
+        "sins": 1,
+        "were": 1,
+        "princes": 1,
+        "full": 1,
+        "servant": 2,
+        "throne": 1,
+        "days": 1,
+        "are": 1,
+        "was": 1,
+        "love": 1,
+        "great": 1,
+        "good": 1,
+        "seen": 1,
+        "wall": 1,
+        "inheritance": 1,
+        "your": 1,
+        "saw": 1,
+        "commanded": 1
+      },
+      "books": {
+        "genesis": {
+          "newVerses": 1,
+          "improvedVerses": 6,
+          "occurrences": 14,
+          "groups": 8,
+          "methods": {
+            "berean-ult-morphology": 7
+          },
+          "screening": {},
+          "priority": {
+            "and": 1,
+            "again": 1,
+            "her": 1,
+            "came": 1,
+            "their": 1,
+            "stood": 1,
+            "my": 2,
+            "son": 1,
+            "fathers": 1
+          },
+          "books": {}
+        },
+        "exodus": {
+          "newVerses": 2,
+          "improvedVerses": 5,
+          "occurrences": 18,
+          "groups": 7,
+          "methods": {
+            "berean-ult-morphology": 7
+          },
+          "screening": {},
+          "priority": {
+            "my": 2,
+            "people": 1,
+            "sword": 1,
+            "and": 4,
+            "do": 1,
+            "i": 2,
+            "have": 1,
+            "will": 1,
+            "out": 1
+          },
+          "books": {}
+        },
+        "leviticus": {
+          "newVerses": 2,
+          "improvedVerses": 0,
+          "occurrences": 5,
+          "groups": 2,
+          "methods": {
+            "berean-ult-morphology": 2
+          },
+          "screening": {},
+          "priority": {
+            "he": 1,
+            "found": 1,
+            "and": 1,
+            "his": 1,
+            "children": 1
+          },
+          "books": {}
+        },
+        "numbers": {
+          "newVerses": 2,
+          "improvedVerses": 2,
+          "occurrences": 10,
+          "groups": 5,
+          "methods": {
+            "berean-ult-morphology": 4
+          },
+          "screening": {},
+          "priority": {
+            "he": 2,
+            "gave": 2,
+            "and": 1,
+            "i": 1,
+            "have": 1,
+            "given": 1
+          },
+          "books": {}
+        },
+        "deuteronomy": {
+          "newVerses": 1,
+          "improvedVerses": 5,
+          "occurrences": 10,
+          "groups": 6,
+          "methods": {
+            "berean-ult-morphology": 6
+          },
+          "screening": {},
+          "priority": {
+            "shall": 2,
+            "stand": 2,
+            "know": 1,
+            "he": 1,
+            "said": 1,
+            "his": 1
+          },
+          "books": {}
+        },
+        "joshua": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 1,
+          "groups": 1,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {},
+          "books": {}
+        },
+        "judges": {
+          "newVerses": 0,
+          "improvedVerses": 3,
+          "occurrences": 5,
+          "groups": 3,
+          "methods": {
+            "berean-ult-morphology": 3
+          },
+          "screening": {},
+          "priority": {
+            "they": 1,
+            "my": 1,
+            "father": 1,
+            "came": 1
+          },
+          "books": {}
+        },
+        "1-samuel": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "he": 1,
+            "turned": 1
+          },
+          "books": {}
+        },
+        "2-samuel": {
+          "newVerses": 1,
+          "improvedVerses": 1,
+          "occurrences": 4,
+          "groups": 2,
+          "methods": {
+            "berean-ult-morphology": 2
+          },
+          "screening": {},
+          "priority": {
+            "the": 2,
+            "mighty": 1
+          },
+          "books": {}
+        },
+        "1-kings": {
+          "newVerses": 0,
+          "improvedVerses": 3,
+          "occurrences": 12,
+          "groups": 5,
+          "methods": {
+            "berean-ult-morphology": 3
+          },
+          "screening": {},
+          "priority": {
+            "and": 2,
+            "his": 3,
+            "father": 1,
+            "work": 1,
+            "i": 1,
+            "heard": 1,
+            "in": 1,
+            "house": 1
+          },
+          "books": {}
+        },
+        "2-kings": {
+          "newVerses": 0,
+          "improvedVerses": 3,
+          "occurrences": 9,
+          "groups": 4,
+          "methods": {
+            "berean-ult-morphology": 3
+          },
+          "screening": {},
+          "priority": {
+            "his": 2,
+            "father": 2,
+            "and": 1,
+            "he": 1,
+            "had": 1,
+            "destroyed": 1
+          },
+          "books": {}
+        },
+        "ezra": {
+          "newVerses": 2,
+          "improvedVerses": 0,
+          "occurrences": 8,
+          "groups": 3,
+          "methods": {
+            "berean-ult-morphology": 2
+          },
+          "screening": {},
+          "priority": {
+            "i": 1,
+            "am": 1,
+            "our": 1,
+            "god": 1,
+            "we": 1,
+            "have": 1
+          },
+          "books": {}
+        },
+        "nehemiah": {
+          "newVerses": 1,
+          "improvedVerses": 2,
+          "occurrences": 5,
+          "groups": 3,
+          "methods": {
+            "berean-ult-morphology": 3
+          },
+          "screening": {},
+          "priority": {
+            "our": 1,
+            "god": 1,
+            "far": 1,
+            "their": 1,
+            "sons": 1
+          },
+          "books": {}
+        },
+        "job": {
+          "newVerses": 4,
+          "improvedVerses": 4,
+          "occurrences": 21,
+          "groups": 9,
+          "methods": {
+            "berean-ult-morphology": 8
+          },
+          "screening": {},
+          "priority": {
+            "my": 6,
+            "and": 1,
+            "his": 1,
+            "head": 1,
+            "i": 2,
+            "have": 1,
+            "found": 1,
+            "am": 1,
+            "righteous": 1,
+            "heart": 1,
+            "mouth": 1
+          },
+          "books": {}
+        },
+        "psalms": {
+          "newVerses": 52,
+          "improvedVerses": 22,
+          "occurrences": 204,
+          "groups": 95,
+          "methods": {
+            "berean-ult-morphology": 74
+          },
+          "screening": {},
+          "priority": {
+            "my": 32,
+            "king": 2,
+            "and": 8,
+            "god": 5,
+            "i": 9,
+            "his": 10,
+            "feet": 4,
+            "the": 8,
+            "wicked": 5,
+            "their": 7,
+            "name": 1,
+            "mouth": 1,
+            "on": 1,
+            "head": 1,
+            "many": 1,
+            "strength": 2,
+            "is": 2,
+            "up": 2,
+            "life": 3,
+            "years": 1,
+            "am": 2,
+            "cut": 1,
+            "off": 1,
+            "from": 3,
+            "evil": 2,
+            "we": 1,
+            "see": 1,
+            "our": 5,
+            "enemies": 1,
+            "fall": 1,
+            "will": 2,
+            "to": 1,
+            "heart": 3,
+            "voice": 1,
+            "covenant": 1,
+            "most": 1,
+            "high": 1,
+            "righteous": 2,
+            "they": 4,
+            "return": 1,
+            "in": 1,
+            "said": 1,
+            "for": 1,
+            "save": 1,
+            "that": 1,
+            "may": 1,
+            "dwell": 1,
+            "set": 1,
+            "of": 1,
+            "sins": 1,
+            "were": 1,
+            "princes": 1,
+            "full": 1,
+            "have": 2,
+            "servant": 2,
+            "found": 1,
+            "throne": 1,
+            "days": 1,
+            "are": 1,
+            "was": 1,
+            "love": 1,
+            "great": 1
+          },
+          "books": {}
+        },
+        "proverbs": {
+          "newVerses": 2,
+          "improvedVerses": 6,
+          "occurrences": 19,
+          "groups": 10,
+          "methods": {
+            "berean-ult-morphology": 8
+          },
+          "screening": {},
+          "priority": {
+            "their": 1,
+            "feet": 1,
+            "my": 4,
+            "son": 3,
+            "the": 3,
+            "evil": 1,
+            "good": 1,
+            "and": 1,
+            "wicked": 1,
+            "many": 1
+          },
+          "books": {}
+        },
+        "ecclesiastes": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 3,
+          "groups": 1,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "i": 1,
+            "have": 1,
+            "seen": 1
+          },
+          "books": {}
+        },
+        "song-of-solomon": {
+          "newVerses": 2,
+          "improvedVerses": 1,
+          "occurrences": 7,
+          "groups": 3,
+          "methods": {
+            "berean-ult-morphology": 3
+          },
+          "screening": {},
+          "priority": {
+            "our": 1,
+            "wall": 1,
+            "is": 1,
+            "heard": 1,
+            "i": 1,
+            "have": 1
+          },
+          "books": {}
+        },
+        "lamentations": {
+          "newVerses": 1,
+          "improvedVerses": 1,
+          "occurrences": 6,
+          "groups": 3,
+          "methods": {
+            "berean-ult-morphology": 2
+          },
+          "screening": {},
+          "priority": {
+            "my": 1,
+            "life": 1,
+            "our": 1,
+            "inheritance": 1,
+            "to": 1
+          },
+          "books": {}
+        },
+        "daniel": {
+          "newVerses": 1,
+          "improvedVerses": 2,
+          "occurrences": 7,
+          "groups": 3,
+          "methods": {
+            "berean-ult-morphology": 3
+          },
+          "screening": {},
+          "priority": {
+            "your": 1,
+            "god": 2,
+            "in": 1,
+            "my": 1,
+            "his": 1
+          },
+          "books": {}
+        },
+        "hosea": {
+          "newVerses": 3,
+          "improvedVerses": 0,
+          "occurrences": 9,
+          "groups": 3,
+          "methods": {
+            "berean-ult-morphology": 3
+          },
+          "screening": {},
+          "priority": {
+            "my": 1,
+            "i": 2,
+            "will": 2,
+            "out": 1
+          },
+          "books": {}
+        },
+        "joel": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "my": 1,
+            "people": 1
+          },
+          "books": {}
+        },
+        "amos": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "he": 1,
+            "saw": 1
+          },
+          "books": {}
+        },
+        "jonah": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 1,
+          "groups": 1,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {},
+          "books": {}
+        },
+        "micah": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 3,
+          "groups": 2,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "evil": 1,
+            "their": 1
+          },
+          "books": {}
+        },
+        "malachi": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "i": 1,
+            "commanded": 1
+          },
+          "books": {}
+        }
+      }
+    },
+    "ylt": {
+      "newVerses": 6,
+      "improvedVerses": 3,
+      "occurrences": 40,
+      "groups": 30,
+      "methods": {
+        "berean-ult-morphology": 4,
+        "terminal-punctuation": 4,
+        "exact-edition": 1
+      },
+      "screening": {
+        "alreadyCovered": 1311,
+        "ambiguous": 13
+      },
+      "priority": {
+        "of": 2,
+        "and": 5,
+        "four": 1,
+        "cities": 1,
+        "my": 2,
+        "flesh": 1,
+        "in": 1,
+        "was": 3,
+        "with": 1,
+        "god": 1,
+        "for": 2,
+        "this": 1,
+        "cause": 1,
+        "i": 1,
+        "the": 1,
+        "father": 1,
+        "our": 1,
+        "lord": 1,
+        "jesus": 1,
+        "christ": 1,
+        "us": 1
+      },
+      "books": {
+        "numbers": {
+          "newVerses": 1,
+          "improvedVerses": 1,
+          "occurrences": 3,
+          "groups": 2,
+          "methods": {
+            "berean-ult-morphology": 2
+          },
+          "screening": {},
+          "priority": {
+            "of": 1
+          },
+          "books": {}
+        },
+        "joshua": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 4,
+          "groups": 3,
+          "methods": {
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 1,
+            "four": 1,
+            "cities": 1
+          },
+          "books": {}
+        },
+        "ezra": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 1
+          },
+          "books": {}
+        },
+        "psalms": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 3,
+          "groups": 1,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 1,
+            "my": 1,
+            "flesh": 1
+          },
+          "books": {}
+        },
+        "luke": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 1,
+          "groups": 1,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {},
+          "books": {}
+        },
+        "john": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 8,
+          "groups": 8,
+          "methods": {
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "in": 1,
+            "was": 3,
+            "and": 2,
+            "with": 1,
+            "god": 1
+          },
+          "books": {}
+        },
+        "ephesians": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 15,
+          "groups": 10,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "for": 1,
+            "this": 1,
+            "cause": 1,
+            "i": 1,
+            "my": 1,
+            "the": 1,
+            "father": 1,
+            "of": 1,
+            "our": 1,
+            "lord": 1,
+            "jesus": 1,
+            "christ": 1
+          },
+          "books": {}
+        },
+        "1-thessalonians": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 4,
+          "groups": 4,
+          "methods": {
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "for": 1,
+            "us": 1
+          },
+          "books": {}
+        }
+      }
+    },
+    "dby": {
+      "newVerses": 30,
+      "improvedVerses": 14,
+      "occurrences": 122,
+      "groups": 83,
+      "methods": {
+        "terminal-punctuation": 12,
+        "berean-ult-morphology": 17,
+        "exact-edition": 10,
+        "exact-clause": 5
+      },
+      "screening": {
+        "alreadyCovered": 3656
+      },
+      "priority": {
+        "days": 1,
+        "gold": 1,
+        "of": 5,
+        "the": 4,
+        "priest": 1,
+        "years": 1,
+        "and": 11,
+        "died": 1,
+        "in": 2,
+        "many": 1,
+        "hands": 1,
+        "a": 4,
+        "covenant": 2,
+        "his": 1,
+        "mouth": 1,
+        "knowledge": 1,
+        "my": 5,
+        "strength": 1,
+        "peace": 1,
+        "their": 1,
+        "to": 1,
+        "with": 2,
+        "will": 1,
+        "save": 1,
+        "they": 3,
+        "set": 1,
+        "moses": 1,
+        "judah": 1,
+        "he": 2,
+        "flesh": 1,
+        "god": 2,
+        "heart": 1,
+        "i": 2,
+        "out": 1,
+        "jerusalem": 1,
+        "behold": 1,
+        "your": 1,
+        "house": 1,
+        "is": 2,
+        "left": 1,
+        "you": 1,
+        "said": 2,
+        "seven": 1,
+        "man": 1,
+        "had": 1,
+        "two": 1,
+        "sons": 1,
+        "sheep": 1,
+        "hear": 1,
+        "voice": 1,
+        "know": 1,
+        "them": 1,
+        "me": 1,
+        "all": 1,
+        "people": 1,
+        "saw": 1,
+        "him": 1,
+        "love": 1,
+        "great": 1
+      },
+      "books": {
+        "exodus": {
+          "newVerses": 1,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 2,
+          "methods": {
+            "terminal-punctuation": 1,
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "days": 1,
+            "gold": 1
+          },
+          "books": {}
+        },
+        "numbers": {
+          "newVerses": 3,
+          "improvedVerses": 1,
+          "occurrences": 8,
+          "groups": 5,
+          "methods": {
+            "terminal-punctuation": 1,
+            "berean-ult-morphology": 2,
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "of": 2,
+            "the": 1,
+            "priest": 1,
+            "years": 1
+          },
+          "books": {}
+        },
+        "1-samuel": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 3,
+          "groups": 2,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 1,
+            "died": 1
+          },
+          "books": {}
+        },
+        "1-kings": {
+          "newVerses": 1,
+          "improvedVerses": 1,
+          "occurrences": 3,
+          "groups": 2,
+          "methods": {
+            "terminal-punctuation": 1,
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "in": 1
+          },
+          "books": {}
+        },
+        "job": {
+          "newVerses": 3,
+          "improvedVerses": 0,
+          "occurrences": 6,
+          "groups": 4,
+          "methods": {
+            "terminal-punctuation": 1,
+            "exact-clause": 2
+          },
+          "screening": {},
+          "priority": {
+            "many": 1,
+            "hands": 1,
+            "a": 2,
+            "covenant": 2
+          },
+          "books": {}
+        },
+        "psalms": {
+          "newVerses": 15,
+          "improvedVerses": 5,
+          "occurrences": 43,
+          "groups": 23,
+          "methods": {
+            "berean-ult-morphology": 10,
+            "exact-edition": 6,
+            "terminal-punctuation": 3,
+            "exact-clause": 1
+          },
+          "screening": {},
+          "priority": {
+            "the": 1,
+            "his": 1,
+            "mouth": 1,
+            "knowledge": 1,
+            "my": 3,
+            "strength": 1,
+            "peace": 1,
+            "their": 1,
+            "to": 1,
+            "with": 2,
+            "will": 1,
+            "save": 1,
+            "they": 1,
+            "set": 1,
+            "of": 3,
+            "moses": 1,
+            "judah": 1,
+            "he": 1,
+            "and": 3,
+            "flesh": 1,
+            "god": 1,
+            "heart": 1,
+            "i": 1,
+            "out": 1
+          },
+          "books": {}
+        },
+        "proverbs": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "the": 1
+          },
+          "books": {}
+        },
+        "ecclesiastes": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "in": 1,
+            "jerusalem": 1
+          },
+          "books": {}
+        },
+        "daniel": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "a": 1
+          },
+          "books": {}
+        },
+        "micah": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "exact-clause": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 1
+          },
+          "books": {}
+        },
+        "matthew": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 8,
+          "groups": 6,
+          "methods": {
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "behold": 1,
+            "your": 1,
+            "house": 1,
+            "is": 1,
+            "left": 1,
+            "you": 1
+          },
+          "books": {}
+        },
+        "mark": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 4,
+          "groups": 3,
+          "methods": {
+            "exact-clause": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 1,
+            "they": 1,
+            "said": 1,
+            "seven": 1
+          },
+          "books": {}
+        },
+        "luke": {
+          "newVerses": 2,
+          "improvedVerses": 0,
+          "occurrences": 10,
+          "groups": 8,
+          "methods": {
+            "berean-ult-morphology": 1,
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 1,
+            "he": 1,
+            "said": 1,
+            "a": 1,
+            "man": 1,
+            "had": 1,
+            "two": 1,
+            "sons": 1
+          },
+          "books": {}
+        },
+        "john": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 13,
+          "groups": 11,
+          "methods": {
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "my": 2,
+            "sheep": 1,
+            "hear": 1,
+            "voice": 1,
+            "and": 2,
+            "i": 1,
+            "know": 1,
+            "them": 1,
+            "they": 1,
+            "me": 1
+          },
+          "books": {}
+        },
+        "acts": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 10,
+          "groups": 9,
+          "methods": {
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 2,
+            "all": 1,
+            "the": 1,
+            "people": 1,
+            "saw": 1,
+            "him": 1,
+            "god": 1
+          },
+          "books": {}
+        },
+        "galatians": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 1,
+          "groups": 1,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "love": 1
+          },
+          "books": {}
+        },
+        "1-timothy": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 3,
+          "groups": 3,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "is": 1,
+            "great": 1
+          },
+          "books": {}
+        }
+      }
+    },
+    "webster": {
+      "newVerses": 143,
+      "improvedVerses": 59,
+      "occurrences": 1380,
+      "groups": 962,
+      "methods": {
+        "exact-edition": 158,
+        "exact-clause": 19,
+        "terminal-punctuation": 19,
+        "berean-ult-morphology": 7
+      },
+      "screening": {
+        "alreadyCovered": 25333,
+        "overlap": 9
+      },
+      "priority": {
+        "man": 10,
+        "an": 5,
+        "angel": 3,
+        "the": 84,
+        "place": 1,
+        "altar": 2,
+        "by": 7,
+        "name": 4,
+        "blood": 4,
+        "times": 2,
+        "with": 11,
+        "and": 94,
+        "of": 52,
+        "tribe": 2,
+        "people": 4,
+        "joseph": 1,
+        "say": 3,
+        "a": 25,
+        "nations": 3,
+        "mountains": 1,
+        "cities": 3,
+        "in": 30,
+        "israel": 3,
+        "god": 20,
+        "two": 3,
+        "years": 3,
+        "jerusalem": 3,
+        "days": 2,
+        "king": 1,
+        "darkness": 2,
+        "waters": 1,
+        "brother": 2,
+        "covenant": 1,
+        "world": 2,
+        "my": 12,
+        "strength": 1,
+        "peace": 1,
+        "righteousness": 6,
+        "princes": 1,
+        "i": 8,
+        "will": 3,
+        "moab": 2,
+        "year": 2,
+        "save": 1,
+        "they": 16,
+        "set": 2,
+        "to": 31,
+        "moses": 1,
+        "ephraim": 1,
+        "from": 7,
+        "heaven": 2,
+        "for": 20,
+        "like": 3,
+        "heart": 3,
+        "night": 1,
+        "good": 1,
+        "understanding": 1,
+        "wisdom": 2,
+        "babylon": 1,
+        "kings": 1,
+        "but": 8,
+        "judah": 1,
+        "iniquity": 1,
+        "now": 3,
+        "when": 8,
+        "jesus": 8,
+        "had": 3,
+        "heard": 3,
+        "that": 19,
+        "was": 10,
+        "cast": 3,
+        "into": 9,
+        "he": 18,
+        "came": 1,
+        "which": 7,
+        "is": 21,
+        "sea": 2,
+        "time": 2,
+        "kingdom": 1,
+        "at": 4,
+        "hand": 1,
+        "have": 3,
+        "it": 6,
+        "been": 2,
+        "said": 6,
+        "who": 3,
+        "are": 4,
+        "saw": 3,
+        "son": 2,
+        "among": 3,
+        "themselves": 1,
+        "this": 8,
+        "come": 3,
+        "him": 16,
+        "let": 1,
+        "us": 2,
+        "on": 7,
+        "his": 13,
+        "inheritance": 2,
+        "keep": 1,
+        "house": 1,
+        "disciples": 4,
+        "morning": 1,
+        "all": 14,
+        "chief": 1,
+        "priests": 1,
+        "elders": 1,
+        "took": 4,
+        "against": 1,
+        "put": 5,
+        "death": 1,
+        "as": 4,
+        "went": 3,
+        "answered": 2,
+        "them": 11,
+        "saying": 6,
+        "mother": 2,
+        "or": 1,
+        "asked": 1,
+        "what": 4,
+        "we": 5,
+        "many": 3,
+        "spirit": 2,
+        "out": 2,
+        "evil": 3,
+        "multitude": 1,
+        "seven": 3,
+        "four": 2,
+        "thousand": 1,
+        "full": 2,
+        "up": 2,
+        "sat": 1,
+        "how": 3,
+        "were": 3,
+        "much": 1,
+        "must": 2,
+        "first": 1,
+        "be": 11,
+        "again": 2,
+        "stood": 1,
+        "both": 5,
+        "righteous": 1,
+        "lord": 6,
+        "make": 1,
+        "our": 3,
+        "life": 2,
+        "every": 4,
+        "not": 12,
+        "five": 1,
+        "one": 2,
+        "take": 2,
+        "build": 1,
+        "able": 1,
+        "dead": 3,
+        "found": 1,
+        "also": 3,
+        "after": 2,
+        "new": 1,
+        "you": 2,
+        "their": 2,
+        "words": 1,
+        "third": 1,
+        "day": 2,
+        "there": 3,
+        "while": 1,
+        "eat": 1,
+        "another": 1,
+        "back": 1,
+        "no": 4,
+        "more": 2,
+        "therefore": 3,
+        "tell": 1,
+        "made": 2,
+        "do": 2,
+        "shall": 3,
+        "turned": 2,
+        "before": 2,
+        "great": 2,
+        "carried": 1,
+        "whom": 6,
+        "laid": 2,
+        "gate": 1,
+        "temple": 2,
+        "called": 2,
+        "killed": 1,
+        "fathers": 1,
+        "tree": 1,
+        "hands": 1,
+        "neither": 1,
+        "part": 1,
+        "nor": 1,
+        "right": 1,
+        "afraid": 1,
+        "sent": 1,
+        "walk": 1,
+        "ways": 1,
+        "between": 1,
+        "faith": 2,
+        "together": 1,
+        "know": 3,
+        "why": 1,
+        "should": 3,
+        "fear": 2,
+        "eyes": 1,
+        "things": 4,
+        "men": 2,
+        "these": 1,
+        "three": 1,
+        "yet": 1,
+        "only": 1,
+        "other": 1,
+        "jews": 1,
+        "love": 2,
+        "strong": 1,
+        "power": 1,
+        "might": 2,
+        "am": 1,
+        "may": 2,
+        "christ": 1,
+        "because": 1,
+        "truth": 1,
+        "gave": 1,
+        "himself": 1,
+        "sin": 2,
+        "given": 2,
+        "speak": 1,
+        "become": 1,
+        "being": 1,
+        "than": 2,
+        "away": 1,
+        "sins": 1,
+        "joy": 1,
+        "fall": 1,
+        "your": 1,
+        "gold": 1,
+        "silver": 1,
+        "voice": 1,
+        "same": 1,
+        "drink": 1,
+        "wine": 1,
+        "wrath": 1,
+        "without": 1,
+        "fire": 1,
+        "holy": 1
+      },
+      "books": {
+        "exodus": {
+          "newVerses": 1,
+          "improvedVerses": 5,
+          "occurrences": 11,
+          "groups": 7,
+          "methods": {
+            "exact-edition": 6
+          },
+          "screening": {},
+          "priority": {
+            "man": 1,
+            "an": 2,
+            "angel": 1,
+            "the": 1,
+            "place": 1,
+            "altar": 1,
+            "by": 1,
+            "name": 1
+          },
+          "books": {}
+        },
+        "leviticus": {
+          "newVerses": 0,
+          "improvedVerses": 2,
+          "occurrences": 5,
+          "groups": 3,
+          "methods": {
+            "exact-edition": 2
+          },
+          "screening": {},
+          "priority": {
+            "the": 1,
+            "blood": 1,
+            "times": 1,
+            "with": 1
+          },
+          "books": {}
+        },
+        "numbers": {
+          "newVerses": 5,
+          "improvedVerses": 11,
+          "occurrences": 33,
+          "groups": 17,
+          "methods": {
+            "exact-clause": 2,
+            "exact-edition": 13,
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 1,
+            "of": 13,
+            "the": 2,
+            "tribe": 2,
+            "people": 1,
+            "joseph": 1,
+            "say": 1
+          },
+          "books": {}
+        },
+        "deuteronomy": {
+          "newVerses": 3,
+          "improvedVerses": 1,
+          "occurrences": 10,
+          "groups": 6,
+          "methods": {
+            "terminal-punctuation": 1,
+            "exact-edition": 3
+          },
+          "screening": {},
+          "priority": {
+            "a": 2,
+            "and": 1,
+            "the": 1,
+            "nations": 1,
+            "mountains": 1
+          },
+          "books": {}
+        },
+        "joshua": {
+          "newVerses": 2,
+          "improvedVerses": 1,
+          "occurrences": 5,
+          "groups": 4,
+          "methods": {
+            "exact-edition": 3
+          },
+          "screening": {},
+          "priority": {
+            "cities": 3,
+            "and": 1
+          },
+          "books": {}
+        },
+        "judges": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "the": 1
+          },
+          "books": {}
+        },
+        "1-samuel": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 1
+          },
+          "books": {}
+        },
+        "2-samuel": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 3,
+          "groups": 2,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "in": 1
+          },
+          "books": {}
+        },
+        "1-kings": {
+          "newVerses": 1,
+          "improvedVerses": 8,
+          "occurrences": 17,
+          "groups": 10,
+          "methods": {
+            "exact-edition": 9
+          },
+          "screening": {},
+          "priority": {
+            "in": 3,
+            "and": 1,
+            "israel": 1,
+            "god": 1,
+            "two": 1,
+            "years": 1,
+            "a": 2
+          },
+          "books": {}
+        },
+        "2-kings": {
+          "newVerses": 1,
+          "improvedVerses": 2,
+          "occurrences": 6,
+          "groups": 5,
+          "methods": {
+            "exact-edition": 3
+          },
+          "screening": {},
+          "priority": {
+            "in": 1,
+            "jerusalem": 1,
+            "israel": 1,
+            "years": 1
+          },
+          "books": {}
+        },
+        "nehemiah": {
+          "newVerses": 1,
+          "improvedVerses": 2,
+          "occurrences": 8,
+          "groups": 7,
+          "methods": {
+            "exact-edition": 3
+          },
+          "screening": {},
+          "priority": {
+            "days": 1,
+            "the": 1
+          },
+          "books": {}
+        },
+        "esther": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 3,
+          "groups": 2,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "the": 1,
+            "king": 1
+          },
+          "books": {}
+        },
+        "job": {
+          "newVerses": 5,
+          "improvedVerses": 4,
+          "occurrences": 14,
+          "groups": 10,
+          "methods": {
+            "exact-edition": 9
+          },
+          "screening": {},
+          "priority": {
+            "man": 1,
+            "god": 2,
+            "the": 2,
+            "darkness": 1,
+            "waters": 1,
+            "a": 2,
+            "brother": 1,
+            "covenant": 1
+          },
+          "books": {}
+        },
+        "psalms": {
+          "newVerses": 34,
+          "improvedVerses": 10,
+          "occurrences": 86,
+          "groups": 53,
+          "methods": {
+            "exact-edition": 39,
+            "berean-ult-morphology": 6
+          },
+          "screening": {},
+          "priority": {
+            "and": 6,
+            "the": 10,
+            "world": 2,
+            "in": 1,
+            "god": 6,
+            "my": 3,
+            "strength": 1,
+            "peace": 1,
+            "righteousness": 4,
+            "princes": 1,
+            "i": 1,
+            "will": 2,
+            "moab": 2,
+            "year": 1,
+            "with": 2,
+            "save": 1,
+            "they": 1,
+            "set": 1,
+            "to": 1,
+            "of": 2,
+            "moses": 1,
+            "ephraim": 1,
+            "from": 1,
+            "heaven": 1,
+            "for": 1,
+            "israel": 1,
+            "like": 1,
+            "heart": 1,
+            "a": 1,
+            "night": 1,
+            "good": 1
+          },
+          "books": {}
+        },
+        "proverbs": {
+          "newVerses": 2,
+          "improvedVerses": 4,
+          "occurrences": 11,
+          "groups": 6,
+          "methods": {
+            "exact-edition": 4,
+            "terminal-punctuation": 1,
+            "exact-clause": 1
+          },
+          "screening": {},
+          "priority": {
+            "blood": 1,
+            "understanding": 1,
+            "the": 1,
+            "and": 2,
+            "a": 2,
+            "brother": 1
+          },
+          "books": {}
+        },
+        "ecclesiastes": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 1,
+          "groups": 1,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "wisdom": 1
+          },
+          "books": {}
+        },
+        "song-of-solomon": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 3,
+          "groups": 2,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 1
+          },
+          "books": {}
+        },
+        "daniel": {
+          "newVerses": 5,
+          "improvedVerses": 0,
+          "occurrences": 7,
+          "groups": 6,
+          "methods": {
+            "exact-edition": 5
+          },
+          "screening": {},
+          "priority": {
+            "a": 1,
+            "babylon": 1,
+            "kings": 1
+          },
+          "books": {}
+        },
+        "hosea": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "a": 1
+          },
+          "books": {}
+        },
+        "joel": {
+          "newVerses": 1,
+          "improvedVerses": 1,
+          "occurrences": 8,
+          "groups": 4,
+          "methods": {
+            "exact-edition": 2
+          },
+          "screening": {},
+          "priority": {
+            "in": 1,
+            "a": 1,
+            "but": 1,
+            "judah": 1,
+            "and": 1,
+            "jerusalem": 1
+          },
+          "books": {}
+        },
+        "amos": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 4,
+          "groups": 2,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "two": 1,
+            "years": 1,
+            "the": 1
+          },
+          "books": {}
+        },
+        "micah": {
+          "newVerses": 0,
+          "improvedVerses": 2,
+          "occurrences": 3,
+          "groups": 2,
+          "methods": {
+            "exact-clause": 2
+          },
+          "screening": {},
+          "priority": {
+            "iniquity": 1,
+            "and": 1
+          },
+          "books": {}
+        },
+        "nahum": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 1,
+          "groups": 1,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {},
+          "books": {}
+        },
+        "zechariah": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 3,
+          "groups": 2,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "the": 1,
+            "angel": 1
+          },
+          "books": {}
+        },
+        "matthew": {
+          "newVerses": 9,
+          "improvedVerses": 0,
+          "occurrences": 148,
+          "groups": 98,
+          "methods": {
+            "terminal-punctuation": 5,
+            "exact-edition": 2,
+            "exact-clause": 2
+          },
+          "screening": {},
+          "priority": {
+            "now": 1,
+            "when": 3,
+            "jesus": 3,
+            "had": 1,
+            "heard": 2,
+            "that": 3,
+            "was": 3,
+            "cast": 1,
+            "into": 2,
+            "he": 2,
+            "and": 9,
+            "came": 1,
+            "in": 2,
+            "which": 1,
+            "is": 3,
+            "the": 10,
+            "sea": 1,
+            "of": 3,
+            "from": 1,
+            "time": 1,
+            "to": 4,
+            "say": 1,
+            "for": 3,
+            "kingdom": 1,
+            "heaven": 1,
+            "at": 2,
+            "hand": 1,
+            "have": 1,
+            "it": 1,
+            "been": 1,
+            "said": 2,
+            "an": 2,
+            "a": 2,
+            "who": 1,
+            "are": 1,
+            "my": 2,
+            "but": 1,
+            "saw": 1,
+            "son": 1,
+            "they": 1,
+            "among": 1,
+            "themselves": 1,
+            "this": 1,
+            "come": 2,
+            "him": 2,
+            "let": 1,
+            "us": 1,
+            "on": 1,
+            "his": 3,
+            "inheritance": 1,
+            "i": 1,
+            "will": 1,
+            "keep": 1,
+            "house": 1,
+            "with": 1,
+            "disciples": 1,
+            "morning": 1,
+            "all": 1,
+            "chief": 1,
+            "priests": 1,
+            "elders": 1,
+            "people": 1,
+            "took": 1,
+            "against": 1,
+            "put": 1,
+            "death": 1,
+            "like": 1,
+            "as": 1
+          },
+          "books": {}
+        },
+        "mark": {
+          "newVerses": 12,
+          "improvedVerses": 0,
+          "occurrences": 170,
+          "groups": 126,
+          "methods": {
+            "exact-clause": 2,
+            "terminal-punctuation": 4,
+            "exact-edition": 6
+          },
+          "screening": {},
+          "priority": {
+            "and": 18,
+            "his": 4,
+            "disciples": 1,
+            "as": 1,
+            "they": 4,
+            "went": 1,
+            "to": 4,
+            "the": 7,
+            "of": 3,
+            "he": 6,
+            "answered": 2,
+            "them": 3,
+            "saying": 2,
+            "is": 2,
+            "my": 3,
+            "mother": 1,
+            "or": 1,
+            "asked": 1,
+            "him": 6,
+            "what": 1,
+            "name": 2,
+            "for": 1,
+            "we": 1,
+            "are": 1,
+            "many": 2,
+            "but": 1,
+            "when": 2,
+            "saw": 2,
+            "sea": 1,
+            "it": 1,
+            "had": 1,
+            "been": 1,
+            "a": 2,
+            "spirit": 1,
+            "out": 1,
+            "an": 1,
+            "evil": 1,
+            "took": 3,
+            "from": 1,
+            "multitude": 1,
+            "put": 1,
+            "into": 2,
+            "seven": 2,
+            "among": 2,
+            "four": 1,
+            "thousand": 1,
+            "full": 1,
+            "up": 1,
+            "said": 1,
+            "jesus": 1,
+            "sat": 1,
+            "how": 1,
+            "people": 1,
+            "cast": 2,
+            "that": 2,
+            "were": 1,
+            "in": 1,
+            "much": 1,
+            "must": 1,
+            "first": 1,
+            "be": 1,
+            "all": 1,
+            "nations": 1,
+            "again": 1,
+            "say": 1,
+            "stood": 1,
+            "by": 1,
+            "this": 1
+          },
+          "books": {}
+        },
+        "luke": {
+          "newVerses": 12,
+          "improvedVerses": 0,
+          "occurrences": 149,
+          "groups": 112,
+          "methods": {
+            "exact-edition": 8,
+            "exact-clause": 4
+          },
+          "screening": {},
+          "priority": {
+            "and": 12,
+            "they": 2,
+            "were": 1,
+            "both": 1,
+            "righteous": 1,
+            "god": 2,
+            "in": 5,
+            "all": 2,
+            "the": 8,
+            "of": 4,
+            "lord": 2,
+            "to": 7,
+            "make": 1,
+            "a": 2,
+            "people": 1,
+            "for": 4,
+            "righteousness": 1,
+            "him": 1,
+            "days": 1,
+            "our": 1,
+            "life": 1,
+            "now": 1,
+            "his": 1,
+            "went": 1,
+            "jerusalem": 1,
+            "every": 1,
+            "year": 1,
+            "at": 1,
+            "man": 2,
+            "are": 1,
+            "not": 4,
+            "five": 1,
+            "two": 1,
+            "one": 1,
+            "them": 3,
+            "is": 4,
+            "with": 1,
+            "take": 1,
+            "saying": 2,
+            "this": 3,
+            "build": 1,
+            "was": 3,
+            "able": 1,
+            "he": 2,
+            "be": 2,
+            "my": 2,
+            "son": 1,
+            "dead": 1,
+            "again": 1,
+            "found": 1,
+            "also": 1,
+            "after": 1,
+            "new": 1,
+            "blood": 1,
+            "which": 1,
+            "you": 1,
+            "their": 1,
+            "words": 1,
+            "as": 1
+          },
+          "books": {}
+        },
+        "john": {
+          "newVerses": 5,
+          "improvedVerses": 0,
+          "occurrences": 68,
+          "groups": 53,
+          "methods": {
+            "terminal-punctuation": 1,
+            "exact-edition": 4
+          },
+          "screening": {},
+          "priority": {
+            "and": 5,
+            "the": 3,
+            "third": 1,
+            "day": 1,
+            "there": 2,
+            "was": 2,
+            "a": 1,
+            "in": 2,
+            "of": 3,
+            "mother": 1,
+            "jesus": 1,
+            "while": 1,
+            "his": 2,
+            "disciples": 2,
+            "him": 2,
+            "saying": 2,
+            "eat": 1,
+            "is": 2,
+            "one": 1,
+            "another": 1,
+            "from": 1,
+            "many": 1,
+            "went": 1,
+            "back": 1,
+            "no": 1,
+            "more": 1,
+            "with": 1,
+            "they": 1,
+            "said": 1,
+            "therefore": 1,
+            "what": 2,
+            "this": 1,
+            "that": 1,
+            "he": 2,
+            "we": 1,
+            "tell": 1
+          },
+          "books": {}
+        },
+        "acts": {
+          "newVerses": 13,
+          "improvedVerses": 0,
+          "occurrences": 212,
+          "groups": 153,
+          "methods": {
+            "exact-edition": 6,
+            "terminal-punctuation": 4,
+            "exact-clause": 3
+          },
+          "screening": {},
+          "priority": {
+            "the": 13,
+            "have": 2,
+            "i": 2,
+            "made": 1,
+            "of": 7,
+            "all": 2,
+            "that": 5,
+            "jesus": 2,
+            "both": 1,
+            "to": 4,
+            "do": 1,
+            "and": 11,
+            "shall": 1,
+            "be": 2,
+            "turned": 1,
+            "into": 3,
+            "darkness": 1,
+            "blood": 1,
+            "before": 1,
+            "great": 1,
+            "day": 1,
+            "lord": 2,
+            "come": 1,
+            "a": 2,
+            "man": 1,
+            "from": 2,
+            "his": 1,
+            "was": 2,
+            "carried": 1,
+            "whom": 5,
+            "they": 4,
+            "laid": 2,
+            "at": 1,
+            "gate": 1,
+            "temple": 2,
+            "which": 1,
+            "is": 3,
+            "called": 2,
+            "them": 2,
+            "killed": 1,
+            "life": 1,
+            "god": 4,
+            "dead": 2,
+            "our": 2,
+            "fathers": 1,
+            "up": 1,
+            "on": 3,
+            "tree": 1,
+            "set": 1,
+            "when": 2,
+            "had": 1,
+            "hands": 1,
+            "neither": 1,
+            "part": 1,
+            "nor": 1,
+            "in": 3,
+            "this": 2,
+            "for": 1,
+            "heart": 1,
+            "not": 1,
+            "right": 1,
+            "he": 3,
+            "him": 1,
+            "afraid": 1,
+            "said": 2,
+            "what": 1,
+            "it": 2,
+            "therefore": 1,
+            "sent": 1,
+            "who": 1,
+            "times": 1,
+            "nations": 1,
+            "walk": 1,
+            "ways": 1,
+            "put": 1,
+            "no": 1,
+            "between": 1,
+            "us": 1,
+            "by": 2,
+            "faith": 1,
+            "together": 1,
+            "with": 2,
+            "like": 1,
+            "know": 1,
+            "we": 1,
+            "why": 1,
+            "should": 2,
+            "you": 1
+          },
+          "books": {}
+        },
+        "romans": {
+          "newVerses": 2,
+          "improvedVerses": 0,
+          "occurrences": 20,
+          "groups": 15,
+          "methods": {
+            "exact-edition": 2
+          },
+          "screening": {},
+          "priority": {
+            "there": 1,
+            "is": 1,
+            "no": 2,
+            "fear": 1,
+            "of": 1,
+            "god": 1,
+            "their": 1,
+            "eyes": 1,
+            "to": 1,
+            "man": 1,
+            "evil": 2,
+            "for": 1,
+            "things": 1,
+            "all": 1,
+            "men": 1
+          },
+          "books": {}
+        },
+        "1-corinthians": {
+          "newVerses": 2,
+          "improvedVerses": 0,
+          "occurrences": 21,
+          "groups": 18,
+          "methods": {
+            "exact-edition": 2
+          },
+          "screening": {},
+          "priority": {
+            "and": 2,
+            "now": 1,
+            "faith": 1,
+            "these": 1,
+            "three": 1,
+            "but": 1,
+            "the": 1,
+            "for": 1,
+            "must": 1,
+            "put": 2,
+            "on": 2
+          },
+          "books": {}
+        },
+        "2-corinthians": {
+          "newVerses": 2,
+          "improvedVerses": 0,
+          "occurrences": 21,
+          "groups": 17,
+          "methods": {
+            "exact-edition": 2
+          },
+          "screening": {},
+          "priority": {
+            "on": 1,
+            "yet": 1,
+            "not": 3,
+            "but": 2,
+            "in": 1,
+            "for": 1,
+            "things": 1,
+            "only": 1,
+            "the": 1,
+            "lord": 1,
+            "also": 1,
+            "men": 1
+          },
+          "books": {}
+        },
+        "galatians": {
+          "newVerses": 1,
+          "improvedVerses": 1,
+          "occurrences": 8,
+          "groups": 6,
+          "methods": {
+            "exact-clause": 1,
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 1,
+            "the": 1,
+            "other": 1,
+            "jews": 1,
+            "with": 1,
+            "him": 1,
+            "love": 1
+          },
+          "books": {}
+        },
+        "ephesians": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 15,
+          "groups": 11,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "my": 1,
+            "be": 1,
+            "strong": 1,
+            "in": 2,
+            "the": 2,
+            "lord": 1,
+            "and": 1,
+            "power": 1,
+            "of": 1,
+            "his": 1,
+            "might": 1
+          },
+          "books": {}
+        },
+        "philippians": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 33,
+          "groups": 17,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "i": 3,
+            "know": 2,
+            "both": 3,
+            "how": 2,
+            "to": 6,
+            "be": 3,
+            "and": 4,
+            "in": 1,
+            "am": 1,
+            "full": 1
+          },
+          "books": {}
+        },
+        "colossians": {
+          "newVerses": 2,
+          "improvedVerses": 0,
+          "occurrences": 33,
+          "groups": 30,
+          "methods": {
+            "exact-edition": 1,
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 3,
+            "he": 1,
+            "is": 1,
+            "before": 1,
+            "by": 1,
+            "him": 1,
+            "all": 2,
+            "things": 1,
+            "whom": 1,
+            "we": 2,
+            "every": 3,
+            "man": 3,
+            "in": 2,
+            "wisdom": 1,
+            "that": 1,
+            "may": 1,
+            "christ": 1,
+            "jesus": 1
+          },
+          "books": {}
+        },
+        "2-thessalonians": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 24,
+          "groups": 15,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 1,
+            "with": 1,
+            "all": 1,
+            "of": 2,
+            "in": 1,
+            "them": 1,
+            "that": 2,
+            "because": 1,
+            "they": 2,
+            "not": 1,
+            "the": 2,
+            "love": 1,
+            "truth": 1,
+            "might": 1,
+            "be": 1
+          },
+          "books": {}
+        },
+        "1-timothy": {
+          "newVerses": 3,
+          "improvedVerses": 0,
+          "occurrences": 27,
+          "groups": 20,
+          "methods": {
+            "exact-edition": 3
+          },
+          "screening": {},
+          "priority": {
+            "who": 1,
+            "gave": 1,
+            "himself": 1,
+            "a": 1,
+            "for": 2,
+            "all": 2,
+            "in": 1,
+            "time": 1,
+            "are": 1,
+            "turned": 1,
+            "after": 1,
+            "them": 1,
+            "that": 2,
+            "sin": 1,
+            "also": 1,
+            "may": 1,
+            "fear": 1
+          },
+          "books": {}
+        },
+        "2-timothy": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 18,
+          "groups": 14,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "all": 1,
+            "given": 1,
+            "by": 1,
+            "of": 1,
+            "god": 1,
+            "and": 1,
+            "for": 4,
+            "in": 1,
+            "righteousness": 1
+          },
+          "books": {}
+        },
+        "titus": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 9,
+          "groups": 7,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "but": 1,
+            "speak": 1,
+            "the": 1,
+            "things": 1,
+            "which": 1,
+            "become": 1
+          },
+          "books": {}
+        },
+        "hebrews": {
+          "newVerses": 2,
+          "improvedVerses": 0,
+          "occurrences": 31,
+          "groups": 16,
+          "methods": {
+            "exact-edition": 2
+          },
+          "screening": {},
+          "priority": {
+            "being": 1,
+            "made": 1,
+            "than": 2,
+            "the": 1,
+            "as": 1,
+            "he": 1,
+            "by": 1,
+            "inheritance": 1,
+            "a": 1,
+            "more": 1,
+            "name": 1,
+            "they": 1,
+            "for": 1,
+            "not": 1,
+            "that": 1,
+            "of": 2,
+            "and": 1,
+            "should": 1,
+            "take": 1,
+            "away": 1,
+            "sins": 1
+          },
+          "books": {}
+        },
+        "james": {
+          "newVerses": 3,
+          "improvedVerses": 0,
+          "occurrences": 33,
+          "groups": 23,
+          "methods": {
+            "terminal-punctuation": 1,
+            "exact-edition": 1,
+            "exact-clause": 1
+          },
+          "screening": {},
+          "priority": {
+            "my": 1,
+            "it": 2,
+            "all": 1,
+            "joy": 1,
+            "when": 1,
+            "fall": 1,
+            "into": 1,
+            "therefore": 1,
+            "to": 3,
+            "him": 2,
+            "that": 1,
+            "do": 1,
+            "and": 2,
+            "not": 1,
+            "is": 2,
+            "sin": 1,
+            "your": 1,
+            "gold": 1,
+            "silver": 1
+          },
+          "books": {}
+        },
+        "1-peter": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 26,
+          "groups": 14,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "but": 1,
+            "the": 2,
+            "man": 1,
+            "of": 4,
+            "heart": 1,
+            "in": 1,
+            "that": 1,
+            "which": 2,
+            "is": 2,
+            "not": 1,
+            "a": 1,
+            "and": 1,
+            "spirit": 1,
+            "god": 1,
+            "great": 1
+          },
+          "books": {}
+        },
+        "revelation": {
+          "newVerses": 3,
+          "improvedVerses": 0,
+          "occurrences": 66,
+          "groups": 42,
+          "methods": {
+            "exact-clause": 1,
+            "exact-edition": 2
+          },
+          "screening": {},
+          "priority": {
+            "and": 6,
+            "to": 1,
+            "them": 1,
+            "were": 1,
+            "given": 1,
+            "seven": 1,
+            "the": 9,
+            "angel": 1,
+            "i": 1,
+            "heard": 1,
+            "a": 1,
+            "voice": 1,
+            "from": 1,
+            "four": 1,
+            "of": 6,
+            "altar": 1,
+            "god": 2,
+            "same": 1,
+            "shall": 2,
+            "drink": 1,
+            "wine": 1,
+            "wrath": 1,
+            "which": 1,
+            "is": 1,
+            "out": 1,
+            "without": 1,
+            "into": 1,
+            "his": 1,
+            "he": 1,
+            "be": 1,
+            "with": 1,
+            "fire": 1,
+            "holy": 1
+          },
+          "books": {}
+        }
+      }
+    },
+    "rv": {
+      "newVerses": 61,
+      "improvedVerses": 31,
+      "occurrences": 513,
+      "groups": 345,
+      "methods": {
+        "exact-clause": 14,
+        "exact-edition": 51,
+        "berean-ult-morphology": 13,
+        "terminal-punctuation": 17
+      },
+      "screening": {
+        "alreadyCovered": 14276,
+        "overlap": 9
+      },
+      "priority": {
+        "the": 34,
+        "ark": 2,
+        "days": 4,
+        "city": 2,
+        "gold": 1,
+        "priest": 2,
+        "sons": 1,
+        "of": 20,
+        "and": 38,
+        "people": 1,
+        "joseph": 1,
+        "king": 2,
+        "a": 9,
+        "my": 8,
+        "face": 1,
+        "darkness": 1,
+        "god": 8,
+        "like": 1,
+        "man": 1,
+        "sheep": 1,
+        "his": 4,
+        "mouth": 1,
+        "knowledge": 1,
+        "peace": 1,
+        "their": 2,
+        "to": 11,
+        "from": 4,
+        "year": 1,
+        "with": 4,
+        "will": 3,
+        "save": 1,
+        "flesh": 1,
+        "righteousness": 1,
+        "heart": 1,
+        "night": 1,
+        "i": 7,
+        "out": 1,
+        "our": 1,
+        "houses": 1,
+        "brother": 1,
+        "in": 8,
+        "jerusalem": 2,
+        "blood": 1,
+        "two": 1,
+        "years": 1,
+        "angel": 2,
+        "but": 4,
+        "he": 10,
+        "answered": 1,
+        "said": 3,
+        "him": 13,
+        "that": 9,
+        "told": 1,
+        "is": 6,
+        "mother": 1,
+        "who": 1,
+        "are": 4,
+        "commanded": 1,
+        "multitude": 1,
+        "down": 1,
+        "on": 1,
+        "ground": 1,
+        "shall": 2,
+        "receive": 1,
+        "one": 2,
+        "such": 2,
+        "little": 1,
+        "child": 1,
+        "name": 1,
+        "me": 1,
+        "go": 1,
+        "into": 1,
+        "say": 1,
+        "time": 2,
+        "at": 3,
+        "hand": 2,
+        "jesus": 1,
+        "christ": 1,
+        "son": 2,
+        "they": 5,
+        "were": 2,
+        "after": 1,
+        "disciples": 1,
+        "as": 1,
+        "went": 1,
+        "came": 2,
+        "heaven": 1,
+        "took": 1,
+        "them": 1,
+        "put": 1,
+        "away": 1,
+        "wife": 1,
+        "another": 1,
+        "against": 1,
+        "her": 1,
+        "both": 1,
+        "righteous": 1,
+        "all": 2,
+        "lord": 1,
+        "am": 2,
+        "stand": 1,
+        "was": 4,
+        "dead": 1,
+        "sat": 1,
+        "up": 1,
+        "speak": 1,
+        "behold": 1,
+        "which": 2,
+        "live": 1,
+        "be": 4,
+        "found": 1,
+        "now": 1,
+        "about": 1,
+        "off": 1,
+        "have": 1,
+        "should": 1,
+        "you": 5,
+        "therefore": 2,
+        "jews": 1,
+        "made": 2,
+        "over": 1,
+        "egypt": 1,
+        "house": 1,
+        "well": 2,
+        "done": 1,
+        "come": 2,
+        "there": 3,
+        "no": 1,
+        "fear": 1,
+        "eyes": 1,
+        "for": 3,
+        "must": 1,
+        "also": 1,
+        "among": 2,
+        "may": 2,
+        "until": 1,
+        "love": 1,
+        "first": 1,
+        "then": 1,
+        "these": 1,
+        "things": 1,
+        "great": 1,
+        "yourselves": 1,
+        "under": 1,
+        "mighty": 1,
+        "father": 1,
+        "glory": 2,
+        "when": 1,
+        "voice": 1,
+        "this": 1,
+        "whom": 1
+      },
+      "books": {
+        "genesis": {
+          "newVerses": 2,
+          "improvedVerses": 1,
+          "occurrences": 7,
+          "groups": 4,
+          "methods": {
+            "exact-clause": 1,
+            "exact-edition": 2
+          },
+          "screening": {},
+          "priority": {
+            "the": 3,
+            "ark": 2,
+            "days": 1,
+            "city": 1
+          },
+          "books": {}
+        },
+        "exodus": {
+          "newVerses": 1,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 2,
+          "methods": {
+            "exact-edition": 1,
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "days": 1,
+            "gold": 1
+          },
+          "books": {}
+        },
+        "leviticus": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "the": 1,
+            "priest": 1
+          },
+          "books": {}
+        },
+        "numbers": {
+          "newVerses": 4,
+          "improvedVerses": 11,
+          "occurrences": 32,
+          "groups": 18,
+          "methods": {
+            "berean-ult-morphology": 2,
+            "exact-edition": 11,
+            "exact-clause": 2,
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "the": 3,
+            "sons": 1,
+            "of": 9,
+            "and": 2,
+            "people": 1,
+            "joseph": 1,
+            "priest": 1,
+            "days": 1
+          },
+          "books": {}
+        },
+        "1-samuel": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 1
+          },
+          "books": {}
+        },
+        "2-samuel": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "the": 1,
+            "king": 1
+          },
+          "books": {}
+        },
+        "1-kings": {
+          "newVerses": 0,
+          "improvedVerses": 2,
+          "occurrences": 4,
+          "groups": 2,
+          "methods": {
+            "exact-edition": 2
+          },
+          "screening": {},
+          "priority": {
+            "a": 2
+          },
+          "books": {}
+        },
+        "2-kings": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 1,
+          "groups": 1,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {},
+          "books": {}
+        },
+        "nehemiah": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 1,
+          "groups": 1,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "days": 1
+          },
+          "books": {}
+        },
+        "job": {
+          "newVerses": 3,
+          "improvedVerses": 1,
+          "occurrences": 7,
+          "groups": 4,
+          "methods": {
+            "terminal-punctuation": 1,
+            "exact-edition": 3
+          },
+          "screening": {},
+          "priority": {
+            "my": 1,
+            "face": 1,
+            "darkness": 1,
+            "god": 1,
+            "like": 1,
+            "a": 1,
+            "man": 1
+          },
+          "books": {}
+        },
+        "psalms": {
+          "newVerses": 15,
+          "improvedVerses": 4,
+          "occurrences": 46,
+          "groups": 24,
+          "methods": {
+            "berean-ult-morphology": 8,
+            "exact-edition": 12
+          },
+          "screening": {},
+          "priority": {
+            "the": 5,
+            "and": 5,
+            "sheep": 1,
+            "his": 1,
+            "mouth": 1,
+            "knowledge": 1,
+            "peace": 1,
+            "their": 1,
+            "to": 1,
+            "from": 1,
+            "year": 1,
+            "with": 1,
+            "will": 1,
+            "save": 1,
+            "my": 2,
+            "flesh": 1,
+            "god": 1,
+            "of": 1,
+            "righteousness": 1,
+            "heart": 1,
+            "a": 1,
+            "night": 1,
+            "i": 1,
+            "out": 1
+          },
+          "books": {}
+        },
+        "proverbs": {
+          "newVerses": 2,
+          "improvedVerses": 2,
+          "occurrences": 9,
+          "groups": 4,
+          "methods": {
+            "terminal-punctuation": 2,
+            "exact-edition": 2
+          },
+          "screening": {},
+          "priority": {
+            "and": 2,
+            "our": 1,
+            "houses": 1,
+            "the": 1,
+            "a": 1,
+            "brother": 1
+          },
+          "books": {}
+        },
+        "ecclesiastes": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "in": 1,
+            "jerusalem": 1
+          },
+          "books": {}
+        },
+        "daniel": {
+          "newVerses": 3,
+          "improvedVerses": 0,
+          "occurrences": 3,
+          "groups": 3,
+          "methods": {
+            "terminal-punctuation": 1,
+            "exact-edition": 2
+          },
+          "screening": {},
+          "priority": {},
+          "books": {}
+        },
+        "joel": {
+          "newVerses": 1,
+          "improvedVerses": 1,
+          "occurrences": 6,
+          "groups": 4,
+          "methods": {
+            "exact-edition": 2
+          },
+          "screening": {},
+          "priority": {
+            "in": 1,
+            "a": 1,
+            "blood": 1
+          },
+          "books": {}
+        },
+        "amos": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 4,
+          "groups": 2,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "two": 1,
+            "years": 1,
+            "the": 1
+          },
+          "books": {}
+        },
+        "micah": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "exact-clause": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 1
+          },
+          "books": {}
+        },
+        "zechariah": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 3,
+          "groups": 2,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "the": 1,
+            "angel": 1
+          },
+          "books": {}
+        },
+        "matthew": {
+          "newVerses": 4,
+          "improvedVerses": 0,
+          "occurrences": 62,
+          "groups": 46,
+          "methods": {
+            "exact-edition": 1,
+            "terminal-punctuation": 2,
+            "exact-clause": 1
+          },
+          "screening": {},
+          "priority": {
+            "but": 1,
+            "he": 3,
+            "answered": 1,
+            "and": 6,
+            "said": 2,
+            "him": 3,
+            "that": 1,
+            "told": 1,
+            "is": 2,
+            "my": 4,
+            "mother": 1,
+            "who": 1,
+            "are": 1,
+            "commanded": 1,
+            "the": 4,
+            "multitude": 1,
+            "to": 2,
+            "down": 1,
+            "on": 1,
+            "ground": 1,
+            "shall": 1,
+            "receive": 1,
+            "one": 1,
+            "such": 1,
+            "little": 1,
+            "child": 1,
+            "in": 1,
+            "name": 1,
+            "me": 1,
+            "go": 1,
+            "into": 1,
+            "city": 1,
+            "say": 1,
+            "time": 1,
+            "at": 1,
+            "hand": 1
+          },
+          "books": {}
+        },
+        "mark": {
+          "newVerses": 6,
+          "improvedVerses": 0,
+          "occurrences": 79,
+          "groups": 53,
+          "methods": {
+            "terminal-punctuation": 3,
+            "exact-clause": 2,
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "the": 5,
+            "of": 5,
+            "jesus": 1,
+            "christ": 1,
+            "son": 1,
+            "god": 1,
+            "and": 8,
+            "they": 2,
+            "that": 1,
+            "were": 1,
+            "with": 2,
+            "him": 7,
+            "after": 1,
+            "his": 2,
+            "disciples": 1,
+            "as": 1,
+            "went": 1,
+            "to": 3,
+            "came": 1,
+            "a": 1,
+            "from": 1,
+            "heaven": 1,
+            "took": 1,
+            "he": 1,
+            "them": 1,
+            "shall": 1,
+            "put": 1,
+            "away": 1,
+            "wife": 1,
+            "another": 1,
+            "against": 1,
+            "her": 1
+          },
+          "books": {}
+        },
+        "luke": {
+          "newVerses": 6,
+          "improvedVerses": 0,
+          "occurrences": 68,
+          "groups": 48,
+          "methods": {
+            "exact-edition": 1,
+            "exact-clause": 5
+          },
+          "screening": {},
+          "priority": {
+            "and": 9,
+            "they": 2,
+            "were": 1,
+            "both": 1,
+            "righteous": 1,
+            "god": 2,
+            "in": 3,
+            "all": 1,
+            "the": 3,
+            "of": 2,
+            "lord": 1,
+            "angel": 1,
+            "said": 1,
+            "him": 1,
+            "i": 1,
+            "am": 1,
+            "that": 2,
+            "stand": 1,
+            "he": 3,
+            "was": 2,
+            "dead": 1,
+            "sat": 1,
+            "up": 1,
+            "to": 3,
+            "speak": 1,
+            "behold": 1,
+            "which": 1,
+            "are": 2,
+            "live": 1,
+            "be": 2,
+            "is": 1,
+            "found": 1
+          },
+          "books": {}
+        },
+        "john": {
+          "newVerses": 2,
+          "improvedVerses": 0,
+          "occurrences": 38,
+          "groups": 25,
+          "methods": {
+            "terminal-punctuation": 1,
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "now": 1,
+            "was": 1,
+            "jerusalem": 1,
+            "about": 1,
+            "off": 1,
+            "but": 1,
+            "have": 1,
+            "a": 1,
+            "that": 2,
+            "i": 2,
+            "should": 1,
+            "you": 2,
+            "one": 1,
+            "at": 1,
+            "the": 3,
+            "will": 1,
+            "therefore": 1,
+            "king": 1,
+            "of": 1,
+            "jews": 1
+          },
+          "books": {}
+        },
+        "acts": {
+          "newVerses": 2,
+          "improvedVerses": 0,
+          "occurrences": 20,
+          "groups": 15,
+          "methods": {
+            "exact-clause": 2
+          },
+          "screening": {},
+          "priority": {
+            "and": 3,
+            "he": 1,
+            "made": 1,
+            "him": 1,
+            "over": 1,
+            "egypt": 1,
+            "all": 1,
+            "his": 1,
+            "house": 1,
+            "well": 1,
+            "done": 1,
+            "that": 1,
+            "come": 1
+          },
+          "books": {}
+        },
+        "romans": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 8,
+          "groups": 6,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "there": 1,
+            "is": 1,
+            "no": 1,
+            "fear": 1,
+            "of": 1,
+            "god": 1,
+            "their": 1,
+            "eyes": 1
+          },
+          "books": {}
+        },
+        "1-corinthians": {
+          "newVerses": 2,
+          "improvedVerses": 0,
+          "occurrences": 26,
+          "groups": 19,
+          "methods": {
+            "exact-edition": 1,
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "for": 1,
+            "there": 1,
+            "must": 1,
+            "be": 2,
+            "also": 1,
+            "among": 2,
+            "you": 2,
+            "that": 1,
+            "they": 1,
+            "which": 1,
+            "are": 1,
+            "may": 1,
+            "made": 1,
+            "but": 1,
+            "i": 1,
+            "will": 1,
+            "at": 1,
+            "until": 1
+          },
+          "books": {}
+        },
+        "galatians": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 1,
+          "groups": 1,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "love": 1
+          },
+          "books": {}
+        },
+        "1-timothy": {
+          "newVerses": 3,
+          "improvedVerses": 0,
+          "occurrences": 26,
+          "groups": 21,
+          "methods": {
+            "terminal-punctuation": 3,
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "for": 1,
+            "was": 1,
+            "first": 1,
+            "then": 1,
+            "these": 1,
+            "things": 1,
+            "i": 1,
+            "to": 1,
+            "come": 1,
+            "but": 1,
+            "with": 1,
+            "is": 1,
+            "great": 1
+          },
+          "books": {}
+        },
+        "1-peter": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 17,
+          "groups": 11,
+          "methods": {
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "yourselves": 1,
+            "therefore": 1,
+            "under": 1,
+            "the": 1,
+            "mighty": 1,
+            "hand": 1,
+            "of": 1,
+            "god": 1,
+            "that": 1,
+            "he": 1,
+            "may": 1,
+            "you": 1,
+            "in": 1,
+            "time": 1
+          },
+          "books": {}
+        },
+        "2-peter": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 33,
+          "groups": 24,
+          "methods": {
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "for": 1,
+            "he": 1,
+            "from": 2,
+            "god": 1,
+            "the": 2,
+            "father": 1,
+            "and": 1,
+            "glory": 2,
+            "when": 1,
+            "there": 1,
+            "came": 1,
+            "such": 1,
+            "a": 1,
+            "voice": 1,
+            "to": 1,
+            "him": 1,
+            "this": 1,
+            "is": 1,
+            "my": 1,
+            "son": 1,
+            "in": 1,
+            "whom": 1,
+            "i": 1,
+            "am": 1,
+            "well": 1
+          },
+          "books": {}
+        }
+      }
+    },
+    "gnv": {
+      "newVerses": 5,
+      "improvedVerses": 0,
+      "occurrences": 26,
+      "groups": 19,
+      "methods": {
+        "berean-ult-morphology": 3,
+        "exact-clause": 1,
+        "exact-edition": 1
+      },
+      "screening": {
+        "alreadyCovered": 1180,
+        "edition reference or witness differs": 816
+      },
+      "priority": {
+        "his": 2,
+        "mouth": 1,
+        "my": 3,
+        "strength": 1,
+        "they": 1,
+        "set": 1,
+        "and": 2,
+        "who": 1,
+        "are": 1,
+        "be": 1,
+        "strong": 1,
+        "in": 2,
+        "the": 2,
+        "lord": 1,
+        "power": 1,
+        "of": 1,
+        "might": 1
+      },
+      "books": {
+        "psalms": {
+          "newVerses": 3,
+          "improvedVerses": 0,
+          "occurrences": 6,
+          "groups": 3,
+          "methods": {
+            "berean-ult-morphology": 3
+          },
+          "screening": {},
+          "priority": {
+            "his": 1,
+            "mouth": 1,
+            "my": 1,
+            "strength": 1,
+            "they": 1,
+            "set": 1
+          },
+          "books": {}
+        },
+        "matthew": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 5,
+          "groups": 5,
+          "methods": {
+            "exact-clause": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 1,
+            "who": 1,
+            "are": 1,
+            "my": 1
+          },
+          "books": {}
+        },
+        "ephesians": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 15,
+          "groups": 11,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "my": 1,
+            "be": 1,
+            "strong": 1,
+            "in": 2,
+            "the": 2,
+            "lord": 1,
+            "and": 1,
+            "power": 1,
+            "of": 1,
+            "his": 1,
+            "might": 1
+          },
+          "books": {}
+        }
+      }
+    },
+    "dra": {
+      "newVerses": 16,
+      "improvedVerses": 2,
+      "occurrences": 177,
+      "groups": 119,
+      "methods": {
+        "berean-ult-morphology": 1,
+        "exact-edition": 7,
+        "terminal-punctuation": 9,
+        "exact-clause": 1
+      },
+      "screening": {
+        "alreadyCovered": 3015,
+        "edition reference or witness differs": 3579,
+        "overlap": 11
+      },
+      "priority": {
+        "of": 12,
+        "a": 1,
+        "wall": 1,
+        "night": 1,
+        "blood": 1,
+        "for": 4,
+        "all": 2,
+        "the": 17,
+        "prophets": 1,
+        "and": 12,
+        "law": 1,
+        "until": 1,
+        "jesus": 1,
+        "christ": 1,
+        "son": 1,
+        "god": 4,
+        "an": 1,
+        "evil": 1,
+        "he": 3,
+        "filled": 1,
+        "sent": 1,
+        "away": 1,
+        "child": 1,
+        "be": 3,
+        "called": 1,
+        "prophet": 1,
+        "go": 1,
+        "before": 1,
+        "face": 1,
+        "lord": 1,
+        "to": 2,
+        "his": 1,
+        "ways": 1,
+        "are": 2,
+        "not": 2,
+        "five": 1,
+        "two": 1,
+        "one": 1,
+        "them": 1,
+        "is": 2,
+        "in": 2,
+        "people": 1,
+        "saw": 1,
+        "him": 1,
+        "put": 1,
+        "no": 2,
+        "between": 1,
+        "us": 1,
+        "by": 1,
+        "faith": 1,
+        "there": 1,
+        "fear": 1,
+        "their": 1,
+        "eyes": 1,
+        "i": 1,
+        "came": 1,
+        "into": 1,
+        "spirit": 1,
+        "your": 2,
+        "feet": 1,
+        "with": 2,
+        "peace": 1,
+        "turned": 1,
+        "after": 1,
+        "world": 1,
+        "that": 1,
+        "then": 1,
+        "was": 1,
+        "being": 1,
+        "water": 1
+      },
+      "books": {
+        "numbers": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 2,
+          "groups": 1,
+          "methods": {
+            "berean-ult-morphology": 1
+          },
+          "screening": {},
+          "priority": {
+            "of": 1
+          },
+          "books": {}
+        },
+        "1-samuel": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 3,
+          "groups": 2,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "a": 1,
+            "wall": 1,
+            "night": 1
+          },
+          "books": {}
+        },
+        "proverbs": {
+          "newVerses": 0,
+          "improvedVerses": 1,
+          "occurrences": 1,
+          "groups": 1,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "blood": 1
+          },
+          "books": {}
+        },
+        "matthew": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 10,
+          "groups": 8,
+          "methods": {
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "for": 1,
+            "all": 1,
+            "the": 2,
+            "prophets": 1,
+            "and": 1,
+            "law": 1,
+            "until": 1
+          },
+          "books": {}
+        },
+        "mark": {
+          "newVerses": 2,
+          "improvedVerses": 0,
+          "occurrences": 23,
+          "groups": 16,
+          "methods": {
+            "terminal-punctuation": 2
+          },
+          "screening": {},
+          "priority": {
+            "the": 3,
+            "of": 3,
+            "jesus": 1,
+            "christ": 1,
+            "son": 1,
+            "god": 1,
+            "an": 1,
+            "evil": 1
+          },
+          "books": {}
+        },
+        "luke": {
+          "newVerses": 4,
+          "improvedVerses": 0,
+          "occurrences": 60,
+          "groups": 37,
+          "methods": {
+            "exact-edition": 2,
+            "terminal-punctuation": 1,
+            "exact-clause": 1
+          },
+          "screening": {},
+          "priority": {
+            "he": 3,
+            "filled": 1,
+            "the": 6,
+            "and": 4,
+            "sent": 1,
+            "away": 1,
+            "child": 1,
+            "be": 2,
+            "called": 1,
+            "prophet": 1,
+            "of": 3,
+            "for": 2,
+            "go": 1,
+            "before": 1,
+            "face": 1,
+            "lord": 1,
+            "to": 2,
+            "his": 1,
+            "ways": 1,
+            "are": 1,
+            "not": 2,
+            "five": 1,
+            "two": 1,
+            "one": 1,
+            "them": 1,
+            "is": 1,
+            "god": 1,
+            "in": 1
+          },
+          "books": {}
+        },
+        "acts": {
+          "newVerses": 2,
+          "improvedVerses": 0,
+          "occurrences": 21,
+          "groups": 18,
+          "methods": {
+            "terminal-punctuation": 1,
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "and": 4,
+            "all": 1,
+            "the": 1,
+            "people": 1,
+            "saw": 1,
+            "him": 1,
+            "god": 1,
+            "put": 1,
+            "no": 1,
+            "between": 1,
+            "us": 1,
+            "by": 1,
+            "faith": 1
+          },
+          "books": {}
+        },
+        "romans": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 8,
+          "groups": 6,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "there": 1,
+            "is": 1,
+            "no": 1,
+            "fear": 1,
+            "of": 1,
+            "god": 1,
+            "their": 1,
+            "eyes": 1
+          },
+          "books": {}
+        },
+        "galatians": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 10,
+          "groups": 7,
+          "methods": {
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "i": 1,
+            "came": 1,
+            "into": 1,
+            "the": 1,
+            "of": 1,
+            "and": 1
+          },
+          "books": {}
+        },
+        "ephesians": {
+          "newVerses": 2,
+          "improvedVerses": 0,
+          "occurrences": 21,
+          "groups": 12,
+          "methods": {
+            "terminal-punctuation": 2
+          },
+          "screening": {},
+          "priority": {
+            "and": 2,
+            "be": 1,
+            "in": 1,
+            "the": 3,
+            "spirit": 1,
+            "of": 3,
+            "your": 2,
+            "feet": 1,
+            "with": 1,
+            "peace": 1
+          },
+          "books": {}
+        },
+        "1-timothy": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 7,
+          "groups": 5,
+          "methods": {
+            "exact-edition": 1
+          },
+          "screening": {},
+          "priority": {
+            "for": 1,
+            "are": 1,
+            "turned": 1,
+            "after": 1
+          },
+          "books": {}
+        },
+        "2-peter": {
+          "newVerses": 1,
+          "improvedVerses": 0,
+          "occurrences": 11,
+          "groups": 6,
+          "methods": {
+            "terminal-punctuation": 1
+          },
+          "screening": {},
+          "priority": {
+            "the": 1,
+            "world": 1,
+            "that": 1,
+            "then": 1,
+            "was": 1,
+            "being": 1,
+            "with": 1,
+            "water": 1
+          },
+          "books": {}
+        }
+      }
+    }
+  },
+  "files": {
+    "genesis/6.json": {
+      "bytes": 1147,
+      "gzipBytes": 506,
+      "sha256": "97606c9da53bb4cf780f2dcaab943a3cd27b6f599245dd0f0cd0a74e8fd29607"
+    },
+    "genesis/8.json": {
+      "bytes": 1097,
+      "gzipBytes": 499,
+      "sha256": "2e1c92834f06d5669e5573b70bad44f5de5584d0887b28d3dff475fb868854c9"
+    },
+    "genesis/24.json": {
+      "bytes": 1245,
+      "gzipBytes": 696,
+      "sha256": "9faf42a55f456ba2b8de438070eec6f782219c8950af1d31513bed59d9f60930"
+    },
+    "genesis/34.json": {
+      "bytes": 901,
+      "gzipBytes": 506,
+      "sha256": "d0e008f9f1e2eb231efb04a8dac9ea5c79bf11407bc0c51b7ee50de50f0213a2"
+    },
+    "genesis/37.json": {
+      "bytes": 1168,
+      "gzipBytes": 627,
+      "sha256": "3545e75da4f64e3f8f2672be30bb072177e95b21585636ebba79808ab0b3c047"
+    },
+    "genesis/45.json": {
+      "bytes": 710,
+      "gzipBytes": 446,
+      "sha256": "7ccd90502014356e311a62c1851066c7ceda3f7c74a958f308fd849712cea9cf"
+    },
+    "genesis/49.json": {
+      "bytes": 1943,
+      "gzipBytes": 951,
+      "sha256": "c945750346afcb12761f229c11690e02cfc57ddcda594afc95399bbf8877e41b"
+    },
+    "exodus/8.json": {
+      "bytes": 691,
+      "gzipBytes": 442,
+      "sha256": "e74270233b570602b75f8e9fa3c868d0f542132f4719aba4bf814a6ec0022d6b"
+    },
+    "exodus/9.json": {
+      "bytes": 1065,
+      "gzipBytes": 540,
+      "sha256": "58b4ca14b7f62f3eecb5dd346d76328ede974ea134c520e462f122e79fffe92a"
+    },
+    "exodus/15.json": {
+      "bytes": 1687,
+      "gzipBytes": 837,
+      "sha256": "712a9ebac6d85eb67cfd782878760e9505a7175d960bdede19f9c7cfefb05c1e"
+    },
+    "exodus/16.json": {
+      "bytes": 915,
+      "gzipBytes": 521,
+      "sha256": "cd6a2135cdf5cb7234b1c43f86a3e05dfa73eab2fff627e60367745ea34a4999"
+    },
+    "exodus/20.json": {
+      "bytes": 723,
+      "gzipBytes": 411,
+      "sha256": "2b99d5a41b52824707e34df18c64eb5dcf32cdd19b3a036fa22f68e136baeca1"
+    },
+    "exodus/23.json": {
+      "bytes": 1108,
+      "gzipBytes": 596,
+      "sha256": "edd2cba9957fcea911eec765ecefce1c6f3042ae078208d320c238139600259e"
+    },
+    "exodus/28.json": {
+      "bytes": 1133,
+      "gzipBytes": 487,
+      "sha256": "71b82d1f7d15f64e97fce14569ee98c24839ca7a491a97ba6e9d85918482a268"
+    },
+    "exodus/30.json": {
+      "bytes": 600,
+      "gzipBytes": 399,
+      "sha256": "254c9b31116fe912b3b82dd137de9c2ac1ab4fc08f614da3dad4f98dca8e6ae9"
+    },
+    "exodus/31.json": {
+      "bytes": 657,
+      "gzipBytes": 393,
+      "sha256": "b2815da4efbe5290c75881c497650fe6e5ee3278119cd7cb44a572b3fd293b76"
+    },
+    "exodus/33.json": {
+      "bytes": 930,
+      "gzipBytes": 528,
+      "sha256": "766917a5f8091e24253eee32ce1c60078a2d881e56b28dfd1ac7c59cf34f5675"
+    },
+    "exodus/38.json": {
+      "bytes": 623,
+      "gzipBytes": 415,
+      "sha256": "e2ad9eb42612ceed94bd3264f433bc656c2a0478fa3c01802b5c245adfa0e2f0"
+    },
+    "exodus/40.json": {
+      "bytes": 798,
+      "gzipBytes": 480,
+      "sha256": "ac32d264e8cb58be074d514d1c6f9f6cc0e6a3887ef3d9a325b2403a480e78be"
+    },
+    "leviticus/6.json": {
+      "bytes": 1456,
+      "gzipBytes": 647,
+      "sha256": "ec5791cb0b7aac37f1248d6d275419feb01eb3880a66ddf3f6d3b23d27853012"
+    },
+    "leviticus/13.json": {
+      "bytes": 725,
+      "gzipBytes": 389,
+      "sha256": "3404e29bcdd11fdb1a2daf737f3d222dda1727599eec561672e62192e63b10f4"
+    },
+    "leviticus/16.json": {
+      "bytes": 920,
+      "gzipBytes": 554,
+      "sha256": "3fb7f7cd59c5e9309841788d06f91dd433505b56a9781bbc2e1a99ce1df80fd0"
+    },
+    "leviticus/25.json": {
+      "bytes": 891,
+      "gzipBytes": 513,
+      "sha256": "e2326c4608220ee0129c82085ae21da008a8d29391cdffc3e3460d93a6360794"
+    },
+    "leviticus/26.json": {
+      "bytes": 988,
+      "gzipBytes": 459,
+      "sha256": "7d7ed40d932d73b0ba5216735966174fce11dd3cd033b40435bd3bea57ee6bc3"
+    },
+    "numbers/3.json": {
+      "bytes": 2428,
+      "gzipBytes": 915,
+      "sha256": "7b0e6fe80bb237f8bbb2b80a760a6b077082828c9617193645d9d6dc63bba1ad"
+    },
+    "numbers/7.json": {
+      "bytes": 1734,
+      "gzipBytes": 696,
+      "sha256": "cbb340802d3ee647ba6ff24b4fb557b01a23e84fe9e685b934f680c24ac75403"
+    },
+    "numbers/10.json": {
+      "bytes": 2270,
+      "gzipBytes": 668,
+      "sha256": "ffa4d86508e3b173b54d58a53e634a8a00d91107afeb12f77753466c0d71f0b0"
+    },
+    "numbers/11.json": {
+      "bytes": 2337,
+      "gzipBytes": 852,
+      "sha256": "c805eb7c847c7725f8fabe667e05e65bc613b0c4568dc093ddd0561f7a8f0c66"
+    },
+    "numbers/13.json": {
+      "bytes": 5929,
+      "gzipBytes": 895,
+      "sha256": "a824f0e9e9acb764311127feb09fa456071e4ff2b5397c5772f94e0e77b9d9c3"
+    },
+    "numbers/14.json": {
+      "bytes": 2626,
+      "gzipBytes": 942,
+      "sha256": "0c0a026b36da97d688fa449dd0fe8d2fbd8706044c4831a6f72fdbcdd28a1562"
+    },
+    "numbers/16.json": {
+      "bytes": 2159,
+      "gzipBytes": 866,
+      "sha256": "ca82ec016b86178a3c1d9b19bbf64d0540673bf47754a0ec56c1d844fde1d9e0"
+    },
+    "numbers/18.json": {
+      "bytes": 1100,
+      "gzipBytes": 625,
+      "sha256": "fdc939f68651eb046521e2b8699169a4c277967ddc805a67aabd5c403c717fac"
+    },
+    "numbers/19.json": {
+      "bytes": 741,
+      "gzipBytes": 398,
+      "sha256": "642d2fbfeecac82cbf945373995b69cb598f81387d8934f886620c47abe0e700"
+    },
+    "numbers/20.json": {
+      "bytes": 650,
+      "gzipBytes": 398,
+      "sha256": "dfe7dd2ce70988684cdc33ee81828ec19b3c696fe946663a0352d9344b96986b"
+    },
+    "numbers/21.json": {
+      "bytes": 699,
+      "gzipBytes": 459,
+      "sha256": "effeb035f2740f19a0e7e76f1cba6e9081983eb6a2a7bbff7476255e315bda85"
+    },
+    "numbers/30.json": {
+      "bytes": 1361,
+      "gzipBytes": 454,
+      "sha256": "b8e0b3726ec57bb6540a4dad3bfcf873cdced05d32655a5725d587e9d321acfd"
+    },
+    "numbers/32.json": {
+      "bytes": 709,
+      "gzipBytes": 446,
+      "sha256": "f339bbdaec46f2af81c38594af226495814aa31fefecc2df9f28b41c4b7a3004"
+    },
+    "deuteronomy/9.json": {
+      "bytes": 1101,
+      "gzipBytes": 613,
+      "sha256": "680e5b444152c895aaa9268bae2bfe056fec7ea4224d1ef44587ad11da54e64e"
+    },
+    "deuteronomy/11.json": {
+      "bytes": 786,
+      "gzipBytes": 424,
+      "sha256": "c58aa831b975f61c5de1845e6164caa8ba19bb98519c4f6c14796ee40ed7b3c6"
+    },
+    "deuteronomy/27.json": {
+      "bytes": 1837,
+      "gzipBytes": 849,
+      "sha256": "d60b2f61a7ca4ebba985ce39d19c6bfad69d53920174c2d9b5f37910ab4323e0"
+    },
+    "deuteronomy/29.json": {
+      "bytes": 1115,
+      "gzipBytes": 533,
+      "sha256": "1a85ce362274316661301a8251d397ecd0dc8b8d46051bd9cc0ab3dcbe8d3030"
+    },
+    "deuteronomy/33.json": {
+      "bytes": 2548,
+      "gzipBytes": 1121,
+      "sha256": "5aa41aaad863ebd23c25bb090b6230d04999bc3d927b274cd2303f2949704f1f"
+    },
+    "joshua/8.json": {
+      "bytes": 583,
+      "gzipBytes": 402,
+      "sha256": "5f143fcff8a49339930f367f289e18bb61684393144b32a7991efd5eacb32a5d"
+    },
+    "joshua/15.json": {
+      "bytes": 1579,
+      "gzipBytes": 648,
+      "sha256": "9688e9edcd879223ac0cd0f636a05e07e95745082ba521c79ef683894de7e9ed"
+    },
+    "joshua/19.json": {
+      "bytes": 607,
+      "gzipBytes": 398,
+      "sha256": "d26f144b1dd5fd58949fa4980344e045f829fcc0c84dcba8f44a0a3e3c0e422d"
+    },
+    "judges/5.json": {
+      "bytes": 754,
+      "gzipBytes": 434,
+      "sha256": "e4e154853ab3f305ee180ccfe8ec975fbffece35514d9e60d6212ed9d55453c6"
+    },
+    "judges/9.json": {
+      "bytes": 802,
+      "gzipBytes": 489,
+      "sha256": "b147c5bf40aa73be7fa36fb591db61418438dbfceeac2d70dc5fece3935c7fbf"
+    },
+    "judges/13.json": {
+      "bytes": 1011,
+      "gzipBytes": 546,
+      "sha256": "a1cc3d03ce3c41fd916eb25cbc786aa02662464ba18973858cafa00929f7c7e1"
+    },
+    "1-samuel/4.json": {
+      "bytes": 1332,
+      "gzipBytes": 514,
+      "sha256": "4c2769f0f376c0e013e711e5e6baa97abff1d399416c3a14e00b2ad71ad3ec24"
+    },
+    "1-samuel/14.json": {
+      "bytes": 1415,
+      "gzipBytes": 753,
+      "sha256": "acd7ee8e1a6beb76cbe9c702cd08824bc0f759c11316414d23230169591cf091"
+    },
+    "1-samuel/25.json": {
+      "bytes": 825,
+      "gzipBytes": 472,
+      "sha256": "adc4e4566acd645b71cbd73f13882bf8eb508708563eb2fb47f60865d661a1e1"
+    },
+    "2-samuel/1.json": {
+      "bytes": 579,
+      "gzipBytes": 413,
+      "sha256": "00b3df6b166f1316354747eddc97517cd20e39263b527205277666d98ed1d0bb"
+    },
+    "2-samuel/5.json": {
+      "bytes": 1095,
+      "gzipBytes": 560,
+      "sha256": "b33c76503927dda6d644fa07eba122e759e7d7e68406ba2b77ac39a43538ff64"
+    },
+    "2-samuel/19.json": {
+      "bytes": 2428,
+      "gzipBytes": 1013,
+      "sha256": "248178c3274f25e18dd16685816f15ad5c0f3645aea223879e7e2e0ea291ad5f"
+    },
+    "1-kings/2.json": {
+      "bytes": 1102,
+      "gzipBytes": 566,
+      "sha256": "637fc52e2aec2a5bd1b012bb2c4ec7eb09072ef82ac6c26959acf5a50c1f1f54"
+    },
+    "1-kings/4.json": {
+      "bytes": 1414,
+      "gzipBytes": 643,
+      "sha256": "7a84b603d41edf1145e5b0fc69b04178cf4858b2ca9aad7d11c6f6341e9018d5"
+    },
+    "1-kings/7.json": {
+      "bytes": 1840,
+      "gzipBytes": 843,
+      "sha256": "392fbb315cee3c36e64b4cf75bb635a320949a7b6fb1885303ca75a05a216ca6"
+    },
+    "1-kings/10.json": {
+      "bytes": 1646,
+      "gzipBytes": 799,
+      "sha256": "8c2a77928f1cf8b903912c777eedc80a2810e67df8fecfc43cdeee1071644bad"
+    },
+    "1-kings/11.json": {
+      "bytes": 810,
+      "gzipBytes": 493,
+      "sha256": "ba132834b782177cdeaee8bdfaa71af0a52604ab8ffaceec4a74e70009b70674"
+    },
+    "1-kings/13.json": {
+      "bytes": 591,
+      "gzipBytes": 397,
+      "sha256": "b8f70923679a9d0d800b9727c9aa8ce9564fc9f268ffb87a42d064f92bf983ff"
+    },
+    "1-kings/14.json": {
+      "bytes": 694,
+      "gzipBytes": 373,
+      "sha256": "66e3669799569b8b5c4797fdbec368eaba14c145109702d49cbccb5e9ddaa71e"
+    },
+    "1-kings/16.json": {
+      "bytes": 1996,
+      "gzipBytes": 740,
+      "sha256": "0869692408502849474cb91ca975d450d203dd950370b600f4294ed60a90fcbf"
+    },
+    "1-kings/21.json": {
+      "bytes": 1963,
+      "gzipBytes": 546,
+      "sha256": "32a464909341d1ec4872e48abde4a28f7ce413dc9e914c549885d49e8cb82480"
+    },
+    "2-kings/14.json": {
+      "bytes": 1899,
+      "gzipBytes": 857,
+      "sha256": "5622ae97054b5376a18dea0489b53a92a0651c0c8ca6d50dcbe0c97bf2c451de"
+    },
+    "2-kings/15.json": {
+      "bytes": 1065,
+      "gzipBytes": 590,
+      "sha256": "c4256bfb5c62171779638978153e7aa10101ad334630b44035af365bfff9ef1c"
+    },
+    "2-kings/19.json": {
+      "bytes": 1676,
+      "gzipBytes": 779,
+      "sha256": "7bcef92d5503162f82a077981aa11a8c6514e03512477f213f537eb36113be10"
+    },
+    "2-kings/21.json": {
+      "bytes": 1553,
+      "gzipBytes": 777,
+      "sha256": "38cc13f451fb18a3a6e69aa1c2ad216fccf2071a90922d76e83839ace722f06e"
+    },
+    "ezra/9.json": {
+      "bytes": 1819,
+      "gzipBytes": 910,
+      "sha256": "d1b5ad88fb8cf4f48edd165b4060a437e2191dd263de8e8f955ea738b92886d9"
+    },
+    "ezra/10.json": {
+      "bytes": 369,
+      "gzipBytes": 293,
+      "sha256": "4f2c168de9d569f2c40fae7d97d443060905b03de785e7fce0849ebe6c498361"
+    },
+    "nehemiah/2.json": {
+      "bytes": 862,
+      "gzipBytes": 347,
+      "sha256": "9357beee60c8f902a8c0aa96c0372a2692c9bdb9384e2d1850c6423b525897a5"
+    },
+    "nehemiah/4.json": {
+      "bytes": 1817,
+      "gzipBytes": 869,
+      "sha256": "d16fb23fa32592dba8d5f73fcbcd16ea02aba2a868cc003754334913c68bc7fb"
+    },
+    "nehemiah/10.json": {
+      "bytes": 1479,
+      "gzipBytes": 725,
+      "sha256": "bc14789a64c8732c3b7fdc7c1c3caba338f551b866c3b2c5c6be526177daafaf"
+    },
+    "nehemiah/12.json": {
+      "bytes": 1906,
+      "gzipBytes": 911,
+      "sha256": "3fbe7aabaa3a495e8c0b3ee294ff2e2d8f80886ce4a19cdf6d71560103e76845"
+    },
+    "esther/7.json": {
+      "bytes": 905,
+      "gzipBytes": 532,
+      "sha256": "49fdfa303acd31a9f2b0c51df7f487c3f3624370cb8b89645e5de5946609b23e"
+    },
+    "job/4.json": {
+      "bytes": 1057,
+      "gzipBytes": 603,
+      "sha256": "c0bbdc1a6b91ce7a6d48009972e07ac6a82ca125c15acb86a2dd91e9559eb87f"
+    },
+    "job/7.json": {
+      "bytes": 574,
+      "gzipBytes": 381,
+      "sha256": "9a5b5b9334b007a90f911eb72e36bcb0b812eadd0840ec900705e2a254f83b1f"
+    },
+    "job/10.json": {
+      "bytes": 712,
+      "gzipBytes": 443,
+      "sha256": "fb77843620f6247bbed96e9980fd6268fb3c3352cb3c1247de2366af34439655"
+    },
+    "job/14.json": {
+      "bytes": 499,
+      "gzipBytes": 348,
+      "sha256": "09a1035e063777fb041e9517c7454c5e7f338e7620b966fb0867eadbd44b9f98"
+    },
+    "job/15.json": {
+      "bytes": 578,
+      "gzipBytes": 381,
+      "sha256": "3801d1a334b67836be13d7598ebe6719df93d05e374dfccf7a000801972daf27"
+    },
+    "job/18.json": {
+      "bytes": 649,
+      "gzipBytes": 371,
+      "sha256": "f67c83a3ca077b0affe8b7c4cc017c786f1440927e35522733998e08ff5493c9"
+    },
+    "job/20.json": {
+      "bytes": 1251,
+      "gzipBytes": 618,
+      "sha256": "921e1434d8db6959ce620c14b82f99af6dddc4016e11216bf3e41f38059a3dba"
+    },
+    "job/23.json": {
+      "bytes": 596,
+      "gzipBytes": 405,
+      "sha256": "4dc8c919967bf90a2c651546bb12cd55960b935652b2d4e6e10d2470a70bbb75"
+    },
+    "job/26.json": {
+      "bytes": 470,
+      "gzipBytes": 357,
+      "sha256": "a99ab1e6e2964f2e208785d518937436740b76dfa59389d3fdcf4ae40b96516c"
+    },
+    "job/27.json": {
+      "bytes": 518,
+      "gzipBytes": 367,
+      "sha256": "4b93f9ada23f9263a76fc2f4e2a75e7603c70cf42f218df326e9be60809b9bf1"
+    },
+    "job/30.json": {
+      "bytes": 1012,
+      "gzipBytes": 578,
+      "sha256": "b8df028032e29aca5b982047c832f90081ad6f7229a4e38f4c73681b8dfd9196"
+    },
+    "job/31.json": {
+      "bytes": 683,
+      "gzipBytes": 415,
+      "sha256": "dbd2b18c2c8c7d04d7605ba0f55389af23bfbab3a47b945775fb8bf5ff60e4ed"
+    },
+    "job/33.json": {
+      "bytes": 602,
+      "gzipBytes": 427,
+      "sha256": "e4e49f151af1f770e8b31ac4846f6e5310f6d8fe452ecd846f6ef988fa7b4720"
+    },
+    "job/34.json": {
+      "bytes": 1028,
+      "gzipBytes": 575,
+      "sha256": "3866ca27b0a459c401923f5bcf8e850221eebcd348a8286d055d42ff3de44815"
+    },
+    "job/37.json": {
+      "bytes": 483,
+      "gzipBytes": 355,
+      "sha256": "84a173ec835bdf6cccc6f2a460e9c6814ee0503fbe433a9432bb9096cd7491a5"
+    },
+    "job/40.json": {
+      "bytes": 1242,
+      "gzipBytes": 632,
+      "sha256": "b0230ab144f367e250e3e5493495f1a16ecac1c0e0d7cf9910e6c3e2cdc7c650"
+    },
+    "job/41.json": {
+      "bytes": 672,
+      "gzipBytes": 405,
+      "sha256": "3618dbe27bc747a99d4eba7c1fc0fa8202d491a79968bd849b854d6ee47c2b20"
+    },
+    "psalms/2.json": {
+      "bytes": 499,
+      "gzipBytes": 347,
+      "sha256": "7c3c1a32a721953148cf4d65cd8c1600e72b6a0aecd4fea985a0bb0c591605d1"
+    },
+    "psalms/5.json": {
+      "bytes": 684,
+      "gzipBytes": 453,
+      "sha256": "0717316497cb994b2acf6275e0fa105a92b7315ed23f4267e6456b87e07149a4"
+    },
+    "psalms/6.json": {
+      "bytes": 486,
+      "gzipBytes": 328,
+      "sha256": "6caaec2bb9bfb59676400b55c036b99e4dc36a50c8f70f5b06eebfbd58865125"
+    },
+    "psalms/8.json": {
+      "bytes": 2126,
+      "gzipBytes": 945,
+      "sha256": "dc065cf84e72c308fedab24743c6c3fc70d00709628ee34fe150ab73412fe201"
+    },
+    "psalms/9.json": {
+      "bytes": 3051,
+      "gzipBytes": 1173,
+      "sha256": "888b59a4d10c57bad58ac2b11462c67ad0073497aba866f35d0eae4313f57624"
+    },
+    "psalms/10.json": {
+      "bytes": 1553,
+      "gzipBytes": 516,
+      "sha256": "a88709d3bc23656da6367127b8d2039e2beadf90e51b88c87ac8b3190b4bdb10"
+    },
+    "psalms/18.json": {
+      "bytes": 1993,
+      "gzipBytes": 858,
+      "sha256": "3f09f1a674ccbb0d1987c3b3ac580074d1669344fe03f6cd2489d7c48f5c821e"
+    },
+    "psalms/19.json": {
+      "bytes": 710,
+      "gzipBytes": 354,
+      "sha256": "88ea40f4cc7fae1a0337fbcc3e8c307244c63a101c75e6136666da65e39a64f8"
+    },
+    "psalms/21.json": {
+      "bytes": 627,
+      "gzipBytes": 434,
+      "sha256": "d010ff87e881b00869c7f0f6eb66f29e7f9f99e1e56e872333ac6465048dd91d"
+    },
+    "psalms/22.json": {
+      "bytes": 2289,
+      "gzipBytes": 814,
+      "sha256": "51a325efc4b016d09b31a14ce22d49921748efe3246cc8be9de516ba0f6591ab"
+    },
+    "psalms/31.json": {
+      "bytes": 1809,
+      "gzipBytes": 921,
+      "sha256": "cab5506c18e2c25f5d991754a210d5d79002eed32a9e90324b859a4cd233b5d8"
+    },
+    "psalms/32.json": {
+      "bytes": 553,
+      "gzipBytes": 396,
+      "sha256": "62d3b3f21c0e3cbfa8fc28a6f9aa6080396d11fe14f57ad1915a2601dec042e6"
+    },
+    "psalms/34.json": {
+      "bytes": 1847,
+      "gzipBytes": 761,
+      "sha256": "b565a7008087864f9f08fe7dee85157eb677b36d8070a08c90e5b7fc0bc1646d"
+    },
+    "psalms/35.json": {
+      "bytes": 560,
+      "gzipBytes": 389,
+      "sha256": "2c165fa7930e9631748bdd92988f589d88ff3c986e6603c166f98e25f59819af"
+    },
+    "psalms/36.json": {
+      "bytes": 521,
+      "gzipBytes": 361,
+      "sha256": "ac7f3d2c5d0d09f096f62aebfe7abece660ab0fd567119fcfe5726bdfb225fcf"
+    },
+    "psalms/38.json": {
+      "bytes": 457,
+      "gzipBytes": 342,
+      "sha256": "d8b190b9b6d36ed338034956e3f379a91081e6899ec41db6c0ea64c050788127"
+    },
+    "psalms/40.json": {
+      "bytes": 799,
+      "gzipBytes": 492,
+      "sha256": "c6fb2cb699100d1fbd83ed5ef709f3a1ab8d0d8b8a0a3f1e08d81c6648cd313c"
+    },
+    "psalms/44.json": {
+      "bytes": 1166,
+      "gzipBytes": 619,
+      "sha256": "d9b6ae6c50d50a637adcb417d5924424e86075bf98111814f65af63f4abe9dc8"
+    },
+    "psalms/45.json": {
+      "bytes": 3346,
+      "gzipBytes": 1406,
+      "sha256": "ff947fa303fb7b921f61a42d99b62a3bd2b35863d6e71b69a6cf9860b827c5f6"
+    },
+    "psalms/46.json": {
+      "bytes": 578,
+      "gzipBytes": 389,
+      "sha256": "6d814809a9f211d76e2195a9a154c35fd8aa063b0824b72754a0e809cdfded6c"
+    },
+    "psalms/47.json": {
+      "bytes": 945,
+      "gzipBytes": 548,
+      "sha256": "314b90306da59c8ab5a324b699d31be1c298b57f00c462b2dfaca4cd53d7309f"
+    },
+    "psalms/48.json": {
+      "bytes": 379,
+      "gzipBytes": 301,
+      "sha256": "1afc046cb4b7e4d3a0d1ae58c1a9ce1da5ba145b0559dceaecc4577fbfd0ff5e"
+    },
+    "psalms/49.json": {
+      "bytes": 3075,
+      "gzipBytes": 1127,
+      "sha256": "66e616f967f9c87ae4982bde34ce2de622267127a3d8f39dd840ca9394c01865"
+    },
+    "psalms/51.json": {
+      "bytes": 516,
+      "gzipBytes": 377,
+      "sha256": "d2f38ff30aa9ac126bf5e11829e0f590ab46c2b0f82c9ac0c0bd86ce737d383c"
+    },
+    "psalms/54.json": {
+      "bytes": 485,
+      "gzipBytes": 358,
+      "sha256": "2a7424c1e1a8125edce6dbc6696da75bc2dbb0ac8f0cfd6bf844765469f8f289"
+    },
+    "psalms/55.json": {
+      "bytes": 1537,
+      "gzipBytes": 789,
+      "sha256": "c2f5db758a48925633c655d3a0c6ed0dd2a76d13883e4f4f59a4d92a3173bc20"
+    },
+    "psalms/56.json": {
+      "bytes": 591,
+      "gzipBytes": 399,
+      "sha256": "680dde1e64880c3ae1d1f6148165f5a2a7a7c1fc5599464b0ec2083452fc6185"
+    },
+    "psalms/57.json": {
+      "bytes": 1564,
+      "gzipBytes": 622,
+      "sha256": "a9cd92c887948bac94a1b7df0071b013c0feeb65c63eb551157b9bced134734c"
+    },
+    "psalms/58.json": {
+      "bytes": 1348,
+      "gzipBytes": 670,
+      "sha256": "e360989e3cf8be03069e3660e6515949f939015b96f81c59b7115f3436f7d388"
+    },
+    "psalms/59.json": {
+      "bytes": 1239,
+      "gzipBytes": 680,
+      "sha256": "fc03d1a27f010e518e095e8f5c356a422d9a07df2fc1d341bab81a1adb16afd2"
+    },
+    "psalms/60.json": {
+      "bytes": 1212,
+      "gzipBytes": 624,
+      "sha256": "89769b4166f37bf2fdcf572488077286abb215da4c4ee4debdf2771b4534ab2a"
+    },
+    "psalms/61.json": {
+      "bytes": 591,
+      "gzipBytes": 397,
+      "sha256": "bdcb7baa413b17d1954b18da22e7a33864c09b814156a3f8dd3ae539489475fd"
+    },
+    "psalms/62.json": {
+      "bytes": 616,
+      "gzipBytes": 390,
+      "sha256": "562f7f24af1dd508b464307cc5929426d27e947a510163d868ba9ec092aef115"
+    },
+    "psalms/63.json": {
+      "bytes": 512,
+      "gzipBytes": 378,
+      "sha256": "61e9b5cb86a8b08554e561a28b7cbde8d1d21c972d5054405666f671929d46d4"
+    },
+    "psalms/65.json": {
+      "bytes": 1944,
+      "gzipBytes": 842,
+      "sha256": "7f3fc63dd73af536ac727f826cff79db41a06923c3ca6e8123ded7bc4a3297e6"
+    },
+    "psalms/68.json": {
+      "bytes": 1394,
+      "gzipBytes": 707,
+      "sha256": "6878f25dba43722e6a870f8a353f2d13dc17d51f938ade9d0fb3c18ccd913f0d"
+    },
+    "psalms/69.json": {
+      "bytes": 4034,
+      "gzipBytes": 1345,
+      "sha256": "37b3182b456b524e96f4fa49bdaa12be9a32d321dea2ab9a31e429790929c660"
+    },
+    "psalms/70.json": {
+      "bytes": 519,
+      "gzipBytes": 362,
+      "sha256": "37f142b762c2bde9628392c689f2df8a3f911cf8a0e7f48874e450cba9a4845e"
+    },
+    "psalms/73.json": {
+      "bytes": 1035,
+      "gzipBytes": 425,
+      "sha256": "856f9655a9683fbe436ab40e742736b441f964b00807d474216e7ea52615e6fa"
+    },
+    "psalms/75.json": {
+      "bytes": 1047,
+      "gzipBytes": 626,
+      "sha256": "c442d7edd5ecfe37fca99944347488739266dc18afea4740cb2aa9dc66ae5184"
+    },
+    "psalms/77.json": {
+      "bytes": 2414,
+      "gzipBytes": 1106,
+      "sha256": "2d8a4152757f5e9620d8da79105758c5b924c1f218035721e2fa113065abbd3b"
+    },
+    "psalms/78.json": {
+      "bytes": 1191,
+      "gzipBytes": 650,
+      "sha256": "8771874a35440b3eef6e3784a3a5ee6ee7149f0722bb91178a9928f3629362a4"
+    },
+    "psalms/79.json": {
+      "bytes": 908,
+      "gzipBytes": 511,
+      "sha256": "a441ee36130245dce902314bfae824813ce4f1bb6c65476db2b9591d00214682"
+    },
+    "psalms/80.json": {
+      "bytes": 1659,
+      "gzipBytes": 881,
+      "sha256": "b6ad2606e1c5bbe528b3945156acbedc712fa7ad214e00d669c084262ef2e725"
+    },
+    "psalms/81.json": {
+      "bytes": 1010,
+      "gzipBytes": 601,
+      "sha256": "945e8cd62a8faa02e39db5440b3284268bae95a8a379768b319073420925a760"
+    },
+    "psalms/83.json": {
+      "bytes": 1291,
+      "gzipBytes": 659,
+      "sha256": "7ddbb3e24c8244dcf0f6b1c97942d96cf664a96375e29bf9a0d6b6dc5270eae5"
+    },
+    "psalms/84.json": {
+      "bytes": 2156,
+      "gzipBytes": 750,
+      "sha256": "cb98ba51b271d168952d2d02e178fc4abf98845728fe3e6ca4270a664a2f1480"
+    },
+    "psalms/85.json": {
+      "bytes": 971,
+      "gzipBytes": 549,
+      "sha256": "15cc57e80b94524d7a7e2777510a0f589965299d3fa6391653e9410508bf7d06"
+    },
+    "psalms/86.json": {
+      "bytes": 1235,
+      "gzipBytes": 642,
+      "sha256": "3cdcea471b5c620d89874df7a887601bd663d989fa98d784973d5297e3dfdfa1"
+    },
+    "psalms/88.json": {
+      "bytes": 897,
+      "gzipBytes": 466,
+      "sha256": "ceb9539a9726da7ddffc335e0cb4f9940919eb087c0e93c06c9100c9820f7f08"
+    },
+    "psalms/89.json": {
+      "bytes": 3138,
+      "gzipBytes": 1340,
+      "sha256": "e9f28b7bb4e4701ff5686d25d5385ded10babaec2084418924399a26e6acc821"
+    },
+    "psalms/99.json": {
+      "bytes": 1044,
+      "gzipBytes": 513,
+      "sha256": "174547ccd56c923aba0e0b5b027f11de7de30b87a1555e0996d1ce63c0720b0e"
+    },
+    "psalms/102.json": {
+      "bytes": 2157,
+      "gzipBytes": 745,
+      "sha256": "e046a33fc72ec3440fee91f967ec0e85d889bd65650b547c97096a41140e1232"
+    },
+    "psalms/105.json": {
+      "bytes": 698,
+      "gzipBytes": 368,
+      "sha256": "a61b7df292c879f57061f1a7c27b1d31a70065beac1ef721238e1f28ad1fa359"
+    },
+    "psalms/106.json": {
+      "bytes": 562,
+      "gzipBytes": 381,
+      "sha256": "8215b06264683eb4fd83fc9c1806dd498ae57c1702f364be5b9c8a5f80ff561d"
+    },
+    "psalms/108.json": {
+      "bytes": 705,
+      "gzipBytes": 433,
+      "sha256": "57566c94e094b9e6d705afba3dadf902a463de1d99f02853bbb956cd9b8f295f"
+    },
+    "psalms/109.json": {
+      "bytes": 1359,
+      "gzipBytes": 618,
+      "sha256": "9243e024bbeefe5056127fc86ebdbbcf070c8b1fc147dc254b0798fdac70fe35"
+    },
+    "psalms/118.json": {
+      "bytes": 479,
+      "gzipBytes": 352,
+      "sha256": "b46c556e1749668ce8f419b1bf10e809f222f93be04903f93309dfc69ddaee6b"
+    },
+    "psalms/119.json": {
+      "bytes": 2080,
+      "gzipBytes": 1003,
+      "sha256": "dfa60adc826520eaee11dba8adb647e4e81337b3837848e7d9684d66ca8c5398"
+    },
+    "psalms/135.json": {
+      "bytes": 465,
+      "gzipBytes": 345,
+      "sha256": "d57a08fee38dec9d423d50e2d253370c662fe554ad832018e91386fdc4c4fcac"
+    },
+    "psalms/136.json": {
+      "bytes": 476,
+      "gzipBytes": 348,
+      "sha256": "d0b53274e8752c0530dc31ee02a3c62285aac43a08e3d3e746361a0b3fe99a24"
+    },
+    "psalms/140.json": {
+      "bytes": 628,
+      "gzipBytes": 419,
+      "sha256": "e6b93b9d2e611e7d0b02383e5f6ca1d6c99b7e24d9a61de17dba2a13fbc22130"
+    },
+    "psalms/142.json": {
+      "bytes": 975,
+      "gzipBytes": 388,
+      "sha256": "6a3c61dc19b67a8d2768c71a9669a2238c2db46a32aecc2898a6a4d90419075d"
+    },
+    "psalms/143.json": {
+      "bytes": 841,
+      "gzipBytes": 527,
+      "sha256": "4da5bba7a8420f488565142fc5da6cfeb92a9f55ecbf9bdecf18f99dba1916d4"
+    },
+    "psalms/145.json": {
+      "bytes": 543,
+      "gzipBytes": 372,
+      "sha256": "a25f7d27942323b78b01f950266449b86af0c5f9a32ead07bd9a4827e0eb8182"
+    },
+    "psalms/149.json": {
+      "bytes": 689,
+      "gzipBytes": 371,
+      "sha256": "40773dbed691054a26f6c90803c9df571bb975918de0b634848466325db5cf5f"
+    },
+    "proverbs/1.json": {
+      "bytes": 1769,
+      "gzipBytes": 807,
+      "sha256": "e430fc7832e17c032f114cfb62d479ef9ec6a14722836d69f31e9c6356788aff"
+    },
+    "proverbs/4.json": {
+      "bytes": 528,
+      "gzipBytes": 368,
+      "sha256": "b1245751140200de9445da9209a619d7841e5260bdde4c5eb03fa998dc2d11aa"
+    },
+    "proverbs/5.json": {
+      "bytes": 572,
+      "gzipBytes": 405,
+      "sha256": "ccff67e746211ca07eb7b8167530731ccc41f81f03f09588b667b4ffbb9059d1"
+    },
+    "proverbs/6.json": {
+      "bytes": 554,
+      "gzipBytes": 370,
+      "sha256": "18a5e07d9544a829bf6749bd3fff7325bb8b9d52df75d2ff1d92506c8af8f1a4"
+    },
+    "proverbs/7.json": {
+      "bytes": 518,
+      "gzipBytes": 382,
+      "sha256": "2e891e9f7c821c257f53787d0d2191af2d96fc906c574cae298da24a56f4474c"
+    },
+    "proverbs/8.json": {
+      "bytes": 824,
+      "gzipBytes": 398,
+      "sha256": "a7ab35a50d06d7583474ac6d226fa412cfc91f04cd569614e67d2dd5e9756fa6"
+    },
+    "proverbs/14.json": {
+      "bytes": 632,
+      "gzipBytes": 425,
+      "sha256": "50636649b7eba9910875f00f6047ed398813b195173838dd7a6d4574ff08994d"
+    },
+    "proverbs/17.json": {
+      "bytes": 678,
+      "gzipBytes": 372,
+      "sha256": "6564336df96cd9a0444bf976e0df1041e7a2d15958bf37d16150af60e35680a9"
+    },
+    "proverbs/19.json": {
+      "bytes": 667,
+      "gzipBytes": 392,
+      "sha256": "94848f0f9b3ad11342158af7d28f995bc98886d3e2aec08e70b9547f621bd13b"
+    },
+    "proverbs/23.json": {
+      "bytes": 539,
+      "gzipBytes": 375,
+      "sha256": "ab37941e8dbe5ecfc4fa520f30dc11d4516b77a40cd5547eac05f87f491f8901"
+    },
+    "proverbs/24.json": {
+      "bytes": 609,
+      "gzipBytes": 400,
+      "sha256": "9dd34c5129db135e52b4f691e455834165a8cfb3a76c313e3ac99594c34fb6d5"
+    },
+    "proverbs/26.json": {
+      "bytes": 545,
+      "gzipBytes": 364,
+      "sha256": "98f67d59a15e7aae7f411da72e8b7ed8bac70884401316b7b239dec9413683cc"
+    },
+    "ecclesiastes/1.json": {
+      "bytes": 1494,
+      "gzipBytes": 597,
+      "sha256": "20f52f673447b2c0e771046401a9e3bab921cebc786b7161b6fb8e051fb77417"
+    },
+    "ecclesiastes/5.json": {
+      "bytes": 735,
+      "gzipBytes": 468,
+      "sha256": "d912cf7d8a7ae9ad4329052fb29b432fc19bbdf42da04261fcc0a66e626981ad"
+    },
+    "song-of-solomon/2.json": {
+      "bytes": 1808,
+      "gzipBytes": 891,
+      "sha256": "f8da27cbf7f90a5ccb5fffcf4e5d058c394585c59939ae0c1cce529427def3a7"
+    },
+    "song-of-solomon/4.json": {
+      "bytes": 904,
+      "gzipBytes": 486,
+      "sha256": "25199ec35f10b04386c7f3635484a6bac1801e2c1a08323e5a9a2332eaf35c7e"
+    },
+    "song-of-solomon/5.json": {
+      "bytes": 739,
+      "gzipBytes": 432,
+      "sha256": "d4c4b430695086eaeb222a28d202d66974b42ebdf9a0b0c4cc097248db94e387"
+    },
+    "lamentations/3.json": {
+      "bytes": 504,
+      "gzipBytes": 345,
+      "sha256": "51e426237685c821a41dd72db698b9f183e3d7055a34072b1cb09b5dcaa3b926"
+    },
+    "lamentations/5.json": {
+      "bytes": 490,
+      "gzipBytes": 357,
+      "sha256": "4316562d00848160c9c86bc4a9073dcbce551d785671987ae2a2803de6a809a8"
+    },
+    "daniel/2.json": {
+      "bytes": 1256,
+      "gzipBytes": 640,
+      "sha256": "831dfbc2bea3c4a1841879c756af3c8da6b2a2cd1f2685b5610a7249791b280a"
+    },
+    "daniel/4.json": {
+      "bytes": 2301,
+      "gzipBytes": 980,
+      "sha256": "9fa4fc9dc77efe717aac208fafa40ada58b277f1bcf1ad8309a53cb6fd96c3fd"
+    },
+    "daniel/6.json": {
+      "bytes": 1923,
+      "gzipBytes": 849,
+      "sha256": "bd898cbb0918650bf7d605961b79e59b607c46e84ec0238d2a15fa4bc64e1228"
+    },
+    "daniel/7.json": {
+      "bytes": 1628,
+      "gzipBytes": 617,
+      "sha256": "a307e198d58d0b9dc9ba203b4191b31d8919af13d0e27851000557443700ec97"
+    },
+    "hosea/2.json": {
+      "bytes": 1021,
+      "gzipBytes": 571,
+      "sha256": "20d7a17ff3e6fe15bfb970a0d1795ded6bd424d7e1875d98f1c59afe18d77d09"
+    },
+    "hosea/5.json": {
+      "bytes": 717,
+      "gzipBytes": 478,
+      "sha256": "5af4c9485ecfa46c49db9b7e6ad7319e8d71b3f5fb8cdcd6fdca0d382de838dc"
+    },
+    "hosea/12.json": {
+      "bytes": 495,
+      "gzipBytes": 362,
+      "sha256": "e50962315c1c3f48de97aa0693fa73550226066debedf5d2293761bbaf6e6744"
+    },
+    "hosea/14.json": {
+      "bytes": 616,
+      "gzipBytes": 421,
+      "sha256": "d4fc4ef5af0ed9922d0c06147f0cd78723863f5b372bb84ed425892e9e130304"
+    },
+    "joel/1.json": {
+      "bytes": 799,
+      "gzipBytes": 478,
+      "sha256": "45bfaaf83f85b07204ab25b8e70ca0661e03e51c57fc6f7baebf6233a14f2c1d"
+    },
+    "joel/2.json": {
+      "bytes": 1543,
+      "gzipBytes": 670,
+      "sha256": "8a180846f6fb21721799b9d8622ee83074b07cbf826a7270365a3f4b69f87f93"
+    },
+    "joel/3.json": {
+      "bytes": 2057,
+      "gzipBytes": 947,
+      "sha256": "a403497410e0ebb96e0aed5e0929b04d96911431b05eff772243af564b4016b1"
+    },
+    "amos/1.json": {
+      "bytes": 2102,
+      "gzipBytes": 775,
+      "sha256": "b47e56bcf30a1e7bc7677853652b51cd48f4e20452d91458612fc7d20dde012b"
+    },
+    "jonah/2.json": {
+      "bytes": 424,
+      "gzipBytes": 327,
+      "sha256": "c73305d23890a928b21502e7fd93725c2d133ff0cb85164867a6785843d3b329"
+    },
+    "micah/2.json": {
+      "bytes": 1178,
+      "gzipBytes": 601,
+      "sha256": "dec5f4c96705487e33984bc3d0e491f4c06df481ace43da1ec6e72b85ca78058"
+    },
+    "micah/6.json": {
+      "bytes": 1613,
+      "gzipBytes": 602,
+      "sha256": "940275ca6291afffc3214ed1a5c831ea5da73b9b6baf14464b887b2a3f8ed0ac"
+    },
+    "nahum/2.json": {
+      "bytes": 787,
+      "gzipBytes": 508,
+      "sha256": "5bb69b5ec2c19e15b56bb2646cdf37a7c850b484666324cbf6c44b515931aae4"
+    },
+    "zechariah/3.json": {
+      "bytes": 798,
+      "gzipBytes": 439,
+      "sha256": "f3a6781817d0496ff17ebca114a80aa1807f56f52e03b2d348524e70bed41c4c"
+    },
+    "malachi/4.json": {
+      "bytes": 860,
+      "gzipBytes": 532,
+      "sha256": "4be48d12312259922d77e40fb304085a3f1ace7c81b21ea20d8b040c3acae360"
+    },
+    "matthew/4.json": {
+      "bytes": 2995,
+      "gzipBytes": 1134,
+      "sha256": "1bce78bd0dbe2db822a95958d4ad6bd84070436abf7ca2b88379d168c153fb55"
+    },
+    "matthew/5.json": {
+      "bytes": 819,
+      "gzipBytes": 426,
+      "sha256": "46ff3232cab82cc0cb260220640277ee15c6ddbbf7c3b709dc808f4bc33044bb"
+    },
+    "matthew/11.json": {
+      "bytes": 943,
+      "gzipBytes": 412,
+      "sha256": "85ab99da19f7e8fdf5f1abd4a66bec0e5b2f3c45ad25d9ece71cc5e2c8738e0e"
+    },
+    "matthew/12.json": {
+      "bytes": 2232,
+      "gzipBytes": 626,
+      "sha256": "a93f6d02e9b7a79c6e237715d7f72b36f530377352366904419934a230146034"
+    },
+    "matthew/15.json": {
+      "bytes": 869,
+      "gzipBytes": 381,
+      "sha256": "bd7112603fc08452e5c4121117ddf8025e85d619813741d8abed5d459b67f551"
+    },
+    "matthew/18.json": {
+      "bytes": 1314,
+      "gzipBytes": 486,
+      "sha256": "f89f98fd7cf1f1ba8acfe2daed526ef81bbca93ba4bd167a119d4b78ea15f714"
+    },
+    "matthew/21.json": {
+      "bytes": 1508,
+      "gzipBytes": 674,
+      "sha256": "2d2113f903924e83d4c179c5b9387a4711f26ba0b77fbb9ef3efddd6f83acff0"
+    },
+    "matthew/23.json": {
+      "bytes": 617,
+      "gzipBytes": 353,
+      "sha256": "320f785af5d9b3f0462fc10a93a5b885e460b378524eacd3be6e23e1aba33c06"
+    },
+    "matthew/26.json": {
+      "bytes": 2134,
+      "gzipBytes": 795,
+      "sha256": "31ca65d4c006f2261cae816baad744abaee02b455cd4023ea0b627ebdd4afc11"
+    },
+    "matthew/27.json": {
+      "bytes": 1367,
+      "gzipBytes": 650,
+      "sha256": "f2f5c62e3c84fc194921a7c672a17e0c7f0094c4eed9756aa0ce80b8af371007"
+    },
+    "matthew/28.json": {
+      "bytes": 936,
+      "gzipBytes": 477,
+      "sha256": "a925bcf6a7f3538f56f8e4781f52b9780b8f001ffe0a05dff1fbb9459bae7b1e"
+    },
+    "mark/1.json": {
+      "bytes": 2077,
+      "gzipBytes": 583,
+      "sha256": "91e50d7c3d3240ef280902f66eb08e56d81804b11189c859312465d28f8ea158"
+    },
+    "mark/2.json": {
+      "bytes": 1561,
+      "gzipBytes": 673,
+      "sha256": "c24894881bcfff5daf48701e899cd8552965b625678836e6f703ae23d435de7f"
+    },
+    "mark/3.json": {
+      "bytes": 1317,
+      "gzipBytes": 606,
+      "sha256": "f3edc8a068df06d3b22b19aae2f907fff7587f0834832a44aca2f9a9ef48bf5f"
+    },
+    "mark/5.json": {
+      "bytes": 1107,
+      "gzipBytes": 533,
+      "sha256": "958402599e42fb2188c693e574f2da5fcc89192564a6ba4b61b3d7d00057e7f4"
+    },
+    "mark/6.json": {
+      "bytes": 989,
+      "gzipBytes": 520,
+      "sha256": "8d8c83a858ff7e632feb1343a5757b9af3de7b1bf4c9a910c6f589c246cbffc8"
+    },
+    "mark/7.json": {
+      "bytes": 2745,
+      "gzipBytes": 945,
+      "sha256": "81437d8732f1b012e0e75673be9d73b3720dffe0176fa689b9a027e524ee0f87"
+    },
+    "mark/8.json": {
+      "bytes": 3920,
+      "gzipBytes": 1247,
+      "sha256": "5a6d5d7fa6996d760ba503d2026995c78d6143d64854255b50a7931856eef120"
+    },
+    "mark/10.json": {
+      "bytes": 1588,
+      "gzipBytes": 562,
+      "sha256": "ad0fc53786373c57839692a4291d7b05c2dc6fe16352626a7f1ce1b6a9fe4082"
+    },
+    "mark/12.json": {
+      "bytes": 1475,
+      "gzipBytes": 643,
+      "sha256": "17dc67edf4a1150c14bdb4b765630d70df24a147cb8f5b16d30883d12cdd42b2"
+    },
+    "mark/13.json": {
+      "bytes": 701,
+      "gzipBytes": 406,
+      "sha256": "9f09ab3f2ac11fb8b3509c5feff85ed4920e3e165ddd62e1ed2160c1f1bc9098"
+    },
+    "mark/14.json": {
+      "bytes": 1062,
+      "gzipBytes": 531,
+      "sha256": "3c26f28dfa8e488e7cb4a1837365e713c3a92435403c98fb7498c0a405e954de"
+    },
+    "luke/1.json": {
+      "bytes": 7921,
+      "gzipBytes": 2089,
+      "sha256": "d1ceaa5a8bffd127f0d6001b5d97e756798da493b6c1abdeaabdfe60f3457c27"
+    },
+    "luke/2.json": {
+      "bytes": 901,
+      "gzipBytes": 477,
+      "sha256": "5273002b9e98f164b952e87aed06158bfa3e3e264f6380099564797e1c3faa8c"
+    },
+    "luke/7.json": {
+      "bytes": 2668,
+      "gzipBytes": 973,
+      "sha256": "085b969a6b6710330e5d2dda4cc58539657dbac12cf3954cf1e113377c4de290"
+    },
+    "luke/8.json": {
+      "bytes": 879,
+      "gzipBytes": 387,
+      "sha256": "d043c6e268b9022073645e85f301a9ad0639962a76df6fa76f98f229249c6811"
+    },
+    "luke/12.json": {
+      "bytes": 1664,
+      "gzipBytes": 590,
+      "sha256": "3cf0969a65b933d82a23652c4b79f57d15b8a2dfd65d181be53c7e9302c9a328"
+    },
+    "luke/14.json": {
+      "bytes": 1941,
+      "gzipBytes": 817,
+      "sha256": "9ef7a0f60c1e42c2bb53f3c20ad7c4960c91b1512fd37f97bb5c883da1724947"
+    },
+    "luke/15.json": {
+      "bytes": 3978,
+      "gzipBytes": 1089,
+      "sha256": "c9a53c0980c389b8b8b3ea5b27dab569e31748d11e4811901d4e3753c8515869"
+    },
+    "luke/21.json": {
+      "bytes": 938,
+      "gzipBytes": 453,
+      "sha256": "213294172e9bec573c837f4771fdce1de9b5b86c9d427623990388aafa526301"
+    },
+    "luke/22.json": {
+      "bytes": 1444,
+      "gzipBytes": 640,
+      "sha256": "2e6180b564deb82ad7df24b3279460e37cf46699c8c06e52a1978c9ab581e179"
+    },
+    "luke/24.json": {
+      "bytes": 880,
+      "gzipBytes": 458,
+      "sha256": "814a661f8a646ee58f1262f78c7bb4892f6899c3f3d7c6f3d7b4032694637127"
+    },
+    "john/1.json": {
+      "bytes": 1226,
+      "gzipBytes": 415,
+      "sha256": "777f7fec2f6b0662b36367ca16b38b06af3fb2df9e54bb3259c5094f778ff34c"
+    },
+    "john/2.json": {
+      "bytes": 1326,
+      "gzipBytes": 552,
+      "sha256": "8faf98ae8d5569874f9596930cd40b362e534bb550c8fcbcaa192863244a6f3b"
+    },
+    "john/3.json": {
+      "bytes": 1263,
+      "gzipBytes": 525,
+      "sha256": "ba598bc919edda66efb324dd767c9e98d32b43060142b2ef6742b6a649b4cfa0"
+    },
+    "john/4.json": {
+      "bytes": 1766,
+      "gzipBytes": 702,
+      "sha256": "298e8629212d3033e0a6de46d35aafc25c952b4e6a36786f001362172322df26"
+    },
+    "john/6.json": {
+      "bytes": 1025,
+      "gzipBytes": 521,
+      "sha256": "d159673453a1cd6e313d086dee16574cb2c7db60ff56b450b9230a37ae833675"
+    },
+    "john/10.json": {
+      "bytes": 1816,
+      "gzipBytes": 516,
+      "sha256": "5fbd2e0fcfa9ef7200a3283c594961ec49e4bb3ba3ea6e4a17c02ecfa25381c4"
+    },
+    "john/11.json": {
+      "bytes": 1134,
+      "gzipBytes": 463,
+      "sha256": "de8021b3a6491ce175cc6a28aa3f67ccb102a8f92a5ec1686c3a21d9aae65ea0"
+    },
+    "john/16.json": {
+      "bytes": 951,
+      "gzipBytes": 464,
+      "sha256": "8326564f35ae9f65e484f8d74d88fdc3f98a11e2b18c8a29dbfd000fd5153dbf"
+    },
+    "john/18.json": {
+      "bytes": 1939,
+      "gzipBytes": 618,
+      "sha256": "a194ebaf195e798078b095a31b2136caf2b11f4295db4f2a749b4f6728ca4c1a"
+    },
+    "acts/1.json": {
+      "bytes": 1151,
+      "gzipBytes": 563,
+      "sha256": "4a34908817de1d333a3abda6e3e96b968fe471fc6ef5d76fc4513abe1b0a271b"
+    },
+    "acts/2.json": {
+      "bytes": 1347,
+      "gzipBytes": 613,
+      "sha256": "5f349b075bc46b1563edb0033a36991faaad6267a292a90fad4c93f3888fb55b"
+    },
+    "acts/3.json": {
+      "bytes": 4584,
+      "gzipBytes": 1399,
+      "sha256": "4904652a0139c0d7ce8cab2185ba585256e4b09d4f7da41b77b7b6a026dd106c"
+    },
+    "acts/5.json": {
+      "bytes": 974,
+      "gzipBytes": 515,
+      "sha256": "1d0d1d97b13e8693f2e6c848b72c8ccd2f99f2083586d46dda739e862c744162"
+    },
+    "acts/6.json": {
+      "bytes": 836,
+      "gzipBytes": 468,
+      "sha256": "bb179af363526576ff371983ef833898ad810031fd93ab941cf1df0231837e38"
+    },
+    "acts/7.json": {
+      "bytes": 2144,
+      "gzipBytes": 748,
+      "sha256": "7bdb2538fdc907d73e6426a23d99e6e5d4295d7ddc3aa0e53c8da834d3923a64"
+    },
+    "acts/8.json": {
+      "bytes": 1319,
+      "gzipBytes": 575,
+      "sha256": "402da3e9ed096f21c0616ef4386e403d39ccda81428c987628cc8c5d7023917c"
+    },
+    "acts/10.json": {
+      "bytes": 3643,
+      "gzipBytes": 1129,
+      "sha256": "47baff1c993d734e5e3fb9a9c2fd2952b3ea165e5c5ce531224545fefd6c0140"
+    },
+    "acts/14.json": {
+      "bytes": 889,
+      "gzipBytes": 459,
+      "sha256": "f5e96626242d64019c646007274061e7575d259c7a84c381a57d71d03780df22"
+    },
+    "acts/15.json": {
+      "bytes": 1288,
+      "gzipBytes": 494,
+      "sha256": "d3fb97b9570f12da9a7161bc443642ef3d26a1421cd9b1342d7ce79a781ff218"
+    },
+    "acts/19.json": {
+      "bytes": 1410,
+      "gzipBytes": 659,
+      "sha256": "c851c12c2a00289ec9d4a0f1ef11002e30b009f5c44d672611e0696382403bcf"
+    },
+    "acts/26.json": {
+      "bytes": 747,
+      "gzipBytes": 434,
+      "sha256": "e117b580c7188b68cb2d580ad4acb958ab5e53d9960953c2bfc5ffff505b1b45"
+    },
+    "romans/3.json": {
+      "bytes": 1304,
+      "gzipBytes": 375,
+      "sha256": "f82e1c051f1871437eedfc3826b75aba5e7f0a3e92b29e8268d16fe367a8b19d"
+    },
+    "romans/12.json": {
+      "bytes": 817,
+      "gzipBytes": 446,
+      "sha256": "c7dcb7650582f0093c98fd6a7300a0c6989f6390a0070ec398980fec2c9692f5"
+    },
+    "1-corinthians/11.json": {
+      "bytes": 1037,
+      "gzipBytes": 499,
+      "sha256": "3f70cc8ec17c04e4603c817d2969718881b91f0d83a0d537667a3afa7e35aafd"
+    },
+    "1-corinthians/13.json": {
+      "bytes": 962,
+      "gzipBytes": 464,
+      "sha256": "dcebcbf14bf9e071f324b411008286abc1677bbb6922a0f5a56fcf4bba871552"
+    },
+    "1-corinthians/15.json": {
+      "bytes": 870,
+      "gzipBytes": 408,
+      "sha256": "3e1850276d3748ffc696c14ceeecf8ee591587c3f7d95e288b0945eeacd42661"
+    },
+    "1-corinthians/16.json": {
+      "bytes": 864,
+      "gzipBytes": 360,
+      "sha256": "9342391b7e128bf0c735b1494ed1e992fbc32a3d4df4afe2648d9eb876f28dee"
+    },
+    "2-corinthians/4.json": {
+      "bytes": 829,
+      "gzipBytes": 421,
+      "sha256": "676f22add7326b79a8a5e66fccc1d17ffe61db565d5d0f40bd46efd28ae6fb68"
+    },
+    "2-corinthians/5.json": {
+      "bytes": 777,
+      "gzipBytes": 429,
+      "sha256": "fbea53521928995c186e076d5d1eef2d6e75fc218617c70efbb28952fbab3a15"
+    },
+    "2-corinthians/8.json": {
+      "bytes": 775,
+      "gzipBytes": 422,
+      "sha256": "06571d77c303f75cad1176b655dd60d193362ba241997f9b67a4520a50767d2d"
+    },
+    "galatians/1.json": {
+      "bytes": 773,
+      "gzipBytes": 408,
+      "sha256": "e334fe8c4cd349166da827c11a31edeff8cd7d7ea46c34bef2042d4420478b91"
+    },
+    "galatians/2.json": {
+      "bytes": 883,
+      "gzipBytes": 482,
+      "sha256": "240d0df4c874c6c10df21d0c379bb540a68d7bfc1d8217f7efffa95997235cd6"
+    },
+    "galatians/5.json": {
+      "bytes": 1430,
+      "gzipBytes": 481,
+      "sha256": "21a5da8811fb463e4be3c13f56dfcbcc5064265d91e1a010f18b7b2a8871c2a3"
+    },
+    "ephesians/3.json": {
+      "bytes": 944,
+      "gzipBytes": 474,
+      "sha256": "c1dd3f029b24beb0bb2ba09245526cb6f751b0e7780a179f49646ed0f014b403"
+    },
+    "ephesians/4.json": {
+      "bytes": 524,
+      "gzipBytes": 337,
+      "sha256": "f1a11c9bcdbdd0787d351adba16759a08111adf9d335e1a1d0a053953bc83bb8"
+    },
+    "ephesians/6.json": {
+      "bytes": 2137,
+      "gzipBytes": 742,
+      "sha256": "eb3abcc282955d176fa2e20ef922b9f62aa4c09568d447645032281103251d58"
+    },
+    "philippians/4.json": {
+      "bytes": 1504,
+      "gzipBytes": 587,
+      "sha256": "e13571f46c127a9735946e32db7f77ff2c65e5951bcb029faef2b5096c9edba6"
+    },
+    "colossians/1.json": {
+      "bytes": 2353,
+      "gzipBytes": 877,
+      "sha256": "d921280445b2dc7fe550b94e8921855f991ebba9b9d801b14604862154e54072"
+    },
+    "1-thessalonians/5.json": {
+      "bytes": 508,
+      "gzipBytes": 300,
+      "sha256": "4613f17eecb5dce7e03c2fc25850e1045b2e7c254dbe87e6b7ba22ab1214635b"
+    },
+    "2-thessalonians/2.json": {
+      "bytes": 1404,
+      "gzipBytes": 625,
+      "sha256": "d68c5e3a014a6765315853679a809c4d673f18eddf633d18d8f60bb774d3ea1d"
+    },
+    "1-timothy/2.json": {
+      "bytes": 1557,
+      "gzipBytes": 621,
+      "sha256": "03528d83a49a9f03fb22639fa1abab2303770278adcc81d63e839462eccf6dbf"
+    },
+    "1-timothy/3.json": {
+      "bytes": 979,
+      "gzipBytes": 399,
+      "sha256": "59e39dd01c41fb7cd636f1bbccc61c2fd5a5d20144c98a035fcc8f75b906df88"
+    },
+    "1-timothy/5.json": {
+      "bytes": 1507,
+      "gzipBytes": 631,
+      "sha256": "1b882be6be44ce7742db77293cfe968772ee24e95de6a484e6a5d4365abf38fc"
+    },
+    "1-timothy/6.json": {
+      "bytes": 1407,
+      "gzipBytes": 473,
+      "sha256": "0a0e04d93e803067c0c3b9c92ccfb0d091fce92b3b3a21d76da8ed66e3b1d1da"
+    },
+    "2-timothy/3.json": {
+      "bytes": 1236,
+      "gzipBytes": 563,
+      "sha256": "39fa71506052f575a1277a592595c8a27064c3c7aad4bce39fafc9b2c57bec24"
+    },
+    "titus/2.json": {
+      "bytes": 623,
+      "gzipBytes": 383,
+      "sha256": "6c3100d1c881e802b9920f6a49b604a1dc256bab9de63692fa86080b49665238"
+    },
+    "hebrews/1.json": {
+      "bytes": 901,
+      "gzipBytes": 508,
+      "sha256": "a099d9165846447c1a02192c6eb9f0ad6d2ab29688be618d5173e661f43c03b3"
+    },
+    "hebrews/10.json": {
+      "bytes": 664,
+      "gzipBytes": 404,
+      "sha256": "f061da501a4b8020522a5ba0e0582018a447f0968aecd2c0f52935c75cb99de4"
+    },
+    "james/1.json": {
+      "bytes": 762,
+      "gzipBytes": 444,
+      "sha256": "6dbd8ca6a99a78ca0d90dbd0822c33cfb0755ccc0e34dc05686745d45cb04269"
+    },
+    "james/4.json": {
+      "bytes": 777,
+      "gzipBytes": 424,
+      "sha256": "e9036727214fb6a7616ff95b74f9749881974d32518f203b6d64f6dafb5673ea"
+    },
+    "james/5.json": {
+      "bytes": 1380,
+      "gzipBytes": 635,
+      "sha256": "6af19803545b38077dcb4acf2df099738b75e81a212e46b8b4c22e37f3eb43f7"
+    },
+    "1-peter/3.json": {
+      "bytes": 1391,
+      "gzipBytes": 646,
+      "sha256": "c67da36f334e3abb3ebecd3263579d0e95f16ed0fb976bd4b331c0a51f7b3131"
+    },
+    "1-peter/5.json": {
+      "bytes": 1587,
+      "gzipBytes": 531,
+      "sha256": "1de18a5f143675602a3bd7bd057e64d33181f79b6cb71ac3d283599e173d5602"
+    },
+    "2-peter/1.json": {
+      "bytes": 1922,
+      "gzipBytes": 832,
+      "sha256": "fecaf5a6ba39979e6445b49cf7b969d1264c22b2d989075d954e4b67c0328fff"
+    },
+    "2-peter/3.json": {
+      "bytes": 619,
+      "gzipBytes": 400,
+      "sha256": "c183bbc639ed0a3d668bf6fafe35e3d373f6861ed3eeae61fdc5ad6239c86c36"
+    },
+    "revelation/8.json": {
+      "bytes": 896,
+      "gzipBytes": 477,
+      "sha256": "b48ccafca1f211cec420e6e5ab370a8ff8e05f0cf4c31778ab0e59e79f1697b1"
+    },
+    "revelation/9.json": {
+      "bytes": 1368,
+      "gzipBytes": 607,
+      "sha256": "fc1ed5e297e888cc2da54193089f4252f174c2bc09a301e5574b3072eb262a9b"
+    },
+    "revelation/14.json": {
+      "bytes": 2197,
+      "gzipBytes": 815,
+      "sha256": "e08417d3b0fd4c83f94dd270d551f46f873b150a9e35846390a4b45ae643c23c"
+    },
+    "index.json": {
+      "bytes": 7316,
+      "gzipBytes": 1996,
+      "sha256": "6214b0fc673e30ce34598547c460a01c8f9aa6e54320d3ebca45073825671524"
+    },
+    "ephesians/1.json": {
+      "bytes": 1350,
+      "gzipBytes": 681,
+      "sha256": "e9ca591068d07e2e99b92af8715634ad237b5910f9343049a3e94acd34c558d3"
+    },
+    "matthew/2.json": {
+      "bytes": 887,
+      "gzipBytes": 492,
+      "sha256": "b6084fd90c5ef85a6190df872333c1b9c382ee68b55247a0e812441ed440f5c7"
+    }
+  },
+  "priorityBooks": {
+    "ephesians": {
+      "verses": 154,
+      "fullyAligned": 153,
+      "remaining": {
+        "1:10": [
+          "in",
+          "him"
+        ]
+      }
+    },
+    "titus": {
+      "verses": 46,
+      "fullyAligned": 45,
+      "remaining": {
+        "1:1": [
+          "is"
+        ]
+      }
+    },
+    "philemon": {
+      "verses": 25,
+      "fullyAligned": 24,
+      "remaining": {
+        "1:9": [
+          "Yet"
+        ]
+      }
+    }
+  },
+  "crossVerse": [
+    {
+      "bookId": "ephesians",
+      "chapter": 1,
+      "englishVerse": 10,
+      "nativeVerse": 11,
+      "positions": [
+        0,
+        1
+      ],
+      "eligibleWords": 2
+    }
+  ],
+  "grammatical": [
+    {
+      "bookId": "matthew",
+      "chapter": 2,
+      "verse": 4,
+      "position": 15,
+      "eligibleWords": 3,
+      "evidence": "Greek present passive finite verb within an indirect question"
+    }
+  ]
+}

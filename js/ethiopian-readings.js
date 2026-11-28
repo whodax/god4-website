@@ -9,6 +9,8 @@
   const heading = byId('heading');
   const passage = byId('passage');
   const pane = heading.parentElement;
+  const previousChapter = byId('previous-chapter');
+  const nextChapter = byId('next-chapter');
   const status = byId('reading-status');
   const cloud = window.BibleCloudTTS;
   const speech = window.speechSynthesis;
@@ -166,6 +168,8 @@
     passage.replaceChildren(content);
     verse.replaceChildren(options);
     verse.disabled = !lines.length;
+    previousChapter.disabled = chapter.selectedIndex <= 0;
+    nextChapter.disabled = chapter.selectedIndex + 1 >= chapter.length;
     pane.hidden = false;
     pane.scrollTo({ top: 0, behavior: 'instant' });
     const index = lines.findIndex(([number]) => String(number) === preferredVerse);
@@ -328,11 +332,21 @@
     stopReading();
     showBook();
   });
-  chapter.addEventListener('change', () => {
+  function changeChapter() {
     stopReading();
     showChapter();
     status.textContent = '';
-  });
+  }
+  chapter.addEventListener('change', changeChapter);
+  for (const [button, step] of [[previousChapter, -1], [nextChapter, 1]]) {
+    button.addEventListener('click', () => {
+      const target = chapter.selectedIndex + step;
+      if (chapter.disabled || target < 0 || target >= chapter.length) return;
+      chapter.selectedIndex = target;
+      changeChapter();
+      pane.focus({ preventScroll: true });
+    });
+  }
   verse.addEventListener('change', () => {
     stopReading();
     scrollToVerse(verse.selectedIndex);

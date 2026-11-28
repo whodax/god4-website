@@ -1,0 +1,2387 @@
+{
+  "baseline": {
+    "verses": 385,
+    "occurrences": 1964
+  },
+  "added": {
+    "verses": 528,
+    "occurrences": 1167,
+    "groups": 723
+  },
+  "sources": {
+    "WLCM": {
+      "sha256": "8bc988dfa9ba168a8448aa724c4271e10857b7dd74b99bc2cf21f72620591112",
+      "verses": 524,
+      "occurrences": 1161,
+      "groups": 717
+    },
+    "SBLGNT": {
+      "sha256": "0dcb6f2baec44df696748f9f5790b4830bcdd789eb7b846951f2ed3288f054b4",
+      "verses": 4,
+      "occurrences": 6,
+      "groups": 6
+    }
+  },
+  "books": {
+    "genesis": {
+      "verses": 23,
+      "occurrences": 46,
+      "groups": 29
+    },
+    "exodus": {
+      "verses": 29,
+      "occurrences": 53,
+      "groups": 35
+    },
+    "leviticus": {
+      "verses": 13,
+      "occurrences": 32,
+      "groups": 21
+    },
+    "numbers": {
+      "verses": 24,
+      "occurrences": 35,
+      "groups": 27
+    },
+    "deuteronomy": {
+      "verses": 23,
+      "occurrences": 45,
+      "groups": 27
+    },
+    "joshua": {
+      "verses": 12,
+      "occurrences": 21,
+      "groups": 17
+    },
+    "judges": {
+      "verses": 9,
+      "occurrences": 16,
+      "groups": 10
+    },
+    "ruth": {
+      "verses": 1,
+      "occurrences": 1,
+      "groups": 1
+    },
+    "1-samuel": {
+      "verses": 13,
+      "occurrences": 22,
+      "groups": 15
+    },
+    "2-samuel": {
+      "verses": 16,
+      "occurrences": 34,
+      "groups": 23
+    },
+    "1-kings": {
+      "verses": 26,
+      "occurrences": 60,
+      "groups": 39
+    },
+    "2-kings": {
+      "verses": 29,
+      "occurrences": 60,
+      "groups": 40
+    },
+    "ezra": {
+      "verses": 19,
+      "occurrences": 53,
+      "groups": 35
+    },
+    "nehemiah": {
+      "verses": 8,
+      "occurrences": 18,
+      "groups": 17
+    },
+    "esther": {
+      "verses": 3,
+      "occurrences": 7,
+      "groups": 4
+    },
+    "job": {
+      "verses": 46,
+      "occurrences": 101,
+      "groups": 61
+    },
+    "psalms": {
+      "verses": 114,
+      "occurrences": 286,
+      "groups": 156
+    },
+    "proverbs": {
+      "verses": 54,
+      "occurrences": 127,
+      "groups": 72
+    },
+    "ecclesiastes": {
+      "verses": 8,
+      "occurrences": 17,
+      "groups": 10
+    },
+    "song-of-solomon": {
+      "verses": 7,
+      "occurrences": 17,
+      "groups": 9
+    },
+    "lamentations": {
+      "verses": 5,
+      "occurrences": 20,
+      "groups": 10
+    },
+    "daniel": {
+      "verses": 2,
+      "occurrences": 3,
+      "groups": 3
+    },
+    "hosea": {
+      "verses": 9,
+      "occurrences": 19,
+      "groups": 10
+    },
+    "joel": {
+      "verses": 5,
+      "occurrences": 10,
+      "groups": 7
+    },
+    "amos": {
+      "verses": 4,
+      "occurrences": 9,
+      "groups": 6
+    },
+    "micah": {
+      "verses": 5,
+      "occurrences": 7,
+      "groups": 6
+    },
+    "nahum": {
+      "verses": 2,
+      "occurrences": 6,
+      "groups": 3
+    },
+    "habakkuk": {
+      "verses": 3,
+      "occurrences": 10,
+      "groups": 6
+    },
+    "zephaniah": {
+      "verses": 2,
+      "occurrences": 3,
+      "groups": 3
+    },
+    "zechariah": {
+      "verses": 10,
+      "occurrences": 23,
+      "groups": 15
+    },
+    "matthew": {
+      "verses": 1,
+      "occurrences": 1,
+      "groups": 1
+    },
+    "romans": {
+      "verses": 2,
+      "occurrences": 3,
+      "groups": 3
+    },
+    "colossians": {
+      "verses": 1,
+      "occurrences": 2,
+      "groups": 2
+    }
+  },
+  "forms": {
+    "from": 11,
+    "you": 14,
+    "return": 2,
+    "favor": 1,
+    "the": 67,
+    "earth": 6,
+    "creature": 1,
+    "a": 19,
+    "plain": 1,
+    "year": 2,
+    "they": 8,
+    "rebelled": 1,
+    "that": 7,
+    "as": 1,
+    "by": 5,
+    "them": 7,
+    "under": 4,
+    "place": 1,
+    "to": 42,
+    "draw": 1,
+    "well": 1,
+    "his": 16,
+    "camels": 1,
+    "have": 11,
+    "prepared": 1,
+    "her": 3,
+    "another": 1,
+    "egypt": 3,
+    "he": 14,
+    "had": 9,
+    "left": 1,
+    "or": 2,
+    "bring": 1,
+    "him": 10,
+    "down": 4,
+    "talked": 1,
+    "with": 12,
+    "pharaoh": 1,
+    "your": 17,
+    "people": 2,
+    "stone": 1,
+    "then": 7,
+    "forever": 2,
+    "meat": 1,
+    "and": 52,
+    "in": 26,
+    "morning": 2,
+    "generation": 1,
+    "now": 2,
+    "i": 14,
+    "know": 2,
+    "all": 9,
+    "work": 1,
+    "years": 1,
+    "burnt": 1,
+    "offerings": 1,
+    "on": 14,
+    "gold": 3,
+    "water": 4,
+    "name": 1,
+    "an": 3,
+    "angel": 1,
+    "rings": 1,
+    "of": 10,
+    "pure": 1,
+    "purple": 1,
+    "north": 1,
+    "south": 1,
+    "altar": 3,
+    "mixed": 5,
+    "clothes": 1,
+    "aaron": 2,
+    "priest": 4,
+    "make": 1,
+    "atonement": 1,
+    "two": 3,
+    "anything": 1,
+    "was": 6,
+    "some": 1,
+    "blood": 2,
+    "it": 2,
+    "finger": 1,
+    "seven": 1,
+    "holy": 1,
+    "first": 1,
+    "third": 1,
+    "moses": 2,
+    "saying": 2,
+    "uzziel": 1,
+    "enemies": 1,
+    "camp": 1,
+    "gad": 1,
+    "days": 4,
+    "there": 4,
+    "therefore": 5,
+    "for": 28,
+    "every": 2,
+    "male": 2,
+    "heshbon": 1,
+    "day": 2,
+    "put": 3,
+    "statutes": 1,
+    "flies": 1,
+    "mightier": 1,
+    "greater": 1,
+    "burned": 1,
+    "jotbathah": 1,
+    "foreigners": 1,
+    "fathers": 4,
+    "has": 6,
+    "done": 7,
+    "this": 5,
+    "sacrifice": 1,
+    "fight": 1,
+    "heifer": 1,
+    "did": 1,
+    "heart": 4,
+    "soul": 3,
+    "plaster": 1,
+    "are": 2,
+    "destroyed": 1,
+    "saw": 2,
+    "joshua": 1,
+    "built": 2,
+    "captured": 1,
+    "gilgal": 1,
+    "reigned": 2,
+    "served": 1,
+    "beyond": 1,
+    "between": 2,
+    "my": 20,
+    "against": 6,
+    "sisera": 1,
+    "zalmunna": 1,
+    "fought": 1,
+    "shamir": 1,
+    "jordan": 2,
+    "born": 3,
+    "eli": 1,
+    "saul": 2,
+    "coming": 1,
+    "will": 16,
+    "be": 6,
+    "prophesying": 1,
+    "over": 5,
+    "before": 2,
+    "shoulders": 1,
+    "ezel": 1,
+    "were": 1,
+    "months": 2,
+    "achish": 1,
+    "because": 2,
+    "fallen": 2,
+    "sword": 1,
+    "how": 2,
+    "mighty": 1,
+    "ox": 1,
+    "house": 3,
+    "silver": 1,
+    "king": 5,
+    "jairite": 1,
+    "shammah": 1,
+    "helez": 1,
+    "abiezer": 1,
+    "zalmon": 1,
+    "eliahba": 1,
+    "ira": 1,
+    "shimei": 2,
+    "gone": 1,
+    "but": 4,
+    "solomon": 4,
+    "abiathar": 1,
+    "drinking": 1,
+    "toward": 1,
+    "our": 5,
+    "test": 1,
+    "many": 2,
+    "foreign": 1,
+    "six": 1,
+    "jerusalem": 5,
+    "bread": 1,
+    "made": 2,
+    "zimri": 1,
+    "samaria": 2,
+    "ravens": 1,
+    "sinned": 1,
+    "proclaimed": 1,
+    "laid": 1,
+    "at": 3,
+    "feet": 2,
+    "passing": 1,
+    "master": 1,
+    "elijah": 2,
+    "behind": 1,
+    "kingdom": 1,
+    "fled": 1,
+    "after": 2,
+    "green": 1,
+    "tree": 1,
+    "altars": 2,
+    "who": 7,
+    "sent": 6,
+    "hadid": 2,
+    "lebanon": 1,
+    "frustrate": 1,
+    "scribe": 1,
+    "counselors": 1,
+    "freely": 1,
+    "offered": 1,
+    "hashabiah": 1,
+    "zebadiah": 1,
+    "maaseiah": 1,
+    "ishmael": 1,
+    "nethanel": 1,
+    "jozabad": 1,
+    "elasah": 1,
+    "judah": 3,
+    "eliezer": 1,
+    "uri": 1,
+    "eliashib": 1,
+    "aziza": 1,
+    "hananiah": 1,
+    "zabbai": 1,
+    "athlai": 1,
+    "mattattah": 1,
+    "zabad": 1,
+    "eliphelet": 1,
+    "jeremai": 1,
+    "manasseh": 1,
+    "shallum": 1,
+    "three": 1,
+    "jeshua": 1,
+    "nehemiah": 1,
+    "azariah": 1,
+    "raamiah": 1,
+    "nahamani": 1,
+    "mordecai": 1,
+    "bilshan": 1,
+    "mispereth": 1,
+    "bigvai": 1,
+    "chose": 1,
+    "talmon": 1,
+    "sallu": 1,
+    "amok": 1,
+    "haman": 1,
+    "sat": 1,
+    "teresh": 1,
+    "perishes": 1,
+    "is": 5,
+    "when": 5,
+    "answer": 1,
+    "choose": 1,
+    "turn": 2,
+    "spirit": 1,
+    "distress": 1,
+    "hand": 2,
+    "godless": 1,
+    "where": 1,
+    "into": 1,
+    "around": 2,
+    "tent": 1,
+    "forgotten": 1,
+    "me": 7,
+    "breath": 1,
+    "though": 1,
+    "tongue": 2,
+    "look": 1,
+    "say": 1,
+    "god": 7,
+    "terrified": 1,
+    "night": 2,
+    "we": 2,
+    "heard": 1,
+    "understands": 1,
+    "its": 2,
+    "way": 1,
+    "like": 3,
+    "dust": 2,
+    "ashes": 1,
+    "am": 1,
+    "full": 1,
+    "puts": 1,
+    "dream": 1,
+    "going": 1,
+    "food": 1,
+    "job": 1,
+    "which": 1,
+    "wisdom": 3,
+    "understanding": 1,
+    "crouch": 1,
+    "surely": 1,
+    "goodness": 1,
+    "dwell": 1,
+    "good": 4,
+    "upright": 1,
+    "uprightness": 1,
+    "hands": 2,
+    "ascribe": 1,
+    "glad": 2,
+    "shield": 1,
+    "their": 6,
+    "teeth": 1,
+    "trust": 2,
+    "land": 3,
+    "wicked": 3,
+    "poor": 1,
+    "speaks": 1,
+    "justice": 3,
+    "most": 1,
+    "high": 1,
+    "youth": 1,
+    "prosperity": 1,
+    "said": 1,
+    "open": 2,
+    "mouth": 3,
+    "kindled": 1,
+    "often": 1,
+    "heights": 1,
+    "become": 1,
+    "reproach": 1,
+    "judge": 1,
+    "come": 2,
+    "mountains": 5,
+    "satisfy": 1,
+    "us": 1,
+    "tread": 1,
+    "lion": 2,
+    "young": 1,
+    "strength": 1,
+    "melt": 1,
+    "trumpets": 1,
+    "world": 1,
+    "rules": 1,
+    "stood": 1,
+    "above": 1,
+    "man": 2,
+    "ham": 1,
+    "struck": 1,
+    "vines": 1,
+    "trees": 1,
+    "departed": 1,
+    "spread": 1,
+    "lips": 1,
+    "daughters": 1,
+    "demons": 1,
+    "brought": 1,
+    "out": 2,
+    "darkness": 1,
+    "deep": 1,
+    "turns": 1,
+    "rivers": 1,
+    "love": 1,
+    "locust": 1,
+    "knees": 1,
+    "works": 1,
+    "redemption": 1,
+    "perish": 1,
+    "blessed": 1,
+    "princes": 1,
+    "skipped": 1,
+    "rams": 1,
+    "bless": 1,
+    "precious": 1,
+    "give": 5,
+    "thanks": 5,
+    "rejected": 1,
+    "eyes": 4,
+    "meditate": 1,
+    "times": 1,
+    "chosen": 1,
+    "teach": 1,
+    "afflicted": 1,
+    "faints": 1,
+    "reject": 1,
+    "redeem": 1,
+    "hear": 1,
+    "quieted": 1,
+    "until": 1,
+    "lift": 1,
+    "up": 1,
+    "seas": 1,
+    "signs": 1,
+    "wonders": 1,
+    "ground": 1,
+    "alone": 1,
+    "heavens": 2,
+    "bind": 1,
+    "kings": 1,
+    "run": 1,
+    "discretion": 1,
+    "finds": 1,
+    "honor": 2,
+    "foot": 1,
+    "sayings": 1,
+    "drink": 1,
+    "slumber": 2,
+    "neck": 1,
+    "keep": 1,
+    "commandments": 1,
+    "vows": 1,
+    "walk": 1,
+    "she": 1,
+    "knowledge": 2,
+    "hates": 1,
+    "son": 2,
+    "flourish": 1,
+    "even": 2,
+    "bribes": 1,
+    "live": 1,
+    "gives": 1,
+    "ear": 1,
+    "eat": 1,
+    "fruit": 1,
+    "wife": 1,
+    "sits": 1,
+    "evil": 1,
+    "do": 1,
+    "righteousness": 1,
+    "gift": 1,
+    "refuse": 1,
+    "wise": 2,
+    "see": 1,
+    "strange": 1,
+    "things": 1,
+    "bridle": 1,
+    "donkey": 1,
+    "rod": 1,
+    "wanders": 1,
+    "law": 1,
+    "rock": 1,
+    "husband": 1,
+    "time": 1,
+    "gather": 1,
+    "refrain": 1,
+    "one": 1,
+    "sun": 1,
+    "changed": 1,
+    "cheeks": 1,
+    "beautiful": 1,
+    "while": 1,
+    "beloved": 1,
+    "wilderness": 2,
+    "cinnamon": 1,
+    "aloes": 1,
+    "garden": 1,
+    "prayer": 1,
+    "remember": 1,
+    "affliction": 1,
+    "let": 1,
+    "sit": 1,
+    "inheritance": 1,
+    "been": 1,
+    "turned": 1,
+    "strangers": 1,
+    "houses": 1,
+    "jeremiah": 1,
+    "ephraim": 1,
+    "pursue": 1,
+    "what": 1,
+    "planted": 1,
+    "plowed": 1,
+    "israel": 1,
+    "trembling": 1,
+    "alas": 1,
+    "grain": 1,
+    "blow": 1,
+    "concerning": 1,
+    "fire": 1,
+    "hate": 1,
+    "sons": 1,
+    "woe": 1,
+    "fields": 1,
+    "shittim": 1,
+    "sins": 1,
+    "rebukes": 1,
+    "sea": 1,
+    "chains": 1,
+    "sacrifices": 1,
+    "filled": 1,
+    "gaza": 1,
+    "behold": 1,
+    "zerubbabel": 1,
+    "zechariah": 1,
+    "girls": 1,
+    "ruler": 1,
+    "together": 1,
+    "plague": 1,
+    "whom": 1
+  },
+  "files": {
+    "1-chronicles/1.json": {
+      "sha256": "def3e94adbaf3a31ad132542560fd644fb8269f5e930485138a1a44c7393b700",
+      "bytes": 2757
+    },
+    "1-chronicles/12.json": {
+      "sha256": "05e4c693b9198a2a8b0e563b021d4398750f36d96d7a2b7b7561badda46c7944",
+      "bytes": 931
+    },
+    "1-chronicles/14.json": {
+      "sha256": "23258780e232aafca21fc80081abac60cd368e3401c9b3faa64449bfeea08915",
+      "bytes": 795
+    },
+    "1-chronicles/2.json": {
+      "sha256": "45f49481657ef4f86b2421563df2c03876d872ad6d7a47b3f1b5f7058f6d13f5",
+      "bytes": 2620
+    },
+    "1-chronicles/23.json": {
+      "sha256": "0e93dcc6d850f6eb63639cb6d3f05807d2ffc02467477cf0dc1a9d8c50aa2bf2",
+      "bytes": 984
+    },
+    "1-chronicles/24.json": {
+      "sha256": "7d817f62dba9d73494c0d9872e3be3a6bc6efb6cb2459b6033d63742af308ab9",
+      "bytes": 1919
+    },
+    "1-chronicles/26.json": {
+      "sha256": "509804ba2d78c84f117a7b99beac0cb6af601e8b0785570b4af7ce614cc23611",
+      "bytes": 2094
+    },
+    "1-chronicles/3.json": {
+      "sha256": "d86818cd1fa00a8e916ddba1ae9f79a05ad12bdc238f154cf7cab3e413403914",
+      "bytes": 2746
+    },
+    "1-chronicles/4.json": {
+      "sha256": "268afd3f6838657ed25b67bb015be3b0d1644e25a36c59435e5b83226873e7f4",
+      "bytes": 2796
+    },
+    "1-chronicles/5.json": {
+      "sha256": "433178b29c03ea251b2236f9964703d94337b5df0b813a02cf48bd49eb017d59",
+      "bytes": 400
+    },
+    "1-chronicles/6.json": {
+      "sha256": "2714c5f20792187359d0c38dbd74b637249e3893cf2100f62282e53560d90136",
+      "bytes": 8583
+    },
+    "1-chronicles/7.json": {
+      "sha256": "e4d21f7e462cd932df08e5518c30dbdefc58d52ee8fbe92735c2d1d34db1187f",
+      "bytes": 3952
+    },
+    "1-chronicles/8.json": {
+      "sha256": "bc1064d1ca9a836f943bed2674d3f76af48963b6f241865888f5b266c92e917b",
+      "bytes": 3367
+    },
+    "1-chronicles/9.json": {
+      "sha256": "45df28f4de19716ca493841de869e7f8a7eaeb2354cca6fd8d211744f01a2130",
+      "bytes": 343
+    },
+    "1-corinthians/15.json": {
+      "sha256": "ac59744b1cfb296afa21ed837efe0dc22810a47f94b8704ed0eca474fb2a6fd9",
+      "bytes": 854
+    },
+    "1-kings/10.json": {
+      "sha256": "b60a6184866d73b6f9043517438b5f6e7866376ce6f2ab439530c5d1d8a4cccc",
+      "bytes": 2311
+    },
+    "1-kings/11.json": {
+      "sha256": "ff21e8021b96c161c89c1db8549f5d97cccd46f87deb9bf966fe6d131ae120a4",
+      "bytes": 2300
+    },
+    "1-kings/13.json": {
+      "sha256": "3ca8a9719d299f079412ca2387cf123e3557613307594ba7cc8db43e2ad4232f",
+      "bytes": 2240
+    },
+    "1-kings/14.json": {
+      "sha256": "5498fce2a20d3e13561518d5b600e0fef93bb540a12dfe87333667eb5369562c",
+      "bytes": 3460
+    },
+    "1-kings/15.json": {
+      "sha256": "8f6cfe953c286bfb3707ff85b585db0c4a68dddb363dd4faa3e24ec6c9b1be8e",
+      "bytes": 632
+    },
+    "1-kings/16.json": {
+      "sha256": "f79760dc9479bb7ffd9b23e56c7db963315ea2cd99141d0ca882e5478df406ae",
+      "bytes": 1644
+    },
+    "1-kings/17.json": {
+      "sha256": "ea258ab2c9ba05778821904fab097f6e19d0b074350aa8167e9bf76ecfad1f26",
+      "bytes": 558
+    },
+    "1-kings/18.json": {
+      "sha256": "22c765bc784f96e21e496f6d35f811fc34ae5e43a4cd03c2683a9417a5a82c37",
+      "bytes": 696
+    },
+    "1-kings/2.json": {
+      "sha256": "aa8d7bf0f48396cdada6b91bc1ab8f591d81420d1ae7b3746366d176e8947d67",
+      "bytes": 1229
+    },
+    "1-kings/21.json": {
+      "sha256": "a0d191b03b4a6ff3ce5bea06bb842bb42f8e082007100eed8735424d0a3bf74a",
+      "bytes": 443
+    },
+    "1-kings/4.json": {
+      "sha256": "0aa85e01c373870b94811de5ffb301a1ad2e84b14f0c7b80282bfa97fbec72e6",
+      "bytes": 1822
+    },
+    "1-kings/6.json": {
+      "sha256": "eab06aa29370fd1a65bae2a3c7a593d848da1670643515d188a01d1d641b6db1",
+      "bytes": 1270
+    },
+    "1-kings/8.json": {
+      "sha256": "a33f5092cb9d07cc058bd20433184a636df032e34dab0fcc9be600c4e9a6a05e",
+      "bytes": 3129
+    },
+    "1-samuel/1.json": {
+      "sha256": "1aa636692f5fedfae51c35b51a48b9790cb39310fafb437f1a1f58bd07e56722",
+      "bytes": 466
+    },
+    "1-samuel/10.json": {
+      "sha256": "efdb0fb13b29641d1817c79ea47e6eb47143a67ac47658cb2bf6012b470422ef",
+      "bytes": 2990
+    },
+    "1-samuel/12.json": {
+      "sha256": "aa9c9a9b65423bd722882a730fb6cf605d1ea8500c1fe476aa47926f6b7a1d3e",
+      "bytes": 1468
+    },
+    "1-samuel/14.json": {
+      "sha256": "b76902087281cbe9f8e621f2712e963981f5cbf93b72d337403a46302faee5cf",
+      "bytes": 2161
+    },
+    "1-samuel/15.json": {
+      "sha256": "e1b05bee23335cf884d042d9931808a124cc8360aef135c24930c2aafd95c47b",
+      "bytes": 987
+    },
+    "1-samuel/17.json": {
+      "sha256": "6e4c5bc87bb6304a5ad88b0a65adfd7bf632b30d4bfabc46212ede175976acf5",
+      "bytes": 530
+    },
+    "1-samuel/20.json": {
+      "sha256": "e25fe0f9ebe752a78d31d03262e45db82f2429c2501136910cfd304886d34b8c",
+      "bytes": 928
+    },
+    "1-samuel/22.json": {
+      "sha256": "fd55b6d89e6410b1b7120c9ade792890a05805bc654218f4034e320ae3bcf490",
+      "bytes": 894
+    },
+    "1-samuel/25.json": {
+      "sha256": "05690b5e1501bf486db4709fa573f0d858f78fd8b028cad52397fde05e6eadff",
+      "bytes": 741
+    },
+    "1-samuel/27.json": {
+      "sha256": "dbcd7b542b092a8e689425f0c9e9485aa2cd31cb0ddeff49c82f47671ec7686a",
+      "bytes": 709
+    },
+    "1-samuel/29.json": {
+      "sha256": "73a01629b10b7833e54192079a5752f5e137b70cdc0579de58161e15d63cd17e",
+      "bytes": 755
+    },
+    "1-samuel/9.json": {
+      "sha256": "6bde24d6e6a1ed4851cf5af58179eb65afb1c44b61018057556ff9752090da67",
+      "bytes": 1576
+    },
+    "1-timothy/4.json": {
+      "sha256": "7afd7a577a07dbb11710a988c6cc044796a7f4726e5cd407f1a41d584c802357",
+      "bytes": 636
+    },
+    "1-timothy/6.json": {
+      "sha256": "75992c25f3f6a51c50fd45b62e4165ab5aba51a2617f0046b5e7acfcfda0fdcb",
+      "bytes": 489
+    },
+    "2-chronicles/11.json": {
+      "sha256": "a7eb25321765875472156a41aa028ff3662824a0aa554c8fcaf080cbc411213b",
+      "bytes": 693
+    },
+    "2-chronicles/20.json": {
+      "sha256": "0f918ab7bbaaf91da3da43b276e46b36b865b222faf145eeaae6c2856c3ad61f",
+      "bytes": 1190
+    },
+    "2-chronicles/29.json": {
+      "sha256": "bff92c5aaea6bf655a566e3fdb8833b1fba62207e1523ef40ec5cb8561fa3c44",
+      "bytes": 1092
+    },
+    "2-chronicles/3.json": {
+      "sha256": "72483d6b35341fc5509d603eaa8d98f4cc0f5ec42a03639e8cf54268646ff3a3",
+      "bytes": 608
+    },
+    "2-chronicles/9.json": {
+      "sha256": "8c01a281f710d0348c914fee2d03a644fba8d754307d6114aeb4bd4d7875c7d5",
+      "bytes": 561
+    },
+    "2-corinthians/11.json": {
+      "sha256": "763c0ebc0c7b7c288632f9e7ae448b93ca563db3fda74998a448a166b2555163",
+      "bytes": 579
+    },
+    "2-corinthians/5.json": {
+      "sha256": "13f39658d0f886ac51d05e1810e4a60cd8c042a41280dc235fc8e641fd80b281",
+      "bytes": 729
+    },
+    "2-kings/10.json": {
+      "sha256": "cd1e95f89e92512da259a2082594ddd8a0eac4e137b62009e0cbc0e7d258089e",
+      "bytes": 3293
+    },
+    "2-kings/11.json": {
+      "sha256": "65f643006bb2e424f8033d7fd903ed2f38a2af09a4ba4a5e11c9a46e45b345a3",
+      "bytes": 824
+    },
+    "2-kings/14.json": {
+      "sha256": "b316812933732a0f1fb7c932ec341f32f99d73aa067562de8f673515bfa420c0",
+      "bytes": 4095
+    },
+    "2-kings/15.json": {
+      "sha256": "c6f263397533413408d2d34352ee8bfce55662080e5638a38fab1ecca5b03635",
+      "bytes": 4232
+    },
+    "2-kings/16.json": {
+      "sha256": "4fd528a7197f7c060b7c2ee2d5f3690f31c82039f9324388c3e7cc9a7259a21d",
+      "bytes": 620
+    },
+    "2-kings/19.json": {
+      "sha256": "b5a4060bbeba3a5c2ec4c0330cd125657b4665859d6398c366428c8040a075a7",
+      "bytes": 1655
+    },
+    "2-kings/2.json": {
+      "sha256": "324b5a080112e7dc7cab42650a65118e9e647d2bb633f611d33e6211f398388a",
+      "bytes": 2135
+    },
+    "2-kings/21.json": {
+      "sha256": "b25efadddd92d8729db7c564995d5e902da432d5c872990c546ae2ff8cb0d3a9",
+      "bytes": 2123
+    },
+    "2-kings/22.json": {
+      "sha256": "1c21a710d85a4d34d514524d87d3808edb443881adb06de3b69fa3a8a62008e9",
+      "bytes": 1798
+    },
+    "2-kings/23.json": {
+      "sha256": "9fba744d0020e45f6ac12f42b14a3075d97da4426f73347887bc2101d146cbec",
+      "bytes": 2030
+    },
+    "2-kings/24.json": {
+      "sha256": "d0bba2ad373e08a38c44b850a8cbde788723c8c16abba69abf8fc6e610b9accb",
+      "bytes": 1063
+    },
+    "2-kings/3.json": {
+      "sha256": "7866c6d9ba51bae02225ce26efc1046022b7a95f9b674199be9c448367a8f7f3",
+      "bytes": 938
+    },
+    "2-kings/4.json": {
+      "sha256": "b50b1b252b239e3732d952faed40c34c07635750e93b60f16291a9150db8ae9b",
+      "bytes": 3067
+    },
+    "2-kings/6.json": {
+      "sha256": "348467fc82de3d4657ce83b63568a06c5fc9338e531896b790f009fefc704dfc",
+      "bytes": 2079
+    },
+    "2-peter/1.json": {
+      "sha256": "484c6269fd585f78aa80d433e57347823fe895cfbfe464d0c7561f1523c43aed",
+      "bytes": 684
+    },
+    "2-samuel/1.json": {
+      "sha256": "e6ddb7c7794cb3822786ffce34dfc8221a870b4136bb787ab0aa5765b032377d",
+      "bytes": 3032
+    },
+    "2-samuel/13.json": {
+      "sha256": "f444f8beff9c625dc65973101809a7f6521b9cbfa682cff8f8318e3e7b80f5c5",
+      "bytes": 663
+    },
+    "2-samuel/14.json": {
+      "sha256": "c91713d3771dcc04b424955ca343f5df55f969e0d82c5288a12e7eb913a9216e",
+      "bytes": 933
+    },
+    "2-samuel/2.json": {
+      "sha256": "a12745af2f7fd829cdaacdf84af5bdf491b7cb31dba2922f724eea10f0c2828f",
+      "bytes": 992
+    },
+    "2-samuel/20.json": {
+      "sha256": "b3853e21d006829acca5a24be089eb948910db7733c89297113344535b604189",
+      "bytes": 385
+    },
+    "2-samuel/22.json": {
+      "sha256": "e85dad7a821b877558858ee097289fe117df34b2ca9312e44f6c244a1b227ddd",
+      "bytes": 482
+    },
+    "2-samuel/23.json": {
+      "sha256": "54e8ce03c6275eea08d1adffe8e902053d013440a29b5f2748a4258a3838f033",
+      "bytes": 1927
+    },
+    "2-samuel/3.json": {
+      "sha256": "173cddfae35c336e4235b08d10706495bcb6fbf9013b41eec41145a2be79921c",
+      "bytes": 646
+    },
+    "2-samuel/5.json": {
+      "sha256": "c1aa416ddf40b6d05280b7b0d93deeeea9486c150707e86e151dc4eb317d4357",
+      "bytes": 1337
+    },
+    "2-samuel/6.json": {
+      "sha256": "4f29fa3937478b65f09080f0d725d2e7287d91e5213b0e9ff88e72545ae8d762",
+      "bytes": 679
+    },
+    "2-samuel/7.json": {
+      "sha256": "79a0270bad0608637fe8c8ff0b99c0818544ca1b068ce0241d049bf707b7eb83",
+      "bytes": 624
+    },
+    "2-samuel/8.json": {
+      "sha256": "228dd4da7933eaf4011741f61de344014b25ae31690d405b7d81265e6222f346",
+      "bytes": 901
+    },
+    "2-timothy/4.json": {
+      "sha256": "596ec9bbd42c6ee8ce3a12da2a67b719c57e48f0b5241bf673c9d944a0c93fa4",
+      "bytes": 329
+    },
+    "acts/12.json": {
+      "sha256": "66447e32c043101e873f404d2ab81cd97d80f602817bca24001c393e498dbf08",
+      "bytes": 403
+    },
+    "acts/16.json": {
+      "sha256": "8acac60890ac5870b3f4f72d42474ad65f9fee2e9c713a6723811c9ed7991ce6",
+      "bytes": 470
+    },
+    "acts/2.json": {
+      "sha256": "24490c7d903ed3ed294b5b08e98fee25c03b1f8bd0a16f63337c2c6209c9915c",
+      "bytes": 873
+    },
+    "amos/1.json": {
+      "sha256": "b4af121c6c99a282cb25de8cf8185ae0a402a13ea925cd9250ebdf1d491582bf",
+      "bytes": 2199
+    },
+    "amos/5.json": {
+      "sha256": "765628a2a1533c2f270dbc6d27f7fcad4003df50a1412ae595a417d38e7e5853",
+      "bytes": 1429
+    },
+    "amos/7.json": {
+      "sha256": "da364675a9710a84e3d78b0a9879888de81dd322302b3136441084bf6be9258f",
+      "bytes": 1558
+    },
+    "colossians/1.json": {
+      "sha256": "17d945f855efbaf6ef124416c2fe27f45d899fdbd27f04054882fe8021864522",
+      "bytes": 469
+    },
+    "daniel/1.json": {
+      "sha256": "a493a1d019778c1aeaf0a45065b157313386f9d6f82c9458a61edfebf76965cc",
+      "bytes": 996
+    },
+    "daniel/2.json": {
+      "sha256": "54981f4f68108509c2166358e68f6390680fbc381b410fbd5322a47ec16fab03",
+      "bytes": 1214
+    },
+    "daniel/3.json": {
+      "sha256": "51d73c817728f29b7afab77376f75526a90b2cba3b13df7fac651dad188acd99",
+      "bytes": 709
+    },
+    "daniel/5.json": {
+      "sha256": "8312749fcc938b88defd58c7137021642ff643340320330bccd461f4ac1723ab",
+      "bytes": 2151
+    },
+    "daniel/8.json": {
+      "sha256": "87c953149d54765da5652aa2896812d7c80f2cf539c65c8d6aaccbe3b600a4b6",
+      "bytes": 517
+    },
+    "daniel/9.json": {
+      "sha256": "8671ed2c05446d4340f74b12a928e7d29757dc08baf1a0c857d6d04af2397fb5",
+      "bytes": 1307
+    },
+    "deuteronomy/1.json": {
+      "sha256": "2ef8c327d79b52a54c64dc945cdb9e69e745778319d1c75a1c7607fc718ffc2d",
+      "bytes": 1643
+    },
+    "deuteronomy/10.json": {
+      "sha256": "5ff6bda8153aa08d399f861e2009dc424bae83ebe650a8bffa5902d665c95095",
+      "bytes": 1916
+    },
+    "deuteronomy/11.json": {
+      "sha256": "c3225114a1fce44b0f063dd7ca537fde0a3e54f2b538fdaeb4ab729df7a71722",
+      "bytes": 1255
+    },
+    "deuteronomy/17.json": {
+      "sha256": "89109f06aaddf51a3ec82700f3bc8bbe3e7e3977c1ab926570e8eb8cbb46b7fe",
+      "bytes": 1345
+    },
+    "deuteronomy/18.json": {
+      "sha256": "5e6d177954882255a332439f5271009c0a81b93cf19bb2f6eded52a966a31aba",
+      "bytes": 1125
+    },
+    "deuteronomy/2.json": {
+      "sha256": "4b071d97fed112db602b1770aed6541f6f7a131955ad0b041709dcd70b0a0319",
+      "bytes": 2252
+    },
+    "deuteronomy/20.json": {
+      "sha256": "ab874cc218012f09f87c5ef64782b4740a4e2c85532d7bb775bca7ee616eceac",
+      "bytes": 556
+    },
+    "deuteronomy/21.json": {
+      "sha256": "5277321717e27825c85e3801cf570e9d7bced7da131879f64631154d1db766c1",
+      "bytes": 871
+    },
+    "deuteronomy/24.json": {
+      "sha256": "9b3dc155f50db0a64b85b57b1d8d04995174f395d8adc036bcb21d114b1cf556",
+      "bytes": 624
+    },
+    "deuteronomy/26.json": {
+      "sha256": "59a552d20d7409973cac1487675fd7a4c44785d9bfbdcb81f15d667444f9b18f",
+      "bytes": 1223
+    },
+    "deuteronomy/27.json": {
+      "sha256": "bf52fc8a64c43f7d176c2fc82e7321495e3334221434e3a494db87505f56acff",
+      "bytes": 1845
+    },
+    "deuteronomy/28.json": {
+      "sha256": "4103644ef551fad9a942c2961d1f16b54229f2a175dddf0b3124ad9c4093c751",
+      "bytes": 1506
+    },
+    "deuteronomy/32.json": {
+      "sha256": "ee560ea6441bcc5d8d1aeae5385ea280cd836a2496522a6915899dd2f2d40d19",
+      "bytes": 436
+    },
+    "deuteronomy/4.json": {
+      "sha256": "1a5c69a30fedad9af37b52810f52478d276ea3783a16229601a3004dc266457c",
+      "bytes": 2382
+    },
+    "deuteronomy/5.json": {
+      "sha256": "bd15025395140f3be04850bcfb4eeb1310989b2394dc8be92738d9fc6506bf01",
+      "bytes": 935
+    },
+    "deuteronomy/9.json": {
+      "sha256": "9d2a394c76045d6681021e9b6850d808be77030389d2b90bf20a0e8b1037c7af",
+      "bytes": 3384
+    },
+    "ecclesiastes/1.json": {
+      "sha256": "e833b548fc817ec2f721351928f451d13eccd06a176ef42412b0fa6e826253ab",
+      "bytes": 1563
+    },
+    "ecclesiastes/3.json": {
+      "sha256": "e2d638edb58a5ea8201c58c13c8c4bac149972b0bfed2c625ea7bf11d3ef0032",
+      "bytes": 3163
+    },
+    "ecclesiastes/6.json": {
+      "sha256": "b393f82ae91beab524fc84697aa0e80d6f51f83a29398277718b9fd89e28d661",
+      "bytes": 1243
+    },
+    "ecclesiastes/7.json": {
+      "sha256": "14b2be6ba782ccc7f53e6af8a3679f6874825da2da1e42c931f8f8db1f22378c",
+      "bytes": 481
+    },
+    "ecclesiastes/8.json": {
+      "sha256": "541134bc359ba0ce89c5505de6507d47326c187384e94d27189fe9c3cd4db12c",
+      "bytes": 837
+    },
+    "ecclesiastes/9.json": {
+      "sha256": "aaf7082028beae6e979fc4ad2a0d8eb7bd42b42154c6e2e9221c0a2832d85a86",
+      "bytes": 1378
+    },
+    "ephesians/6.json": {
+      "sha256": "87048f5093d37f21a162352d6e8a3b8cf48ef282e87dd6c10cada18b8fafc568",
+      "bytes": 711
+    },
+    "esther/3.json": {
+      "sha256": "2eb4e17da21fa4bb8b0a77222e4dd675c2c5c77c81edc288966a9961bd730377",
+      "bytes": 1123
+    },
+    "esther/6.json": {
+      "sha256": "38033c52cd622dd389fcb70b5317e521164d203e69fca5af5ce08a68bd36cab5",
+      "bytes": 1157
+    },
+    "esther/8.json": {
+      "sha256": "0fed5f88d3fb208fef3c5dcbe942210798196258251304c64df128b68473c19c",
+      "bytes": 862
+    },
+    "esther/9.json": {
+      "sha256": "9effe900fb869c44ad09cf2ce7bf58228e0989367d091f8a374315a7c9ad5253",
+      "bytes": 371
+    },
+    "exodus/1.json": {
+      "sha256": "004cc994e7e8fe0f12ccfa13029206982f2172053c9146ef7cec99215bdb20a9",
+      "bytes": 551
+    },
+    "exodus/15.json": {
+      "sha256": "1605ad92c23e562df8f0a8d4ae4e10db03032d66bccbc094e07b5d05978299ec",
+      "bytes": 1995
+    },
+    "exodus/16.json": {
+      "sha256": "2a81d5d1a0c5d397396619d417ecadd71df1924af967af9ee52a1fa45edde8d1",
+      "bytes": 1641
+    },
+    "exodus/17.json": {
+      "sha256": "82fe738387799a34756be3d0678fe97a0f3aec2a4656c5d694d765d493c682b8",
+      "bytes": 651
+    },
+    "exodus/18.json": {
+      "sha256": "f24e85986684678576e26952920c22f7baca15453fd0424ddbcf987f8578525d",
+      "bytes": 727
+    },
+    "exodus/20.json": {
+      "sha256": "04f843a95b1195d44da045fb66d6e45e57f798471414ff05d5140facdf73f78b",
+      "bytes": 426
+    },
+    "exodus/21.json": {
+      "sha256": "3f0013aa0e71e620c401f1682a725f9d7f4c8f6057d6eb574b463448d9b24d04",
+      "bytes": 619
+    },
+    "exodus/23.json": {
+      "sha256": "2a8b640f9bfeef384c873e4e79dccdd0b2036d1cf29675f709d643dce9362b64",
+      "bytes": 516
+    },
+    "exodus/24.json": {
+      "sha256": "2640ae884e79b3bb241f165eff0b224a6cb9318d5333148f83fac103eeedadae",
+      "bytes": 782
+    },
+    "exodus/28.json": {
+      "sha256": "d220ccdcca22b2dcf231dce3f75acf680aaadf10834aff56fef68554565cc15e",
+      "bytes": 631
+    },
+    "exodus/30.json": {
+      "sha256": "7bf63f6609ec8c7e0d01ca80bbd8c6b5735715599a5e8d0842419aa3b235da90",
+      "bytes": 1544
+    },
+    "exodus/31.json": {
+      "sha256": "93d853359acd613c4761e79730efc56a261a4f1c5f45088c8c23e0c3e51b8b6d",
+      "bytes": 2507
+    },
+    "exodus/33.json": {
+      "sha256": "9200d795fa6ad7b1e62fa1c9610015ad284bddf96c6648af158010099d60f73c",
+      "bytes": 841
+    },
+    "exodus/34.json": {
+      "sha256": "135b1092bde53b1256c36e6fd623eb1407df7ad43683eac25dc1886450ef5de0",
+      "bytes": 858
+    },
+    "exodus/35.json": {
+      "sha256": "9e314b267d0595a4ed80371d5dc5c418f0181a6b951ded580207f3e7cc590500",
+      "bytes": 634
+    },
+    "exodus/37.json": {
+      "sha256": "1c94b7978839e3d3c7130c52f70172cb45666b56330903dde35416848136beea",
+      "bytes": 1806
+    },
+    "exodus/38.json": {
+      "sha256": "1c4d44c11524bdfc327fde21defee43c19f61e756b58f3802cd68729a386afa6",
+      "bytes": 1100
+    },
+    "exodus/39.json": {
+      "sha256": "81faf9ddf34eed07044db604d700675ba4ddbef26791b591a18e25cd207d1071",
+      "bytes": 3198
+    },
+    "exodus/40.json": {
+      "sha256": "ad7a3364115e7c6318bbefed884f7ea2969b58d900c9450354da1a04825e3044",
+      "bytes": 2133
+    },
+    "exodus/6.json": {
+      "sha256": "b200cc9bac3e972832997db550e6012a8a09cb4c1dc084606638aa693ff26b67",
+      "bytes": 690
+    },
+    "exodus/7.json": {
+      "sha256": "56be4c36a44a98f0491c334f827348def1b5c482935dbd425e91445ec7870d8f",
+      "bytes": 707
+    },
+    "exodus/9.json": {
+      "sha256": "7398e49ded3a8a8ce2a38fbd9f6739c53aa406f907ab6bddd5d8b6be215a5226",
+      "bytes": 808
+    },
+    "ezekiel/11.json": {
+      "sha256": "bc0a342494aaab4e357d1e10f840bc4fa414aa4402d82a067b73227e937d8ba1",
+      "bytes": 699
+    },
+    "ezekiel/13.json": {
+      "sha256": "fbbe217e6daaa8f34ea4d4de12169b5f9e6de9ab8a37d1649f46efc442030310",
+      "bytes": 2262
+    },
+    "ezekiel/19.json": {
+      "sha256": "122c79b05bf0a489722227042a1af8f67d2b8bc187ca28a4db8a504bd6f05079",
+      "bytes": 423
+    },
+    "ezekiel/20.json": {
+      "sha256": "2dded2c8407f587ef69b086f78832da587033a9772bc3bf4b0dfd99800d8c815",
+      "bytes": 872
+    },
+    "ezekiel/29.json": {
+      "sha256": "74e85eadf0670954a99a9a077c0a5be9fefd5e210e9c1e0f1e6ea36222383ed9",
+      "bytes": 922
+    },
+    "ezekiel/34.json": {
+      "sha256": "de6694457281b7bb3e46a13f3aba9ea0e9a180457fd96d14c52bfea83a10643a",
+      "bytes": 1470
+    },
+    "ezekiel/35.json": {
+      "sha256": "1c0e1001991a848773fd3db2d3b3a3fe0f040e32b14b54e99259eccd27bccc5c",
+      "bytes": 642
+    },
+    "ezekiel/36.json": {
+      "sha256": "f0fa6da962743bf578587d58811e5f9630ce56cb6f337bcb791c89a4fa3ef0d7",
+      "bytes": 838
+    },
+    "ezekiel/39.json": {
+      "sha256": "8980b5dce1b7d2259bcf5098198e389b4df86f8375b687e8e56db0bafe5f21cb",
+      "bytes": 1268
+    },
+    "ezekiel/6.json": {
+      "sha256": "edf36c4df5432ffe81dce27e72305a086e8a734f0a462b71d84b50566465a67e",
+      "bytes": 473
+    },
+    "ezra/1.json": {
+      "sha256": "591836d8f9ec03d72e34dabf0805d1a02c1f849833877284a04c077be0d6b661",
+      "bytes": 1022
+    },
+    "ezra/10.json": {
+      "sha256": "58c0f1541618da8222adab4a5d59fdc822c3f1e75b4f29d35b189a15cd3dc58e",
+      "bytes": 6441
+    },
+    "ezra/2.json": {
+      "sha256": "059f92ba0d70881963545c680cde10a586ec3c322c6cd18d7a61a7d9a2baac39",
+      "bytes": 1726
+    },
+    "ezra/3.json": {
+      "sha256": "9e9f7da3b587a32bca593591d09b21f1cec5ce50b3ece565ca3c2a21635ed0ba",
+      "bytes": 1399
+    },
+    "ezra/4.json": {
+      "sha256": "29853b8deaf6dee89527d75fc8bfd117824205df73def71b9c147911af836954",
+      "bytes": 2483
+    },
+    "ezra/7.json": {
+      "sha256": "f6121eb13047825e88b4255cac7a49942bca322cb0d466a43ad949995945366a",
+      "bytes": 3850
+    },
+    "ezra/8.json": {
+      "sha256": "5f67e40f0d8b71a9c342b9cf76f921d39a4a84803257f1cd545bf205e1df9254",
+      "bytes": 1115
+    },
+    "galatians/5.json": {
+      "sha256": "2fa7b768f1f1a8a761c089a39f4734bf4b306787b09d4c64d9b9a39d4de2358d",
+      "bytes": 719
+    },
+    "genesis/10.json": {
+      "sha256": "856e51fd0230d0b495ef39685f52786f7f81a5f973caeba706f020a958e20b41",
+      "bytes": 700
+    },
+    "genesis/11.json": {
+      "sha256": "3ad0b59bd20d52bac9a5405df52f8cf68907fcb35f2b24e53d064ac7a9f5a06f",
+      "bytes": 1488
+    },
+    "genesis/14.json": {
+      "sha256": "38c8fc806dbd7234c853521b01d8d3a9cd05f065c106ad971e194b3d72c6ba41",
+      "bytes": 635
+    },
+    "genesis/15.json": {
+      "sha256": "a3bc81bd3aedb32f62342a5a3e7d0eeea605e676644828a276fed04303f1af48",
+      "bytes": 459
+    },
+    "genesis/18.json": {
+      "sha256": "b137925a3ec8e2e501c5d733d8614343ef317872262e92179ba29b3df7d5d5cb",
+      "bytes": 2034
+    },
+    "genesis/19.json": {
+      "sha256": "17e35e57c6a71af5d6593609c0a7b024dcca5722ebd5df5065b24db07ee36e49",
+      "bytes": 635
+    },
+    "genesis/2.json": {
+      "sha256": "a97023460e84dfe376b715ee0c0369080aa2938fa2b71638a2979c3d640e79cb",
+      "bytes": 540
+    },
+    "genesis/22.json": {
+      "sha256": "8fa345290065d2d088647ec78370282c79d81afb98bfa91ffb0d74c01eaf8ddb",
+      "bytes": 591
+    },
+    "genesis/23.json": {
+      "sha256": "c753644ab61a1a0428d5031a586ed651dc4df41a37602c3da0b8a0fb45f152a4",
+      "bytes": 1453
+    },
+    "genesis/24.json": {
+      "sha256": "579e503f8c02dc31e128d37302413470bc1f53d73bdd00bfa580149f8fce6c88",
+      "bytes": 3538
+    },
+    "genesis/25.json": {
+      "sha256": "419b7f6347ac30b11b914c7b84005c95649b20c0339fef3410dddab5ad6c65e2",
+      "bytes": 2262
+    },
+    "genesis/26.json": {
+      "sha256": "308588f6bd5e22872f80925fef881ceff818c4fbe756f22c7e14b05660a9f003",
+      "bytes": 593
+    },
+    "genesis/29.json": {
+      "sha256": "07c4df1cce03902a8b2c75cfa435176bf71addc9f018114a56831c562ab59765",
+      "bytes": 1010
+    },
+    "genesis/3.json": {
+      "sha256": "92c413434bf29d3814bb299d075c07a73f24080fe22db04edabd0d5aa58550f1",
+      "bytes": 996
+    },
+    "genesis/33.json": {
+      "sha256": "23f6baa21f37205f10703a55c9d7033456dcaa403868ab582fc5c711711d740e",
+      "bytes": 932
+    },
+    "genesis/35.json": {
+      "sha256": "f1a0fcbdc1c5dc64c0a9ef2013b49bcabc35a53fde61dae5458fd6ccfaf3bc3b",
+      "bytes": 664
+    },
+    "genesis/37.json": {
+      "sha256": "37a7deb350622e2329f327ca1d0df8d6afc76d643bb4ab4e3b8832879390563b",
+      "bytes": 1276
+    },
+    "genesis/39.json": {
+      "sha256": "db058f33a5350d7af305660b1011dca2a9fd9de6d213de817c97dafe5ab7481d",
+      "bytes": 582
+    },
+    "genesis/43.json": {
+      "sha256": "23cc3bf350154f3b7e249bcef22b82f368940ba2f1bce2b5c0f2535ef32c6b71",
+      "bytes": 428
+    },
+    "genesis/44.json": {
+      "sha256": "eda0859bc6f72d42ff9c354be63fec1670456a95e8dd9bb5f8c6329956d81bf4",
+      "bytes": 1606
+    },
+    "genesis/45.json": {
+      "sha256": "2a2cb8af352a7c8d35062aba9396146aff7344c33dd933ed14d90b33919242d3",
+      "bytes": 1660
+    },
+    "genesis/46.json": {
+      "sha256": "54f41d12c4f0b34707c021e125fa6d8a10bd32225abf46938865fb10b5573df0",
+      "bytes": 6791
+    },
+    "genesis/49.json": {
+      "sha256": "0ee32e3c67c8a181ffbf4fd1e8620fbe08622a444f2199874cd7508836103ac3",
+      "bytes": 854
+    },
+    "genesis/6.json": {
+      "sha256": "7870936b1920a992b420c5187b85f3a646b00c4a93cfa3d47a28c3257b367a0a",
+      "bytes": 317
+    },
+    "genesis/8.json": {
+      "sha256": "c724b345d574509c34f64eb39114abb99afed31a39fea438fa26977744e6d7b6",
+      "bytes": 685
+    },
+    "genesis/9.json": {
+      "sha256": "9e13a1ae4879e1766bbce8499de8b76c2f180466cd982f72e8b2b601b09c0e26",
+      "bytes": 1100
+    },
+    "habakkuk/1.json": {
+      "sha256": "e1c97cefc559968eb1b574f39bd3c08119831fc1a306e300b08d170169e92c8a",
+      "bytes": 820
+    },
+    "habakkuk/2.json": {
+      "sha256": "9248702811b7a41e8270fb6a8b2bb65d0b6f24ed380e2f1888e9dc0889a708f7",
+      "bytes": 1244
+    },
+    "hosea/10.json": {
+      "sha256": "b97335caca1b219a47e09f68b9e5e211130786b9c7ae07889abd36f17f99d83e",
+      "bytes": 830
+    },
+    "hosea/11.json": {
+      "sha256": "00eab65419a4bf5486ff6179ff7fd90b86b462284d5c1070c58dc08a9e5f2a50",
+      "bytes": 1302
+    },
+    "hosea/13.json": {
+      "sha256": "a28378634b061aa061ca22493b2db7637226fe0ac6060e63d1448a873aab57b8",
+      "bytes": 1253
+    },
+    "hosea/5.json": {
+      "sha256": "477c7e202084bce243caf4f0f77c782660f9283f220cd8389cce4eccc626ed38",
+      "bytes": 1990
+    },
+    "hosea/8.json": {
+      "sha256": "c4bc5cb5143db66cdb700ae67ebbd32af06472ea873095e1ce5eba422439525b",
+      "bytes": 374
+    },
+    "hosea/9.json": {
+      "sha256": "095891b1a3ad585265f9766accbe837cc355607d123c1e30d8033f93712a1f23",
+      "bytes": 2450
+    },
+    "isaiah/10.json": {
+      "sha256": "48fcd5db647f92dee2d5b44218cf453ec8f5f6b131b0272ed07684658930c1c6",
+      "bytes": 912
+    },
+    "isaiah/19.json": {
+      "sha256": "c0d5e83e1a853fdf59515a6529f240aa105ecd583b12064448f369c65cb3c2d2",
+      "bytes": 977
+    },
+    "isaiah/33.json": {
+      "sha256": "0ab2782eeebc2b63c3c3d88ab7a0e1549e33e057542a6fe6e2ff174a84a0722d",
+      "bytes": 509
+    },
+    "isaiah/34.json": {
+      "sha256": "783219f63b15a1d58dbb4e0062e561e7ec16cb5f7512831b45aa4aaabfb6a801",
+      "bytes": 621
+    },
+    "isaiah/36.json": {
+      "sha256": "8c14e66e921071b8aabbef66d6bb20073faca91b717a1f7cd43f76eb86a148ff",
+      "bytes": 853
+    },
+    "isaiah/38.json": {
+      "sha256": "b5a7a1b18dae6da765b20cf099775123951f5ba87149b0d3b4b7a12c2d9e44a3",
+      "bytes": 549
+    },
+    "isaiah/54.json": {
+      "sha256": "9ca3fca9ec95234e64d714a6ac1afcd4fe0455caeaa21126f9113b75ce0bafdc",
+      "bytes": 814
+    },
+    "isaiah/64.json": {
+      "sha256": "119eb28874999a1e2a9d548f513510e882c223e1d39b6d49db0ee3c906a5b437",
+      "bytes": 608
+    },
+    "jeremiah/13.json": {
+      "sha256": "93e52d8d0227763febc58b8bfacc23799192f0c8d5de791978f5313871a0b69d",
+      "bytes": 742
+    },
+    "jeremiah/36.json": {
+      "sha256": "faf5190ef03688e0024ade301903bd3903e131af509e09e83836a46f69aba4d8",
+      "bytes": 647
+    },
+    "jeremiah/49.json": {
+      "sha256": "1aae6c801fde040ff3a932ad6ce2135a54bf6fe9347f95745f284998d507ca4d",
+      "bytes": 839
+    },
+    "jeremiah/8.json": {
+      "sha256": "d96c0e2495ae1a40d52054880ee3f09e5c18704364c43edc1b98ac051e4d7e79",
+      "bytes": 684
+    },
+    "job/11.json": {
+      "sha256": "0e53b08d37aa15b5d2b1eb7f0e8bd421fb55989027cd83e6316018af5a7546e2",
+      "bytes": 505
+    },
+    "job/13.json": {
+      "sha256": "fa0a94d297d4d0eaff1ab7c899e2bedba43a0bee628da34d9720ee8be27b7865",
+      "bytes": 917
+    },
+    "job/14.json": {
+      "sha256": "a3c6e322c031d6fbe71029df53d48db42dd959bc26e4851351d199b9998e7e74",
+      "bytes": 526
+    },
+    "job/15.json": {
+      "sha256": "aa545dddf95d00ae735db003d5c3d42024f6abc6fab48099644e3cc79ac4686e",
+      "bytes": 2537
+    },
+    "job/17.json": {
+      "sha256": "ad3f7c652076fa90f54697c86279ebc50d9b4140aad2f94b3c36d16b36d14d05",
+      "bytes": 925
+    },
+    "job/18.json": {
+      "sha256": "01d7e174e44ecec85fa200f4fe7b73dc2ffba0d31ba8d22dbbcf8e110e69fa48",
+      "bytes": 437
+    },
+    "job/19.json": {
+      "sha256": "48570b15b68e05066dd29c6dde6ea6e68f4bdc3ca36800d204c34532bf24b84e",
+      "bytes": 1467
+    },
+    "job/20.json": {
+      "sha256": "8920521f0637c478627997f33beb1c05b75bee6f026edf6c29eb9a6cb098ec86",
+      "bytes": 969
+    },
+    "job/21.json": {
+      "sha256": "dabf242c88510ebbb17382be4262c76c6f371a1546c7e28c648b8fb793b0d504",
+      "bytes": 1457
+    },
+    "job/22.json": {
+      "sha256": "488fe8bb89e561fdc941946e2e966f41294febaad551506b47bd939788cacc42",
+      "bytes": 1042
+    },
+    "job/23.json": {
+      "sha256": "5f40f96c44b098f160f16b590b832748a2d0e8892346ee3a8ffa34ea99d9a344",
+      "bytes": 391
+    },
+    "job/27.json": {
+      "sha256": "cf3f4ef38030a525af9b0e2a9d64dfe0f251736edda8725e21da3cdb94f3986d",
+      "bytes": 469
+    },
+    "job/28.json": {
+      "sha256": "63b8fbd9e7ab27374f89c950bc92c1a902f34d2c6cb67bbf98c35740d4f72ca1",
+      "bytes": 935
+    },
+    "job/29.json": {
+      "sha256": "75f92c353975fa02848786e37c6e2d8315298885daa2f41b958b94e3660b7c5e",
+      "bytes": 915
+    },
+    "job/3.json": {
+      "sha256": "358849beaa397f8125ca39bc50c96f5e5a8badc127d6c20e07edfd1583e8eec2",
+      "bytes": 507
+    },
+    "job/30.json": {
+      "sha256": "70a0be7b777c7919aaa691643490e8df818610f5c5e970f1024d26d8b86cbe15",
+      "bytes": 421
+    },
+    "job/32.json": {
+      "sha256": "ef85e90b1633b9dda4d3c3a793e3763ce156355782599c7ee0f78ee056f02e42",
+      "bytes": 441
+    },
+    "job/33.json": {
+      "sha256": "83a572860ae565153a55c2f7204cd7885ef0f74eb85a18c9a3ed0052e065dd26",
+      "bytes": 2122
+    },
+    "job/34.json": {
+      "sha256": "90d63da973c723abec5f913d7cd7c771bf609f1e5c710ef3192c8e82b5de44c3",
+      "bytes": 1914
+    },
+    "job/35.json": {
+      "sha256": "cbc2ac0a8f4f04a30b529d2b1f0e1173f6d3c5ae5774c5fbe895e7b5dcbfb452",
+      "bytes": 395
+    },
+    "job/38.json": {
+      "sha256": "2bb8ca730be2bcdb02c66b841801d5191c7375eafdc8121cba9b09fb5f2bfc9a",
+      "bytes": 2428
+    },
+    "job/4.json": {
+      "sha256": "6df4ec8b3faa9593d15b215db3a7eff5a0631f8bc5c5f443139fa177de5f02ef",
+      "bytes": 986
+    },
+    "job/42.json": {
+      "sha256": "aaa29092bb473d19b3940b1b52115126fb564fbf4d23f21ecdcb0ebc5319c890",
+      "bytes": 919
+    },
+    "job/5.json": {
+      "sha256": "8281e60c0bf7a12138e6bfa6a1a7e8e940e926986eede229526fe26ccca8c834",
+      "bytes": 1064
+    },
+    "job/6.json": {
+      "sha256": "6b44ebed7e938e3056df00a9bcdeab72fc8dbb3805b37d3756927bab240b3a8a",
+      "bytes": 720
+    },
+    "job/7.json": {
+      "sha256": "305639f423743c018f2ec91bbfd0df6e19e17b5c71f2fe07fc3ddc803e19b3ac",
+      "bytes": 508
+    },
+    "job/9.json": {
+      "sha256": "5ab10a9359a3a0c9933165a7fe5362088eb6f982b62c83522458267ac47915c8",
+      "bytes": 849
+    },
+    "joel/1.json": {
+      "sha256": "42dd698c0cac42a0cdc4c58ac042564407d171c23d8311a125793d946e445636",
+      "bytes": 2091
+    },
+    "joel/2.json": {
+      "sha256": "03d846374a5d66cf7e34e011922fe3ac48c2b41aa09f164ba3c41f467739588f",
+      "bytes": 1181
+    },
+    "joel/3.json": {
+      "sha256": "d8075401c7be597ef95a919e83bb0f61563896499829552cdb4748d21e74208c",
+      "bytes": 678
+    },
+    "john/1.json": {
+      "sha256": "b5461f2bd8ab7515e3bedc374351f1c650d6e5a4f5727d7772c02b448a9db634",
+      "bytes": 1630
+    },
+    "john/11.json": {
+      "sha256": "801345a91a38acf26e0821f2203eb4ae006103a8c8314062db45388343d43522",
+      "bytes": 180
+    },
+    "john/9.json": {
+      "sha256": "5192e0b9a35c19929dcb10e4b1aeb986468233bd4ec21c49616fbab32946a79b",
+      "bytes": 561
+    },
+    "joshua/11.json": {
+      "sha256": "d54247465075fc8692910d0db743258001c69f12ef5e5ea807f9a6077017b774",
+      "bytes": 1174
+    },
+    "joshua/12.json": {
+      "sha256": "0dc992d250c3dd1c98d43b63116a9716b776fe4c77710694f49be04f65865c2c",
+      "bytes": 5614
+    },
+    "joshua/13.json": {
+      "sha256": "d2bd6c71f3a3ee9480450b335952f27ed9772104e240b61a5ea39d9f710ac5f5",
+      "bytes": 1655
+    },
+    "joshua/14.json": {
+      "sha256": "7c2e4cef19ca4f2c98dc993cb95dfabc93f3890b13973534d0dbecedc073a8cb",
+      "bytes": 1082
+    },
+    "joshua/15.json": {
+      "sha256": "b00af39c7f84c604295f5bf9e5f524079f38d486e5d2f731bac474d737455d28",
+      "bytes": 3964
+    },
+    "joshua/18.json": {
+      "sha256": "72edffefa80de86e538b29a4161a35dbedd144642ffb6e0bed58284b8e598566",
+      "bytes": 730
+    },
+    "joshua/19.json": {
+      "sha256": "aa7e7efa898c3fd4995ebf9621c94be6bc0ba204a45227418772b1abd15ed796",
+      "bytes": 2772
+    },
+    "joshua/21.json": {
+      "sha256": "6ea8c664cd9018277d2b235d8195b3413b4c5c49e167cc4d2b238ce4202b752a",
+      "bytes": 951
+    },
+    "joshua/22.json": {
+      "sha256": "c4eb9846605936bd66df3e155cbda12f63d26d6c7ef41a5799648bcfb56a48c2",
+      "bytes": 531
+    },
+    "joshua/24.json": {
+      "sha256": "0fa94b11f8b567a2ce6786bc954997f11e4a295fd02e85d6145615a03d06bd1a",
+      "bytes": 1203
+    },
+    "joshua/6.json": {
+      "sha256": "0be2e615e83ae48fa1e6e58a33d3a14334cb7a6c9ad2dabb82bb2bcc0f1287e4",
+      "bytes": 843
+    },
+    "joshua/8.json": {
+      "sha256": "495ab0ff645b04e599862084b69518a256adb2fd9ae29b763ec20ee1716c39ab",
+      "bytes": 2133
+    },
+    "joshua/9.json": {
+      "sha256": "006e7b9b158cf358c032d00e97d945ce057cb8b8f17343c4ea97664201056e8f",
+      "bytes": 1104
+    },
+    "judges/10.json": {
+      "sha256": "d04eac8918dfa5dd5d591434caed69a5e124adedb4c4c8492e3f9b01377a28c6",
+      "bytes": 590
+    },
+    "judges/11.json": {
+      "sha256": "0aae024b8d02a7af188694a5272df270655fa87eb87c45631e1d4dbeabeec067",
+      "bytes": 769
+    },
+    "judges/18.json": {
+      "sha256": "0463698811f13f53b8ede4c4021590c3f5f937223b0246c2280ea434d0bee2c0",
+      "bytes": 914
+    },
+    "judges/4.json": {
+      "sha256": "6f4ca93376978aae2499e9dca087b01679485d86263787a1fb50a75c83c81263",
+      "bytes": 1075
+    },
+    "judges/5.json": {
+      "sha256": "c9d4f34b5c090159b6383052ccf9983b31a1b4782da822af7633de98272d12f6",
+      "bytes": 1931
+    },
+    "judges/7.json": {
+      "sha256": "c70bbd7e2cc3ad6c02d8b29aea6eca73d49397ce4c675c654f50c0f9894ee7d2",
+      "bytes": 1040
+    },
+    "judges/8.json": {
+      "sha256": "b40abd0816855f4c8fb8a35a6d0f7dc86241cac9d4b39d7c5a25d13ae2a8af2c",
+      "bytes": 1174
+    },
+    "judges/9.json": {
+      "sha256": "f638858c3176e317ab6855eb71f0328baf64ce3821a340c6f8481eaf863c5f0f",
+      "bytes": 1633
+    },
+    "lamentations/3.json": {
+      "sha256": "7744c1f6be5e82ded9733506ff5b300f0fbfddfa2aac6c79731d5c75a5c812ef",
+      "bytes": 1657
+    },
+    "lamentations/5.json": {
+      "sha256": "082a0ad5c506663040e9e45703ec1fb2a243ccd4dd52f2526ef46693cd31b6e5",
+      "bytes": 502
+    },
+    "leviticus/11.json": {
+      "sha256": "7429fa11157b81a1dc1ab8d55ba689faf9819757a8dafd35c48c1e1a1ff1cdcd",
+      "bytes": 2305
+    },
+    "leviticus/13.json": {
+      "sha256": "eb4cec138c11db57ef4cc088d58a3a8cb2e99b3f10882a398dfa29694b9fd1d3",
+      "bytes": 2015
+    },
+    "leviticus/14.json": {
+      "sha256": "b4cb433b56418830fbfa8d2d58f4135247e6f5a1be0c45cd8ce23af12b10303a",
+      "bytes": 2160
+    },
+    "leviticus/15.json": {
+      "sha256": "abd1603ad77d69c12b5577170743b37066204b240db61721d7274ffc7bb1417b",
+      "bytes": 1161
+    },
+    "leviticus/16.json": {
+      "sha256": "0a599c5bab6290b5fa40f6061c8639a806f500c3db66546ed7e9d7a182f71919",
+      "bytes": 933
+    },
+    "leviticus/19.json": {
+      "sha256": "fb3249178ef3b05b47ba3e3c4aa01d04ba08a851e2a356956ee500f645c879d2",
+      "bytes": 1621
+    },
+    "leviticus/2.json": {
+      "sha256": "bd35248674a326f7ecb65f6794a4343374aface1988b92eb53c012f86a824aef",
+      "bytes": 863
+    },
+    "leviticus/20.json": {
+      "sha256": "d9de432235fe8c083dcb0dd8e7303c820f5de58d05c2bf6974d1911b1d820871",
+      "bytes": 547
+    },
+    "leviticus/27.json": {
+      "sha256": "bdb132adf57f0aaf2d396b7b70fbc238f3009f70b9dfe7c0a91d2c2f0b005a65",
+      "bytes": 777
+    },
+    "leviticus/4.json": {
+      "sha256": "f4c9e15d5312eb6ae897c9eb728bb34abc8a5f64f3c1a7be624ea7f8def636c7",
+      "bytes": 970
+    },
+    "leviticus/5.json": {
+      "sha256": "27fb4df7e31b673db4704d7473984b168fbe9e2c8300d5d6e5f7fdfd121b7e88",
+      "bytes": 912
+    },
+    "leviticus/7.json": {
+      "sha256": "5645d494d835463dcaf3df94a36d9f4837d0f9a0378070eb55c9ee4fb1bbfad6",
+      "bytes": 634
+    },
+    "leviticus/8.json": {
+      "sha256": "5a29fc0926eadfda5fe7e1313656885275b79b8be2991823e42c10e39a8a717a",
+      "bytes": 565
+    },
+    "leviticus/9.json": {
+      "sha256": "3fc9c9f5531ef48caf4dfbdef9cd79677c09c127d0d3758024fbe70dd84555f1",
+      "bytes": 893
+    },
+    "luke/22.json": {
+      "sha256": "b738793bcae5994bb87447e815b5114a69f36bf9127c5384904110452bc1acce",
+      "bytes": 411
+    },
+    "malachi/1.json": {
+      "sha256": "a65d80fd1b3dad6519bd377b03e36edc974f9ea1c9ca22911a0dfd46ca329601",
+      "bytes": 961
+    },
+    "malachi/3.json": {
+      "sha256": "d14d4fd411be92f5b340313dad3d86c1e7188e1d30180277530986bfc462417d",
+      "bytes": 801
+    },
+    "matthew/12.json": {
+      "sha256": "8516a2a7a570ddd1f557c4e68bb7183a8797ae3e057c6682a23a606e960dd1e6",
+      "bytes": 539
+    },
+    "matthew/14.json": {
+      "sha256": "94f68fac7f6063765531eb84c4b6abba6d9447036de1647eac269646eb47f328",
+      "bytes": 424
+    },
+    "matthew/4.json": {
+      "sha256": "2d0c013f59690c05a9dfa1dd74555a8805dcb784ed28185d1492800e75b76f8d",
+      "bytes": 882
+    },
+    "matthew/9.json": {
+      "sha256": "01588ff7193ef5bcb38b82fc50422fbfa65f286ba6717b689aa78cdb38688d5d",
+      "bytes": 599
+    },
+    "micah/2.json": {
+      "sha256": "cebae3275d15ed3b689e815b169e9c88014ae1e741c1bf15520dbe420ff653aa",
+      "bytes": 1594
+    },
+    "micah/4.json": {
+      "sha256": "bcd5b79555bb1d8c506d1cffd8cbe1a3783470d0ca60d6fdb9f003d03d82b393",
+      "bytes": 1370
+    },
+    "micah/6.json": {
+      "sha256": "c26ea5035fe13a854aa76e2ffeb2356c861270bb932dc244d5569195cac69267",
+      "bytes": 2523
+    },
+    "micah/7.json": {
+      "sha256": "6bac51c60c6b39fdd4109888e6f61281ef0baa0ce0c802562cc3b7af0c4e4ef0",
+      "bytes": 1096
+    },
+    "nahum/1.json": {
+      "sha256": "2f6da29af1f884e6bd70b4b6878c1cc770e718f1bd8ff8d703c8f14a117df2c8",
+      "bytes": 1801
+    },
+    "nahum/3.json": {
+      "sha256": "504b4ddbd5d77ecb1a0bd9977f06f80fd712cc1f7d85df9b43a141317b2ae26a",
+      "bytes": 1215
+    },
+    "nehemiah/10.json": {
+      "sha256": "590cc38a8c48453605e38117a750c141adf7c6771d3c58f9dda02707937a14b7",
+      "bytes": 4282
+    },
+    "nehemiah/11.json": {
+      "sha256": "41e2f237b65f1b30bea52e107542011f05810a8ec5710e1f450425960031314e",
+      "bytes": 2143
+    },
+    "nehemiah/12.json": {
+      "sha256": "7e4372e1c280e82c390725f9572b26bce22f2bff574c9db0f84a4e22b44617f3",
+      "bytes": 7995
+    },
+    "nehemiah/13.json": {
+      "sha256": "7d04c75d5ca54291b78827eeff201acd63737d17ebefca790e144b7b78f6e807",
+      "bytes": 571
+    },
+    "nehemiah/2.json": {
+      "sha256": "bce731b6af38d4fd2c4c57229ebdef5b29ed49852480ef0fc63c0b1b469195ed",
+      "bytes": 421
+    },
+    "nehemiah/7.json": {
+      "sha256": "bb813ef36cfecb084a40b3f6229e5d5e29ffb5890e8af05044c37245ba32bad5",
+      "bytes": 2802
+    },
+    "nehemiah/9.json": {
+      "sha256": "8822ecb278f1005695c4f565c8eabc0eb058aeeb3a01f211ebe51cafabc196d8",
+      "bytes": 809
+    },
+    "numbers/10.json": {
+      "sha256": "0d3e505e6eae399df4c69a0c2e73efe26713f07f17499185308de93ca73e80ca",
+      "bytes": 1631
+    },
+    "numbers/13.json": {
+      "sha256": "c5e278a5d551431a1be1eb886b2a247b824e955685d5a6661f0d291cd0150334",
+      "bytes": 3710
+    },
+    "numbers/16.json": {
+      "sha256": "74900f9c88fca02b4e5c88279bdebb65832515b20efe6e83a1c975d78ecd009b",
+      "bytes": 622
+    },
+    "numbers/18.json": {
+      "sha256": "8e9c048d33162187eef9541d67af0866503f754541eb9cbaceaebf79af918f82",
+      "bytes": 1199
+    },
+    "numbers/19.json": {
+      "sha256": "fc82e5691895393f149396b64b3d3ca16f8e0618cf6a380ba211545859ada40f",
+      "bytes": 1495
+    },
+    "numbers/2.json": {
+      "sha256": "df699c761b786b9d81b16c43cf26c2fd389101abb8787db372b90d750a6b048c",
+      "bytes": 1773
+    },
+    "numbers/21.json": {
+      "sha256": "2a765851ca7fd025668cf998869ca9af9a43bc1dc469bde7fd31d8ab02911ed8",
+      "bytes": 2179
+    },
+    "numbers/23.json": {
+      "sha256": "9555cd136d64ee4c6c273445e37e4c6f5b0d7a40574f42ef36123f8ede701cdf",
+      "bytes": 588
+    },
+    "numbers/27.json": {
+      "sha256": "ff7ef140b34384ffe6300a7c10bee04f314b31d8740718b688e58fef5aa6b318",
+      "bytes": 681
+    },
+    "numbers/28.json": {
+      "sha256": "d793f7ab5c113c5bdf26ab61f5e358d10b019fcab4276443127596d30e3d7690",
+      "bytes": 1095
+    },
+    "numbers/29.json": {
+      "sha256": "6c21e89563cc62f033b319d27448f8f611a8f3b94452527848a0624c57d9e0f8",
+      "bytes": 673
+    },
+    "numbers/3.json": {
+      "sha256": "58a55b83f475b41eeb8347cc28910f1ba1285d34e11055285cb656ff8c9b5778",
+      "bytes": 2149
+    },
+    "numbers/31.json": {
+      "sha256": "939e8468e6cfed950cb27ce308c63b7097384603aedb2817f809cc2525615c01",
+      "bytes": 1264
+    },
+    "numbers/32.json": {
+      "sha256": "8e4397a4b5959c3d14658e76beca84ea55f00b5da09aee95634f3d824c8487d8",
+      "bytes": 705
+    },
+    "numbers/33.json": {
+      "sha256": "1aa5a207929b57d709776a2275cf766193130f3ab2e9241aab8a4d1aa90a203a",
+      "bytes": 1137
+    },
+    "numbers/4.json": {
+      "sha256": "a352019937ac404d2010cd05118484f008086e33ad2764e3abc9ffcac66e13f0",
+      "bytes": 851
+    },
+    "numbers/7.json": {
+      "sha256": "869d918236db6fdd00db4e6e48fddc136aa84f830d7e47cdcdfd30c6e4b9e723",
+      "bytes": 3667
+    },
+    "numbers/9.json": {
+      "sha256": "697ca9dcb7b336fe3a57c8f2d5bec8effdde94ce2b0b4279941473cbdf07115c",
+      "bytes": 1116
+    },
+    "proverbs/1.json": {
+      "sha256": "94ce08e8e1c9b9f49e6aa5d724085a05cf5be317a77a249a2965c652b427b3ad",
+      "bytes": 1420
+    },
+    "proverbs/10.json": {
+      "sha256": "23a9cb453834825cd50a003f52f6d88c8a3900a1a17f5b6b33368e5f2ef770ab",
+      "bytes": 997
+    },
+    "proverbs/12.json": {
+      "sha256": "64aff4c00ec59bab0d7c16f6209509ef6d0d5d09b077fdac6b28e91175582fb5",
+      "bytes": 453
+    },
+    "proverbs/13.json": {
+      "sha256": "4cea51d971bd88e2f12e4f9427fbe7e6f0499f8977eb0a27b83dbdc5d90a7ec6",
+      "bytes": 1023
+    },
+    "proverbs/14.json": {
+      "sha256": "212c451efccb0ada317246a3a5e909879359d47c281655ab4c763eb284b96f91",
+      "bytes": 2424
+    },
+    "proverbs/15.json": {
+      "sha256": "9a5093faa9ff4bcbc1083f2c2531cee56c2f6a27d849b13a91728732cc3c20db",
+      "bytes": 1999
+    },
+    "proverbs/17.json": {
+      "sha256": "38aa6eedeac64a4f194957e2f406d22ba3fca50266f3696c1cef867c331d78e6",
+      "bytes": 1007
+    },
+    "proverbs/18.json": {
+      "sha256": "88fd6c493b6208c45b9aec990dc46d074c44fffb827bdaef0eac5b83cb127c30",
+      "bytes": 981
+    },
+    "proverbs/2.json": {
+      "sha256": "211cb237480ed31d6b576a2675925161b84467811bf0aebbcbef239863d1c4d0",
+      "bytes": 1778
+    },
+    "proverbs/20.json": {
+      "sha256": "bc49fab4afefd7eab4ed37a685bf434fa70458f5af79e73888d9644cc02038dc",
+      "bytes": 604
+    },
+    "proverbs/21.json": {
+      "sha256": "d0661435939bf0e71b012a5fd4ec5e703f7895c94a4f0f471565837816411684",
+      "bytes": 1913
+    },
+    "proverbs/22.json": {
+      "sha256": "54d25577ddc49f0ebae73ebcc86c8e46d899f8fc53667b3dff0a8fe8d92d19c6",
+      "bytes": 1139
+    },
+    "proverbs/23.json": {
+      "sha256": "0eac1fb718c6d36dcb81bb8009fe73e26b7910ad6c7ea6c41523d4e1349828de",
+      "bytes": 1546
+    },
+    "proverbs/24.json": {
+      "sha256": "ca48e747979a5d22d6772a0045c71c794cbd3396d740c9b6564d266a746fb5c7",
+      "bytes": 895
+    },
+    "proverbs/26.json": {
+      "sha256": "702e2f1ae7c521084114073e1803436d081c0b1eeb312b6657c6af874dd6d8fb",
+      "bytes": 1053
+    },
+    "proverbs/27.json": {
+      "sha256": "9023323187c504b0d398e2643662e7a209619e6f52ef609fc3779b82e00bf60c",
+      "bytes": 1033
+    },
+    "proverbs/28.json": {
+      "sha256": "21f9a8c1d00779a6950cac8f849077fb5cb4f855059337518db4abc64a3492ea",
+      "bytes": 510
+    },
+    "proverbs/29.json": {
+      "sha256": "ff0f11932c270a795827268a718e70cae3df61f387632e808681b1a737edd2c3",
+      "bytes": 992
+    },
+    "proverbs/3.json": {
+      "sha256": "06109a6ef0e685763ac5072c7ad78be3600daa167e8ddc6c973cbc0041823394",
+      "bytes": 1404
+    },
+    "proverbs/30.json": {
+      "sha256": "8623aee13013e151809b72476d3cbd630729f9d5d5b7ac71e508868d78cedea9",
+      "bytes": 2228
+    },
+    "proverbs/31.json": {
+      "sha256": "bfe83e2a445971440bafb5a66781f449213bb8b177f78d982f952fc4e97406dd",
+      "bytes": 1445
+    },
+    "proverbs/4.json": {
+      "sha256": "d4b0636b0b1ae4ab6d3bdfa71b18294fbd4354a58983e5747541e8b17433c8a6",
+      "bytes": 943
+    },
+    "proverbs/5.json": {
+      "sha256": "4df8971bca2358a417c6a59fa2e2ee71eaff1a89efe01524b31117a1133c006f",
+      "bytes": 439
+    },
+    "proverbs/6.json": {
+      "sha256": "2d03cfc7dab6394c6ec7e67e9c3633fc0ee0e6b0347dbe15654a1d0ca72905ed",
+      "bytes": 1473
+    },
+    "proverbs/7.json": {
+      "sha256": "eb68a8034938c1caa051c212d6a7cf7a00c4cc551bc10e4cea7f60c33aff59bc",
+      "bytes": 1335
+    },
+    "proverbs/8.json": {
+      "sha256": "9f47e81b08f36b8478f8e3995383964f5ffd3e5dcd1c014723ec78e2e440bc8a",
+      "bytes": 866
+    },
+    "proverbs/9.json": {
+      "sha256": "11625bfcb49e22b0682b2140ee29e15b8ac72594e84d6c20929f67f91c54dd5e",
+      "bytes": 943
+    },
+    "psalms/1.json": {
+      "sha256": "2943f477e30f72ea46f97df721b1909ec6b652bd0b11d5e673be60e34673b57c",
+      "bytes": 593
+    },
+    "psalms/103.json": {
+      "sha256": "57075f8185f7223acbf56483123f4cfa4360a3aabbd91e5a09fc548522565348",
+      "bytes": 1092
+    },
+    "psalms/104.json": {
+      "sha256": "aa2302e1071f6684687a01c12fc340a54d50ca70bc56632874d80b50fa9001a7",
+      "bytes": 1841
+    },
+    "psalms/105.json": {
+      "sha256": "1824a4d4f3c5cfe4b980433bc6c8646faac3e3b687c720651c109882773f167a",
+      "bytes": 4251
+    },
+    "psalms/106.json": {
+      "sha256": "949bad23c361a41c3dc4bd1e91715bf0d2db5c09e07abe08262e323806615929",
+      "bytes": 2306
+    },
+    "psalms/107.json": {
+      "sha256": "6204d4279266cd3342661849dc0d274d5bf6c7a832634ec5fc1c68a8f8644eac",
+      "bytes": 1825
+    },
+    "psalms/108.json": {
+      "sha256": "a0c3e7cd34394db2de940bbc761f9d2a69521f511bee22912343334df1ace83e",
+      "bytes": 466
+    },
+    "psalms/109.json": {
+      "sha256": "fa58100ae9fdac1f9400f6bb47a598a88e85917910c10926b651bfcd43cff9b7",
+      "bytes": 1785
+    },
+    "psalms/111.json": {
+      "sha256": "51f95ec2b1a1d269bd88dd47c1b652fdc64ed99cee54d64e7b136932d1dbcb9f",
+      "bytes": 1127
+    },
+    "psalms/112.json": {
+      "sha256": "90bba18e90cf09f1695fe6da018ae423cd3c67e2b464a811097b6257873cc3a8",
+      "bytes": 1057
+    },
+    "psalms/113.json": {
+      "sha256": "0ec61e73c0ff5969546cb2d8482bacfe76219440d94f32bce04e87a2862131c8",
+      "bytes": 855
+    },
+    "psalms/114.json": {
+      "sha256": "4bce5de5c004880dc9fce3184216f727e11b316abc7f9a278e000b2a42d7a6bd",
+      "bytes": 808
+    },
+    "psalms/115.json": {
+      "sha256": "9ded45439c9fdca3d234cb64e63803f16189d7d8d664b558aeeca1e642aff0fa",
+      "bytes": 924
+    },
+    "psalms/116.json": {
+      "sha256": "7d7886dece40c94030fbb76af6b317eac173b1dba99c4a476bd0ec9f3041367d",
+      "bytes": 745
+    },
+    "psalms/117.json": {
+      "sha256": "38208e2ebc465449419098a3038b20f05fbd32b945f60384aed70f96528af180",
+      "bytes": 528
+    },
+    "psalms/118.json": {
+      "sha256": "90ff1f49dce1c68e662be49c05bc00fadec3c3ae6528baf4ee214154f4e85322",
+      "bytes": 2265
+    },
+    "psalms/119.json": {
+      "sha256": "b9b207801d21ffcfc01d42883a04793e39c43b37151491dd27739a105a9e916a",
+      "bytes": 7137
+    },
+    "psalms/121.json": {
+      "sha256": "a12c25829511354bbf0d03d6858ce0823c8fcc7d8df316a71665fd50f825202f",
+      "bytes": 846
+    },
+    "psalms/122.json": {
+      "sha256": "e1cf03249e85af8d092ad3a13644d6fba7432811cb3a62d8f550c2f06361166b",
+      "bytes": 665
+    },
+    "psalms/131.json": {
+      "sha256": "43120d9265c99699e5282cca1cc4218cf51a354c5c6975111ddf91959cfff2e4",
+      "bytes": 724
+    },
+    "psalms/132.json": {
+      "sha256": "44480fe4f31b29d6553bd5e9f2b3a5a0952916f6886b254f175a9666f47dd742",
+      "bytes": 456
+    },
+    "psalms/133.json": {
+      "sha256": "fd754dabb4bfca97fd00c699e3d9ebc1a951691d491ad4fa6bb7a27244163911",
+      "bytes": 651
+    },
+    "psalms/134.json": {
+      "sha256": "372f59bbafdc1b599f8f499aaf618cbda3e4948786e4a0f2b28901f96044f8a7",
+      "bytes": 383
+    },
+    "psalms/135.json": {
+      "sha256": "cb1dc68a0fcff02e651fae7b46e2ceec4d0e23d48f94e9187f5f0fc4afa40fb7",
+      "bytes": 2566
+    },
+    "psalms/136.json": {
+      "sha256": "dba8d8548adf4d0883b4979a7ea0d7fca89e97ec52efc4c1a33ffd3a1eb176b4",
+      "bytes": 1742
+    },
+    "psalms/143.json": {
+      "sha256": "afbcd7508911c60bcd1b6e7ffe213efce8c6f334efb390644d43c48f94c022cd",
+      "bytes": 758
+    },
+    "psalms/145.json": {
+      "sha256": "5efde2055faf00b01880903835d620c4402c3c4604125157f57fa732db6d8132",
+      "bytes": 485
+    },
+    "psalms/147.json": {
+      "sha256": "b361df65885ba3e3bf9cc7c88ed418336ea8ed0a66167d638ab404480fc138be",
+      "bytes": 453
+    },
+    "psalms/148.json": {
+      "sha256": "d03cd717e1da8004d447c9dbc96345749ea9ae0de5b880cff703648f76b948f8",
+      "bytes": 2401
+    },
+    "psalms/149.json": {
+      "sha256": "3f965e293d591d7d8e88d8d77d620bfe23d7dfa179dc9f7bd49b72a20562f77a",
+      "bytes": 491
+    },
+    "psalms/150.json": {
+      "sha256": "f8ffbbf152e4367f20315b621bd07a8193a6ab1d07e6b782cf40d032752514f2",
+      "bytes": 1003
+    },
+    "psalms/16.json": {
+      "sha256": "77812fc45526b23b43e65fc00c0a2f8b37101b854aebb616e0023fb0389c9050",
+      "bytes": 534
+    },
+    "psalms/2.json": {
+      "sha256": "422dcd0577c3726faf0da44623fe2a0baecf04fa6934cc0d056f5853fd9eb256",
+      "bytes": 444
+    },
+    "psalms/23.json": {
+      "sha256": "300fb2bb8d9d465f5de671172d1542357b3fd3c86fb1a9d0b4cb7005f3923a5e",
+      "bytes": 820
+    },
+    "psalms/24.json": {
+      "sha256": "caf86e663a59ddade7c1c080c3a3953d0294a0e332bc3a07e9315b2314e033e6",
+      "bytes": 649
+    },
+    "psalms/25.json": {
+      "sha256": "01fd6ee776cb58e58084ad6615091db4f31dce29befbcc19063123c938d83f0b",
+      "bytes": 1770
+    },
+    "psalms/26.json": {
+      "sha256": "5efb36862028d1d284394345f50fba7a36210f5af02e44f341f06d28c6e8511b",
+      "bytes": 488
+    },
+    "psalms/29.json": {
+      "sha256": "a17dd824194e160f09bae6c50be15f725ccf197f520c6327bad3beb1f464465c",
+      "bytes": 530
+    },
+    "psalms/32.json": {
+      "sha256": "80500679bb52470ae88b22837c275aaff5c52e34b4a851541807e0167f4f40e2",
+      "bytes": 1026
+    },
+    "psalms/33.json": {
+      "sha256": "ce98de3b6f2db4a26e209a841cf51c232f7e72f47d4a9951013f48f9a1f315d3",
+      "bytes": 903
+    },
+    "psalms/35.json": {
+      "sha256": "289a3bb8da0f1d6fb50ff975e43c9691afe1ad8d7d7170f0d25f01256d52c062",
+      "bytes": 1742
+    },
+    "psalms/37.json": {
+      "sha256": "c82c468c56fc1e103499832a9f23b5bbfb81353731cf1cc1359d473389efefd6",
+      "bytes": 2286
+    },
+    "psalms/43.json": {
+      "sha256": "a1a89baf076eae91ee1028266c533b34fbed130f079abfb66979d6e5ec5624ba",
+      "bytes": 1486
+    },
+    "psalms/50.json": {
+      "sha256": "a2e1734bdea5cb5698f3a911b813b0fcfbbd23ed23add5b0f64b6b36bda5cd8e",
+      "bytes": 464
+    },
+    "psalms/7.json": {
+      "sha256": "ec747a12f5fd8b303b677dafb5796d6a6d56c170622562ae10e8d38f8e3528a0",
+      "bytes": 404
+    },
+    "psalms/71.json": {
+      "sha256": "a1f68936769867ad5605f19d67bcfbc03d755b8f7cef60f09d1e4ecd5bffbfa6",
+      "bytes": 485
+    },
+    "psalms/73.json": {
+      "sha256": "33fb0d5e2a34354c1c53cf4db923e518a129cf9e0d9d3e10d24540a91815f9ab",
+      "bytes": 465
+    },
+    "psalms/74.json": {
+      "sha256": "5788e9a5c64256b649b478f71b70256a6e5b007c1e5805c0444dc260bf2696db",
+      "bytes": 614
+    },
+    "psalms/75.json": {
+      "sha256": "6194bc27b59caf76061d1003520a78f847f057a2bb2adeab2fc039f6e6ee3ab7",
+      "bytes": 424
+    },
+    "psalms/77.json": {
+      "sha256": "7189fdb08e71103be517ba28a8cff7308ed7d3f293f6c6fd72a4b2f8ae2f9f65",
+      "bytes": 412
+    },
+    "psalms/78.json": {
+      "sha256": "54862812a93f989d8ace385e60d6b4298443374efb17d225c3695b810bb7adfd",
+      "bytes": 3163
+    },
+    "psalms/79.json": {
+      "sha256": "6fcf16c34ddc0cee2463c3c3bb31980a6e43b11cedc76a6d6d137b708882bc82",
+      "bytes": 519
+    },
+    "psalms/82.json": {
+      "sha256": "ec96729a945235581f7786dc6b400016badef64f79071200ea7187ab2b0fb45f",
+      "bytes": 573
+    },
+    "psalms/86.json": {
+      "sha256": "91dcf6130da15ef85963760e0bdc62891c4eb7af757d4d6896ee25d4a2797e02",
+      "bytes": 1999
+    },
+    "psalms/87.json": {
+      "sha256": "be0ab08e93288a81ca9aeb853a4984c67ab43f057f8954ec3a1c166594084dba",
+      "bytes": 577
+    },
+    "psalms/89.json": {
+      "sha256": "2035ec8d95c7c988895940440288504470cdcc2f940d608148f722d3e011b4af",
+      "bytes": 560
+    },
+    "psalms/9.json": {
+      "sha256": "1f1ce2dc5f2445252362eba95b1a54058f01324d9fe863d395b24d493ca40bcc",
+      "bytes": 562
+    },
+    "psalms/90.json": {
+      "sha256": "60e19206dfc37236a18afb83b55a48494aa49552f8fddabf7e2ca58df2206c3c",
+      "bytes": 1833
+    },
+    "psalms/91.json": {
+      "sha256": "cd5eca794dfee8c293b66b985150115daf8012e6e7d93400b32c25217b4e14ef",
+      "bytes": 1042
+    },
+    "psalms/92.json": {
+      "sha256": "33f9bc848b5ffcec222dbddcd72b7ea7c7258449b5fe2356397823e54c7d9a5b",
+      "bytes": 493
+    },
+    "psalms/94.json": {
+      "sha256": "c0870988cfc1734925c401a2638ede7418a82ebd7118f857cedcd042f74a68ce",
+      "bytes": 922
+    },
+    "psalms/95.json": {
+      "sha256": "f2e54bb4ee9569306e7e8ade4f5289488e652cd51c6a8c2be2d87df3a3804f16",
+      "bytes": 557
+    },
+    "psalms/96.json": {
+      "sha256": "42d8068158957bfd7923d5f5f788a27f599696feb1da0802611a06b9cbb3ff55",
+      "bytes": 2191
+    },
+    "psalms/97.json": {
+      "sha256": "c1e619f02dd04c53950c5d2b764ce065f2b6f4506279c65860739265308ae348",
+      "bytes": 1337
+    },
+    "psalms/98.json": {
+      "sha256": "78a499bf07302302ca5e859b865999991980129b2f422cfc343af9cf3a03e59e",
+      "bytes": 1239
+    },
+    "psalms/99.json": {
+      "sha256": "7d6417c6986809d1bac259f7bc8d0a85b73865dd325409c99abfb3f07dbdb0d2",
+      "bytes": 1510
+    },
+    "romans/10.json": {
+      "sha256": "3c5b06d734d69005b0b34d51bb2b3b12a3810bca12b549bd4214cd11b52428b0",
+      "bytes": 590
+    },
+    "romans/2.json": {
+      "sha256": "eed7d46eeacfc8cfd295fc9e38a8f8dbf38542b6e547430418f96db8b960ba18",
+      "bytes": 750
+    },
+    "romans/8.json": {
+      "sha256": "809334c1d2a554fe50a39937591508e8a19ac86ca9b80dd4a5fef63223734653",
+      "bytes": 677
+    },
+    "ruth/2.json": {
+      "sha256": "c716680ec79979e351426fea36ee0dfb5fa5436450feb327e7bab9595f6d3b13",
+      "bytes": 970
+    },
+    "song-of-solomon/1.json": {
+      "sha256": "a6d659f087aec52ca3100f3a07a3bc49e71ec9052cb9464e83aa3d00d451022b",
+      "bytes": 881
+    },
+    "song-of-solomon/2.json": {
+      "sha256": "5204fc64dd525e8161c0870e4ae8ac389c38ec61cb69ccf791ad48ece1be627e",
+      "bytes": 2120
+    },
+    "song-of-solomon/3.json": {
+      "sha256": "0208726bdd0e670a3f7afbe2f5d83fdf36689a8babad6a9cd4729494682c54f1",
+      "bytes": 807
+    },
+    "song-of-solomon/4.json": {
+      "sha256": "9a4eb35efc6f748f25e33700e8e19217bcc68b7b3b44ede605416ca1873b510d",
+      "bytes": 840
+    },
+    "song-of-solomon/6.json": {
+      "sha256": "adade9e435cd49493bf79b062b9297652d76763211886729745671509274491b",
+      "bytes": 681
+    },
+    "zechariah/1.json": {
+      "sha256": "bbe6f1cc460fb4202d7379f67c0dfc6d356ac1aab75c4f817c8889593cf6bf77",
+      "bytes": 997
+    },
+    "zechariah/10.json": {
+      "sha256": "2a5b7e0e20dc28df47fc0d8dd66c92114759ea81f17ffc27cabea6db23a30295",
+      "bytes": 760
+    },
+    "zechariah/12.json": {
+      "sha256": "827732d1b14ec8637988cf8dcf7b987dafd8596e58f4c3ed952cd84d27a94278",
+      "bytes": 919
+    },
+    "zechariah/14.json": {
+      "sha256": "0372b85f8466b601c04ad59e67350b99fbe111b3585d4bc99b04578eb1372d92",
+      "bytes": 1559
+    },
+    "zechariah/4.json": {
+      "sha256": "f187a1c458d337ab7f90049b686e784768f8ba9f3a3887ef1eb259b3c4863b88",
+      "bytes": 913
+    },
+    "zechariah/5.json": {
+      "sha256": "0320de940219d856dd27eac40e2afa635a6feb310abd96b491033d7a6d70dfde",
+      "bytes": 1242
+    },
+    "zechariah/6.json": {
+      "sha256": "cf2bcf1e393624b1eb68f748006ebf5f22eed61245d4dc1d774eb28c2ed599de",
+      "bytes": 2150
+    },
+    "zechariah/7.json": {
+      "sha256": "0704c0deb36ea19a76480464c967af9a3c0e190b3d976f0d95bccef5e13037a8",
+      "bytes": 390
+    },
+    "zechariah/8.json": {
+      "sha256": "9dbe2de175ab707603cca925623acffa4ea9526efcff797a0f06635e29c206c4",
+      "bytes": 535
+    },
+    "zephaniah/1.json": {
+      "sha256": "4b45151392e0483ba473e2cc416a157a930db6e3f5db7900b49d7f46d6ead44f",
+      "bytes": 957
+    },
+    "zephaniah/2.json": {
+      "sha256": "c698f773addba9db89b3ee4e096947a85ae6edf1b6affd6308045dad1a533dab",
+      "bytes": 1542
+    },
+    "index.json": {
+      "sha256": "ddd6c8c39b83a035c2bb9864f12ec22c1e8fb5d768db0e2b5eac74f64a3599f7",
+      "bytes": 1763
+    }
+  },
+  "bytes": 555937,
+  "gzipBytes": 265935,
+  "maxChapterBytes": 8583
+}

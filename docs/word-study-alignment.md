@@ -37,9 +37,13 @@ WCAG conformance audit of the site.
 The 60,663 retained Genesis, Isaiah, John and Romans token records contain 15
 lexical/reference fields. None supplies translation-specific English word spans.
 Strong's numbers/definitions and verse-number compatibility do not establish word
-alignment. There are **no verified production word alignments** shipped here,
-including for DRA. Original-language tokens and lexical definitions remain usable;
-the panel explicitly reports that exact word alignment is unavailable.
+alignment. The reviewed catalog covers **God** (אֱלֹהִים, H430) in WEB Genesis 1:1
+and **LORD** (יהוה, H3068) and **Moses** (מֹשֶׁה, H4872) in WEB Exodus 10:1. Review checked the exact WEB
+verses and published token identities against the interlinear for
+[Genesis 1:1](https://biblehub.com/interlinear/genesis/1-1.htm) and
+[Exodus 10:1](https://biblehub.com/interlinear/exodus/10-1.htm).
+For unmapped selections, the panel still offers the original-language tokens
+and lexical definitions and reports that exact word alignment is unavailable.
 If the optional alignment module cannot load, English dictionary and verse-level
 original-language lookup still work with the same unavailable-alignment notice.
 The module is requested once, lazily, without delaying normal Word Study readiness.
@@ -47,12 +51,13 @@ Its load attempt has a three-second deadline. Errors, missing APIs and timeout k
 the fallback for the page lifetime; reloading the page permits another attempt.
 Removing a timed-out script cannot guarantee cancellation of browser execution,
 so any completion after the deadline is ignored by the controller.
-Successful loading within the deadline is used on the next word activation, never
-to rebuild an already open excerpt, change focus or repeat provider lookups.
+Successful loading within the deadline can be used when original-language tokens
+first render. If the tokens have already rendered, the module is used on the next
+word activation. Loading it never moves focus or repeats provider lookups.
 
 ## Reviewed alignment contract
 
-`js/word-study/alignment.js` keeps an empty, code-reviewed production catalog.
+`js/word-study/alignment.js` holds the production alignment catalog.
 Future catalog additions require a separately reviewed alignment source, including
 title, source reference, revision and reviewer. A `verified` label received from
 an arbitrary external source is not sufficient: there is no runtime external
@@ -105,10 +110,9 @@ word's source slice must also equal its displayed token. Modified wording or mis
 italic markers fail closed and clear stale offsets. WEB/DRA text remains exact and
 unchanged. Ordinary parentheses and nested literal brackets are not stripped.
 
-These offsets identify English occurrences, not Hebrew/Greek equivalence. The
-production alignment catalog remains empty; provenance, exact verse text and token
-identity checks still gate any verified mapping. Tests use explicitly synthetic
-mapping fixtures only, never inferred definitions or approximate wording.
+These offsets identify English occurrences. Provenance, exact verse text and token
+identity checks still gate each catalog mapping. KJV tests use explicitly
+synthetic mapping fixtures.
 
 The KJV correction is stacked on test-only PR #113 so its diff contains the actual
 application fix separately. Shell cache 50 delivers the changed precached alignment

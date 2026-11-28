@@ -61,6 +61,10 @@ for(const [word, shard, book, chapter, index, ambiguous] of [
     expect(current.requests).toEqual(previous.requests);
     expect(result.senseSelection.selectedIndex).toBe(index);
     expect(result.senseSelection.ambiguous).toBe(ambiguous);
+    if(word === 'God'){
+      expect(result.relatedWords).toEqual([]);
+      expect(baseline.definition).toBe(result.definition);
+    }
   });
 }
 
@@ -230,7 +234,7 @@ test('Word Study dictionary failure retains the existing local fallback without 
   expect(current.requests).toEqual(previous.requests);
 });
 
-for(const [displayWord, chapter, expectedStart] of [['king',14,'A chief ruler; a sovereign;'], ['God',1,'The Supreme Being;']]){
+for(const [displayWord, chapter, expectedStart] of [['king',14,'A chief ruler or sovereign.'], ['God',1,'The Supreme Being.']]){
   test(`Word Study Reader displays the selected ${displayWord} sense through unchanged panel controls`, async ({page}) => {
     const errors=[]; page.on('pageerror', error => errors.push(error.message));
     await page.goto('/');

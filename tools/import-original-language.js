@@ -86,7 +86,8 @@ function parseStrongGreekXml(text) {
     const body = match[2];
     const definitions = [...body.matchAll(/<strongs_def[^>]*>([\s\S]*?)<\/strongs_def>/g)];
     const fallbackDefinitions = [...body.matchAll(/<kjv_def[^>]*>([\s\S]*?)<\/kjv_def>/g)];
-    const definition = (definitions.length ? definitions : fallbackDefinitions).map((item) => decodeXml(item[1].replace(/<[^>]+>/g, ' '))).join(' ').replace(/\s+/g, ' ').trim();
+    const definitionText = matches => matches.map(item => decodeXml(item[1].replace(/<[^>]+>/g, ' '))).join(' ').replace(/\s+/g, ' ').trim();
+    const definition = definitionText(definitions) || definitionText(fallbackDefinitions);
     const greek = body.match(/<greek\s+[^>]*unicode="([^"]+)"[^>]*translit="([^"]*)"/);
     entries.set(`G${Number(match[1])}`, { definition: definition || null, lemma: greek ? decodeXml(greek[1]) : null, transliteration: greek ? decodeXml(greek[2]) : null });
   }
@@ -167,7 +168,7 @@ function parseOshb(text, hebrewLexicon, config, chapters, diagnostics) {
   return records;
 }
 
-function parseByzantineTokens(text){
+function parseByzantineTokens(text, allowDuplicateAnalyses = false){
   // One nonnumeric surface followed by one or more complete analysis pairs.
   // Match the entire running text; detached numbers/tags must never become words.
   const pattern = /([^\s{}\d,]+)\s+(\d{1,5})\s+\{([A-Z][A-Z0-9]*(?:-[A-Z0-9]+)*)\}((?:\s+\d{1,5}\s+\{[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)*\})*)/g;
@@ -178,7 +179,10 @@ function parseByzantineTokens(text){
     const primary = {strongsNumber:'G'+Number(match[2]),morphology:match[3]};
     const analyses = [primary,...[...match[4].matchAll(/(\d{1,5})\s+\{([A-Z][A-Z0-9]*(?:-[A-Z0-9]+)*)\}/g)].map(a => ({strongsNumber:'G'+Number(a[1]),morphology:a[2]}))];
     const keys = analyses.map(a => a.strongsNumber+':'+a.morphology);
-    if(new Set(keys).size !== keys.length) throw new TypeError('Duplicate Byzantine analysis');
+    if(new Set(keys).size !== keys.length){
+      if(!allowDuplicateAnalyses) throw new TypeError('Duplicate Byzantine analysis');
+      return {surface:match[1],analyses:analyses.filter((_,index) => keys.indexOf(keys[index]) === index)};
+    }
     return {surface:match[1],analyses};
   });
 }
@@ -191,7 +195,7 @@ function parseByzantine(text, greekLexicon, config, chapters, diagnostics) {
     const chapter = Number(match && match[1]);
     if(match && config.sourceVerseCounts) mapReference(config, chapter, Number(match[2]));
     if (!match || !chapterSelection.has(chapter)) return;
-    const tokens = parseByzantineTokens(match[3]);
+    const tokens = parseByzantineTokens(match[3],config.allowDuplicateAnalyses);
     tokens.forEach((token, tokenIndex) => {
       if(token.analyses.length > 1){
         if(config.alternateAnalysisPolicy !== 'first-source-analysis' || !diagnostics) throw new TypeError('Alternate analyses require explicit policy and detailed diagnostics');
@@ -236,8 +240,30 @@ function mapSourceRecords(records, config, options = {}){
     const [chapter,verse] = key.split(':').map(Number);
     if(chapters.has(chapter) && records.filter(r => r.chapter === chapter && r.verse === verse).length !== split.tokenCount) throw new TypeError('Split source token count mismatch: ' + key);
   }
+  const omitted = config.referenceMapping.omittedReaderVerses || {};
+  const counts = new Map();
+  for(const record of records){
+    const key = record.chapter + ':' + record.verse;
+    if(Object.hasOwn(omitted, key)) throw new TypeError('Source contains a declared omission: ' + key);
+    counts.set(key, (counts.get(key) || 0) + 1);
+  }
+  const mergeOffsets = new Map();
+  for(const sources of Object.values(config.referenceMapping.mergedTargets || {})){
+    if(!sources.some(key => chapters.has(Number(key.split(':')[0])))) continue;
+    let offset = 0;
+    for(const key of sources){
+      if(!chapters.has(Number(key.split(':')[0])) || !counts.has(key)){
+        throw new TypeError('Incomplete merged source verses: ' + sources.join(', '));
+      }
+      mergeOffsets.set(key, offset);
+      offset += counts.get(key);
+    }
+  }
   for(const ch of chapters) for(let verse = 1; verse <= config.sourceVerseCounts[ch - 1]; verse++){
-    for(const r of sourceTargets(config,ch,verse)) expected.add(r.chapter + ':' + r.verse);
+    for(const r of sourceTargets(config,ch,verse)){
+      const key = r.chapter + ':' + r.verse;
+      if(!Object.hasOwn(omitted, key)) expected.add(key);
+    }
   }
   const mapped = records.filter(r => chapters.has(r.chapter)).map(r => {
     if(r.bookId !== config.bookId || r.status !== 'authoritative') throw new TypeError('Source record book/status mismatch');
@@ -249,7 +275,8 @@ function mapSourceRecords(records, config, options = {}){
       if(typeof r.morphology !== 'string' || !/^[HA]/.test(r.morphology)) throw new TypeError('Invalid OSHB morphology language');
       language = r.morphology[0] === 'A' ? 'aramaic' : 'hebrew';
     }else if(r.language !== 'greek') throw new TypeError('Greek source record language mismatch');
-    return Object.assign({}, r, target, {tokenIndex:segment ? r.tokenIndex - segment.start : r.tokenIndex,language, source:config.source.attribution});
+    const offset = segment ? -segment.start : mergeOffsets.get(r.chapter + ':' + r.verse) || 0;
+    return Object.assign({}, r, target, {tokenIndex:r.tokenIndex + offset,language, source:config.source.attribution});
   });
   const normalized = normalizeRecords(mapped), present = new Set(normalized.map(r => r.chapter + ':' + r.verse));
   const missing = [...expected].filter(key => !present.has(key));
@@ -260,17 +287,21 @@ function mapSourceRecords(records, config, options = {}){
 function parseConfiguredSourceDetailed(text, lexicon, config, options = {}){
   validateBookConfig(config);
   const chapters = options.chapters == null ? Array.from({length:config.chapterCount}, (_, i) => i + 1) : options.chapters;
-  const parser = config.parserStrategy === 'oshb' ? parseOshb : parseByzantine;
-  const diagnostics = {serializationPolicy:config.alternateAnalysisPolicy || null,alternateAnalyses:[],
-    oshbWordPolicy:config.parserStrategy === 'oshb' ? 'main-text-only' : null,
-    excludedVariantNotes:0,excludedVariantWords:0,excludedApparatus:[]};
-  if(config.lexicalJoinStrategy === 'strongs-hebrew-xml-subset') diagnostics.sourceLemmas = [];
-  const sourceRecords = parser(text, lexicon, config, chapters, diagnostics);
+  const {records:sourceRecords,diagnostics} = parseSourceRecords(text,lexicon,config,chapters);
   const records = mapSourceRecords(sourceRecords, config, {chapters});
   diagnostics.mapping = {sourceVerses:new Set(sourceRecords.map(r=>r.chapter+':'+r.verse)).size,sourceTokens:sourceRecords.length,
     readerVerses:new Set(records.map(r=>r.chapter+':'+r.verse)).size,
     splitSourceVerses:Object.keys(config.referenceMapping.tokenSplits || {}).filter(key => selectedChapters(chapters).has(Number(key.split(':')[0])))};
   return {records,diagnostics};
+}
+
+function parseSourceRecords(text, lexicon, config, chapters){
+  const parser = config.parserStrategy === 'oshb' ? parseOshb : parseByzantine;
+  const diagnostics = {serializationPolicy:config.alternateAnalysisPolicy || null,alternateAnalyses:[],
+    oshbWordPolicy:config.parserStrategy === 'oshb' ? 'main-text-only' : null,
+    excludedVariantNotes:0,excludedVariantWords:0,excludedApparatus:[]};
+  if(config.lexicalJoinStrategy === 'strongs-hebrew-xml-subset') diagnostics.sourceLemmas = [];
+  return {records:parser(text, lexicon, config, chapters, diagnostics),diagnostics};
 }
 
 function parseConfiguredSource(text, lexicon, config, options = {}){
@@ -354,7 +385,10 @@ function writeStaticData(records, outputDirectory, configurations = []) {
       const first = shardRecords[0], book = readerBook(first.bookId), verses = book[first.chapter]?.verses;
       const present = new Set(shardRecords.map(r => r.verse));
       if(!verses || [...present].some(v => v > verses.length)) throw new TypeError('Invalid Reader chapter output');
-      const missing = verses.map((_, i) => i + 1).filter(v => !present.has(v));
+      const config = configurations.find(c => c.bookId === first.bookId);
+      const omitted = config?.referenceMapping?.omittedReaderVerses || {};
+      if([...present].some(v => Object.hasOwn(omitted, first.chapter + ':' + v))) throw new TypeError('Unexpected output for a declared omission');
+      const missing = verses.map((_, i) => i + 1).filter(v => !present.has(v) && !Object.hasOwn(omitted, first.chapter + ':' + v));
       if(missing.length) throw new TypeError('Incomplete Reader chapter output: ' + first.bookId + ' ' + first.chapter + ':' + missing.join(','));
     }
   }
@@ -428,4 +462,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { SCHEMA_FIELDS, normalizeRecord, normalizeRecords, writeStaticData, importOriginalLanguage, parseStrongDat, parseStrongGreekXml, parseOshbGenesis, parseByzantineJohn, importAuthoritativeSources, selectedChapters, mapSourceRecords, parseConfiguredSource, generateConfiguredSource, parseByzantineTokens, parseConfiguredSourceDetailed, generateConfiguredSourceDetailed };
+module.exports = { SCHEMA_FIELDS, normalizeRecord, normalizeRecords, writeStaticData, importOriginalLanguage, parseStrongDat, parseStrongGreekXml, parseOshbGenesis, parseByzantineJohn, importAuthoritativeSources, selectedChapters, mapSourceRecords, parseSourceRecords, parseConfiguredSource, generateConfiguredSource, parseByzantineTokens, parseConfiguredSourceDetailed, generateConfiguredSourceDetailed };
